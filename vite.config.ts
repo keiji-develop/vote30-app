@@ -4,6 +4,7 @@ import { VitePWA } from 'vite-plugin-pwa';
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: '/vote30-app/',   // ← リポジトリ名と完全一致
   plugins: [
     // React (JSX/TSX) 変換
     react(),
@@ -14,7 +15,8 @@ export default defineConfig({
       manifest: {
         name: 'T.M.R Vote30',
         short_name: 'Vote30',
-        start_url: '/',
+        start_url: '/vote30-app/',   // ベースと一致
+        scope: '/vote30-app/',
         display: 'standalone',
         theme_color: '#000000',
         background_color: '#ffffff',

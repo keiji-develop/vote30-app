@@ -1,182 +1,212 @@
 [
   {
     "id": 1,
-    "title": "T.M.R. LIVE REVOLUTION '96 -monopolize-",
+    "title": "T.M.R. LIVE REVOLUTION '96",
+    "subtitle": "-monopolize-",
     "year": 1996,
     "description": "デビュー初のライブツアー。1996.03.30〜06.06に大阪・名古屋・東京の3都市で全9公演開催。"
   },
   {
     "id": 2,
-    "title": "T.M.R. LIVE REVOLUTION '96 -MAKES REVOLUTION-",
+    "title": "T.M.R. LIVE REVOLUTION '96",
+    "subtitle": "-MAKES REVOLUTION-",
     "year": 1996,
     "description": "アルバム「MAKES REVOLUTION」のリリースに合わせて、1996.08.19〜08.31に全国8都市で全8公演開催。"
   },
   {
     "id": 3,
-    "title": "T.M.R. LIVE REVOLUTION '97 -維新レベル→3-",
+    "title": "T.M.R. LIVE REVOLUTION '97",
+    "subtitle": "-維新レベル→3-",
     "year": 1997,
     "description": "アルバム「restoration LEVEL→3」のリリースに合わせて、1997.03.21〜04.24に全国8都市で全10公演開催。"
   },
   {
     "id": 4,
-    "title": "T.M.R. LIVE REVOLUTION '97 -HIGH PRESSURE-",
+    "title": "T.M.R. LIVE REVOLUTION '97",
+    "subtitle": "-HIGH PRESSURE-",
     "year": 1997,
     "description": "1997.08.01〜08.15に東京・大阪・愛知の3都市で全6公演開催。（東京公演の2公演が追加公演として発表）"
   },
   {
     "id": 5,
-    "title": "T.M.R. LIVE REVOLUTION '97 -Joker-",
+    "title": "T.M.R. LIVE REVOLUTION '97",
+    "subtitle": "-Joker-",
     "year": 1997,
     "description": "1997.11.10〜12.27に全国22都市で全22公演開催。地元である滋賀県野洲市での凱旋公演も実施。"
   },
   {
     "id": 6,
-    "title": "T.M.R. LIVE REVOLUTION '98 -KING of JOKER-",
+    "title": "T.M.R. LIVE REVOLUTION '98",
+    "subtitle": "-KING of JOKER-",
     "year": 1998,
     "description": "アルバム「triple joker」のリリースに合わせて、1998.03.21〜04.24に全国9都市で、初の武道館公演を含む全14公演開催。"
   },
   {
     "id": 7,
-    "title": "T.M.R. LIVE REVOLUTION '98 -Joker Type 2-",
+    "title": "T.M.R. LIVE REVOLUTION '98",
+    "subtitle": "-Joker Type 2-",
     "year": 1998,
     "description": "初の全都道府県ツアーを5ヶ月間にわたり敢行。1998.07.26〜12.25に全国47都道府県の64都市で全68公演開催。新党革命 総務会長 SUNAO氏 初入党。"
   },
   {
     "id": 8,
-    "title": "T.M.R. LIVE REVOLUTION '99 -THE FORCE-",
+    "title": "T.M.R. LIVE REVOLUTION '99",
+    "subtitle": "-THE FORCE-",
     "year": 1999,
     "description": "アルバム「The Force」のリリースに合わせ1999.03.17〜03.18に開催した初の東京ドーム公演。公演翌日に「T.M.Revolution」の活動封印を発表。"
   },
   {
     "id": 9,
-    "title": "the end of genesis T.M.R. evolution turbo type D -LIVE ARENA 2000 A.D.-",
+    "title": "the end of genesis T.M.R. evolution turbo type D",
+    "subtitle": "-LIVE ARENA 2000 A.D.-",
     "year": 2000,
-    "description": "2000.03.11〜03.31にアリーナ会場を中心に4都市で全10公演を開催。ライブ前半はT.M.R-e・後半はT.M.Revolutionの楽曲で構成。「T.M.Revolution」の封印解除。"
+    "description": "2000.03.11〜03.31にアリーナ会場を中心に4都市で全10公演を開催。ライブ前半はT.M.R-e・後半はT.M.Revolutionの楽曲で構成。"
   },
   {
     "id": 10,
-    "title": "T.M.R. LIVE REVOLUTION '00 -SUMMER CRUSH 2000-",
+    "title": "T.M.R. LIVE REVOLUTION '00",
+    "subtitle": "-SUMMER CRUSH 2000-",
     "year": 2000,
     "description": "2000.07.29 大阪WTCオープンエアスタジアム、2000.08.10 神奈川横浜スタジアムで開催した初の野外ライブ。"
   },
   {
     "id": 11,
-    "title": "T.M.R. LIVE REVOLUTION '00 -progress-",
+    "title": "T.M.R. LIVE REVOLUTION '00",
+    "subtitle": "-progress-",
     "year": 2000,
-    "description": "アルバム「progress」のリリースに合わせて、2000.10.14〜2001.02.23に全国27都道府県27都市で全38公演開催したホールツアー。"
+    "description": "アルバム「progress」のリリースに合わせて、2000.10.14〜2001.02.23に全国27都道府県27都市で全38公演開催。"
   },
   {
     "id": 12,
-    "title": "T.M.R. LIVE REVOLUTION '01 -progress ARENA TOUR-",
+    "title": "T.M.R. LIVE REVOLUTION '01",
+    "subtitle": "-progress ARENA TOUR-",
     "year": 2001,
     "description": "ホールツアーに続いて、2001.03.14〜04.08に全国4都市のアリーナ会場で全8公演開催。"
   },
   {
     "id": 13,
-    "title": "T.M.R. LIVE REVOLUTION '02 -B☆E☆S☆T-",
+    "title": "T.M.R. LIVE REVOLUTION '02",
+    "subtitle": "-B☆E☆S☆T-",
     "year": 2002,
-    "description": "初のベストアルバム「B☆E☆S☆T」のリリースに合わせて、2002.03.16〜06.06に全国30都道府県のホール会場で全45公演開催。"
+    "description": "ベストアルバム「B☆E☆S☆T」のリリースに合わせて、2002.03.16〜06.06に全国30都道府県で全45公演開催。"
   },
   {
     "id": 14,
-    "title": "T.M.R. LIVE REVOLUTION '02 B☆E☆S☆T SPECIAL -SUMMER CRUSH 2002-",
+    "title": "T.M.R. LIVE REVOLUTION '02",
+    "subtitle": "B☆E☆S☆T SPECIAL -SUMMER CRUSH 2002-",
     "year": 2002,
-    "description": "2年ぶりに開催した野外ライブ SUMMER CRUSH 2002。2002.08.13〜14 東京ビックサイトオープンエアスタジアムで開催。"
+    "description": "野外ライブ SUMMER CRUSH 2002 を2002.08.13〜14 東京ビッグサイトで開催。"
   },
   {
     "id": 15,
-    "title": "T.M.R. LIVE REVOLUTION '03 -coordinator-",
+    "title": "T.M.R. LIVE REVOLUTION '03",
+    "subtitle": "-coordinator-",
     "year": 2003,
-    "description": "アルバム「coordinate」のリリースに合わせて2003.04.20〜08.03に全国19都道府県21都市で全33公演開催したホールツアー。"
+    "description": "アルバム「coordinate」リリースに合わせて2003.04.20〜08.03に全国21都市で全33公演開催。"
   },
   {
     "id": 16,
-    "title": "T.M.R. LIVE REVOLUTION '03 -satellite-",
+    "title": "T.M.R. LIVE REVOLUTION '03",
+    "subtitle": "-satellite-",
     "year": 2003,
-    "description": "coordinatorツアー期間中にライブハウスで開催した4都市4公演のツアー。チケットは公演前日に発売され、会場は発券まで非公開だった。"
+    "description": "coordinatorツアー期間中にライブハウスで開催した4都市4公演のプレミアムツアー。"
   },
   {
     "id": 17,
-    "title": "T.M.R. LIVE REVOLUTION '04 -SEVENTH HEAVEN-",
+    "title": "T.M.R. LIVE REVOLUTION '04",
+    "subtitle": "-SEVENTH HEAVEN-",
     "year": 2004,
-    "description": "アルバム「SEVENTH HEAVEN」のリリースに合わせて2004.04.11〜08.15に18都市で全31公演開催。新党革命 幹事長 柴崎氏、選対委員長 淳士氏 初入党。"
+    "description": "アルバム「SEVENTH HEAVEN」リリースに合わせ2004.04.11〜08.15に18都市で全31公演開催。"
   },
   {
     "id": 18,
-    "title": "T.M.R. LIVE REVOLUTION '05 -vertical infinity-",
+    "title": "T.M.R. LIVE REVOLUTION '05",
+    "subtitle": "-vertical infinity-",
     "year": 2005,
-    "description": "アルバム「vertical infinity」のリリースに合わせて2005.03.06〜08.07に18都市で全34公演開催。新党革命 政調会長 IKUO氏が初入党し、現在の党執行部体制がスタート。"
+    "description": "アルバム「vertical infinity」リリースに合わせ2005.03.06〜08.07に18都市で全34公演開催。"
   },
   {
     "id": 19,
-    "title": "T.M.R. LIVE REVOLUTION '06 -UNDER:COVER-",
+    "title": "T.M.R. LIVE REVOLUTION '06",
+    "subtitle": "-UNDER:COVER-",
     "year": 2006,
-    "description": "デビュー10周年企画セルフカバーアルバム「UNDER:COVER」のリリースに合わせて、2006.03.25〜07.30に21都市で全32公演開催。"
+    "description": "セルフカバーアルバム「UNDER:COVER」リリースに合わせ2006.03.25〜07.30に21都市で全32公演開催。"
   },
   {
     "id": 20,
-    "title": "T.M.R. LIVE REVOLUTION '06 -UNDER:COVER- ARENA STYLE Version",
+    "title": "T.M.R. LIVE REVOLUTION '06",
+    "subtitle": "-UNDER:COVER- ARENA STYLE Version",
     "year": 2006,
-    "description": "ホールツアーに続いて、2006.08.18〜08.27に大阪城ホールと日本武道館で全3公演開催。"
+    "description": "ホールツアー後、2006.08.18〜27に大阪城ホールと日本武道館で全3公演開催。"
   },
   {
     "id": 21,
-    "title": "T.M.R. LIVE REVOLUTION '08-'09 〜転生降臨之章〜",
+    "title": "T.M.R. LIVE REVOLUTION '08-'09",
+    "subtitle": "〜転生降臨之章〜",
     "year": 2008,
-    "description": "abingdon boys school 活動期間を経て約2年ぶりに開催したホールツアー。2008.09.14〜2009.03.29に31都市で全38公演開催。"
+    "description": "abingdon boys school 活動を経て約2年ぶりのホールツアー。2008.09.14〜2009.03.29に全38公演開催。"
   },
   {
     "id": 22,
-    "title": "T.M.R. LIVE REVOLUTION '11-'12 -CLOUD NINE-",
+    "title": "T.M.R. LIVE REVOLUTION '11-'12",
+    "subtitle": "-CLOUD NINE-",
     "year": 2011,
-    "description": "デビュー15周年。オリジナルアルバム「CLOUD NINE」のリリースに合わせて2度目の47都道府県ツアーを開催。2011.04.07〜2012.04.15に56都市で全63公演。"
+    "description": "アルバム「CLOUD NINE」リリースに合わせ2度目の47都道府県ツアー。2011.04.07〜2012.04.15に全63公演。"
   },
   {
     "id": 23,
-    "title": "T.M.R. LIVE REVOLUTION '12 -15th Anniversary FINAL-",
+    "title": "T.M.R. LIVE REVOLUTION '12",
+    "subtitle": "-15th Anniversary FINAL-",
     "year": 2012,
-    "description": "15周年締めくくり＆16年目スタートとして2012.05.12〜05.13に国立代々木競技場第一体育館で開催。"
+    "description": "15周年ファイナルとして2012.05.12〜13に国立代々木競技場第一体育館で開催。"
   },
   {
     "id": 24,
-    "title": "T.M.R. LIVE REVOLUTION '13 -UNDER:COVER 2-",
+    "title": "T.M.R. LIVE REVOLUTION '13",
+    "subtitle": "-UNDER:COVER 2-",
     "year": 2013,
-    "description": "セルフカバーアルバム第2弾「UNDER:COVER II」のリリースに合わせて、2013.06.01〜09.01に24都市で32公演開催。"
+    "description": "セルフカバー第2弾アルバムリリースに合わせ2013.06.01〜09.01に全32公演開催。"
   },
   {
     "id": 25,
-    "title": "T.M.R. LIVE REVOLUTION '15 -天-",
+    "title": "T.M.R. LIVE REVOLUTION '15",
+    "subtitle": "-天-",
     "year": 2015,
-    "description": "10枚目のアルバム「天」のリリースに合わせて、2015.04.04〜09.06に開催した3度目の全国47都道府県ツアー（全50公演）。"
+    "description": "10枚目のアルバム「天」リリースに合わせ2015.04.04〜09.06に47都道府県全50公演開催。"
   },
   {
     "id": 26,
-    "title": "T.M.R. LIVE REVOLUTION '16-'17 -Route 20-",
+    "title": "T.M.R. LIVE REVOLUTION '16-'17",
+    "subtitle": "-Route 20-",
     "year": 2016,
-    "description": "デビュー20周年イヤーに2年連続で47都道府県ツアーを開催。熊本公演・武道館公演の追加を含む全51公演。"
+    "description": "デビュー20周年イヤーに2年連続47都道府県ツアー＋武道館追加公演で全51公演。"
   },
   {
     "id": 27,
-    "title": "T.M.R. LIVE REVOLUTION '17 -ROUND HOUSE CUTBACK-",
+    "title": "T.M.R. LIVE REVOLUTION '17",
+    "subtitle": "-ROUND HOUSE CUTBACK-",
     "year": 2017,
-    "description": "2017.02.25〜03.19に東京・大阪・愛知・北海道のZeppで全7公演開催したプレミアムライブハウスツアー。"
+    "description": "2017.02.25〜03.19にZepp 東京・大阪・名古屋・札幌で全7公演開催したライブハウスツアー。"
   },
   {
     "id": 28,
-    "title": "T.M.R. LIVE REVOLUTION '17 -20th Anniversary FINAL-",
+    "title": "T.M.R. LIVE REVOLUTION '17",
+    "subtitle": "-20th Anniversary FINAL-",
     "year": 2017,
-    "description": "20周年締めくくりライブを2017.05.13〜05.14にさいたまスーパーアリーナで開催。"
+    "description": "デビュー20周年締めくくりライブを2017.05.13〜14にさいたまスーパーアリーナで開催。"
   },
   {
     "id": 29,
-    "title": "T.M.R. LIVE REVOLUTION '21-'22 -VOTE-",
+    "title": "T.M.R. LIVE REVOLUTION '21-'22",
+    "subtitle": "-VOTE-",
     "year": 2021,
-    "description": "デビュー25周年記念。2021.05.13〜2022.05.17に地元滋賀県中心に25公演を開催。大阪・東京・宮城の追加を含め全30公演。"
+    "description": "デビュー25周年ツアー。2021.05.13〜2022.05.17に滋賀を中心とした25公演＋追加で全30公演開催。"
   },
   {
     "id": 30,
-    "title": "T.M.R. LIVE REVOLUTION '22-'23 -VOTE JAPAN-",
+    "title": "T.M.R. LIVE REVOLUTION '22-'23",
+    "subtitle": "-VOTE JAPAN-",
     "year": 2022,
-    "description": "5度目となる全国47都道府県ツアー。2022.06.24〜2023.05.12に全50公演開催し、コロナ禍を乗り越えて全国遊説を達成。"
+    "description": "5度目の全国47都道府県ツアー。2022.06.24〜2023.05.12に全50公演開催。"
   }
 ]
