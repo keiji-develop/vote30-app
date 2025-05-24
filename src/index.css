@@ -11,6 +11,18 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  --kanji-size: 18px;   /* ラベル漢字の大きさ */
+  --ruby-size: 9.5px;    /* ふりがなの大きさ   */
+  --num-size:  52px;    /* 候補番号（数字）   */
+
+  /* ▼ 追加：公演名が長いときは自動縮小（最少 14px, 最大 24px） */
+  --title-size: clamp(5px, 4vw, 45px);
+  --sub-size:   clamp(5px, 4vw, 45px);
+
+    /* ▼ 追加：公演名が長いときの折り返し方法（nowrapだと無理やり１行、normalだと２行折り返し） */
+    --title-wrap: normal;   /* normal にすると 2 行折返し */
+
 }
 
 a {
