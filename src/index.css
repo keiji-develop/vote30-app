@@ -12,16 +12,30 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  --kanji-size: 18px;   /* ラベル漢字の大きさ */
+  /* 既存の変数 */
+  --kanji-size: 30px;    /* ラベル漢字の大きさ */
   --ruby-size: 9.5px;    /* ふりがなの大きさ   */
-  --num-size:  52px;    /* 候補番号（数字）   */
+  --num-size:  52px;     /* 候補番号（数字）   */
 
-  /* ▼ 追加：公演名が長いときは自動縮小（最少 14px, 最大 24px） */
-  --title-size: clamp(5px, 4vw, 45px);
-  --sub-size:   clamp(5px, 4vw, 45px);
+  /* ▼ 追加：公演名が長いときは自動縮小（最少 14px, 最大 30px） */
+  --title-size: clamp(5px, 4vw, 30px);
+  --sub-size:   clamp(5px, 4vw, 30px);
 
-    /* ▼ 追加：公演名が長いときの折り返し方法（nowrapだと無理やり１行、normalだと２行折り返し） */
-    --title-wrap: normal;   /* normal にすると 2 行折返し */
+  /* ▼ プレビュー用フォントサイズ（調整用） */
+  --preview-number-size: 5rem;    /* プレビュー中の候補番号 */
+  --preview-title-size: 2.25rem;  /* プレビュー中の公演名タイトル */
+  --preview-subtitle-size: 2rem;  /* プレビュー中のサブタイトル */
+
+  /* ▼ 追加：公演名が長いときの折り返し方法 */
+  --title-wrap: normal;   /* normal にすると 2 行折返し */
+
+  /* ▼ 追加：プレビュー部ラベルフォントサイズ */
+  --preview-label-size: 0.98rem;  /* 候補番号・候補公演名ラベルのサイズ */
+
+  /* プレビューグリッド高さ */
+  --preview-grid-height: 5rem; /* お好みで調整可 */
+
+
 
 }
 
@@ -64,6 +78,24 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
+}
+
+/* ── プレビュー部フォント調整用クラス ── */
+.preview-number {
+  font-size: var(--preview-number-size);
+}
+
+.preview-title {
+  font-size: var(--preview-title-size);
+}
+
+.preview-subtitle {
+  font-size: var(--preview-subtitle-size);
+}
+
+.preview-label {
+  font-size: var(--preview-label-size);
+  /* 縦書き設定は既にインラインで行っているため不要 */
 }
 
 @tailwind base;
