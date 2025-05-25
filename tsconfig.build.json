@@ -1,0 +1,11 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "jsx": "react-jsx",        // React 17+ の新トランスフォーム
+    "baseUrl": "./src",       // パスエイリアスの基点
+    "paths": {
+      "@/*": ["*"]           // '@/...' → 'src/...'
+    }
+  },
+  "include": ["src"]
+}

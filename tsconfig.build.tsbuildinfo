@@ -1,0 +1,1 @@
+{"root":["./src/app.tsx","./src/main.tsx","./src/vite-env.d.ts","./src/components/card.tsx","./src/components/modal.tsx","./src/components/preview.tsx","./src/components/previewcontent.tsx","./src/components/seatinput.tsx","./src/components/tourdetail.tsx","./src/hooks/usetours.ts","./src/types/tour.ts","./src/utils/fittext.ts"],"errors":true,"version":"5.8.3"}

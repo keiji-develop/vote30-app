@@ -86,7 +86,11 @@ useEffect(() => {
 
   /* ---------- UI ---------- */
   return (
-    <main className="p-4 max-w-xl mx-auto select-none">
+    /* 画面縦横中央寄せラッパー */
+    <div className="flex items-center justify-center min-h-screen bg-gray-50">
+      <main className="p-4 w-full max-w-xl select-none">
+
+
 
 {/* 本日の座席番号欄 */}
 <div className="mb-2 text-sm flex items-center gap-2">
@@ -123,7 +127,12 @@ useEffect(() => {
         </select>
       </div>
       */} 
- 
+
+        {/* カード一覧説明 */}
+        <p className="text-center text-gray-700 mb-4">
+          候補公演名一覧と公演概要（公式の一覧から転記）
+        </p>
+
       {/* カード一覧 */}
       <ul className="grid gap-3">
         {filtered.map(t => (
@@ -310,6 +319,7 @@ useEffect(() => {
           </article>
         </div>
       )}
-    </main>
+      </main>
+    </div>
   );
 }
