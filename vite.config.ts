@@ -12,6 +12,9 @@ export default defineConfig({
     // ★ PWA プラグイン
     VitePWA({
       registerType: 'autoUpdate',  // 変更検知で Service Worker を自動更新
+      workbox: {
+          cleanupOutdatedCaches: true,     // 古いキャッシュを自動で削除
+        },
       manifest: {
         name: 'T.M.R Vote30',
         short_name: 'Vote30',
