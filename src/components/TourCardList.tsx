@@ -7,7 +7,7 @@ type TourCardListProps = {
 
 export function TourCardList({ tours, onCardClick }: TourCardListProps) {
   return (
-    <ul className="grid gap-3">
+    <ul className="grid gap-3 mx-auto w-full">
       {tours.map(t => (
         <li
           key={t.id}
