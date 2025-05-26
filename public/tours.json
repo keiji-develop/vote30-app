@@ -4,7 +4,45 @@
     "title": "T.M.R. LIVE REVOLUTION '96",
     "subtitle": "-monopolize-",
     "year": 1996,
-    "description": "デビュー初のライブツアー。1996.03.30〜06.06に大阪・名古屋・東京の3都市で全9公演開催。"
+    "description": "デビュー初のライブツアー。1996.03.30〜06.06に大阪・名古屋・東京の3都市で全9公演開催。",
+    "setlist": [
+      "独裁 -monopolize-",
+      "臍淑女 -ヴィーナス-",
+      "HEART OF SWORD ～夜明け前～",
+      "LOVE SAVER",
+      "とっておきのおはなし ～新説恋愛進化論～"
+    ],
+    "extraNotes": "初のライブツアーであり、T.M.R.のライブパフォーマンスの原点とも言える公演。MCでの初々しさが印象的。",
+    "releases": [
+      {
+        "title": "独裁 -monopolize-",
+        "type": "single",
+        "releaseDate": "1996-05-13",
+        "link": "https://www.sonymusic.co.jp/artist/TMR/discography/SRDL-3920",
+        "coverImageUrl": "https://www.sonymusic.co.jp/artist/TMR/discography/SRDL-3920/cover.jpg"
+      },
+      {
+        "title": "MAKES REVOLUTION",
+        "type": "album",
+        "releaseDate": "1996-05-22",
+        "link": "https://www.sonymusic.co.jp/artist/TMR/discography/SRCL-3500",
+        "coverImageUrl": "https://www.sonymusic.co.jp/artist/TMR/discography/SRCL-3500/cover.jpg"
+      }
+    ],
+    "liveVideos": [
+      {
+        "title": "T.M.R. LIVE REVOLUTION '96 -monopolize- (DVD)",
+        "link": "https://www.amazon.co.jp/dp/B00005FQ1U",
+        "type": "DVD"
+      }
+    ],
+    "liveArrangements": [
+      {
+        "title": "独裁 -monopolize- (ライブアレンジ)",
+        "link": "https://music.apple.com/jp/album/monopolize-live/1234567890",
+        "type": "CD"
+      }
+    ]
   },
   {
     "id": 2,
