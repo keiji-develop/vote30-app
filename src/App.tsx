@@ -1,14 +1,12 @@
 import { useEffect, useState, useRef } from 'react';
 import * as FlexSearch from 'flexsearch';
 import './index.css';
-
-type Tour = {
-  id: number;
-  title: string;
-  subtitle: string;
-  year: number;
-  description: string;
-};
+import { type Tour } from './types/tour';
+import { fitOneLine } from './utils/fitOneLine';
+import { saveSeat } from './utils/localStorage';
+import { PreviewModal } from './components/PreviewModal';
+import { DetailModal } from './components/DetailModal';
+import { TourCardList } from './components/TourCardList';
 
 export default function App() {
   /* ---------- state ---------- */
@@ -22,29 +20,11 @@ export default function App() {
   const [yearFilter, _setYearFilter] = useState(0);
   const [seat, setSeat] = useState<string>(() => localStorage.getItem('seat') || ''); // 本日の座席番号の情報をローカルにだけ保存
 
-
-  /* 本日の座席番号の情報をローカルにだけ保存する */ 
-  const saveSeat = (v:string) => {
-  setSeat(v);
-  localStorage.setItem('seat', v);
-};
-
-  /* 文字列がハミ出すときだけ fontSize を 0.5px ずつ下げる */
-const fitOneLine = (el: HTMLDivElement | null) => {
-  if (!el) return;
-  const cellWidth = el.parentElement!.clientWidth - 8;   // 4px左右余白
-  let font = parseFloat(getComputedStyle(el).fontSize);
-  while (el.scrollWidth > cellWidth && font > 12) {
-    font -= 0.5;
-    el.style.fontSize = `${font}px`;
-  }
-};
-
-/* preview が変わるたびタイトル / サブタイトルをフィット */
-useEffect(() => {
-  fitOneLine(titleRef.current);
-  fitOneLine(subtitleRef.current);
-}, [preview]);
+  /* preview が変わるたびタイトル / サブタイトルをフィット */
+  useEffect(() => {
+    fitOneLine(titleRef.current);
+    fitOneLine(subtitleRef.current);
+  }, [preview]);
 
   /* ---------- 年リスト ---------- */
   const [_years] = [Array.from(new Set(tours.map(t => t.year))).sort()];
@@ -97,7 +77,10 @@ useEffect(() => {
   <label className="whitespace-nowrap">本日の座席番号<br></br>（投票記入見本に表示されます）:</label>
   <input
     value={seat}
-    onChange={e => saveSeat(e.target.value)}
+    onChange={e => {
+      setSeat(e.target.value);
+      saveSeat(e.target.value);
+    }}
     placeholder="例 1階 919ブロック 2R扉 513列 1242番"
     className="border p-1 flex-1"
   />
@@ -134,190 +117,19 @@ useEffect(() => {
         </p>
 
       {/* カード一覧 */}
-      <ul className="grid gap-3">
-        {filtered.map(t => (
-          <li
-            key={t.id}
-            className="border rounded p-3 flex flex-col gap-2 hover:bg-gray-100 cursor-pointer"
-            onClick={() => setActive(t)}
-          >
-           {/* ID とタイトルまわりは横並び */}
-           <div className="flex gap-6 items-start">
-             <span className="text-6xl sm:text-7xl font-bold leading-none">
-               {t.id}
-             </span>
-             <div className="leading-tight mt-2">
-               <div className="text-lg sm:text-xl font-semibold">{t.title}</div>
-               {t.subtitle && (
-                 <div className="tracking-wider text-base sm:text-lg">{t.subtitle}</div>
-               )}
-             </div>
-           </div>
-           {/* 説明文はタイトル群の下に表示 */}
-           <p className="mt-2 text-sm text-gray-700 line-clamp-2">
-             {t.description}
-           </p>
-
-
-          </li>
-        ))}
-      </ul>
+      <TourCardList tours={filtered} onCardClick={setActive} />
 
 
 
 
 {/* ---------- 投票記入プレビュー ---------- */}
 {preview && (
-  <div
-    className="fixed inset-0 bg-white flex items-center justify-center
-               border-[6px] border-black z-50"
-  >
-
-    {/* ▼ モーダルと同じ閉じるボタン（右上・枠内） */}
-      <button
-        onClick={() => setPreview(null)}
-        className="absolute top-2 right-2 px-6 py-1 bg-black text-white text-sm rounded"
-      >
-        閉じる
-      </button>
-
-{/* ▼ ラッパー: 縦積み & 同じ幅を共有 */}
-<div className="flex flex-col items-stretch w-[90%] max-w-[600px]">
-
-
-    {/* ▼ 投票用紙そっくりボックス（幅ピッタリ） */}
-    <div
-      className="border border-black grid relative"
-      style={{
-        gridTemplateColumns: '30px 72px 30px 1fr',
-        width: '100%', height: '110px'
-      }}
-    >
-      {/* === 1列目：候補番号ラベル === */}
-      <div className="border-r border-black flex items-center justify-center">
-        <div className="flex justify-between w-full px-[2px]">
-          <span className="font-bold leading-none"
-                style={{ writingMode:'vertical-rl', textOrientation:'upright', fontSize:'var(--kanji-size)' }}>
-            候補番号
-          </span>
-          <span className="leading-none"
-                style={{ writingMode:'vertical-rl', textOrientation:'upright', fontSize:'var(--ruby-size)' }}>
-            こうほばんごう
-          </span>
-        </div>
-      </div>
-
-      {/* === 2列目：数字 === */}
-      <div className="border-r border-black flex items-center justify-center">
-        <span style={{ fontSize:'var(--num-size)' }} className="font-bold">
-          {preview.id}
-        </span>
-      </div>
-
-      {/* === 3列目：候補公演名ラベル === */}
-      <div className="border-r border-black flex items-center justify-center">
-        <div className="flex justify-between w-full px-[2px]">
-          <span className="font-bold leading-none"
-                style={{ writingMode:'vertical-rl', textOrientation:'upright', fontSize:'var(--kanji-size)' }}>
-            候補公演名
-          </span>
-          <span className="leading-none"
-                style={{ writingMode:'vertical-rl', textOrientation:'upright', fontSize:'var(--ruby-size)' }}>
-            こうほこうえんめい
-          </span>
-        </div>
-      </div>
-
-      {/* === 4列目：公演名 === */}
-      <div className="px-4 flex flex-col justify-center overflow-hidden">
-        <div className="whitespace-normal leading-tight text-lg font-semibold">
-          {preview.title}
-        </div>
-        {preview.subtitle && (
-          <div className="whitespace-normal leading-tight tracking-wider text-lg">
-            {preview.subtitle}
-          </div>
-        )}
-      </div>
-    </div>
-      {/* ▼ 座席番号行（罫線なし & 幅はグリッドと同じ） */}
-      <div className="w-full px-0 pt-0 text-sm flex">
-        <span className="mr-2 font-semibold text-sm">(本日の座席番号:</span>
-        <span style={{ fontSize:'18px' }}>{seat || '–––'}</span>
-        <span className="ml-1 font-semibold text-sm">)</span>
-      </div>
-    </div>
-</div> 
+  <PreviewModal preview={preview} seat={seat} setPreview={setPreview} />
 )}
 
 {/* ---------- 詳細モーダル ---------- */}
       {active && (
-        <div
-          className="fixed inset-0 z-40 bg-black/40 flex items-center justify-center"
-          onClick={() => setActive(null)}
-        >
-        <article
-          tabIndex={-1}
-          className="relative bg-white w-full max-w-lg border-[3px] border-black font-serif"
-            onClick={e => e.stopPropagation()}
-        >
-
-      {/* ★ ヘッダー直後に × ボタン */}
-           <button
-             onClick={e => {
-               e.stopPropagation();
-               setActive(null);    // ← こちらを呼び出す
-             }}
-             className="absolute top-2 right-2 text-2xl font-semibold leading-none"
-             aria-label="閉じる"
-           >
-             ×
-           </button>
-
-            <header className="flex text-xs font-semibold tracking-wider px-5 pt-2">
-              <span className="min-w-[4.5rem]">候補番号</span>
-              <span className="ml-6">候補公演名</span>
-            </header>
-
-            <section className="flex items-center px-5 pt-3 pb-4">
-              <span className="text-6xl sm:text-7xl font-bold mr-6">
-                {active.id}
-              </span>
-              <h2 className="leading-tight text-lg sm:text-xl font-semibold">
-                {active.title}
-                {active.subtitle && (
-                  <>
-                    <br />
-                    <span className="tracking-wider">
-                      {active.subtitle}
-                    </span>
-                  </>
-                )}
-              </h2>
-            </section>
-
-            <p className="px-5 pb-6 text-[0.95rem] leading-relaxed whitespace-pre-wrap">
-              {active.description}
-            </p>
-
-            <footer className="relative border-t-[3px] border-black flex justify-end items-center p-3 space-x-2">
-              {/* ×ボタン（消したい場合はここを削除） 
-              <button
-                onClick={() => setActive(null)}
-                className="px-4 py-1 bg-black text-white text-sm rounded"
-              >
-                ×
-              </button> */}
-              {/* プレビュー表示ボタン */}
-              <button
-                onClick={() => setPreview(active)}
-                className="px-6 py-1 border border-black text-sm rounded"
-              >
-                投票記入見本を開く
-              </button>
-            </footer>
-          </article>
-        </div>
+        <DetailModal active={active} setActive={setActive} setPreview={setPreview} />
       )}
       </main>
     </div>
