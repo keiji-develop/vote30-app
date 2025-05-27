@@ -73,15 +73,16 @@ export default function App() {
         <Header />
 
         {/* 本日の座席番号欄 */}
-        <div className="flex items-center gap-4 bg-white rounded border border-[#6ea7b2] px-4 py-3 mb-6">
-          <label className="font-bold text-base text-gray-800 text-center whitespace-nowrap">
-            本日の座席番号<br className="hidden sm:block" />（投票記入見本に表示されます）
+        <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-4 bg-white rounded border border-[#6ea7b2] px-4 py-3 mb-6">
+          <label className="font-bold text-base text-gray-800 text-center sm:text-right whitespace-nowrap sm:w-1/3">
+            本日の座席番号
+            <span className="block sm:text-right">（投票記入見本に表示されます）</span>
           </label>
           <input
             value={seat}
             onChange={e => { setSeat(e.target.value); saveSeat(e.target.value); }}
             placeholder="例 1階 919ブロック 2R扉 513列 1242番"
-            className="border border-gray-300 rounded px-3 py-2 text-base flex-1 h-12"
+            className="border border-gray-300 rounded px-3 py-2 text-base w-full sm:w-2/3 h-12"
             style={{ minWidth: 0 }}
           />
         </div>
@@ -112,9 +113,10 @@ export default function App() {
         */} 
 
         {/* カード一覧説明 */}
-        <p className="text-xl font-bold text-center border-b-2 border-[#6ea7b2] pb-2 mb-6">
-          候補公演名一覧と公演概要（公式の一覧から転記）
-        </p>
+        <div className="flex flex-col sm:flex-row justify-center items-center text-xl font-bold text-center border-b-2 border-[#6ea7b2] pb-2 mb-6">
+          <span>候補公演名一覧と公演概要</span>
+          <span className="sm:ml-4 font-bold text-xl text-[#213547]">（公式の一覧から転記）</span>
+        </div>
 
         {/* カード一覧 */}
         <TourCardList tours={filtered} onCardClick={setActive} />
