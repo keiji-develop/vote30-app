@@ -10,7 +10,10 @@
       "臍淑女 -ヴィーナス-",
       "HEART OF SWORD ～夜明け前～",
       "LOVE SAVER",
-      "とっておきのおはなし ～新説恋愛進化論～"
+      "とっておきのおはなし ～新説恋愛進化論～",
+      "HEART OF SWORD ～夜明け前～ (アコースティックバージョン) ※日替わり",
+      "LOVE SAVER (アコースティックバージョン) ※日替わり",
+      "独裁 -monopolize- (アコースティックバージョン) ※途中から変更"
     ],
     "extraNotes": "初のライブツアーであり、T.M.R.のライブパフォーマンスの原点とも言える公演。MCでの初々しさが印象的。",
     "releases": [
@@ -32,15 +35,21 @@
     "liveVideos": [
       {
         "title": "T.M.R. LIVE REVOLUTION '96 -monopolize- (DVD)",
-        "link": "https://www.amazon.co.jp/dp/B00005FQ1U",
+        "link": "https://www.sonymusic.co.jp/artist/TMR/discography/SRBL-1420",
         "type": "DVD"
+      },
+      {
+        "title": "MUSIC STATION",
+        "type": "TV",
+        "notes": "1996年4月放送「HEART OF SWORD ～夜明け前～」"
       }
     ],
     "liveArrangements": [
       {
         "title": "独裁 -monopolize- (ライブアレンジ)",
-        "link": "https://music.apple.com/jp/album/monopolize-live/1234567890",
-        "type": "CD"
+        "link": "https://www.sonymusic.co.jp/artist/TMR/discography/SRCL-3500",
+        "type": "CD",
+        "notes": "ライブツアー初日の音源"
       }
     ]
   },
@@ -49,7 +58,17 @@
     "title": "T.M.R. LIVE REVOLUTION '96",
     "subtitle": "-MAKES REVOLUTION-",
     "year": 1996,
-    "description": "アルバム「MAKES REVOLUTION」のリリースに合わせて、1996.08.19〜08.31に全国8都市で全8公演開催。"
+    "description": "アルバム「MAKES REVOLUTION」のリリースに合わせて、1996.08.19〜08.31に全国8都市で全8公演開催。",
+    "extraNotes": "アルバムリリース直後のツアーであり、新曲が多数披露された。",
+    "releases": [
+      {
+        "title": "MAKES REVOLUTION",
+        "type": "album",
+        "releaseDate": "1996-05-22",
+        "link": "https://www.sonymusic.co.jp/artist/TMR/discography/SRCL-3500",
+        "coverImageUrl": "https://www.sonymusic.co.jp/artist/TMR/discography/SRCL-3500/cover.jpg"
+      }
+    ]
   },
   {
     "id": 3,
