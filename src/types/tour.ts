@@ -16,11 +16,13 @@ export type Tour = {
   liveVideos?: {
     title: string;
     link: string;
-    type: 'DVD' | 'Blu-ray' | 'YouTube' | '配信';
+    type: 'DVD' | 'Blu-ray' | 'YouTube' | '配信' | 'TV';
+    notes?: string;
   }[];
   liveArrangements?: {
     title: string;
     link?: string;
     type: 'CD' | 'DVD' | 'TV' | '配信';
+    notes?: string;
   }[];
 }; 
