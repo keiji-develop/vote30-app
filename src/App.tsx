@@ -32,7 +32,8 @@ export default function App() {
 
   /* ---------- fetch tours.json ---------- */
   useEffect(() => {
-    fetch('tours.json')
+    const version = import.meta.env?.VITE_APP_VERSION || Date.now();
+    fetch(`tours.json?v=${version}`)
       .then(r => r.json())
       .then((data: Tour[]) => {
         setTours(data);
@@ -64,6 +65,18 @@ export default function App() {
     window.addEventListener('keydown', h);
     return () => window.removeEventListener('keydown', h);
   }, []);
+
+  /* モーダル・プレビュー表示中はbodyスクロール禁止 */
+  useEffect(() => {
+    if (active || preview) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+    return () => {
+      document.body.style.overflow = '';
+    };
+  }, [active, preview]);
 
   /* ---------- UI ---------- */
   return (
@@ -123,12 +136,21 @@ export default function App() {
 
         {/* ---------- 投票記入プレビュー ---------- */}
         {preview && (
-          <PreviewModal preview={preview} seat={seat} setPreview={setPreview} />
+          <PreviewModal
+            preview={preview}
+            seat={seat}
+            setPreview={setPreview}
+          />
         )}
 
         {/* ---------- 詳細モーダル ---------- */}
         {active && (
-          <DetailModal active={active} setActive={setActive} setPreview={setPreview} />
+          <DetailModal
+            active={active}
+            setActive={setActive}
+            setPreview={setPreview}
+            tours={filtered}
+          />
         )}
       </main>
     </div>

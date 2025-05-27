@@ -19,7 +19,7 @@ export function PreviewModal({ preview, seat, setPreview }: PreviewModalProps) {
 
   return (
     <div
-      className="fixed inset-0 bg-white flex items-center justify-center border-[6px] border-black z-50"
+      className="fixed inset-0 bg-white flex items-center justify-center border-[6px] border-black z-50 py-4"
     >
       {/* 閉じるボタン */}
       <button

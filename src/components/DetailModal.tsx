@@ -1,25 +1,83 @@
 import { type Tour } from '../types/tour';
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 
 type DetailModalProps = {
   active: Tour;
   setActive: (t: Tour | null) => void;
   setPreview: (t: Tour) => void;
+  tours: Tour[];
 };
 
-export function DetailModal({ active, setActive, setPreview }: DetailModalProps) {
+export function DetailModal({ active, setActive, setPreview, tours }: DetailModalProps) {
   const [isDetailsExpanded, setIsDetailsExpanded] = useState(false);
+  const modalRef = useRef<HTMLDivElement>(null);
+
+  // 前後のインデックス
+  const idx = tours.findIndex(t => t.id === active.id);
+  const prevTour = idx > 0 ? tours[idx - 1] : null;
+  const nextTour = idx < tours.length - 1 ? tours[idx + 1] : null;
+
+  // キーボード左右キー対応
+  useEffect(() => {
+    const handler = (e: KeyboardEvent) => {
+      if (e.key === 'ArrowLeft' && prevTour) setActive(prevTour);
+      if (e.key === 'ArrowRight' && nextTour) setActive(nextTour);
+    };
+    window.addEventListener('keydown', handler);
+    return () => window.removeEventListener('keydown', handler);
+  }, [prevTour, nextTour, setActive]);
+
+  // スワイプ対応
+  useEffect(() => {
+    let startX = 0;
+    const handleTouchStart = (e: TouchEvent) => {
+      startX = e.touches[0].clientX;
+    };
+    const handleTouchEnd = (e: TouchEvent) => {
+      const endX = e.changedTouches[0].clientX;
+      if (startX - endX > 50 && nextTour) setActive(nextTour); // 左スワイプ
+      if (endX - startX > 50 && prevTour) setActive(prevTour); // 右スワイプ
+    };
+    const node = modalRef.current;
+    if (node) {
+      node.addEventListener('touchstart', handleTouchStart);
+      node.addEventListener('touchend', handleTouchEnd);
+    }
+    return () => {
+      if (node) {
+        node.removeEventListener('touchstart', handleTouchStart);
+        node.removeEventListener('touchend', handleTouchEnd);
+      }
+    };
+  }, [prevTour, nextTour, setActive]);
 
   return (
     <div
-      className="fixed inset-0 z-40 bg-black/40 flex items-center justify-center"
+      className="fixed inset-0 z-40 bg-black/40 flex items-center justify-center py-4"
       onClick={() => setActive(null)}
     >
       <article
+        ref={modalRef}
         tabIndex={-1}
         className="relative bg-white w-full max-w-[95vw] sm:max-w-md md:max-w-lg border-[3px] border-black font-serif flex flex-col max-h-[90vh]"
         onClick={e => e.stopPropagation()}
       >
+        {/* 矢印ナビゲーション */}
+        <div className="absolute top-1/2 left-0 -translate-y-1/2 z-10">
+          {prevTour && (
+            <button onClick={() => setActive(prevTour)} className="p-2 text-2xl font-bold text-gray-500 hover:text-black bg-white/80 rounded-full shadow">
+              &#8592;
+            </button>
+          )}
+        </div>
+        <div className="absolute top-1/2 right-0 -translate-y-1/2 z-10">
+          {nextTour && (
+            <button onClick={() => setActive(nextTour)} className="p-2 text-2xl font-bold text-gray-500 hover:text-black bg-white/80 rounded-full shadow">
+              &#8594;
+            </button>
+          )}
+        </div>
+
         {/* × ボタン */}
         <button
           onClick={e => {
