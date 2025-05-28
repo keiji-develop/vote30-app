@@ -18,6 +18,7 @@ import Cookies from './pages/Cookies';
 import AffiliateDisclosure from './pages/AffiliateDisclosure';
 import SpecCommercial from './pages/SpecCommercial';
 import NotFound from './pages/NotFound';
+import Sitemap from './pages/Sitemap';
 
 export default function App() {
   /* ---------- state ---------- */
@@ -178,6 +179,7 @@ export default function App() {
         <Route path="/cookies" element={<Cookies />} />
         <Route path="/affiliate-disclosure" element={<AffiliateDisclosure />} />
         <Route path="/spec-commercial" element={<SpecCommercial />} />
+        <Route path="/sitemap" element={<Sitemap />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
