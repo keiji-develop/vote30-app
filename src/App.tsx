@@ -9,6 +9,15 @@ import { DetailModal } from './components/DetailModal';
 import { TourCardList } from './components/TourCardList';
 import { Header } from './components/Header';
 import { Footer } from './components/Footer';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import About from './pages/About';
+import Disclaimer from './pages/Disclaimer';
+import PrivacyPolicy from './pages/PrivacyPolicy';
+import Contact from './pages/Contact';
+import Cookies from './pages/Cookies';
+import AffiliateDisclosure from './pages/AffiliateDisclosure';
+import SpecCommercial from './pages/SpecCommercial';
+import NotFound from './pages/NotFound';
 
 export default function App() {
   /* ---------- state ---------- */
@@ -81,83 +90,96 @@ export default function App() {
 
   /* ---------- UI ---------- */
   return (
-    /* 画面縦横中央寄せラッパー */
-    <div className="min-h-screen bg-gray-50" role="application" aria-label="VOTE30選挙対策支援サイト">
-      <main className="pb-4 px-4 sm:px-4 max-w-2xl mx-auto select-none">
-        <Header />
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={
+          <div className="min-h-screen bg-gray-50" role="application" aria-label="VOTE30選挙対策支援サイト">
+            <main className="pb-4 px-4 sm:px-4 max-w-2xl mx-auto select-none">
+              <Header />
 
-        {/* 本日の座席番号欄 */}
-        <section aria-labelledby="seat-label" className="flex flex-col sm:flex-row items-center gap-2 sm:gap-4 bg-white rounded border border-[#6ea7b2] px-4 py-3 mb-6">
-          <label id="seat-label" className="font-bold text-base text-gray-800 text-center sm:text-right whitespace-nowrap sm:w-1/3">
-            本日の座席番号
-            <span className="block sm:text-right">（投票記入見本に表示されます）</span>
-          </label>
-          <input
-            value={seat}
-            onChange={e => { setSeat(e.target.value); saveSeat(e.target.value); }}
-            placeholder="例 1階 919ブロック 2R扉 513列 1242番"
-            className="border border-gray-300 rounded px-3 py-2 text-base w-full sm:w-2/3 h-12"
-            style={{ minWidth: 0 }}
-            aria-label="本日の座席番号"
-          />
-        </section>
+              {/* 本日の座席番号欄 */}
+              <section aria-labelledby="seat-label" className="flex flex-col sm:flex-row items-center gap-2 sm:gap-4 bg-white rounded border border-[#6ea7b2] px-4 py-3 mb-6">
+                <label id="seat-label" className="font-bold text-base text-gray-800 text-center sm:text-right whitespace-nowrap sm:w-1/3">
+                  本日の座席番号
+                  <span className="block sm:text-right">（投票記入見本に表示されます）</span>
+                </label>
+                <input
+                  value={seat}
+                  onChange={e => { setSeat(e.target.value); saveSeat(e.target.value); }}
+                  placeholder="例 1階 919ブロック 2R扉 513列 1242番"
+                  className="border border-gray-300 rounded px-3 py-2 text-base w-full sm:w-2/3 h-12"
+                  style={{ minWidth: 0 }}
+                  aria-label="本日の座席番号"
+                />
+              </section>
 
-        {/* 20250525_0330_検索機能はしばらく封印します */}
-        {/* 検索バー */}
-        {/* <input
-          value={q}
-          onChange={e => setQ(e.target.value)}
-          placeholder="検索…"
-          className="w-full mb-4 p-2 border rounded"
-        />
-        */}
-        {/* 年フィルタ */}
-        {/* <div className="mb-4">
-          <label className="mr-2 text-sm">年で絞る:</label>
-          <select
-            value={yearFilter}
-            onChange={e => setYearFilter(Number(e.target.value))}
-            className="border rounded p-1 text-sm"
-          >
-            <option value={0}>すべて</option>
-            {years.map(y => (
-              <option key={y} value={y}>{y}</option>
-            ))}
-          </select>
-        </div>
-        */} 
+              {/* 20250525_0330_検索機能はしばらく封印します */}
+              {/* 検索バー */}
+              {/* <input
+                value={q}
+                onChange={e => setQ(e.target.value)}
+                placeholder="検索…"
+                className="w-full mb-4 p-2 border rounded"
+              />
+              */}
+              {/* 年フィルタ */}
+              {/* <div className="mb-4">
+                <label className="mr-2 text-sm">年で絞る:</label>
+                <select
+                  value={yearFilter}
+                  onChange={e => setYearFilter(Number(e.target.value))}
+                  className="border rounded p-1 text-sm"
+                >
+                  <option value={0}>すべて</option>
+                  {years.map(y => (
+                    <option key={y} value={y}>{y}</option>
+                  ))}
+                </select>
+              </div>
+              */} 
 
-        {/* カード一覧説明 */}
-        <section aria-labelledby="tour-list-title" className="flex flex-col sm:flex-row justify-center items-center text-xl font-bold text-center border-b-2 border-[#6ea7b2] pb-2 mb-6">
-          <h2 id="tour-list-title" className="text-xl font-bold">候補公演名一覧と公演概要</h2>
-          <span className="sm:ml-4 font-bold text-xl text-[#213547]">（公式の一覧から転記）</span>
-        </section>
+              {/* カード一覧説明 */}
+              <section aria-labelledby="tour-list-title" className="flex flex-col sm:flex-row justify-center items-center text-xl font-bold text-center border-b-2 border-[#6ea7b2] pb-2 mb-6">
+                <h2 id="tour-list-title" className="text-xl font-bold">候補公演名一覧と公演概要</h2>
+                <span className="sm:ml-4 font-bold text-xl text-[#213547]">（公式の一覧から転記）</span>
+              </section>
 
-        {/* カード一覧 */}
-        <section aria-label="公演一覧">
-          <TourCardList tours={filtered} onCardClick={setActive} />
-        </section>
+              {/* カード一覧 */}
+              <section aria-label="公演一覧">
+                <TourCardList tours={filtered} onCardClick={setActive} />
+              </section>
 
-        {/* ---------- 投票記入プレビュー ---------- */}
-        {preview && (
-          <PreviewModal
-            preview={preview}
-            seat={seat}
-            setPreview={setPreview}
-          />
-        )}
+              {/* ---------- 投票記入プレビュー ---------- */}
+              {preview && (
+                <PreviewModal
+                  preview={preview}
+                  seat={seat}
+                  setPreview={setPreview}
+                />
+              )}
 
-        {/* ---------- 詳細モーダル ---------- */}
-        {active && (
-          <DetailModal
-            active={active}
-            setActive={setActive}
-            setPreview={setPreview}
-            tours={filtered}
-          />
-        )}
-      </main>
-      <Footer />
-    </div>
+              {/* ---------- 詳細モーダル ---------- */}
+              {active && (
+                <DetailModal
+                  active={active}
+                  setActive={setActive}
+                  setPreview={setPreview}
+                  tours={filtered}
+                />
+              )}
+            </main>
+            <Footer />
+          </div>
+        } />
+        <Route path="/about" element={<About />} />
+        <Route path="/disclaimer" element={<Disclaimer />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/cookies" element={<Cookies />} />
+        <Route path="/affiliate-disclosure" element={<AffiliateDisclosure />} />
+        <Route path="/spec-commercial" element={<SpecCommercial />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
