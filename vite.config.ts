@@ -4,39 +4,54 @@ import { VitePWA } from 'vite-plugin-pwa';
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/vote30-app/',   // ← リポジトリ名と完全一致
+  base: '/',
   plugins: [
-    // React (JSX/TSX) 変換
     react(),
-
-    // ★ PWA プラグイン
     VitePWA({
-      registerType: 'autoUpdate',  // 変更検知で Service Worker を自動更新
-      workbox: {
-          cleanupOutdatedCaches: true,     // 古いキャッシュを自動で削除
-        },
+      registerType: 'autoUpdate',
+      includeAssets: ['favicon.ico', 'apple-touch-icon.png', 'masked-icon.svg'],
       manifest: {
-        name: 'T.M.R Vote30',
-        short_name: 'Vote30',
-        start_url: '/vote30-app/',   // ベースと一致
-        scope: '/vote30-app/',
-        display: 'standalone',
-        theme_color: '#000000',
-        background_color: '#ffffff',
+        name: 'VOTE30選挙対策支援サイト',
+        short_name: 'VOTE30',
+        description: '30代の有権者を中心に、選挙に関する情報を分かりやすく提供し、より多くの方々が政治に参加できるよう支援するサイトです。',
+        theme_color: '#6ea7b2',
         icons: [
-          // ↓ 公開フォルダ (public/) にアイコン PNG を置いたらパスを合わせてください
           {
-            src: '/icon-192.png',
+            src: 'pwa-192x192.png',
             sizes: '192x192',
             type: 'image/png'
           },
           {
-            src: '/icon-512.png',
+            src: 'pwa-512x512.png',
             sizes: '512x512',
             type: 'image/png'
           }
         ]
       }
     })
-  ]
+  ],
+  server: {
+    port: 3000,
+    fs: {
+      strict: false,
+      allow: ['..']
+    }
+  },
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          'vendor': ['react', 'react-dom', 'react-router-dom']
+        }
+      }
+    }
+  },
+  // 静的ファイルの設定
+  publicDir: 'public',
+  // クリーンURLのサポート
+  preview: {
+    port: 3000,
+    strictPort: true,
+    host: true
+  }
 });
