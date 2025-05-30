@@ -5,51 +5,38 @@
     "subtitle": "-monopolize-",
     "year": 1996,
     "description": "デビュー初のライブツアー。1996.03.30〜06.06に大阪・名古屋・東京の3都市で全9公演開催。",
+    "extraNotes": "1000人規模のライブハウスを回るツアーとして開催。当時はまだ今と比べて曲数も少なく、他のアーティストの曲のカバーもセットリストに入っていた。SHAKIN' LOVEの歌詞が今と違う！！",
     "setlist": [
-      "独裁 -monopolize-",
+      "独裁-monopolize-",
+      "URBAN BEASTS",
+      "PIN UP LADY",
+      "TROUBLE [Shampooのカバー]",
+      "夢の雫",
       "臍淑女 -ヴィーナス-",
-      "HEART OF SWORD ～夜明け前～",
-      "LOVE SAVER",
-      "とっておきのおはなし ～新説恋愛進化論～",
-      "HEART OF SWORD ～夜明け前～ (アコースティックバージョン) ※日替わり",
-      "LOVE SAVER (アコースティックバージョン) ※日替わり",
-      "独裁 -monopolize- (アコースティックバージョン) ※途中から変更"
-    ],
-    "extraNotes": "初のライブツアーであり、T.M.R.のライブパフォーマンスの原点とも言える公演。MCでの初々しさが印象的。",
-    "releases": [
-      {
-        "title": "独裁 -monopolize-",
-        "type": "single",
-        "releaseDate": "1996-05-13",
-        "link": "https://www.sonymusic.co.jp/artist/TMR/discography/SRDL-3920",
-        "coverImageUrl": "https://www.sonymusic.co.jp/artist/TMR/discography/SRDL-3920/cover.jpg"
-      },
-      {
-        "title": "MAKES REVOLUTION",
-        "type": "album",
-        "releaseDate": "1996-05-22",
-        "link": "https://www.sonymusic.co.jp/artist/TMR/discography/SRCL-3500",
-        "coverImageUrl": "https://www.sonymusic.co.jp/artist/TMR/discography/SRCL-3500/cover.jpg"
-      }
+      "LIAR'S SMILE",
+      "SHAKIN' LOVE",
+      "BLACK OR WHITE ?",
+      "---アンコール---",
+      "独裁-monopolize-"
     ],
     "liveVideos": [
       {
-        "title": "T.M.R. LIVE REVOLUTION '96 -monopolize- (DVD)",
-        "link": "https://www.sonymusic.co.jp/artist/TMR/discography/SRBL-1420",
-        "type": "DVD"
+        "title": "T.M.Revolution DVD Series The Summary -summarize 1- (DVD)",
+        "type": "DVD",
+        "links": [
+          "https://www.sonymusic.co.jp/artist/TMRevolution/discography/ESBL-2123",
+          "https://www.amazon.co.jp/T-M-Revolution-DVD-Summary-summarize1/dp/B0000QX20E"
+        ]
       },
       {
-        "title": "MUSIC STATION",
-        "type": "TV",
-        "notes": "1996年4月放送「HEART OF SWORD ～夜明け前～」"
+        "title": "LIVE REVOLUTION COMPLETE EDITION-2 1996.6.6 赤坂BLITZ(FC限定VHS)",
+        "type": "VHS"
       }
     ],
     "liveArrangements": [
       {
-        "title": "独裁 -monopolize- (ライブアレンジ)",
-        "link": "https://www.sonymusic.co.jp/artist/TMR/discography/SRCL-3500",
-        "type": "CD",
-        "notes": "ライブツアー初日の音源"
+        "title": "このライブと同じアレンジのライブ映像・音源",
+        "notes": "無し"
       }
     ]
   },

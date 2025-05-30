@@ -1,13 +1,43 @@
 <!doctype html>
-<html lang="en">
+<html lang="ja">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vote30-app/vote.svg" />
+    <link rel="icon" type="image/svg+xml" href="/vote.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>VOTE30選挙対策支援サイト</title>
-    <script type="module" crossorigin src="/vote30-app/assets/index-utA-telP.js"></script>
-    <link rel="stylesheet" crossorigin href="/vote30-app/assets/index-BfEpBq7X.css">
-  <link rel="manifest" href="/vote30-app/manifest.webmanifest"><script id="vite-plugin-pwa:register-sw" src="/vote30-app/registerSW.js"></script></head>
+    <meta name="description" content="VOTE30選挙対策支援サイトは、公演情報の閲覧と投票記入をサポートするウェブアプリケーションです。" />
+    <meta name="keywords" content="VOTE30,選挙,投票,公演,演劇" />
+    
+    <!-- OGP設定 -->
+    <meta property="og:title" content="VOTE30選挙対策支援サイト" />
+    <meta property="og:description" content="VOTE30選挙対策支援サイトは、公演情報の閲覧と投票記入をサポートするウェブアプリケーションです。" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://your-domain.com" />
+    <meta property="og:image" content="https://your-domain.com/ogp.jpg" />
+    <meta property="og:site_name" content="VOTE30選挙対策支援サイト" />
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="VOTE30選挙対策支援サイト" />
+    <meta name="twitter:description" content="VOTE30選挙対策支援サイトは、公演情報の閲覧と投票記入をサポートするウェブアプリケーションです。" />
+    <meta name="twitter:image" content="https://your-domain.com/ogp.jpg" />
+    
+    <!-- アクセシビリティ -->
+    <meta name="theme-color" content="#6ea7b2" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
+    <script type="module" crossorigin src="/assets/index-BD_uyRFc.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/vendor-BSv-8b_t.js">
+    <link rel="stylesheet" crossorigin href="/assets/index-CTKe_frm.css">
+  <link rel="manifest" href="/manifest.webmanifest"><script id="vite-plugin-pwa:register-sw" src="/registerSW.js"></script></head>
   <body>
     <div id="root"></div>
   </body>
