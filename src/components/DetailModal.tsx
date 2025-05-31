@@ -1,5 +1,5 @@
 import { type Tour } from '../types/tour';
-import { useState, useEffect, useRef } from 'react';
+import { useEffect, useRef } from 'react';
 
 type DetailModalProps = {
   active: Tour;
@@ -9,7 +9,6 @@ type DetailModalProps = {
 };
 
 export function DetailModal({ active, setActive, setPreview, tours }: DetailModalProps) {
-  const [isDetailsExpanded, setIsDetailsExpanded] = useState(false);
   const modalRef = useRef<HTMLDivElement>(null);
 
   // 前後のインデックス
@@ -117,95 +116,108 @@ export function DetailModal({ active, setActive, setPreview, tours }: DetailModa
           <div className="px-2 sm:px-4 md:px-6 py-5 space-y-6">
             <div className="font-bold text-base text-black mb-2">中の人追記</div>
             
-            {/* 公演メモとセットリストを横並びに */}
-            <div className="flex flex-col md:flex-row gap-6 w-full">
+            {/* 公演メモとセットリストを1列に */}
+            <div className="flex flex-col gap-6 w-full">
               {/* 公演メモ */}
               {active.extraNotes && (
-                <section className="flex-1 min-w-0 break-words">
+                <section className="w-full break-words">
                   <div className="font-bold text-sm text-black mb-1">公演メモ</div>
                   <div className="text-sm leading-relaxed text-gray-800">{active.extraNotes}</div>
                 </section>
               )}
               {/* セットリスト */}
               {active.setlist && (
-                <section className="flex-1 min-w-0 break-words overflow-x-auto">
+                <section className="w-full break-words overflow-x-auto">
                   <div className="font-bold text-sm text-black mb-1">セットリスト</div>
-                  <ul className="list-disc list-inside text-sm leading-relaxed ml-4">
-                    {active.setlist.map((song, i) => (
-                      <li key={i}>{song}</li>
-                    ))}
-                  </ul>
+                  {/* セットリストを区切り文字で分割して表示 */}
+                  {(() => {
+                    let trackNumber = 1;
+                    return (
+                      <div>
+                        {active.setlist.map((item, index) => {
+                          // 区切り文字（---で囲まれた文字列）かどうかを判定
+                          const isDivider = item.startsWith('---') && item.endsWith('---');
+                          
+                          if (isDivider) {
+                            // 区切り文字の場合は番号なしで表示
+                            const dividerText = item.replace(/^---/, '').replace(/---$/, '');
+                            return (
+                              <div key={index} className="font-bold mt-3 mb-2 first:mt-0">
+                                {dividerText}
+                              </div>
+                            );
+                          } else {
+                            // 楽曲の場合は番号付きで表示
+                            const currentNumber = trackNumber++;
+                            return (
+                              <div key={index} className="text-sm leading-relaxed ml-4 mb-1">
+                                <span className="inline-block w-6 text-right mr-2">{currentNumber}.</span>
+                                <span>{item}</span>
+                              </div>
+                            );
+                          }
+                        })}
+                      </div>
+                    );
+                  })()}
                 </section>
               )}
             </div>
 
-            {/* 詳細情報の展開ボタン */}
+            {/* 関連作品情報 */}
             {((active.releases?.length ?? 0) > 0 || (active.liveVideos?.length ?? 0) > 0 || (active.liveArrangements?.length ?? 0) > 0) && (
-              <button
-                onClick={() => setIsDetailsExpanded(!isDetailsExpanded)}
-                className="w-full py-2 text-sm text-gray-600 hover:text-gray-900 border-t border-b border-gray-200"
-              >
-                {isDetailsExpanded ? '詳細を閉じる' : '関連作品情報を開く'}
-              </button>
-            )}
-
-            {/* 詳細情報部分 */}
-            {isDetailsExpanded && (
               <section>
-                <div className="font-bold text-sm text-black mb-1">関連作品情報</div>
-                {active.releases && active.releases.length > 0 && (
-                  <div className="mb-3">
-                    <div className="text-sm font-semibold mb-1">・ツアー関連リリース</div>
-                    <ul className="space-y-2">
-                      {active.releases.map((rel, i) => (
-                        <li key={i} className="flex items-center gap-2 text-sm">
-                          {rel.coverImageUrl && (
-                            <img src={rel.coverImageUrl} alt={rel.title} className="w-8 h-8 object-cover rounded border" />
-                          )}
-                          <span className="font-semibold">{rel.title}</span>
-                          <span className="text-xs text-gray-500">({rel.type})</span>
-                          <span className="text-xs text-gray-500">{rel.releaseDate}</span>
-                          {rel.link && (
-                            <a href={rel.link} target="_blank" rel="noopener noreferrer" className="text-blue-600 underline ml-2">詳細</a>
-                          )}
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                )}
+                <div className="font-bold text-sm text-black mb-3">関連作品情報</div>
+                
+                {/* このライブが収録されている作品 */}
                 {active.liveVideos && active.liveVideos.length > 0 && (
-                  <div className="mb-3">
-                    <div className="text-sm font-semibold mb-1">・ライブ映像</div>
-                    <ul className="space-y-2">
+                  <div className="mb-4">
+                    <div className="text-sm font-semibold mb-2">・このライブが収録されている作品</div>
+                    <div className="space-y-3">
                       {active.liveVideos.map((v, i) => (
-                        <li key={i} className="text-sm">
-                          <span className="font-semibold">{v.title}</span>
-                          <span className="text-xs text-gray-500 ml-2">({v.type})</span>
-                          {v.type !== 'TV' && v.link && (
-                            <a href={v.link} target="_blank" rel="noopener noreferrer" className="text-blue-600 underline ml-2">視聴/購入</a>
-                          )}
-                          {v.type === 'TV' && v.notes && (
-                            <span className="text-xs text-gray-500 ml-2">{v.notes}</span>
-                          )}
-                        </li>
+                        <div key={i} className="bg-gray-50 p-3 rounded border">
+                          <div className="mb-2">
+                            <div className="font-semibold text-sm">{v.title}</div>
+                            <div className="text-xs text-gray-500">({v.type})</div>
+                          </div>
+                          <div className="flex flex-wrap gap-2">
+                            {/* links配列があれば優先して表示 */}
+                            {Array.isArray((v as any).links) && (v as any).links.length > 0 ? (
+                              (v as any).links.map((link: string, j: number) => (
+                                <a key={j} href={link} target="_blank" rel="noopener noreferrer" 
+                                   className="px-3 py-1 bg-blue-600 text-white text-xs rounded hover:bg-blue-700 transition-colors">
+                                  視聴/購入{(v as any).links.length > 1 ? `(${j + 1})` : ''}
+                                </a>
+                              ))
+                            ) : v.link ? (
+                              <a href={v.link} target="_blank" rel="noopener noreferrer" 
+                                 className="px-3 py-1 bg-blue-600 text-white text-xs rounded hover:bg-blue-700 transition-colors">
+                                視聴/購入
+                              </a>
+                            ) : null}
+                          </div>
+                        </div>
                       ))}
-                    </ul>
+                    </div>
                   </div>
                 )}
+                
+                {/* このライブと同じアレンジのライブ映像・音源 */}
                 {active.liveArrangements && active.liveArrangements.length > 0 && (
-                  <div className="mb-3">
-                    <div className="text-sm font-semibold mb-1">・関連ライブ音源</div>
-                    <ul className="space-y-2">
+                  <div className="mb-4">
+                    <div className="text-sm font-semibold mb-2">・このライブと同じアレンジのライブ映像・音源</div>
+                    <div className="space-y-2">
                       {active.liveArrangements.map((a, i) => (
-                        <li key={i} className="text-sm">
-                          <span className="font-semibold">{a.title}</span>
-                          <span className="text-xs text-gray-500 ml-2">({a.type})</span>
-                          {a.link && (
-                            <a href={a.link} target="_blank" rel="noopener noreferrer" className="text-blue-600 underline ml-2">詳細</a>
-                          )}
-                        </li>
+                        a.notes === '無し' ? (
+                          <div key={i} className="text-sm text-gray-600">無し</div>
+                        ) : (
+                          <div key={i} className="bg-gray-50 p-3 rounded border">
+                            <div className="font-semibold text-sm">{a.title}</div>
+                            {a.notes && <div className="text-xs text-gray-500 mt-1">{a.notes}</div>}
+                          </div>
+                        )
                       ))}
-                    </ul>
+                    </div>
                   </div>
                 )}
               </section>

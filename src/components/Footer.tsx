@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export const Footer: React.FC = () => {
   return (
@@ -11,9 +12,6 @@ export const Footer: React.FC = () => {
             <p className="text-gray-600 text-sm mb-4">
               投票テーマを共有し、ユーザー参加型の軽量Webアプリを通じてコンテンツ体験を提供します。
             </p>
-            <p className="text-gray-500 text-xs">
-              © 2025 KEIJI. All rights reserved.
-            </p>
           </div>
 
           {/* 右カラム：リンク集 */}
@@ -21,42 +19,30 @@ export const Footer: React.FC = () => {
             <h3 className="text-lg font-bold text-gray-800 mb-4">サイト情報</h3>
             <ul className="space-y-2">
               <li>
-                <a href="/about" className="text-gray-600 hover:text-[#6ea7b2] text-sm">
+                <Link to="/about" className="text-gray-600 hover:text-[#6ea7b2] text-sm">
                   このサイトについて
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/privacy-policy" className="text-gray-600 hover:text-[#6ea7b2] text-sm">
+                <Link to="/sitemap" className="text-gray-600 hover:text-[#6ea7b2] text-sm">
+                  サイトマップ
+                </Link>
+              </li>
+              <li>
+                <Link to="/legal" className="text-gray-600 hover:text-[#6ea7b2] text-sm">
                   プライバシーポリシー
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/affiliate-disclosure" className="text-gray-600 hover:text-[#6ea7b2] text-sm">
-                  広告について
-                </a>
-              </li>
-              <li>
-                <a href="/disclaimer" className="text-gray-600 hover:text-[#6ea7b2] text-sm">
-                  免責事項
-                </a>
-              </li>
-              <li>
-                <a href="/contact" className="text-gray-600 hover:text-[#6ea7b2] text-sm">
+                <Link to="/contact" className="text-gray-600 hover:text-[#6ea7b2] text-sm">
                   お問い合わせ
-                </a>
-              </li>
-              <li>
-                <a href="/cookies" className="text-gray-600 hover:text-[#6ea7b2] text-sm">
-                  Cookieの使用について
-                </a>
-              </li>
-              <li>
-                <a href="/spec-commercial" className="text-gray-600 hover:text-[#6ea7b2] text-sm">
-                  特定商取引法に基づく表記
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
+        </div>
+        <div className="text-center mt-8">
+          <p className="text-gray-500 text-xs">© 2025 VOTE30-Support. All rights reserved.</p>
         </div>
       </div>
     </footer>

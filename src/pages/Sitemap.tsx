@@ -3,34 +3,32 @@ import { Helmet } from 'react-helmet-async';
 
 const Sitemap = () => {
   return (
-    <div style={{ maxWidth: 800, margin: '0 auto', padding: '2rem', color: '#333', fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif' }}>
+    <div className="max-w-2xl mx-auto px-4 sm:px-6 md:px-8 py-8 bg-white rounded shadow-md mt-8 mb-8">
       <Helmet>
         <title>サイトマップ - VOTE30選挙対策支援サイト</title>
-        <meta name="description" content="VOTE30選挙対策支援サイトのHTML版サイトマップです。全ページへのリンク一覧を掲載しています。" />
+        <meta name="description" content="VOTE30選挙対策支援サイトのサイトマップです。各ページへのリンクを掲載しています。" />
       </Helmet>
-      <h1 style={{ color: '#6ea7b2', borderBottom: '2px solid #6ea7b2', paddingBottom: '0.5rem', marginBottom: '2rem' }}>サイトマップ</h1>
-
-      <h2 style={{ color: '#6ea7b2', marginTop: '2rem', marginBottom: '1rem' }}>メインページ</h2>
-      <ul style={{ listStyle: 'none', paddingLeft: 0 }}>
-        <li><Link to="/">トップページ</Link></li>
-      </ul>
-
-      <h2 style={{ color: '#6ea7b2', marginTop: '2rem', marginBottom: '1rem' }}>サイト情報</h2>
-      <ul style={{ listStyle: 'none', paddingLeft: 0 }}>
-        <li><Link to="/about">このサイトについて</Link></li>
-        <li><Link to="/contact">お問い合わせ</Link></li>
-      </ul>
-
-      <h2 style={{ color: '#6ea7b2', marginTop: '2rem', marginBottom: '1rem' }}>法的文書</h2>
-      <ul style={{ listStyle: 'none', paddingLeft: 0 }}>
-        <li><Link to="/privacy-policy">プライバシーポリシー</Link></li>
-        <li><Link to="/affiliate-disclosure">広告について</Link></li>
-        <li><Link to="/disclaimer">免責事項</Link></li>
-        <li><Link to="/cookies">Cookieの使用について</Link></li>
-        <li><Link to="/spec-commercial">特定商取引法に基づく表記</Link></li>
-      </ul>
-
-      <Link to="/" className="back-link" style={{ display: 'inline-block', marginTop: '2rem', color: '#6ea7b2', textDecoration: 'none' }}>← トップページに戻る</Link>
+      <h1 className="text-3xl font-bold mb-6 border-b-2 border-[#6ea7b2] pb-2">サイトマップ</h1>
+      <div className="space-y-4">
+        <section>
+          <h2 className="text-xl font-semibold mb-2">メインページ</h2>
+          <ul className="list-disc list-inside ml-4 space-y-1">
+            <li><Link to="/" className="text-[#6ea7b2] hover:underline">トップページ</Link></li>
+          </ul>
+        </section>
+        <section>
+          <h2 className="text-xl font-semibold mb-2">サイト情報</h2>
+          <ul className="list-disc list-inside ml-4 space-y-1">
+            <li><Link to="/about" className="text-[#6ea7b2] hover:underline">このサイトについて</Link></li>
+            <li><Link to="/sitemap" className="text-[#6ea7b2] hover:underline">サイトマップ</Link></li>
+            <li><Link to="/legal" className="text-[#6ea7b2] hover:underline">プライバシーポリシー</Link></li>
+            <li><Link to="/contact" className="text-[#6ea7b2] hover:underline">お問い合わせ</Link></li>
+          </ul>
+        </section>
+      </div>
+      <div className="mt-8">
+        <Link to="/" className="inline-block text-[#6ea7b2] underline">← トップページに戻る</Link>
+      </div>
     </div>
   );
 };

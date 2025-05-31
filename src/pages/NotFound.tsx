@@ -3,14 +3,14 @@ import { Helmet } from 'react-helmet-async';
 
 const NotFound = () => {
   return (
-    <div style={{ maxWidth: 600, margin: '0 auto', padding: '2rem', textAlign: 'center', color: '#333' }}>
+    <div className="max-w-xl mx-auto px-4 sm:px-6 md:px-8 py-16 bg-white rounded shadow-md mt-16 mb-16 text-center">
       <Helmet>
         <title>404 - ページが見つかりません | VOTE30選挙対策支援サイト</title>
         <meta name="description" content="お探しのページは見つかりませんでした。VOTE30選挙対策支援サイトのトップページにお戻りください。" />
       </Helmet>
-      <h1 style={{ fontSize: '3rem', color: '#6ea7b2', marginBottom: '1rem' }}>404</h1>
-      <p style={{ fontSize: '1.5rem', marginBottom: '2rem' }}>お探しのページは見つかりませんでした。</p>
-      <Link to="/" style={{ color: '#6ea7b2', textDecoration: 'none', fontWeight: 'bold' }}>トップページに戻る</Link>
+      <h1 className="text-6xl font-bold text-[#6ea7b2] mb-4">404</h1>
+      <p className="text-xl mb-8">お探しのページは見つかりませんでした。</p>
+      <Link to="/" className="inline-block text-[#6ea7b2] underline text-lg">← トップページに戻る</Link>
     </div>
   );
 };
