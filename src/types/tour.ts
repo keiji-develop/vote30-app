@@ -6,6 +6,7 @@ export type Tour = {
   description: string;
   setlist?: string[];
   extraNotes?: string;
+  memo?: string;
   releases?: {
     title: string;
     type: 'album' | 'single';
@@ -13,13 +14,14 @@ export type Tour = {
     link?: string;
     coverImageUrl?: string;
   }[];
-  liveVideos?: {
+  liveVideos?: string | {
     title: string;
-    link: string;
-    type: 'DVD' | 'Blu-ray' | 'YouTube' | '配信' | 'TV';
+    link?: string;
+    type: 'DVD' | 'Blu-ray' | 'YouTube' | '配信' | 'TV' | 'VHS';
     notes?: string;
+    links?: string[];
   }[];
-  liveArrangements?: {
+  liveArrangements?: string | {
     title: string;
     link?: string;
     type: 'CD' | 'DVD' | 'TV' | '配信';

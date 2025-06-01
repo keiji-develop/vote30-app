@@ -165,58 +165,82 @@ export function DetailModal({ active, setActive, setPreview, tours }: DetailModa
             </div>
 
             {/* 関連作品情報 */}
-            {((active.releases?.length ?? 0) > 0 || (active.liveVideos?.length ?? 0) > 0 || (active.liveArrangements?.length ?? 0) > 0) && (
+            {((active.releases?.length ?? 0) > 0 || active.liveVideos || active.liveArrangements) && (
               <section>
                 <div className="font-bold text-sm text-black mb-3">関連作品情報</div>
                 
-                {/* このライブが収録されている作品 */}
-                {active.liveVideos && active.liveVideos.length > 0 && (
+                {/* このライブが収録されている映像・音源 */}
+                {active.liveVideos && (
                   <div className="mb-4">
-                    <div className="text-sm font-semibold mb-2">・このライブが収録されている作品</div>
+                    <div className="text-sm font-semibold mb-2">・このライブが収録されている映像・音源</div>
                     <div className="space-y-3">
-                      {active.liveVideos.map((v, i) => (
-                        <div key={i} className="bg-gray-50 p-3 rounded border">
-                          <div className="mb-2">
-                            <div className="font-semibold text-sm">{v.title}</div>
-                            <div className="text-xs text-gray-500">({v.type})</div>
+                      {/* 文字列形式の場合 */}
+                      {typeof active.liveVideos === 'string' ? (
+                        active.liveVideos.split('\n').filter(line => line.trim()).map((line, i) => (
+                          <div key={i} className="bg-gray-50 p-3 rounded border">
+                            <div className="text-sm">{line.trim()}</div>
                           </div>
-                          <div className="flex flex-wrap gap-2">
-                            {/* links配列があれば優先して表示 */}
-                            {Array.isArray((v as any).links) && (v as any).links.length > 0 ? (
-                              (v as any).links.map((link: string, j: number) => (
-                                <a key={j} href={link} target="_blank" rel="noopener noreferrer" 
+                        ))
+                      ) : (
+                        /* 配列形式の場合（従来通り） */
+                        active.liveVideos.map((v, i) => (
+                          <div key={i} className="bg-gray-50 p-3 rounded border">
+                            <div className="mb-2">
+                              <div className="font-semibold text-sm">{v.title}</div>
+                              <div className="text-xs text-gray-500">({v.type})</div>
+                            </div>
+                            <div className="flex flex-wrap gap-2">
+                              {/* links配列があれば優先して表示 */}
+                              {Array.isArray((v as any).links) && (v as any).links.length > 0 ? (
+                                (v as any).links.map((link: string, j: number) => (
+                                  <a key={j} href={link} target="_blank" rel="noopener noreferrer" 
+                                     className="px-3 py-1 bg-blue-600 text-white text-xs rounded hover:bg-blue-700 transition-colors">
+                                    視聴/購入{(v as any).links.length > 1 ? `(${j + 1})` : ''}
+                                  </a>
+                                ))
+                              ) : v.link ? (
+                                <a href={v.link} target="_blank" rel="noopener noreferrer" 
                                    className="px-3 py-1 bg-blue-600 text-white text-xs rounded hover:bg-blue-700 transition-colors">
-                                  視聴/購入{(v as any).links.length > 1 ? `(${j + 1})` : ''}
+                                  視聴/購入
                                 </a>
-                              ))
-                            ) : v.link ? (
-                              <a href={v.link} target="_blank" rel="noopener noreferrer" 
-                                 className="px-3 py-1 bg-blue-600 text-white text-xs rounded hover:bg-blue-700 transition-colors">
-                                視聴/購入
-                              </a>
-                            ) : null}
+                              ) : null}
+                            </div>
                           </div>
-                        </div>
-                      ))}
+                        ))
+                      )}
                     </div>
                   </div>
                 )}
                 
-                {/* このライブと同じアレンジのライブ映像・音源 */}
-                {active.liveArrangements && active.liveArrangements.length > 0 && (
+                {/* 同じライブアレンジの映像・音源 */}
+                {active.liveArrangements && (
                   <div className="mb-4">
-                    <div className="text-sm font-semibold mb-2">・このライブと同じアレンジのライブ映像・音源</div>
+                    <div className="text-sm font-semibold mb-2">・同じライブアレンジの映像・音源</div>
                     <div className="space-y-2">
-                      {active.liveArrangements.map((a, i) => (
-                        a.notes === '無し' ? (
-                          <div key={i} className="text-sm text-gray-600">無し</div>
+                      {/* 文字列形式の場合 */}
+                      {typeof active.liveArrangements === 'string' ? (
+                        active.liveArrangements === '無し' ? (
+                          <div className="text-sm text-gray-600">無し</div>
                         ) : (
-                          <div key={i} className="bg-gray-50 p-3 rounded border">
-                            <div className="font-semibold text-sm">{a.title}</div>
-                            {a.notes && <div className="text-xs text-gray-500 mt-1">{a.notes}</div>}
-                          </div>
+                          active.liveArrangements.split('\n').filter(line => line.trim()).map((line, i) => (
+                            <div key={i} className="bg-gray-50 p-3 rounded border">
+                              <div className="text-sm">{line.trim()}</div>
+                            </div>
+                          ))
                         )
-                      ))}
+                      ) : (
+                        /* 配列形式の場合（従来通り） */
+                        active.liveArrangements.map((a, i) => (
+                          a.notes === '無し' ? (
+                            <div key={i} className="text-sm text-gray-600">無し</div>
+                          ) : (
+                            <div key={i} className="bg-gray-50 p-3 rounded border">
+                              <div className="font-semibold text-sm">{a.title}</div>
+                              {a.notes && <div className="text-xs text-gray-500 mt-1">{a.notes}</div>}
+                            </div>
+                          )
+                        ))
+                      )}
                     </div>
                   </div>
                 )}
