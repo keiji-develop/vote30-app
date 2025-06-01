@@ -1,230 +1,293 @@
 [
   {
     "id": 1,
-    "mediaIds": [
-      "media1",
-      "media2",
-      "media3"
+    "liveVideoIds": [
+      "summarize_1",
+      "complete_edition_2"
+    ],
+    "liveArrangementIds": [
+      "none"
     ]
   },
   {
     "id": 2,
-    "mediaIds": [
-      "media1",
-      "media4",
-      "media3"
+    "liveVideoIds": [
+      "summarize_1",
+      "complete_edition_3"
+    ],
+    "liveArrangementIds": [
+      "none"
     ]
   },
   {
     "id": 3,
-    "mediaIds": [
-      "media5",
-      "media3"
+    "liveVideoIds": [
+      "summarize_2"
+    ],
+    "liveArrangementIds": [
+      "none"
     ]
   },
   {
     "id": 4,
-    "mediaIds": [
-      "media3"
+    "liveVideoIds": [
+      "none"
+    ],
+    "liveArrangementIds": [
+      "none"
     ]
   },
   {
     "id": 5,
-    "mediaIds": [
-      "media3"
+    "liveVideoIds": [
+      "none"
+    ],
+    "liveArrangementIds": [
+      "none"
     ]
   },
   {
     "id": 6,
-    "mediaIds": [
-      "media6",
-      "media3"
+    "liveVideoIds": [
+      "summarize_3"
+    ],
+    "liveArrangementIds": [
+      "none"
     ]
   },
   {
     "id": 7,
-    "mediaIds": [
-      "media3"
+    "liveVideoIds": [
+      "none"
+    ],
+    "liveArrangementIds": [
+      "none"
     ]
   },
   {
     "id": 8,
-    "mediaIds": [
-      "media7",
-      "media3"
+    "liveVideoIds": [
+      "summarize_4"
+    ],
+    "liveArrangementIds": [
+      "none"
     ]
   },
   {
     "id": 9,
-    "mediaIds": [
-      "media8",
-      "media3"
+    "liveVideoIds": [
+      "genesis_turbo_type_d_live_arena_2000_ad_special_dvd_version"
+    ],
+    "liveArrangementIds": [
+      "none"
     ]
   },
   {
     "id": 10,
-    "mediaIds": [
-      "media9",
-      "media10",
-      "media3"
+    "liveVideoIds": [
+      "unknown_0001",
+      "wowow_broadcast"
+    ],
+    "liveArrangementIds": [
+      "none"
     ]
   },
   {
     "id": 11,
-    "mediaIds": [
-      "media11",
-      "media9"
+    "liveVideoIds": [
+      "none_1"
+    ],
+    "liveArrangementIds": [
+      "unknown_0001"
     ]
   },
   {
     "id": 12,
-    "mediaIds": [
-      "media9",
-      "media3"
+    "liveVideoIds": [
+      "unknown_0001"
+    ],
+    "liveArrangementIds": [
+      "none"
     ]
   },
   {
     "id": 13,
-    "mediaIds": [
-      "media12",
-      "media3"
+    "liveVideoIds": [
+      "best_summer_crush_2002"
+    ],
+    "liveArrangementIds": [
+      "none"
     ]
   },
   {
     "id": 14,
-    "mediaIds": [
-      "media12",
-      "media3"
+    "liveVideoIds": [
+      "best_summer_crush_2002"
+    ],
+    "liveArrangementIds": [
+      "none"
     ]
   },
   {
     "id": 15,
-    "mediaIds": [
-      "media3",
-      "media13",
-      "media14"
+    "liveVideoIds": [
+      "none"
+    ],
+    "liveArrangementIds": [
+      "sonic_warp",
+      "seventh_heaven"
     ]
   },
   {
     "id": 16,
-    "mediaIds": [
-      "media3",
-      "media13",
-      "media14"
+    "liveVideoIds": [
+      "none"
+    ],
+    "liveArrangementIds": [
+      "sonic_warp",
+      "seventh_heaven"
     ]
   },
   {
     "id": 17,
-    "mediaIds": [
-      "media14",
-      "media3"
+    "liveVideoIds": [
+      "seventh_heaven"
+    ],
+    "liveArrangementIds": [
+      "none"
     ]
   },
   {
     "id": 18,
-    "mediaIds": [
-      "media15",
-      "media14",
-      "media16"
+    "liveVideoIds": [
+      "vertical_infinity_tv"
+    ],
+    "liveArrangementIds": [
+      "seventh_heaven",
+      "under_cover_live"
     ]
   },
   {
     "id": 19,
-    "mediaIds": [
-      "media17",
-      "media16",
-      "media18",
-      "media19"
+    "liveVideoIds": [
+      "none_2"
+    ],
+    "liveArrangementIds": [
+      "under_cover_live",
+      "under_cover_cd",
+      "cloud_nine_cd"
     ]
   },
   {
     "id": 20,
-    "mediaIds": [
-      "media16",
-      "media3"
+    "liveVideoIds": [
+      "under_cover_live"
+    ],
+    "liveArrangementIds": [
+      "none"
     ]
   },
   {
     "id": 21,
-    "mediaIds": [
-      "media3",
-      "media15",
-      "media20",
-      "media21",
-      "media19"
+    "liveVideoIds": [
+      "none"
+    ],
+    "liveArrangementIds": [
+      "vertical_infinity_tv",
+      "tmr_live_revolution_06",
+      "undercover",
+      "cloud_nine_cd"
     ]
   },
   {
     "id": 22,
-    "mediaIds": [
-      "media19",
-      "media16",
-      "media22",
-      "media23",
-      "media24"
+    "liveVideoIds": [
+      "cloud_nine_cd"
+    ],
+    "liveArrangementIds": [
+      "under_cover_live",
+      "inazuma_2011",
+      "strikes_back_ix_11_in",
+      "anniversary_15th_final"
     ]
   },
   {
     "id": 23,
-    "mediaIds": [
-      "media24",
-      "media3"
+    "liveVideoIds": [
+      "anniversary_15th_final"
+    ],
+    "liveArrangementIds": [
+      "none"
     ]
   },
   {
     "id": 24,
-    "mediaIds": [
-      "media25",
-      "media3"
+    "liveVideoIds": [
+      "under_2_cover"
+    ],
+    "liveArrangementIds": [
+      "none"
     ]
   },
   {
     "id": 25,
-    "mediaIds": [
-      "media3",
-      "media26",
-      "media27",
-      "media28",
-      "media29",
-      "media30"
+    "liveVideoIds": [
+      "none"
+    ],
+    "liveArrangementIds": [
+      "14_14",
+      "double_deal_cd",
+      "strikes_back_xi_15",
+      "inazuma_2015",
+      "route_20_budokan"
     ]
   },
   {
     "id": 26,
-    "mediaIds": [
-      "media30",
-      "media3"
+    "liveVideoIds": [
+      "route_20_budokan"
+    ],
+    "liveArrangementIds": [
+      "none"
     ]
   },
   {
     "id": 27,
-    "mediaIds": [
-      "media31",
-      "media32"
+    "liveVideoIds": [
+      "round_house_cutback_17cd"
+    ],
+    "liveArrangementIds": [
+      "inazuma_2017"
     ]
   },
   {
     "id": 28,
-    "mediaIds": [
-      "media33",
-      "media19",
-      "media3"
+    "liveVideoIds": [
+      "anniversary_20th_final"
+    ],
+    "liveArrangementIds": [
+      "cloud_nine_cd",
+      "none"
     ]
   },
   {
     "id": 29,
-    "mediaIds": [
-      "media34",
-      "media35",
-      "media36",
-      "media37"
+    "liveVideoIds": [
+      "dvdbdvote_japan"
+    ],
+    "liveArrangementIds": [
+      "tmrevolutionhot_limithigh_pressure",
+      "the_25th_anniversaryvote_21_extended_live_edition",
+      "vote_japan_22"
     ]
   },
   {
     "id": 30,
-    "mediaIds": [
-      "media37",
-      "media3"
+    "liveVideoIds": [
+      "vote_japan_22"
+    ],
+    "liveArrangementIds": [
+      "none"
     ]
   }
 ]

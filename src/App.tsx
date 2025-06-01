@@ -1,7 +1,7 @@
 import { useEffect, useState, useRef } from 'react';
 import * as FlexSearch from 'flexsearch';
 import './index.css';
-import { type Tour } from './types/tour';
+import type { Tour } from './types/tour';
 import { fitOneLine } from './utils/fitOneLine';
 import { saveSeat } from './utils/localStorage';
 import { PreviewModal } from './components/PreviewModal';
@@ -17,6 +17,7 @@ import Sitemap from './pages/Sitemap';
 import ScrollToTop from './components/ScrollToTop';
 import LegalAllInOne from './pages/LegalAllInOne';
 import { Helmet } from 'react-helmet-async';
+import { loadToursData } from './services/dataService';
 
 export default function App() {
   /* ---------- state ---------- */
@@ -39,14 +40,17 @@ useEffect(() => {
   /* ---------- 年リスト ---------- */
   const [_years] = [Array.from(new Set(tours.map(t => t.year))).sort()];
 
-  /* ---------- fetch tours.json ---------- */
+  /* ---------- fetch tours data ---------- */
   useEffect(() => {
-    const version = import.meta.env?.VITE_APP_VERSION || Date.now();
-    fetch(`tours.json?v=${version}`)
-      .then(r => r.json())
+    loadToursData()
       .then((data: Tour[]) => {
         setTours(data);
         setFiltered(data);
+      })
+      .catch((error) => {
+        console.error('Failed to load tours data:', error);
+        setTours([]);
+        setFiltered([]);
       });
   }, []);
 
