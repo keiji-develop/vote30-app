@@ -6,7 +6,7 @@ const About = () => {
     <div className="max-w-2xl mx-auto px-4 sm:px-6 md:px-8 py-8 bg-white rounded shadow-md mt-8 mb-8">
       <Helmet>
         <title>このサイトについて - VOTE30選挙対策支援サイト</title>
-        <meta name="description" content="VOTE30選挙対策支援サイトについて。T.M.Revolutionの過去30回のライブツアーの詳細情報を提供し、あなたの投票をサポートします。運営方針、データの信頼性、収益化について透明性を持ってご説明します。" />
+        <meta name="description" content="「ただの滋賀ない西ヲタ」が作った、T.M.R. LIVE ELECTION -VOTE 30-の投票対策支援サイト。臨時党大会の体験から生まれました。" />
       </Helmet>
       <h1 className="text-3xl font-bold mb-6 border-b-2 border-[#6ea7b2] pb-2">このサイトについて</h1>
 
