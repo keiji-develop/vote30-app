@@ -1,1 +1,0 @@
-{"name":"VOTE30選挙対策支援サイト","short_name":"VOTE30","description":"30代の有権者を中心に、選挙に関する情報を分かりやすく提供し、より多くの方々が政治に参加できるよう支援するサイトです。","start_url":"/","display":"standalone","background_color":"#ffffff","theme_color":"#6ea7b2","lang":"en","scope":"/","icons":[{"src":"pwa-192x192.png","sizes":"192x192","type":"image/png"},{"src":"pwa-512x512.png","sizes":"512x512","type":"image/png"}]}
