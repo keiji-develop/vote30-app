@@ -19,7 +19,16 @@ const Contact = () => {
       <section className="mb-6">
         <h2 className="text-2xl font-semibold mb-3">📧 お問い合わせフォーム</h2>
         <div className="bg-gray-50 rounded p-4 mb-4">
-          <iframe src="https://forms.gle/xxxxxxxxxxxxx" title="お問い合わせフォーム" className="w-full min-h-[400px] sm:min-h-[600px] border-none rounded" />
+          <iframe 
+            src="https://docs.google.com/forms/d/e/1FAIpQLSc0eNUBnr2IjyyDuXQS4_z9vKy5NZvdpl8sJ6XLZskp_PE4BQ/viewform?embedded=true" 
+            title="お問い合わせフォーム" 
+            className="w-full min-h-[750px] sm:min-h-[800px] border-none rounded"
+            frameBorder="0"
+            marginHeight={0}
+            marginWidth={0}
+          >
+            読み込んでいます…
+          </iframe>
         </div>
         <div className="bg-blue-50 rounded p-3 border-l-4 border-blue-500">
           <p className="text-blue-800 text-sm">
