@@ -24,7 +24,7 @@ const LegalAllInOne = () => {
       {/* 個人情報の取り扱い */}
       <section id="privacy" className="mb-10">
         <h2 className="text-2xl font-semibold mb-2">個人情報の取り扱い</h2>
-        <p>当サイト（https://keiji-develop.github.io/vote30-app/）では、個人情報の保護と利用者の安心に配慮し、以下の方針に基づいて運営を行っています。</p>
+        <p>当サイト（https://takanori-support.com/）では、個人情報の保護と利用者の安心に配慮し、以下の方針に基づいて運営を行っています。</p>
         <h3 className="text-lg font-bold mt-4 mb-1">1. 個人情報の収集と利用について</h3>
         <p>当サイトでは、以下の目的のために、お名前・メールアドレス等の個人情報を取得する場合があります。</p>
         <ul className="list-disc list-inside ml-4 space-y-1">

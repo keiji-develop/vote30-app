@@ -11,7 +11,7 @@ const PrivacyPolicy = () => {
       <h1 className="text-3xl font-bold mb-6 border-b-2 border-[#6ea7b2] pb-2">プライバシーポリシー</h1>
 
       <section className="mb-6">
-        <p>当サイト（https://keiji-develop.github.io/vote30-app/）では、個人情報の保護と利用者の安心に配慮し、以下の方針に基づいて運営を行っています。</p>
+        <p>当サイト（https://takanori-support.com/）では、個人情報の保護と利用者の安心に配慮し、以下の方針に基づいて運営を行っています。</p>
       </section>
 
       <section className="mb-6">

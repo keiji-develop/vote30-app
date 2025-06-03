@@ -93,7 +93,7 @@ useEffect(() => {
 
   /* ---------- UI ---------- */
   return (
-    <BrowserRouter basename="/vote30-app">
+    <BrowserRouter>
       <ScrollToTop />
       <Routes>
         <Route path="/" element={

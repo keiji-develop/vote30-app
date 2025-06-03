@@ -1,57 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://keiji-develop.github.io/vote30-app/</loc>
+    <loc>https://takanori-support.com/</loc>
     <lastmod>2025-05-28</lastmod>
-    <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://keiji-develop.github.io/vote30-app/about</loc>
+    <loc>https://takanori-support.com/about</loc>
     <lastmod>2025-05-28</lastmod>
-    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://keiji-develop.github.io/vote30-app/contact</loc>
+    <loc>https://takanori-support.com/contact</loc>
     <lastmod>2025-05-28</lastmod>
-    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://keiji-develop.github.io/vote30-app/privacy-policy</loc>
+    <loc>https://takanori-support.com/privacy-policy</loc>
     <lastmod>2025-05-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://keiji-develop.github.io/vote30-app/affiliate-disclosure</loc>
-    <lastmod>2025-05-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://keiji-develop.github.io/vote30-app/disclaimer</loc>
-    <lastmod>2025-05-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://keiji-develop.github.io/vote30-app/cookies</loc>
-    <lastmod>2025-05-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://keiji-develop.github.io/vote30-app/spec-commercial</loc>
-    <lastmod>2025-05-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://keiji-develop.github.io/vote30-app/sitemap.html</loc>
-    <lastmod>2025-05-28</lastmod>
-    <changefreq>monthly</changefreq>
     <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://takanori-support.com/affiliate-disclosure</loc>
+    <lastmod>2025-05-28</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://takanori-support.com/disclaimer</loc>
+    <lastmod>2025-05-28</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://takanori-support.com/cookies</loc>
+    <lastmod>2025-05-28</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://takanori-support.com/spec-commercial</loc>
+    <lastmod>2025-05-28</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://takanori-support.com/sitemap.html</loc>
+    <lastmod>2025-05-28</lastmod>
+    <priority>0.3</priority>
   </url>
 </urlset> 

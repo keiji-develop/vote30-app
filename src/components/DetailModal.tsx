@@ -184,28 +184,28 @@ export function DetailModal({ active, setActive, setPreview, tours }: DetailModa
                       ) : (
                         /* 配列形式の場合（従来通り） */
                         active.liveVideos.map((v, i) => (
-                          <div key={i} className="bg-gray-50 p-3 rounded border">
-                            <div className="mb-2">
-                              <div className="font-semibold text-sm">{v.title}</div>
-                              <div className="text-xs text-gray-500">({v.type})</div>
-                            </div>
-                            <div className="flex flex-wrap gap-2">
-                              {/* links配列があれば優先して表示 */}
-                              {Array.isArray((v as any).links) && (v as any).links.length > 0 ? (
-                                (v as any).links.map((link: string, j: number) => (
-                                  <a key={j} href={link} target="_blank" rel="noopener noreferrer" 
-                                     className="px-3 py-1 bg-blue-600 text-white text-xs rounded hover:bg-blue-700 transition-colors">
-                                    視聴/購入{(v as any).links.length > 1 ? `(${j + 1})` : ''}
-                                  </a>
-                                ))
-                              ) : v.link ? (
-                                <a href={v.link} target="_blank" rel="noopener noreferrer" 
-                                   className="px-3 py-1 bg-blue-600 text-white text-xs rounded hover:bg-blue-700 transition-colors">
-                                  視聴/購入
-                                </a>
-                              ) : null}
-                            </div>
+                        <div key={i} className="bg-gray-50 p-3 rounded border">
+                          <div className="mb-2">
+                            <div className="font-semibold text-sm">{v.title}</div>
+                            <div className="text-xs text-gray-500">({v.type})</div>
                           </div>
+                          <div className="flex flex-wrap gap-2">
+                            {/* links配列があれば優先して表示 */}
+                            {Array.isArray((v as any).links) && (v as any).links.length > 0 ? (
+                              (v as any).links.map((link: string, j: number) => (
+                                <a key={j} href={link} target="_blank" rel="noopener noreferrer" 
+                                   className="px-3 py-1 bg-blue-600 text-white text-xs rounded hover:bg-blue-700 transition-colors">
+                                  視聴/購入{(v as any).links.length > 1 ? `(${j + 1})` : ''}
+                                </a>
+                              ))
+                            ) : v.link ? (
+                              <a href={v.link} target="_blank" rel="noopener noreferrer" 
+                                 className="px-3 py-1 bg-blue-600 text-white text-xs rounded hover:bg-blue-700 transition-colors">
+                                視聴/購入
+                              </a>
+                            ) : null}
+                          </div>
+                        </div>
                         ))
                       )}
                     </div>
@@ -231,14 +231,14 @@ export function DetailModal({ active, setActive, setPreview, tours }: DetailModa
                       ) : (
                         /* 配列形式の場合（従来通り） */
                         active.liveArrangements.map((a, i) => (
-                          a.notes === '無し' ? (
-                            <div key={i} className="text-sm text-gray-600">無し</div>
-                          ) : (
-                            <div key={i} className="bg-gray-50 p-3 rounded border">
-                              <div className="font-semibold text-sm">{a.title}</div>
-                              {a.notes && <div className="text-xs text-gray-500 mt-1">{a.notes}</div>}
-                            </div>
-                          )
+                        a.notes === '無し' ? (
+                          <div key={i} className="text-sm text-gray-600">無し</div>
+                        ) : (
+                          <div key={i} className="bg-gray-50 p-3 rounded border">
+                            <div className="font-semibold text-sm">{a.title}</div>
+                            {a.notes && <div className="text-xs text-gray-500 mt-1">{a.notes}</div>}
+                          </div>
+                        )
                         ))
                       )}
                     </div>
