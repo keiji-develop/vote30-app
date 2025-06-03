@@ -58,7 +58,7 @@ const PrivacyPolicy = () => {
 
       <section className="mb-6">
         <h2 className="text-2xl font-semibold mb-2">制定日</h2>
-        <p>2025年5月28日<br />運営者: KEIJI（個人による非営利運営）</p>
+        <p>2025年○月○日<br />運営者: VOTE30-Support（個人による非営利運営）</p>
       </section>
 
       <div className="mt-8">

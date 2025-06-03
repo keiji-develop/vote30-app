@@ -25,6 +25,7 @@ const LegalAllInOne = () => {
       <section id="privacy" className="mb-10">
         <h2 className="text-2xl font-semibold mb-2">個人情報の取り扱い</h2>
         <p>当サイト（https://takanori-support.com/）では、個人情報の保護と利用者の安心に配慮し、以下の方針に基づいて運営を行っています。</p>
+        
         <h3 className="text-lg font-bold mt-4 mb-1">1. 個人情報の収集と利用について</h3>
         <p>当サイトでは、以下の目的のために、お名前・メールアドレス等の個人情報を取得する場合があります。</p>
         <ul className="list-disc list-inside ml-4 space-y-1">
@@ -32,28 +33,60 @@ const LegalAllInOne = () => {
           <li>サイトの利用状況の把握・改善（アクセス解析）</li>
         </ul>
         <p>取得した個人情報は、上記の目的以外には利用せず、適切に管理いたします。</p>
-        <h3 className="text-lg font-bold mt-4 mb-1">2. アクセス解析ツールについて（Google Analytics）</h3>
-        <p>当サイトは、Google社のアクセス解析ツール「Google Analytics」を使用しています。このツールは、トラフィックデータの収集のためにCookieを使用します。収集される情報は匿名であり、個人を特定するものではありません。</p>
-        <p>Cookieの使用はブラウザ設定で無効にすることが可能です。詳細は<a href="https://policies.google.com/technologies/partner-sites?hl=ja" target="_blank" rel="noopener noreferrer" className="underline text-[#6ea7b2]">Googleのポリシー</a>をご参照ください。</p>
+        
+        <h3 className="text-lg font-bold mt-4 mb-1">2. アクセス解析ツールについて</h3>
+        <div className="space-y-3">
+          <div>
+            <h4 className="font-bold">Google Analytics</h4>
+            <p>当サイトは、Google社のアクセス解析ツール「Google Analytics」を使用しています。このツールは、トラフィックデータの収集のためにCookieを使用します。収集される情報は匿名であり、個人を特定するものではありません。データ保持期間は最大26ヶ月です。</p>
+            <p>詳細は<a href="https://policies.google.com/technologies/partner-sites?hl=ja" target="_blank" rel="noopener noreferrer" className="underline text-[#6ea7b2]">Googleのポリシー</a>をご参照ください。</p>
+          </div>
+          <div>
+            <h4 className="font-bold">Microsoft Clarity</h4>
+            <p>当サイトは、Microsoft社のアクセス解析ツール「Microsoft Clarity」を使用しています。このツールは、ユーザーの行動分析とサイト改善のためにCookieを使用します。収集される情報は匿名であり、個人を特定するものではありません。データ保持期間は最大24ヶ月です。</p>
+            <p>詳細は<a href="https://clarity.microsoft.com/terms" target="_blank" rel="noopener noreferrer" className="underline text-[#6ea7b2]">Microsoft Clarityの利用規約</a>をご参照ください。</p>
+          </div>
+        </div>
+        <p>Cookieの使用はブラウザ設定で無効にすることが可能です。</p>
+        
         <h3 className="text-lg font-bold mt-4 mb-1">3. アフィリエイトプログラムについて</h3>
-        <p>当サイトでは、第三者配信のアフィリエイトプログラムを利用しています。対象の広告リンクを経由して商品やサービスの申込み・購入が行われた場合、当サイトに報酬が発生することがあります。</p>
+        <p>当サイトでは、以下を含む第三者配信のアフィリエイトプログラムを利用しています。対象の広告リンクを経由して商品やサービスの申込み・購入が行われた場合、当サイトに報酬が発生することがあります。</p>
+        <ul className="list-disc list-inside ml-4 space-y-1">
+          <li>Amazonアソシエイトプログラム</li>
+          <li>楽天アフィリエイト</li>
+          <li>その他パートナーサービス</li>
+        </ul>
         <p>なお、リンク先の商品やサービスについては、各販売元にてご確認ください。</p>
+        
+        <h3 className="text-lg font-bold mt-4 mb-1">4. データ保持期間について</h3>
+        <ul className="list-disc list-inside ml-4 space-y-1">
+          <li>お問い合わせ情報：対応完了後1年間</li>
+          <li>アクセス解析データ：各サービスの規定に準拠（上記参照）</li>
+          <li>Cookieデータ：最大2年間</li>
+        </ul>
+        <p>保持期間経過後は、適切に削除いたします。</p>
       </section>
 
       {/* 広告について */}
       <section id="ads" className="mb-10">
         <h2 className="text-2xl font-semibold mb-2">広告について</h2>
-        <p>当サイトでは、第三者配信の広告サービス（Google AdSense）を利用しています。このような広告配信事業者は、ユーザーの興味に応じた商品やサービスの広告を表示するため、当サイトや他サイトへのアクセスに関する情報 『Cookie』(氏名、住所、メール アドレス、電話番号は含まれません) を使用することがあります。</p>
-        <h3 className="text-lg font-bold mt-4 mb-1">広告の表示について</h3>
+        <p>当サイトでは、以下の第三者配信の広告サービスを利用しています。これらの広告配信事業者は、ユーザーの興味に応じた商品やサービスの広告を表示するため、当サイトや他サイトへのアクセスに関する情報『Cookie』(氏名、住所、メール アドレス、電話番号は含まれません) を使用することがあります。</p>
+        
+        <h3 className="text-lg font-bold mt-4 mb-1">利用している広告サービス</h3>
         <ul className="list-disc list-inside ml-4 space-y-1">
           <li>Google AdSense</li>
           <li>Amazonアソシエイトプログラム</li>
+          <li>楽天アフィリエイト</li>
+          <li>その他パートナー広告サービス</li>
         </ul>
+        
         <h3 className="text-lg font-bold mt-4 mb-1">広告収入について</h3>
         <p>当サイトは、広告収入によって運営されています。広告収入は、サイトの維持・改善、コンテンツの充実化に使用されます。</p>
+        
         <h3 className="text-lg font-bold mt-4 mb-1">広告の選択について</h3>
         <p>当サイトに掲載される広告は、広告配信事業者によって自動的に選択されています。広告の内容は、当サイトの運営者が直接管理・制御するものではありません。</p>
-        <h3 className="text-lg font-bold mt-4 mb-1">広告の無効化について</h3>
+        
+        <h3 className="text-lg font-bold mt-4 mb-1">パーソナライズ広告の無効化について</h3>
         <p>ユーザーは、<a href="https://www.google.com/settings/ads" target="_blank" rel="noopener noreferrer" className="underline text-[#6ea7b2]">Google の広告設定ページ</a>で、パーソナライズされた広告を無効にすることができます。</p>
       </section>
 
@@ -61,6 +94,7 @@ const LegalAllInOne = () => {
       <section id="cookies" className="mb-10">
         <h2 className="text-2xl font-semibold mb-2">Cookieの使用について</h2>
         <p>当サイトでは、ユーザーエクスペリエンスの向上とサイトの改善のために、Cookie（クッキー）を使用しています。このページでは、Cookieの使用目的と管理方法について説明します。</p>
+        
         <h3 className="text-lg font-bold mt-4 mb-1">Cookieの種類</h3>
         <div className="space-y-2">
           <div>
@@ -73,16 +107,17 @@ const LegalAllInOne = () => {
           <div>
             <h4 className="font-bold">分析Cookie</h4>
             <ul className="list-disc list-inside ml-4">
-              <li>Google Analyticsによるページビュー数</li>
-              <li>訪問者の行動分析</li>
+              <li>Google Analyticsによるページビュー数・訪問者の行動分析</li>
+              <li>Microsoft Clarityによるユーザー行動分析</li>
               <li>サイトの改善点の特定</li>
             </ul>
           </div>
           <div>
             <h4 className="font-bold">広告Cookie</h4>
-            <p>Google AdSenseによって使用され、ユーザーに関連性の高い広告を表示するために使用されます。</p>
+            <p>Google AdSense、Amazonアソシエイト、楽天アフィリエイト等によって使用され、ユーザーに関連性の高い広告を表示するために使用されます。</p>
           </div>
         </div>
+        
         <h3 className="text-lg font-bold mt-4 mb-1">Cookieの管理方法</h3>
         <p>ブラウザの設定を変更することで、Cookieの使用を制限したり、無効にしたりすることができます。ただし、その場合、サイトの一部の機能が正常に動作しない可能性があります。</p>
       </section>
@@ -100,10 +135,13 @@ const LegalAllInOne = () => {
       {/* 特定商取引法に基づく表記 */}
       <section id="spec-commercial" className="mb-10">
         <h2 className="text-2xl font-semibold mb-2">特定商取引法に基づく表記</h2>
-        <h3 className="text-lg font-bold mt-4 mb-1">運営者情報</h3>
-        <p>当サイトは、選挙対策支援を目的とした情報提供サイトです。商品販売は行っておりませんが、広告収入（Google AdSense、Amazonアソシエイト）を利用しています。</p>
+        
+        <h3 className="text-lg font-bold mt-4 mb-1">サイトの性質</h3>
+        <p>当サイトは、選挙対策支援を目的とした情報提供サイトです。商品販売は行っておりませんが、広告収入（Google AdSense、Amazonアソシエイト、楽天アフィリエイト等）を利用しています。</p>
+        
         <h3 className="text-lg font-bold mt-4 mb-1">広告収入の使途</h3>
         <p>広告収入は、サイトの運営・維持費用に充てられています。詳細は<a href="#ads" className="underline text-[#6ea7b2]">広告について</a>をご確認ください。</p>
+        
         <h3 className="text-lg font-bold mt-4 mb-1">プライバシーポリシーとの連携</h3>
         <p>当サイトでは、ユーザーのプライバシーを尊重し、<a href="#privacy" className="underline text-[#6ea7b2]">プライバシーポリシー</a>に基づいて情報を管理しています。広告配信に関連するデータ収集については、<a href="#cookies" className="underline text-[#6ea7b2]">Cookieの使用について</a>もご参照ください。</p>
       </section>
@@ -112,7 +150,11 @@ const LegalAllInOne = () => {
       <section className="mb-10">
         <h2 className="text-2xl font-semibold mb-2">お問い合わせ・制定日</h2>
         <p>当サイトに関するお問い合わせ・ご意見・ご指摘は、<Link to="/contact" className="underline text-[#6ea7b2]">お問い合わせフォーム</Link>よりお願いいたします。内容に応じて、誠実に対応いたします。</p>
-        <p className="mt-2">2025年5月28日<br />運営者: KEIJI（個人による非営利運営）</p>
+        <p className="mt-2">
+          制定日：2025年○月○日<br />
+          最終更新：2025年○月○日<br />
+          運営者: VOTE30-Support（個人による非営利運営）
+        </p>
       </section>
 
       <div className="mt-8">

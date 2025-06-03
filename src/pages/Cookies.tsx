@@ -45,7 +45,7 @@ const Cookies = () => {
       <p><Link to="/contact">→ お問い合わせフォームはこちら</Link></p>
 
       <h2 style={{ color: '#6ea7b2', marginTop: '2rem', marginBottom: '1rem' }}>制定日</h2>
-      <p>2025年5月28日<br />運営者: KEIJI（個人による非営利運営）</p>
+      <p>2025年○月○日<br />運営者: VOTE30-Support（個人による非営利運営）</p>
 
       <Link to="/" className="back-link" style={{ display: 'inline-block', marginTop: '2rem', color: '#6ea7b2', textDecoration: 'none' }}>← トップページに戻る</Link>
     </div>
