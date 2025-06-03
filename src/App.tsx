@@ -102,7 +102,7 @@ useEffect(() => {
               <Header />
               <Helmet>
                 <title>VOTE30選挙対策支援サイト</title>
-                <meta name="description" content="VOTE30選挙対策支援サイトは、公演情報の閲覧と投票記入をサポートするウェブアプリケーションです。" />
+                <meta name="description" content="T.M.Rの30年分のライブツアー情報をまとめて、VOTE30で迷ってる人の投票をお手伝いしてます。セトリとか映像情報とか調べるのにも使えます。" />
               </Helmet>
 
 {/* 本日の座席番号欄 */}
