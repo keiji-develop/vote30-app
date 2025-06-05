@@ -1,5 +1,5 @@
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Yu Gothic Medium", "Meiryo", "Helvetica Neue", Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -139,7 +139,14 @@
   --primary-color: var(--primary);
   --text-color: var(--neutral-700);
   --background-color: var(--neutral-50);
-  --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Yu Gothic Medium", "Meiryo", "Helvetica Neue", Arial, sans-serif;
+
+  /* フォントファミリー統一システム */
+  --font-sans: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Yu Gothic Medium", "Meiryo", "Helvetica Neue", Arial, sans-serif;
+  --font-mono: "SF Mono", "Monaco", "Inconsolata", "Roboto Mono", "Source Code Pro", Consolas, "Courier New", monospace;
+  
+  /* 数字・ID専用フォント（可読性重視） */
+  --font-numeric: "SF Pro Display", "Roboto", "Segoe UI", system-ui, sans-serif;
 }
 
 body {
@@ -335,6 +342,18 @@ button:focus-visible {
   .gap-md { gap: var(--spacing-md); }
   .gap-lg { gap: var(--spacing-lg); }
   .gap-xl { gap: var(--spacing-xl); }
+
+  /* フォントファミリー統一クラス */
+  .font-sans { font-family: var(--font-sans); }
+  .font-mono { font-family: var(--font-mono); }
+  .font-numeric { font-family: var(--font-numeric); }
+  
+  /* 数字・ID表示用の統一クラス */
+  .text-numeric {
+    font-family: var(--font-numeric);
+    font-feature-settings: "tnum", "lnum"; /* 等幅数字 */
+    font-variant-numeric: tabular-nums;
+  }
 }
 
 @media (prefers-color-scheme: light) {

@@ -133,15 +133,16 @@ useEffect(() => {
       <Routes>
         <Route path="/" element={
           <div className="min-h-screen bg-gray-50" role="application" aria-label="VOTE30選挙対策支援サイト">
-            <main className="padding-md sm:padding-lg md:padding-xl max-w-2xl mx-auto select-none">
-              <Header />
-              <Helmet>
-                <title>VOTE30選挙対策支援サイト</title>
-                <meta name="description" content="T.M.Rの30年分のライブツアー情報をまとめて、VOTE30で迷ってる人の投票をお手伝いしてます。セトリとか映像情報とか調べるのにも使えます。" />
-              </Helmet>
+            <div className="max-w-2xl mx-auto px-4 sm:px-6 md:px-8 py-8 bg-white rounded shadow-md mt-8 mb-8">
+              <main className="select-none">
+                <Header />
+                <Helmet>
+                  <title>VOTE30選挙対策支援サイト</title>
+                  <meta name="description" content="T.M.Rの30年分のライブツアー情報をまとめて、VOTE30で迷ってる人の投票をお手伝いしてます。セトリとか映像情報とか調べるのにも使えます。" />
+                </Helmet>
 
-{/* 本日の座席番号欄 */}
-              <section aria-labelledby="seat-label" className="flex flex-col sm:flex-row items-center gap-sm sm:gap-md bg-white rounded border border-[#6ea7b2] padding-md section-spacing-sm">
+                {/* 本日の座席番号欄 */}
+                <section aria-labelledby="seat-label" className="flex flex-col sm:flex-row items-center gap-2 sm:gap-4 bg-gray-50 rounded p-4 border-l-4 border-[#6ea7b2] mb-6">
                 <label id="seat-label" className="text-heading-4 text-gray-800 text-center sm:text-right whitespace-nowrap sm:w-1/3">
                   本日の座席番号
                   <span className="block sm:text-right">（投票記入見本に表示されます）</span>
@@ -150,7 +151,7 @@ useEffect(() => {
     value={seat}
                   onChange={e => { setSeat(e.target.value); saveSeat(e.target.value); }}
     placeholder="例 1階 919ブロック 2R扉 513列 1242番"
-                  className="border border-gray-300 rounded padding-sm text-body w-full sm:w-2/3 h-12"
+                  className="border border-gray-300 rounded px-3 py-2 text-body w-full sm:w-2/3 h-12"
                   style={{ minWidth: 0 }}
                   aria-label="本日の座席番号"
   />
@@ -181,77 +182,78 @@ useEffect(() => {
       </div>
       */} 
 
-        {/* カード一覧説明 */}
-              <section aria-labelledby="tour-list-title" className="flex flex-col sm:flex-row justify-center items-center text-center border-b-2 border-[#6ea7b2] pb-2 section-spacing-sm">
-                <h2 id="tour-list-title" className="text-heading-2">候補公演名一覧と公演概要</h2>
-                <span className="sm:ml-4 text-heading-2 text-[#213547]">（公式の一覧から転記）</span>
-              </section>
+                {/* カード一覧説明 */}
+                <section aria-labelledby="tour-list-title" className="flex flex-col sm:flex-row justify-center items-center text-center border-b-2 border-[#6ea7b2] pb-2 mb-6">
+                  <h2 id="tour-list-title" className="text-heading-2">候補公演名一覧と公演概要</h2>
+                  <span className="sm:ml-4 text-heading-2 text-[#213547]">（公式の一覧から転記）</span>
+                </section>
 
-      {/* カード一覧 */}
-              <section aria-label="公演一覧">
-                {loading && (
-                  <LoadingSpinner 
-                    size="lg" 
-                    message="候補公演データを読み込み中..." 
-                    className="section-spacing-lg"
+                {/* コンテンツエリア */}
+                <section aria-label="公演一覧">
+                  {loading && (
+                    <LoadingSpinner 
+                      size="lg" 
+                      message="候補公演データを読み込み中..." 
+                      className="py-8"
+                    />
+                  )}
+
+                  {error && (
+                    <ErrorState
+                      title="データ読み込みエラー"
+                      message={error}
+                      onRetry={handleRetry}
+                      className="py-8"
+                    />
+                  )}
+
+                  {!loading && !error && filtered.length === 0 && tours.length > 0 && (
+                    <EmptyState
+                      icon="🔍"
+                      title="検索結果が見つかりません"
+                      description="検索条件を変更してもう一度お試しください。"
+                      className="py-8"
+                    />
+                  )}
+
+                  {!loading && !error && tours.length === 0 && (
+                    <EmptyState
+                      icon="🎵"
+                      title="候補公演データがありません"
+                      description="公演データが見つかりませんでした。"
+                      actionLabel="再読み込み"
+                      onAction={handleRetry}
+                      className="py-8"
+                    />
+                  )}
+
+                  {!loading && !error && filtered.length > 0 && (
+                    <TourCardList tours={filtered} onCardClick={setActive} />
+                  )}
+                </section>
+
+                {/* ---------- 投票記入プレビュー ---------- */}
+                {preview && (
+                  <PreviewModal
+                    preview={preview}
+                    seat={seat}
+                    setPreview={setPreview}
                   />
                 )}
 
-                {error && (
-                  <ErrorState
-                    title="データ読み込みエラー"
-                    message={error}
-                    onRetry={handleRetry}
-                    className="section-spacing-lg"
+                {/* ---------- 詳細モーダル ---------- */}
+                {active && (
+                  <DetailModal
+                    active={active}
+                    setActive={setActive}
+                    setPreview={setPreview}
+                    tours={filtered}
                   />
                 )}
-
-                {!loading && !error && filtered.length === 0 && tours.length > 0 && (
-                  <EmptyState
-                    icon="🔍"
-                    title="検索結果が見つかりません"
-                    description="検索条件を変更してもう一度お試しください。"
-                    className="section-spacing-lg"
-                  />
-                )}
-
-                {!loading && !error && tours.length === 0 && (
-                  <EmptyState
-                    icon="🎵"
-                    title="候補公演データがありません"
-                    description="公演データが見つかりませんでした。"
-                    actionLabel="再読み込み"
-                    onAction={handleRetry}
-                    className="section-spacing-lg"
-                  />
-                )}
-
-                {!loading && !error && filtered.length > 0 && (
-                  <TourCardList tours={filtered} onCardClick={setActive} />
-                )}
-              </section>
-
-{/* ---------- 投票記入プレビュー ---------- */}
-{preview && (
-                <PreviewModal
-                  preview={preview}
-                  seat={seat}
-                  setPreview={setPreview}
-                />
-)}
-
-{/* ---------- 詳細モーダル ---------- */}
-      {active && (
-                <DetailModal
-                  active={active}
-                  setActive={setActive}
-                  setPreview={setPreview}
-                  tours={filtered}
-                />
-      )}
-      </main>
+              </main>
+            </div>
             <Footer />
-    </div>
+          </div>
         } />
         <Route path="/about" element={<About />} />
         <Route path="/legal" element={<LegalAllInOne />} />
