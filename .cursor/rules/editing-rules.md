@@ -12,7 +12,8 @@ backup/*
 ### ❌ 絶対に編集禁止・閲覧のみ許可
 
 ```
-
+public/data/songs-master.json
+public/data/media-master.json
 ```
 **理由**: 他のデータファイルがこれらのIDを参照している。編集するとデータが壊れる
 
@@ -28,9 +29,6 @@ public/data/setlists.json
 
 ### ⚠️ 編集注意（事前相談推奨）
 ```
-public/data/songs-master.json
-public/data/media-master.json
-public/data/tours-content.json
 public/data/tours-media.json
 public/data/tours-extra-notes.json
 ```

@@ -119,12 +119,14 @@ export function DetailModal({ active, setActive, setPreview, tours }: DetailModa
             {/* 公演メモとセットリストを1列に */}
             <div className="flex flex-col gap-6 w-full">
               {/* 公演メモ */}
+              {/* 
               {active.extraNotes && (
                 <section className="w-full break-words">
                   <div className="font-bold text-sm text-black mb-1">公演メモ</div>
                   <div className="text-sm leading-relaxed text-gray-800">{active.extraNotes}</div>
                 </section>
               )}
+              */}
               {/* セットリスト */}
               {active.setlist && (
                 <section className="w-full break-words overflow-x-auto">
@@ -187,7 +189,8 @@ export function DetailModal({ active, setActive, setPreview, tours }: DetailModa
                           </div>
                           {!v.isNone && (
                             <div className="flex flex-wrap gap-2">
-                              {/* links配列があれば優先して表示 */}
+                              {/* リンク表示を一時的に非表示 - データは保持 */}
+                              {/* 
                               {Array.isArray((v as any).links) && (v as any).links.length > 0 ? (
                                 (v as any).links.map((link: string, j: number) => (
                                   <a key={j} href={link} target="_blank" rel="noopener noreferrer" 
@@ -201,6 +204,7 @@ export function DetailModal({ active, setActive, setPreview, tours }: DetailModa
                                   視聴/購入
                                 </a>
                               ) : null}
+                              */}
                             </div>
                           )}
                         </div>
