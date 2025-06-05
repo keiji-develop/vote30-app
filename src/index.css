@@ -23,9 +23,122 @@
     /* ▼ 追加：公演名が長いときの折り返し方法（nowrapだと無理やり１行、normalだと２行折り返し） */
     --title-wrap: normal;   /* normal にすると 2 行折返し */
 
-  --primary-color: #6ea7b2;
-  --text-color: #333;
-  --background-color: #f9f9f9;
+  /* 統一カラーパレット */
+  --primary: #6ea7b2;           /* メインカラー（既存） */
+  --primary-light: #8bc1cc;     /* 薄いメイン */
+  --primary-dark: #5a8a94;      /* 濃いメイン */
+  --primary-50: #f0f9fa;        /* 最も薄いメイン背景 */
+  --primary-100: #e1f2f4;       /* 薄いメイン背景 */
+  
+  --accent: #213547;            /* アクセントカラー（既存） */
+  --accent-light: #475569;      /* 薄いアクセント */
+  
+  /* セマンティックカラー（メインカラーベース） */
+  --info: #6ea7b2;              /* 情報（メインと同じ） */
+  --info-light: #e1f2f4;        /* 情報背景 */
+  --info-border: #8bc1cc;       /* 情報ボーダー */
+  
+  --success: #10b981;           /* 成功（緑系だがメイン寄り） */
+  --success-light: #ecfdf5;     /* 成功背景 */
+  --success-border: #6ee7b7;    /* 成功ボーダー */
+  
+  --warning: #f59e0b;           /* 警告（オレンジ） */
+  --warning-light: #fffbeb;     /* 警告背景 */
+  --warning-border: #fbbf24;    /* 警告ボーダー */
+  
+  --error: #ef4444;             /* エラー（赤） */
+  --error-light: #fef2f2;       /* エラー背景 */
+  --error-border: #fca5a5;      /* エラーボーダー */
+  
+  /* ニュートラルカラー */
+  --neutral-50: #f8fafc;        /* 最も薄い背景 */
+  --neutral-100: #f1f5f9;       /* 薄い背景 */
+  --neutral-200: #e2e8f0;       /* ボーダー */
+  --neutral-300: #cbd5e1;       /* 薄いボーダー */
+  --neutral-400: #94a3b8;       /* プレースホルダー */
+  --neutral-500: #64748b;       /* 薄いテキスト */
+  --neutral-600: #475569;       /* 通常テキスト */
+  --neutral-700: #334155;       /* 濃いテキスト */
+  --neutral-800: #1e293b;       /* 最も濃いテキスト */
+  --neutral-900: #0f172a;       /* 見出しテキスト */
+
+  /* 統一タイポグラフィシステム */
+  /* Display (特別な表示用) */
+  --text-display-xl: 3.75rem;    /* 60px - 特大表示 */
+  --text-display-lg: 3rem;       /* 48px - 大表示 */
+  --text-display-md: 2.25rem;    /* 36px - 中表示 */
+  --text-display-sm: 1.875rem;   /* 30px - 小表示 */
+  
+  /* Headings (見出し) */
+  --text-h1: 1.875rem;           /* 30px - メインタイトル */
+  --text-h2: 1.5rem;             /* 24px - セクション見出し */
+  --text-h3: 1.25rem;            /* 20px - サブセクション見出し */
+  --text-h4: 1.125rem;           /* 18px - 小見出し */
+  
+  /* Body (本文) */
+  --text-body-lg: 1.125rem;      /* 18px - 大きな本文 */
+  --text-body: 1rem;             /* 16px - 通常本文 */
+  --text-body-sm: 0.875rem;      /* 14px - 小さな本文 */
+  --text-body-xs: 0.75rem;       /* 12px - キャプション */
+
+  /* Line Heights */
+  --leading-display: 1.1;        /* Display用 */
+  --leading-heading: 1.2;        /* 見出し用 */
+  --leading-body: 1.6;           /* 本文用 */
+  --leading-tight: 1.4;          /* タイトル等のタイト表示 */
+
+  /* Font Weights */
+  --font-light: 300;
+  --font-normal: 400;
+  --font-medium: 500;
+  --font-semibold: 600;
+  --font-bold: 700;
+  --font-extrabold: 800;
+
+  /* 統一スペーシングシステム */
+  /* Base unit: 0.25rem (4px) */
+  --space-0: 0;                  /* 0px */
+  --space-1: 0.25rem;           /* 4px */
+  --space-2: 0.5rem;            /* 8px */
+  --space-3: 0.75rem;           /* 12px */
+  --space-4: 1rem;              /* 16px */
+  --space-5: 1.25rem;           /* 20px */
+  --space-6: 1.5rem;            /* 24px */
+  --space-8: 2rem;              /* 32px */
+  --space-10: 2.5rem;           /* 40px */
+  --space-12: 3rem;             /* 48px */
+  --space-16: 4rem;             /* 64px */
+  --space-20: 5rem;             /* 80px */
+  --space-24: 6rem;             /* 96px */
+
+  /* Semantic Spacing */
+  /* Component内の小さな間隔 */
+  --spacing-xs: var(--space-1);    /* 4px - 最小間隔 */
+  --spacing-sm: var(--space-2);    /* 8px - 小さな間隔 */
+  --spacing-md: var(--space-4);    /* 16px - 標準間隔 */
+  --spacing-lg: var(--space-6);    /* 24px - 大きな間隔 */
+  --spacing-xl: var(--space-8);    /* 32px - とても大きな間隔 */
+
+  /* Section間の間隔 */
+  --section-spacing-sm: var(--space-6);   /* 24px - 小セクション間 */
+  --section-spacing-md: var(--space-8);   /* 32px - 標準セクション間 */
+  --section-spacing-lg: var(--space-12);  /* 48px - 大セクション間 */
+
+  /* Page/Container間の間隔 */
+  --page-spacing-sm: var(--space-8);      /* 32px - 小ページ間隔 */
+  --page-spacing-md: var(--space-12);     /* 48px - 標準ページ間隔 */
+  --page-spacing-lg: var(--space-16);     /* 64px - 大ページ間隔 */
+
+  /* Component Padding */
+  --padding-xs: var(--space-2);           /* 8px - 最小パディング */
+  --padding-sm: var(--space-3);           /* 12px - 小パディング */
+  --padding-md: var(--space-4);           /* 16px - 標準パディング */
+  --padding-lg: var(--space-6);           /* 24px - 大パディング */
+  --padding-xl: var(--space-8);           /* 32px - 特大パディング */
+
+  --primary-color: var(--primary);
+  --text-color: var(--neutral-700);
+  --background-color: var(--neutral-50);
   --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
@@ -76,6 +189,153 @@ button:focus-visible {
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* 統一タイポグラフィユーティリティクラス */
+@layer components {
+  /* Display Classes */
+  .text-display-xl {
+    font-size: var(--text-display-xl);
+    line-height: var(--leading-display);
+    font-weight: var(--font-extrabold);
+  }
+  
+  .text-display-lg {
+    font-size: var(--text-display-lg);
+    line-height: var(--leading-display);
+    font-weight: var(--font-bold);
+  }
+  
+  .text-display-md {
+    font-size: var(--text-display-md);
+    line-height: var(--leading-display);
+    font-weight: var(--font-bold);
+  }
+  
+  .text-display-sm {
+    font-size: var(--text-display-sm);
+    line-height: var(--leading-display);
+    font-weight: var(--font-bold);
+  }
+
+  /* Heading Classes */
+  .text-heading-1 {
+    font-size: var(--text-h1);
+    line-height: var(--leading-heading);
+    font-weight: var(--font-bold);
+    color: var(--neutral-900);
+  }
+  
+  .text-heading-2 {
+    font-size: var(--text-h2);
+    line-height: var(--leading-heading);
+    font-weight: var(--font-semibold);
+    color: var(--neutral-800);
+  }
+  
+  .text-heading-3 {
+    font-size: var(--text-h3);
+    line-height: var(--leading-heading);
+    font-weight: var(--font-semibold);
+    color: var(--neutral-800);
+  }
+  
+  .text-heading-4 {
+    font-size: var(--text-h4);
+    line-height: var(--leading-heading);
+    font-weight: var(--font-medium);
+    color: var(--neutral-700);
+  }
+
+  /* Body Text Classes */
+  .text-body-large {
+    font-size: var(--text-body-lg);
+    line-height: var(--leading-body);
+    font-weight: var(--font-normal);
+    color: var(--neutral-700);
+  }
+  
+  .text-body {
+    font-size: var(--text-body);
+    line-height: var(--leading-body);
+    font-weight: var(--font-normal);
+    color: var(--neutral-700);
+  }
+  
+  .text-body-small {
+    font-size: var(--text-body-sm);
+    line-height: var(--leading-body);
+    font-weight: var(--font-normal);
+    color: var(--neutral-600);
+  }
+  
+  .text-caption {
+    font-size: var(--text-body-xs);
+    line-height: var(--leading-tight);
+    font-weight: var(--font-normal);
+    color: var(--neutral-500);
+  }
+
+  /* Special Classes */
+  .text-title-tight {
+    line-height: var(--leading-tight);
+  }
+
+  /* 統一スペーシングユーティリティクラス */
+  /* Margin Classes */
+  .margin-xs { margin: var(--spacing-xs); }
+  .margin-sm { margin: var(--spacing-sm); }
+  .margin-md { margin: var(--spacing-md); }
+  .margin-lg { margin: var(--spacing-lg); }
+  .margin-xl { margin: var(--spacing-xl); }
+
+  .margin-t-xs { margin-top: var(--spacing-xs); }
+  .margin-t-sm { margin-top: var(--spacing-sm); }
+  .margin-t-md { margin-top: var(--spacing-md); }
+  .margin-t-lg { margin-top: var(--spacing-lg); }
+  .margin-t-xl { margin-top: var(--spacing-xl); }
+
+  .margin-b-xs { margin-bottom: var(--spacing-xs); }
+  .margin-b-sm { margin-bottom: var(--spacing-sm); }
+  .margin-b-md { margin-bottom: var(--spacing-md); }
+  .margin-b-lg { margin-bottom: var(--spacing-lg); }
+  .margin-b-xl { margin-bottom: var(--spacing-xl); }
+
+  .margin-l-xs { margin-left: var(--spacing-xs); }
+  .margin-l-sm { margin-left: var(--spacing-sm); }
+  .margin-l-md { margin-left: var(--spacing-md); }
+  .margin-l-lg { margin-left: var(--spacing-lg); }
+  .margin-l-xl { margin-left: var(--spacing-xl); }
+
+  .margin-r-xs { margin-right: var(--spacing-xs); }
+  .margin-r-sm { margin-right: var(--spacing-sm); }
+  .margin-r-md { margin-right: var(--spacing-md); }
+  .margin-r-lg { margin-right: var(--spacing-lg); }
+  .margin-r-xl { margin-right: var(--spacing-xl); }
+
+  /* Padding Classes */
+  .padding-xs { padding: var(--padding-xs); }
+  .padding-sm { padding: var(--padding-sm); }
+  .padding-md { padding: var(--padding-md); }
+  .padding-lg { padding: var(--padding-lg); }
+  .padding-xl { padding: var(--padding-xl); }
+
+  /* Section Spacing Classes */
+  .section-spacing-sm { margin-bottom: var(--section-spacing-sm); }
+  .section-spacing-md { margin-bottom: var(--section-spacing-md); }
+  .section-spacing-lg { margin-bottom: var(--section-spacing-lg); }
+
+  /* Page Spacing Classes */
+  .page-spacing-sm { margin: var(--page-spacing-sm); }
+  .page-spacing-md { margin: var(--page-spacing-md); }
+  .page-spacing-lg { margin: var(--page-spacing-lg); }
+
+  /* Gap Classes */
+  .gap-xs { gap: var(--spacing-xs); }
+  .gap-sm { gap: var(--spacing-sm); }
+  .gap-md { gap: var(--spacing-md); }
+  .gap-lg { gap: var(--spacing-lg); }
+  .gap-xl { gap: var(--spacing-xl); }
+}
 
 @media (prefers-color-scheme: light) {
   :root {

@@ -10,12 +10,12 @@ const NotFound = () => {
       </Helmet>
       
       <div className="text-center">
-        <h1 className="text-6xl font-bold text-[#6ea7b2] mb-4">404</h1>
-        <h2 className="text-2xl font-bold mb-4 text-gray-800">あれ、そのページないです...🤔</h2>
+        <h1 className="text-display-xl font-bold text-[#6ea7b2] mb-4">404</h1>
+        <h2 className="text-heading-2 mb-4 text-gray-800">あれ、そのページないです...🤔</h2>
         
         <div className="bg-gray-50 rounded p-6 mb-8 text-left">
-          <h3 className="text-lg font-bold mb-3 text-gray-700">考えられる原因：</h3>
-          <ul className="list-disc list-inside space-y-1 text-sm text-gray-600">
+          <h3 className="text-heading-3 mb-3 text-gray-700">考えられる原因：</h3>
+          <ul className="list-disc list-inside space-y-1 text-body-small text-gray-600">
             <li>URLを間違えて入力した</li>
             <li>リンクが古くて、ページが移動してる</li>
             <li>そもそもそんなページはない</li>
@@ -31,7 +31,7 @@ const NotFound = () => {
             🏠 トップページに戻る
           </Link>
           
-          <div className="text-sm text-gray-600">
+          <div className="text-body-small text-gray-600">
             <p>それでも見つからない場合は</p>
             <Link to="/contact" className="text-[#6ea7b2] hover:underline">
               お問い合わせフォーム

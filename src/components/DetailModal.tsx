@@ -1,5 +1,6 @@
-import { type Tour } from '../types/tour';
 import { useEffect, useRef } from 'react';
+import type { Tour } from '../types/tour';
+import { Button } from './Button';
 
 type DetailModalProps = {
   active: Tour;
@@ -9,24 +10,27 @@ type DetailModalProps = {
 };
 
 export function DetailModal({ active, setActive, setPreview, tours }: DetailModalProps) {
-  const modalRef = useRef<HTMLDivElement>(null);
+  const modalRef = useRef<HTMLElement>(null);
 
-  // 前後のインデックス
-  const idx = tours.findIndex(t => t.id === active.id);
-  const prevTour = idx > 0 ? tours[idx - 1] : null;
-  const nextTour = idx < tours.length - 1 ? tours[idx + 1] : null;
+  const currentIndex = tours.findIndex(t => t.id === active.id);
+  const prevTour = currentIndex > 0 ? tours[currentIndex - 1] : null;
+  const nextTour = currentIndex < tours.length - 1 ? tours[currentIndex + 1] : null;
 
-  // キーボード左右キー対応
+  // キーボードナビゲーション
   useEffect(() => {
     const handler = (e: KeyboardEvent) => {
-      if (e.key === 'ArrowLeft' && prevTour) setActive(prevTour);
-      if (e.key === 'ArrowRight' && nextTour) setActive(nextTour);
+      if (e.key === 'ArrowLeft' && prevTour) {
+        setActive(prevTour);
+      }
+      if (e.key === 'ArrowRight' && nextTour) {
+        setActive(nextTour);
+      }
     };
     window.addEventListener('keydown', handler);
     return () => window.removeEventListener('keydown', handler);
   }, [prevTour, nextTour, setActive]);
 
-  // スワイプ対応
+  // タッチイベント（スワイプナビゲーション）
   useEffect(() => {
     let startX = 0;
     const handleTouchStart = (e: TouchEvent) => {
@@ -34,25 +38,31 @@ export function DetailModal({ active, setActive, setPreview, tours }: DetailModa
     };
     const handleTouchEnd = (e: TouchEvent) => {
       const endX = e.changedTouches[0].clientX;
-      if (startX - endX > 50 && nextTour) setActive(nextTour); // 左スワイプ
-      if (endX - startX > 50 && prevTour) setActive(prevTour); // 右スワイプ
-    };
-    const node = modalRef.current;
-    if (node) {
-      node.addEventListener('touchstart', handleTouchStart);
-      node.addEventListener('touchend', handleTouchEnd);
-    }
-    return () => {
-      if (node) {
-        node.removeEventListener('touchstart', handleTouchStart);
-        node.removeEventListener('touchend', handleTouchEnd);
+      const diff = startX - endX;
+      
+      if (Math.abs(diff) > 50) { // 50px以上のスワイプで反応
+        if (diff > 0 && nextTour) {
+          setActive(nextTour); // 左スワイプで次へ
+        } else if (diff < 0 && prevTour) {
+          setActive(prevTour); // 右スワイプで前へ
+        }
       }
     };
+
+    const modal = modalRef.current;
+    if (modal) {
+      modal.addEventListener('touchstart', handleTouchStart);
+      modal.addEventListener('touchend', handleTouchEnd);
+      return () => {
+        modal.removeEventListener('touchstart', handleTouchStart);
+        modal.removeEventListener('touchend', handleTouchEnd);
+      };
+    }
   }, [prevTour, nextTour, setActive]);
 
   return (
     <div
-      className="fixed inset-0 z-40 bg-black/40 flex items-center justify-center py-4"
+      className="fixed inset-0 bg-black/20 flex items-center justify-center z-40 p-4"
       onClick={() => setActive(null)}
     >
       <article
@@ -64,60 +74,72 @@ export function DetailModal({ active, setActive, setPreview, tours }: DetailModa
         {/* 矢印ナビゲーション */}
         <div className="absolute top-1/2 left-0 -translate-y-1/2 z-10">
           {prevTour && (
-            <button onClick={() => setActive(prevTour)} className="p-2 text-2xl font-bold text-gray-500 hover:text-black bg-white/80 rounded-full shadow">
+            <Button 
+              variant="icon" 
+              size="md"
+              onClick={() => setActive(prevTour)}
+              aria-label="前の公演"
+            >
               &#8592;
-            </button>
+            </Button>
           )}
         </div>
         <div className="absolute top-1/2 right-0 -translate-y-1/2 z-10">
           {nextTour && (
-            <button onClick={() => setActive(nextTour)} className="p-2 text-2xl font-bold text-gray-500 hover:text-black bg-white/80 rounded-full shadow">
+            <Button 
+              variant="icon" 
+              size="md"
+              onClick={() => setActive(nextTour)}
+              aria-label="次の公演"
+            >
               &#8594;
-            </button>
+            </Button>
           )}
         </div>
 
         {/* × ボタン */}
-        <button
+        <Button
+          variant="close"
+          size="md"
           onClick={e => {
             e.stopPropagation();
             setActive(null);
           }}
-          className="absolute top-2 right-2 text-2xl font-semibold leading-none"
+          className="absolute top-2 right-2"
           aria-label="閉じる"
         >
           ×
-        </button>
+        </Button>
 
         {/* ヘッダー部分 */}
         <div className="flex-shrink-0">
-          <header className="flex text-xs font-semibold tracking-wider px-5 pt-2">
+          <header className="flex text-caption font-semibold tracking-wider px-5 pt-2">
             <span className="min-w-[4.5rem]">候補番号</span>
             <span className="ml-6">候補公演名</span>
           </header>
           {/* --- 公式情報 --- */}
-          <div className="px-2 sm:px-4 md:px-6 pt-5 pb-4">
-            <div className="flex items-center mb-2">
-              <span className="text-4xl sm:text-5xl font-bold mr-4">{active.id}</span>
+          <div className="padding-sm sm:padding-md md:padding-lg margin-t-lg margin-b-md">
+            <div className="flex items-center margin-b-sm">
+              <span className="text-display-md sm:text-display-lg font-bold margin-r-md">{active.id}</span>
               <div>
-                <div className="text-lg sm:text-xl font-bold leading-tight">{active.title}</div>
+                <div className="text-heading-3 sm:text-heading-2 leading-tight">{active.title}</div>
                 {active.subtitle && (
-                  <div className="tracking-wider text-base sm:text-lg text-gray-700">{active.subtitle}</div>
+                  <div className="tracking-wider text-body sm:text-body-large text-gray-700">{active.subtitle}</div>
                 )}
               </div>
             </div>
-            <div className="text-sm text-gray-700 whitespace-pre-wrap mt-1">{active.description}</div>
+            <div className="text-body-small text-gray-700 whitespace-pre-wrap margin-t-xs">{active.description}</div>
           </div>
           <hr className="border-b border-black" />
         </div>
 
         {/* スクロール可能なコンテンツ部分 */}
         <div className="flex-1 overflow-y-auto">
-          <div className="px-2 sm:px-4 md:px-6 py-5 space-y-6">
-            <div className="font-bold text-base text-black mb-2">中の人追記</div>
+          <div className="padding-sm sm:padding-md md:padding-lg section-spacing-sm gap-lg">
+            <div className="text-heading-4 text-black margin-b-sm">中の人追記</div>
             
             {/* 公演メモとセットリストを1列に */}
-            <div className="flex flex-col gap-6 w-full">
+            <div className="flex flex-col gap-lg w-full">
               {/* 公演メモ */}
               {/* 
               {active.extraNotes && (
@@ -130,7 +152,7 @@ export function DetailModal({ active, setActive, setPreview, tours }: DetailModa
               {/* セットリスト */}
               {active.setlist && (
                 <section className="w-full break-words overflow-x-auto">
-                  <div className="font-bold text-sm text-black mb-1">セットリスト</div>
+                  <div className="text-heading-4 text-black margin-b-xs">セットリスト</div>
                   {/* セットリストを区切り文字で分割して表示 */}
                   {(() => {
                     let trackNumber = 1;
@@ -144,7 +166,7 @@ export function DetailModal({ active, setActive, setPreview, tours }: DetailModa
                             // 区切り文字の場合は番号なしで表示
                             const dividerText = item.replace(/^---/, '').replace(/---$/, '');
                             return (
-                              <div key={index} className="font-bold mt-3 mb-2 first:mt-0">
+                              <div key={index} className="font-bold margin-t-md margin-b-sm first:mt-0">
                                 {dividerText}
                               </div>
                             );
@@ -152,8 +174,8 @@ export function DetailModal({ active, setActive, setPreview, tours }: DetailModa
                             // 楽曲の場合は番号付きで表示
                             const currentNumber = trackNumber++;
                             return (
-                              <div key={index} className="text-sm leading-relaxed ml-4 mb-1">
-                                <span className="inline-block w-6 text-right mr-2">{currentNumber}.</span>
+                              <div key={index} className="text-body-small leading-relaxed margin-l-md margin-b-xs">
+                                <span className="inline-block w-6 text-right margin-r-sm">{currentNumber}.</span>
                                 <span>{item}</span>
                               </div>
                             );
@@ -169,26 +191,26 @@ export function DetailModal({ active, setActive, setPreview, tours }: DetailModa
             {/* 関連作品情報 */}
             {((active.releases?.length ?? 0) > 0 || active.liveVideos || active.liveArrangements) && (
               <section>
-                <div className="font-bold text-sm text-black mb-3">関連作品情報</div>
+                <div className="text-heading-4 text-black margin-b-md">関連作品情報</div>
                 
                 {/* このライブが収録されている映像・音源 */}
                 {active.liveVideos && (
-                  <div className="mb-4">
-                    <div className="text-sm font-semibold mb-2">・このライブが収録されている映像・音源</div>
+                  <div className="margin-b-md">
+                    <div className="text-body-small font-semibold margin-b-sm">・このライブが収録されている映像・音源</div>
                     <div className="space-y-3">
                       {/* 配列形式のみ対応（文字列形式は廃止） */}
                       {Array.isArray(active.liveVideos) && active.liveVideos.map((v, i) => (
-                        <div key={i} className={`p-3 rounded border ${v.isNone ? 'bg-gray-100 border-gray-300' : 'bg-gray-50'}`}>
-                          <div className="mb-2">
-                            <div className={`font-semibold text-sm ${v.isNone ? 'text-gray-500 italic' : ''}`}>
+                        <div key={i} className={`padding-md rounded border ${v.isNone ? 'bg-gray-100 border-gray-300' : 'bg-gray-50'}`}>
+                          <div className="margin-b-sm">
+                            <div className={`font-semibold text-body-small ${v.isNone ? 'text-gray-500 italic' : ''}`}>
                               {v.title}
                             </div>
                             {!v.isNone && (
-                              <div className="text-xs text-gray-500">({v.type})</div>
+                              <div className="text-caption text-gray-500">({v.type})</div>
                             )}
                           </div>
                           {!v.isNone && (
-                            <div className="flex flex-wrap gap-2">
+                            <div className="flex flex-wrap gap-sm">
                               {/* リンク表示を一時的に非表示 - データは保持 */}
                               {/* 
                               {Array.isArray((v as any).links) && (v as any).links.length > 0 ? (
@@ -215,22 +237,22 @@ export function DetailModal({ active, setActive, setPreview, tours }: DetailModa
                 
                 {/* 同じライブアレンジの映像・音源 */}
                 {active.liveArrangements && (
-                  <div className="mb-4">
-                    <div className="text-sm font-semibold mb-2">・同じライブアレンジの映像・音源</div>
+                  <div className="margin-b-md">
+                    <div className="text-body-small font-semibold margin-b-sm">・同じライブアレンジの映像・音源</div>
                     <div className="space-y-2">
                       {/* 配列形式のみ対応（文字列形式は廃止） */}
                       {Array.isArray(active.liveArrangements) && active.liveArrangements.map((a, i) => (
-                        <div key={i} className={`p-3 rounded border ${a.isNone ? 'bg-gray-100 border-gray-300' : 'bg-gray-50'}`}>
-                          <div className="mb-2">
-                            <div className={`font-semibold text-sm ${a.isNone ? 'text-gray-500 italic' : ''}`}>
+                        <div key={i} className={`padding-md rounded border ${a.isNone ? 'bg-gray-100 border-gray-300' : 'bg-gray-50'}`}>
+                          <div className="margin-b-sm">
+                            <div className={`font-semibold text-body-small ${a.isNone ? 'text-gray-500 italic' : ''}`}>
                               {a.title}
                             </div>
                             {!a.isNone && (
-                              <div className="text-xs text-gray-500">({a.type})</div>
+                              <div className="text-caption text-gray-500">({a.type})</div>
                             )}
                           </div>
                           {a.notes && a.notes !== a.title && !a.isNone && (
-                            <div className="text-xs text-gray-500 mt-1">{a.notes}</div>
+                            <div className="text-caption text-gray-500 margin-t-xs">{a.notes}</div>
                           )}
                         </div>
                       ))}
@@ -240,7 +262,7 @@ export function DetailModal({ active, setActive, setPreview, tours }: DetailModa
 
                 {/* どちらも無い場合の表示 */}
                 {!active.liveVideos && !active.liveArrangements && (
-                  <div className="text-sm text-gray-600">関連映像・音源情報なし</div>
+                  <div className="text-body-small text-gray-600">関連映像・音源情報なし</div>
                 )}
               </section>
             )}
@@ -248,13 +270,14 @@ export function DetailModal({ active, setActive, setPreview, tours }: DetailModa
         </div>
 
         {/* フッター部分 */}
-        <footer className="flex-shrink-0 border-t-[3px] border-black flex justify-end items-center p-3 space-x-2">
-          <button
+        <footer className="flex-shrink-0 border-t-[3px] border-black flex justify-end items-center padding-md gap-sm">
+          <Button
+            variant="secondary"
+            size="sm"
             onClick={() => setPreview(active)}
-            className="px-6 py-1 border border-black text-sm rounded"
           >
             投票記入見本を開く
-          </button>
+          </Button>
         </footer>
       </article>
     </div>
