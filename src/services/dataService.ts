@@ -44,6 +44,70 @@ export async function loadToursData(): Promise<Tour[]> {
       const liveVideos = liveVideoIds.map(id => mediaMap.get(id)).filter(Boolean) as MediaItem[];
       const liveArrangements = liveArrangementIds.map(id => mediaMap.get(id)).filter(Boolean) as MediaItem[];
 
+      // liveVideosの処理：新しい詳細制御ロジック
+      let processedLiveVideos;
+      
+      if (liveVideos.length > 0) {
+        // 実際のメディアがある場合 → 通常通り表示
+        processedLiveVideos = liveVideos.map(v => {
+          // タイトルに補足情報を含める
+          const displayTitle = v.notes ? `${v.title}（${v.notes}）` : v.title;
+          
+          return {
+            title: displayTitle,
+            type: v.type as 'DVD' | 'Blu-ray' | 'YouTube' | '配信' | 'TV' | 'VHS',
+            links: v.links || [],
+            isNone: false
+          };
+        });
+      } else if (tourMedia?.noMediaInfo?.liveVideo?.showNoneItem === true) {
+        // メディアはないが「無し」項目を表示する場合
+        const comment = tourMedia.noMediaInfo.liveVideo.comment;
+        const displayTitle = comment ? `無し（${comment}）` : "無し";
+        
+        processedLiveVideos = [{
+          title: displayTitle,
+          type: "none" as any,
+          links: [],
+          notes: comment || undefined,
+          isNone: true
+        }];
+      } else {
+        // メディアもなく、項目表示もしない場合 → undefined
+        processedLiveVideos = undefined;
+      }
+
+      // liveArrangementsの処理：新しい詳細制御ロジック
+      let processedLiveArrangements;
+      if (liveArrangements.length > 0) {
+        // 実際のメディアがある場合 → 通常通り表示
+        processedLiveArrangements = liveArrangements.map(a => {
+          // タイトルに補足情報を含める
+          const displayTitle = a.notes ? `${a.title}（${a.notes}）` : a.title;
+          
+          return {
+            title: displayTitle,
+            type: a.type as 'CD' | 'DVD' | 'TV' | '配信',
+            notes: displayTitle,
+            isNone: false
+          };
+        });
+      } else if (tourMedia?.noMediaInfo?.liveArrangement?.showNoneItem === true) {
+        // メディアはないが「無し」項目を表示する場合
+        const comment = tourMedia.noMediaInfo.liveArrangement.comment;
+        const displayTitle = comment ? `無し（${comment}）` : "無し";
+        
+        processedLiveArrangements = [{
+          title: displayTitle,
+          type: "none" as any,
+          notes: comment || undefined,
+          isNone: true
+        }];
+      } else {
+        // メディアもなく、項目表示もしない場合 → undefined
+        processedLiveArrangements = undefined;
+      }
+
       return {
         id: core.id,
         title: core.title,
@@ -52,18 +116,9 @@ export async function loadToursData(): Promise<Tour[]> {
         description: core.description,
         setlist: setlist || [],
         extraNotes,
-        // 分類情報を使って正しく分けて配列形式で返す
-        liveVideos: liveVideos.length > 0 ? liveVideos.map(v => ({
-          title: v.title,
-          type: v.type as 'DVD' | 'Blu-ray' | 'YouTube' | '配信' | 'TV' | 'VHS',
-          links: v.links || []
-        })) : undefined,
-        liveArrangements: liveArrangements.length > 0 ? liveArrangements.map(a => ({
-          title: a.title,
-          type: a.type as 'CD' | 'DVD' | 'TV' | '配信',
-          notes: a.title
-        })) : undefined,
-        // 必要に応じて他のフィールドも追加
+        // 処理されたメディア情報を設定
+        liveVideos: processedLiveVideos,
+        liveArrangements: processedLiveArrangements,
         memo: '',
         releases: []
       };

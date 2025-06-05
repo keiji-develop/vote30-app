@@ -14,17 +14,19 @@ export type Tour = {
     link?: string;
     coverImageUrl?: string;
   }[];
-  liveVideos?: string | {
+  liveVideos?: {
     title: string;
     link?: string;
     type: 'DVD' | 'Blu-ray' | 'YouTube' | '配信' | 'TV' | 'VHS';
     notes?: string;
     links?: string[];
+    isNone?: boolean;
   }[];
-  liveArrangements?: string | {
+  liveArrangements?: {
     title: string;
     link?: string;
     type: 'CD' | 'DVD' | 'TV' | '配信';
     notes?: string;
+    isNone?: boolean;
   }[];
 }; 
