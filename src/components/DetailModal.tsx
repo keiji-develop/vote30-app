@@ -71,49 +71,55 @@ export function DetailModal({ active, setActive, setPreview, tours }: DetailModa
       className="fixed inset-0 bg-black/20 flex items-center justify-center z-40 p-4"
       onClick={() => setActive(null)}
     >
-      {/* 矢印ナビゲーション - 中央揃え調整 */}
-      <div 
-        className="absolute inset-y-0 left-1 sm:left-4 md:left-8 lg:left-12 flex items-center z-50"
-        onClick={(e) => e.stopPropagation()}
-      >
-        <Button 
-          variant="icon" 
-          size="md"
-          onClick={(e) => {
-            e.stopPropagation();
-            setActive(prevTour);
-          }}
-          aria-label="前の公演"
-          className="bg-white/95 hover:bg-white shadow-lg border text-lg sm:text-xl w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 flex items-center justify-center"
+      {/* モーダルとナビゲーションのコンテナ */}
+      <div className="relative">
+        
+        {/* 左矢印 - レスポンシブ配置 */}
+        <div 
+          className="absolute top-1/2 -translate-y-1/2 z-50 left-1 sm:left-4 md:left-8 lg:left-12 xl:right-[calc(100%+8px)] xl:left-auto"
+          onClick={(e) => e.stopPropagation()}
         >
-          &#8592;
-        </Button>
-      </div>
-      <div 
-        className="absolute inset-y-0 right-1 sm:right-4 md:right-8 lg:right-12 flex items-center z-50"
-        onClick={(e) => e.stopPropagation()}
-      >
-        <Button 
-          variant="icon" 
-          size="md"
-          onClick={(e) => {
-            e.stopPropagation();
-            setActive(nextTour);
-          }}
-          aria-label="次の公演"
-          className="bg-white/95 hover:bg-white shadow-lg border text-lg sm:text-xl w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 flex items-center justify-center"
-        >
-          &#8594;
-        </Button>
-      </div>
+          <Button 
+            variant="icon" 
+            size="md"
+            onClick={(e) => {
+              e.stopPropagation();
+              setActive(prevTour);
+            }}
+            aria-label="前の公演"
+            className="bg-white/95 hover:bg-white shadow-lg border text-lg sm:text-xl w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 flex items-center justify-center"
+          >
+            &#8592;
+          </Button>
+        </div>
 
-      <article
-        ref={modalRef}
-        tabIndex={-1}
-        className="relative bg-white w-full max-w-[95vw] sm:max-w-md md:max-w-lg rounded shadow-lg border-2 flex flex-col max-h-[90vh]"
-        style={{ borderColor: 'var(--primary)' }}
-        onClick={e => e.stopPropagation()}
-      >
+        {/* 右矢印 - レスポンシブ配置 */}
+        <div 
+          className="absolute top-1/2 -translate-y-1/2 z-50 right-1 sm:right-4 md:right-8 lg:right-12 xl:left-[calc(100%+8px)] xl:right-auto"
+          onClick={(e) => e.stopPropagation()}
+        >
+          <Button 
+            variant="icon" 
+            size="md"
+            onClick={(e) => {
+              e.stopPropagation();
+              setActive(nextTour);
+            }}
+            aria-label="次の公演"
+            className="bg-white/95 hover:bg-white shadow-lg border text-lg sm:text-xl w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 flex items-center justify-center"
+          >
+            &#8594;
+          </Button>
+        </div>
+
+        {/* モーダル本体 - 元の幅に戻す */}
+        <article
+          ref={modalRef}
+          tabIndex={-1}
+          className="relative bg-white w-full max-w-[95vw] sm:max-w-md md:max-w-lg rounded shadow-lg border-2 flex flex-col max-h-[90vh]"
+          style={{ borderColor: 'var(--primary)' }}
+          onClick={e => e.stopPropagation()}
+        >
 
         {/* × ボタン */}
         <Button
@@ -320,7 +326,9 @@ export function DetailModal({ active, setActive, setPreview, tours }: DetailModa
             投票記入見本を開く
           </Button>
         </footer>
-      </article>
+        </article>
+
+      </div>
     </div>
   );
 } 
