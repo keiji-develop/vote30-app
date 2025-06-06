@@ -34,17 +34,22 @@ export function DetailModal({ active, setActive, setPreview, tours }: DetailModa
   // タッチイベント（スワイプナビゲーション）
   useEffect(() => {
     let startX = 0;
+    let startY = 0;
     const handleTouchStart = (e: TouchEvent) => {
       startX = e.touches[0].clientX;
+      startY = e.touches[0].clientY;
     };
     const handleTouchEnd = (e: TouchEvent) => {
       const endX = e.changedTouches[0].clientX;
-      const diff = startX - endX;
+      const endY = e.changedTouches[0].clientY;
+      const diffX = startX - endX;
+      const diffY = startY - endY;
       
-      if (Math.abs(diff) > 50) { // 50px以上のスワイプで反応
-        if (diff > 0) {
+      // 水平方向の移動距離が十分で、かつ垂直方向の移動が水平方向より小さい場合のみ反応
+      if (Math.abs(diffX) > 50 && Math.abs(diffX) > Math.abs(diffY) * 2) {
+        if (diffX > 0) {
           setActive(nextTour); // 左スワイプで次へ
-        } else if (diff < 0) {
+        } else if (diffX < 0) {
           setActive(prevTour); // 右スワイプで前へ
         }
       }
@@ -66,6 +71,42 @@ export function DetailModal({ active, setActive, setPreview, tours }: DetailModa
       className="fixed inset-0 bg-black/20 flex items-center justify-center z-40 p-4"
       onClick={() => setActive(null)}
     >
+      {/* 矢印ナビゲーション - 中央揃え調整 */}
+      <div 
+        className="absolute inset-y-0 left-1 sm:left-4 md:left-8 lg:left-12 flex items-center z-50"
+        onClick={(e) => e.stopPropagation()}
+      >
+        <Button 
+          variant="icon" 
+          size="md"
+          onClick={(e) => {
+            e.stopPropagation();
+            setActive(prevTour);
+          }}
+          aria-label="前の公演"
+          className="bg-white/95 hover:bg-white shadow-lg border text-lg sm:text-xl w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 flex items-center justify-center"
+        >
+          &#8592;
+        </Button>
+      </div>
+      <div 
+        className="absolute inset-y-0 right-1 sm:right-4 md:right-8 lg:right-12 flex items-center z-50"
+        onClick={(e) => e.stopPropagation()}
+      >
+        <Button 
+          variant="icon" 
+          size="md"
+          onClick={(e) => {
+            e.stopPropagation();
+            setActive(nextTour);
+          }}
+          aria-label="次の公演"
+          className="bg-white/95 hover:bg-white shadow-lg border text-lg sm:text-xl w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 flex items-center justify-center"
+        >
+          &#8594;
+        </Button>
+      </div>
+
       <article
         ref={modalRef}
         tabIndex={-1}
@@ -73,27 +114,6 @@ export function DetailModal({ active, setActive, setPreview, tours }: DetailModa
         style={{ borderColor: 'var(--primary)' }}
         onClick={e => e.stopPropagation()}
       >
-        {/* 矢印ナビゲーション */}
-        <div className="absolute top-1/2 left-0 -translate-y-1/2 z-10">
-          <Button 
-            variant="icon" 
-            size="md"
-            onClick={() => setActive(prevTour)}
-            aria-label="前の公演"
-          >
-            &#8592;
-          </Button>
-        </div>
-        <div className="absolute top-1/2 right-0 -translate-y-1/2 z-10">
-          <Button 
-            variant="icon" 
-            size="md"
-            onClick={() => setActive(nextTour)}
-            aria-label="次の公演"
-          >
-            &#8594;
-          </Button>
-        </div>
 
         {/* × ボタン */}
         <Button

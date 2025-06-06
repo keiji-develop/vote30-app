@@ -121,7 +121,7 @@ const About = () => {
             <p>・<strong>ファン歴</strong>：20年ちょっと。vertical infinityツアーに参戦して人生変わりました</p>
             <p>・<strong>ライブ回数</strong>：数えたくないけど多分合計50回は超えてる（白目）</p>
             <p>・<strong>データ収集癖</strong>：気づいたら10年以上、映像とか音源とかため込んでた</p>
-            <p>・<strong>本業</strong>：Web関係の仕事してるので、サイト作るのは慣れてます</p>
+            <p>・<strong>本業</strong>：いちおうIT関係の仕事してるので、ちょっとだけならサイト作れます</p>
           </div>
           <p className="mt-3 text-body-small" style={{ color: 'var(--neutral-600)' }}>要するに、T.M.R好きすぎて色々やってたら、なんかサイト作れるようになってた人です。</p>
         </div>
