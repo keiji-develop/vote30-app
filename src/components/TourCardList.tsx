@@ -7,29 +7,36 @@ type TourCardListProps = {
 
 export function TourCardList({ tours, onCardClick }: TourCardListProps) {
   return (
-    <ul className="grid gap-3">
+    <ul className="space-y-4 mx-auto w-full">
       {tours.map(t => (
         <li
           key={t.id}
-          className="border rounded p-3 flex flex-col gap-2 hover:bg-gray-100 cursor-pointer"
+          className="bg-gray-50 rounded p-4 border-l-4 hover:bg-gray-100 cursor-pointer transition-colors"
+          style={{ borderLeftColor: 'var(--primary)' }}
           onClick={() => onCardClick(t)}
         >
-          {/* ID とタイトルまわりは横並び */}
-          <div className="flex gap-6 items-start">
-            <span className="text-6xl sm:text-7xl font-bold leading-none">
-              {t.id}
-            </span>
-            <div className="leading-tight mt-2">
-              <div className="text-lg sm:text-xl font-semibold">{t.title}</div>
+          {/* 公式一覧と同じ構成：左に候補番号、右に候補公演名 */}
+          <div className="flex items-start gap-4 mb-3">
+            {/* 候補番号（公式と同じく左側に大きく） */}
+            <div className="flex-shrink-0 w-12 text-center">
+              <span className="text-display-lg font-bold text-numeric text-black">
+                {t.id}
+              </span>
+            </div>
+            
+            {/* 候補公演名（公式と同じく右側に） */}
+            <div className="flex-1">
+              <div className="text-heading-3 font-semibold leading-tight">{t.title}</div>
               {t.subtitle && (
-                <div className="tracking-wider text-base sm:text-lg">{t.subtitle}</div>
+                <div className="tracking-wider text-body text-gray-700 mt-1">{t.subtitle}</div>
               )}
             </div>
           </div>
-          {/* 説明文はタイトル群の下に表示 */}
-          <p className="mt-2 text-sm text-gray-700 line-clamp-2">
+          
+          {/* 説明文（公式と同じく下部に、簡潔に） */}
+          <div className="text-body-small text-gray-700 line-clamp-2 leading-relaxed">
             {t.description}
-          </p>
+          </div>
         </li>
       ))}
     </ul>

@@ -1,0 +1,242 @@
+[
+  {
+    "id": 1,
+    "liveVideoIds": [
+      "summarize_1"
+    ],
+    "liveArrangementIds": []
+  },
+  {
+    "id": 2,
+    "liveVideoIds": [
+      "complete_edition_2"
+    ],
+    "liveArrangementIds": []
+  },
+  {
+    "id": 3,
+    "liveVideoIds": [
+      "complete_edition_3"
+    ],
+    "liveArrangementIds": [
+      "summarize_2"
+    ]
+  },
+  {
+    "id": 4,
+    "liveVideoIds": [
+      "summarize_3"
+    ],
+    "liveArrangementIds": []
+  },
+  {
+    "id": 5,
+    "liveVideoIds": [
+      "summarize_4"
+    ],
+    "liveArrangementIds": []
+  },
+  {
+    "id": 6,
+    "liveVideoIds": [
+      "genesis_turbo_type_d_live_arena_2000_ad_special_dvd_version"
+    ],
+    "liveArrangementIds": []
+  },
+  {
+    "id": 7,
+    "liveVideoIds": [
+      "unknown_0001"
+    ],
+    "liveArrangementIds": []
+  },
+  {
+    "id": 8,
+    "liveVideoIds": [
+      "wowow_broadcast"
+    ],
+    "liveArrangementIds": []
+  },
+  {
+    "id": 9,
+    "liveVideoIds": [
+      "genesis_turbo_type_d_live_arena_2000_ad_special_dvd_version"
+    ],
+    "liveArrangementIds": []
+  },
+  {
+    "id": 10,
+    "liveVideoIds": [
+      "wowow_broadcast"
+    ],
+    "liveArrangementIds": []
+  },
+  {
+    "id": 11,
+    "liveVideoIds": [],
+    "liveVideoNote": "DVD化はARENA Tourのみ",
+    "liveArrangementIds": [
+      "unknown_0001"
+    ]
+  },
+  {
+    "id": 12,
+    "liveVideoIds": [
+      "unknown_0001"
+    ],
+    "liveArrangementIds": []
+  },
+  {
+    "id": 13,
+    "liveVideoIds": [
+      "best_summer_crush_2002"
+    ],
+    "liveArrangementIds": []
+  },
+  {
+    "id": 14,
+    "liveVideoIds": [
+      "best_summer_crush_2002"
+    ],
+    "liveArrangementIds": []
+  },
+  {
+    "id": 15,
+    "liveVideoIds": [],
+    "liveArrangementIds": [
+      "sonic_warp",
+      "seventh_heaven"
+    ]
+  },
+  {
+    "id": 16,
+    "liveVideoIds": [],
+    "liveArrangementIds": [
+      "sonic_warp",
+      "seventh_heaven"
+    ]
+  },
+  {
+    "id": 17,
+    "liveVideoIds": [
+      "seventh_heaven"
+    ],
+    "liveArrangementIds": []
+  },
+  {
+    "id": 18,
+    "liveVideoIds": [
+      "vertical_infinity_tv"
+    ],
+    "liveArrangementIds": [
+      "seventh_heaven",
+      "under_cover_live"
+    ]
+  },
+  {
+    "id": 19,
+    "liveVideoIds": [],
+    "liveVideoNote": "DVD/BD化はARENA STYLE Versionのみ",
+    "liveArrangementIds": [
+      "under_cover_live",
+      "under_cover_cd",
+      "cloud_nine_cd"
+    ]
+  },
+  {
+    "id": 20,
+    "liveVideoIds": [
+      "under_cover_live"
+    ],
+    "liveArrangementIds": []
+  },
+  {
+    "id": 21,
+    "liveVideoIds": [],
+    "liveArrangementIds": [
+      "vertical_infinity_tv",
+      "tmr_live_revolution_06",
+      "undercover",
+      "cloud_nine_cd"
+    ]
+  },
+  {
+    "id": 22,
+    "liveVideoIds": [
+      "cloud_nine_cd"
+    ],
+    "liveArrangementIds": [
+      "under_cover_live",
+      "inazuma_2011",
+      "strikes_back_ix_11_in",
+      "anniversary_15th_final"
+    ]
+  },
+  {
+    "id": 23,
+    "liveVideoIds": [
+      "anniversary_15th_final"
+    ],
+    "liveArrangementIds": []
+  },
+  {
+    "id": 24,
+    "liveVideoIds": [
+      "under_2_cover"
+    ],
+    "liveArrangementIds": []
+  },
+  {
+    "id": 25,
+    "liveVideoIds": [],
+    "liveArrangementIds": [
+      "14_14",
+      "double_deal_cd",
+      "strikes_back_xi_15",
+      "inazuma_2015",
+      "route_20_budokan"
+    ]
+  },
+  {
+    "id": 26,
+    "liveVideoIds": [
+      "route_20_budokan"
+    ],
+    "liveArrangementIds": []
+  },
+  {
+    "id": 27,
+    "liveVideoIds": [
+      "round_house_cutback_17cd"
+    ],
+    "liveArrangementIds": [
+      "inazuma_2017"
+    ]
+  },
+  {
+    "id": 28,
+    "liveVideoIds": [
+      "anniversary_20th_final"
+    ],
+    "liveArrangementIds": [
+      "cloud_nine_cd"
+    ]
+  },
+  {
+    "id": 29,
+    "liveVideoIds": [],
+    "liveVideoNote": "DVD/BD化はVOTE JAPANのみ",
+    "liveArrangementIds": [
+      "tmrevolutionhot_limithigh_pressure",
+      "the_25th_anniversaryvote_21_extended_live_edition",
+      "vote_japan_22"
+    ]
+  },
+  {
+    "id": 30,
+    "liveVideoIds": [
+      "vote_japan_22"
+    ],
+    "liveArrangementIds": []
+  }
+]

@@ -1,6 +1,7 @@
 import { useRef, useEffect } from 'react';
 import { type Tour } from '../types/tour';
 import { fitOneLine } from '../utils/fitOneLine';
+import { Button } from './Button';
 
 type PreviewModalProps = {
   preview: Tour;
@@ -19,15 +20,17 @@ export function PreviewModal({ preview, seat, setPreview }: PreviewModalProps) {
 
   return (
     <div
-      className="fixed inset-0 bg-white flex items-center justify-center border-[6px] border-black z-50"
+      className="fixed inset-0 bg-white flex items-center justify-center border-[6px] border-black z-50 py-4"
     >
       {/* 閉じるボタン */}
-      <button
+      <Button
+        variant="primary"
+        size="sm"
         onClick={() => setPreview(null)}
-        className="absolute top-2 right-2 px-6 py-1 bg-black text-white text-sm rounded"
+        className="absolute top-2 right-2"
       >
         閉じる
-      </button>
+      </Button>
       {/* ラッパー: 縦積み & 同じ幅を共有 */}
       <div className="flex flex-col items-stretch w-[90%] max-w-[600px]">
         {/* 投票用紙そっくりボックス */}
@@ -72,21 +75,21 @@ export function PreviewModal({ preview, seat, setPreview }: PreviewModalProps) {
           </div>
           {/* 4列目：公演名 */}
           <div className="px-4 flex flex-col justify-center overflow-hidden">
-            <div ref={titleRef} className="whitespace-normal leading-tight text-lg font-semibold">
+            <div ref={titleRef} className="whitespace-normal leading-tight text-heading-3 font-semibold">
               {preview.title}
             </div>
             {preview.subtitle && (
-              <div ref={subtitleRef} className="whitespace-normal leading-tight tracking-wider text-lg">
+              <div ref={subtitleRef} className="whitespace-normal leading-tight tracking-wider text-heading-3">
                 {preview.subtitle}
               </div>
             )}
           </div>
         </div>
         {/* 座席番号行 */}
-        <div className="w-full px-0 pt-0 text-sm flex">
-          <span className="mr-2 font-semibold text-sm">(本日の座席番号:</span>
+        <div className="w-full px-0 pt-0 text-body-small flex">
+          <span className="mr-2 font-semibold text-body-small">(本日の座席番号:</span>
           <span style={{ fontSize:'18px' }}>{seat || '–––'}</span>
-          <span className="ml-1 font-semibold text-sm">)</span>
+          <span className="ml-1 font-semibold text-body-small">)</span>
         </div>
       </div>
     </div>

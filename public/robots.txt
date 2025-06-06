@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://takanori-support.com/sitemap.xml
+ 
+# Block unnecessary paths
+Disallow: /node_modules/
+Disallow: /src/
+Disallow: /*.json$ 

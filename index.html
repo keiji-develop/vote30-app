@@ -1,10 +1,74 @@
 <!doctype html>
-<html lang="en">
+<html lang="ja">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vote.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>VOTE30選挙対策支援サイト</title>
+    <meta name="description" content="T.M.Rの30年分のライブツアー情報をまとめて、VOTE30で迷ってる人の投票をお手伝いしてます。セトリとか映像情報とか調べるのにも使えます。" />
+    <meta name="keywords" content="VOTE30,選挙,投票,公演,演劇" />
+    
+    <!-- OGP設定 -->
+    <meta property="og:title" content="VOTE30選挙対策支援サイト" />
+    <meta property="og:description" content="T.M.Rの30年分のライブツアー情報をまとめて、VOTE30で迷ってる人の投票をお手伝いしてます。セトリとか映像情報とか調べるのにも使えます。" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://takanori-support.com" />
+    <meta property="og:image" content="https://takanori-support.com/ogp.jpg" />
+    <meta property="og:site_name" content="VOTE30選挙対策支援サイト" />
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="VOTE30選挙対策支援サイト" />
+    <meta name="twitter:description" content="T.M.Rの30年分のライブツアー情報をまとめて、VOTE30で迷ってる人の投票をお手伝いしてます。セトリとか映像情報とか調べるのにも使えます。" />
+    <meta name="twitter:image" content="https://takanori-support.com/ogp.jpg" />
+    
+    <!-- アクセシビリティ -->
+    <meta name="theme-color" content="#6ea7b2" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MGDQCN2VC8"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-MGDQCN2VC8');
+    </script>
+
+    <!-- Microsoft Clarity -->
+    <script type="text/javascript">
+        (function(c,l,a,r,i,t,y){
+            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+        })(window, document, "clarity", "script", "rtk9s83jj7");
+    </script>
+
+    <!-- Start Single Page Apps for GitHub Pages -->
+    <script type="text/javascript">
+      // Single Page Apps for GitHub Pages
+      // MIT License
+      // https://github.com/rafgraph/spa-github-pages
+      // This script checks to see if a redirect is present in the query string,
+      // converts it back into the correct url and adds it to the
+      // browser's history using window.history.replaceState(...),
+      // which won't cause the browser to attempt to load the new url.
+      // When the single page app is loaded further down in this file,
+      // the correct url will be waiting in the browser's history for
+      // the single page app to route accordingly.
+      (function(l) {
+        if (l.search[1] === '/' ) {
+          var decoded = l.search.slice(1).split('&').map(function(s) { 
+            return s.replace(/~and~/g, '&')
+          }).join('?');
+          window.history.replaceState(null, null,
+              l.pathname.slice(0, -1) + decoded + l.hash
+          );
+        }
+      }(window.location))
+    </script>
+    <!-- End Single Page Apps for GitHub Pages -->
   </head>
   <body>
     <div id="root"></div>
