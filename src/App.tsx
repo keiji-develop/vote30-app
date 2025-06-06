@@ -1,5 +1,4 @@
 import { useEffect, useState, useRef } from 'react';
-import * as FlexSearch from 'flexsearch';
 import './index.css';
 import type { Tour } from './types/tour';
 import { fitOneLine } from './utils/fitOneLine';
@@ -7,6 +6,7 @@ import { saveSeat } from './utils/localStorage';
 import { PreviewModal } from './components/PreviewModal';
 import { DetailModal } from './components/DetailModal';
 import { TourCardList } from './components/TourCardList';
+import { SearchInterface } from './components/SearchInterface';
 import { Header } from './components/Header';
 import { Footer } from './components/Footer';
 import { LoadingSpinner } from './components/LoadingSpinner';
@@ -25,7 +25,6 @@ import { loadToursData } from './services/dataService';
 export default function App() {
   /* ---------- state ---------- */
   const [tours, setTours] = useState<Tour[]>([]);
-  const [q, _setQ] = useState('');
   const [filtered, setFiltered] = useState<Tour[]>([]);
   const [active, setActive] = useState<Tour | null>(null);   // ← モーダル対象
   const [preview, setPreview] = useState<Tour | null>(null); // ← 1 行プレビュー
@@ -33,7 +32,6 @@ export default function App() {
   const [error, setError] = useState<string | null>(null);
   const titleRef     = useRef<HTMLDivElement>(null);
   const subtitleRef  = useRef<HTMLDivElement>(null);
-  const [yearFilter, _setYearFilter] = useState(0);
   const [seat, setSeat] = useState<string>(() => localStorage.getItem('seat') || ''); // 本日の座席番号の情報をローカルにだけ保存
 
 /* preview が変わるたびタイトル / サブタイトルをフィット */
@@ -41,9 +39,6 @@ useEffect(() => {
   fitOneLine(titleRef.current);
   fitOneLine(subtitleRef.current);
 }, [preview]);
-
-  /* ---------- 年リスト ---------- */
-  const [_years] = [Array.from(new Set(tours.map(t => t.year))).sort()];
 
   /* ---------- fetch tours data ---------- */
   useEffect(() => {
@@ -89,18 +84,10 @@ useEffect(() => {
     fetchData();
   };
 
-  /* ---------- 検索 + 年フィルタ ---------- */
-  useEffect(() => {
-    const idx = new FlexSearch.Index({ tokenize: 'strict' });
-    tours.forEach(t =>
-      idx.add(t.id, `${t.title} ${t.subtitle} ${t.year}`)
-    );
-    const ids = q ? (idx.search(q) as number[]) : tours.map(t => t.id);
-    const byYear = yearFilter === 0
-      ? tours
-      : tours.filter(t => t.year === yearFilter);
-    setFiltered(byYear.filter(t => ids.includes(t.id)));
-  }, [q, tours, yearFilter]);
+  /* ---------- 検索結果を受け取る関数 ---------- */
+  const handleFilteredResults = (filteredTours: Tour[]) => {
+    setFiltered(filteredTours);
+  };
 
   /* ---------- Esc でどちらも閉じる ---------- */
   useEffect(() => {
@@ -160,30 +147,15 @@ useEffect(() => {
                   />
                 </section>
 
-{/* 20250525_0330_検索機能はしばらく封印します */}
-      {/* 検索バー */}
-      {/* <input
-        value={q}
-        onChange={e => setQ(e.target.value)}
-        placeholder="検索…"
-        className="w-full mb-4 p-2 border rounded"
-      />
-      */}
-      {/* 年フィルタ */}
-      {/* <div className="mb-4">
-        <label className="mr-2 text-sm">年で絞る:</label>
-        <select
-          value={yearFilter}
-          onChange={e => setYearFilter(Number(e.target.value))}
-          className="border rounded p-1 text-sm"
-        >
-          <option value={0}>すべて</option>
-          {years.map(y => (
-            <option key={y} value={y}>{y}</option>
-          ))}
-        </select>
-      </div>
-      */} 
+ 
+
+                {/* 検索・絞り込み機能 */}
+                {!loading && !error && tours.length > 0 && (
+                  <SearchInterface 
+                    tours={tours} 
+                    onFilteredResults={handleFilteredResults}
+                  />
+                )}
 
                 {/* カード一覧説明 */}
                 <section aria-labelledby="tour-list-title" className="flex flex-col sm:flex-row justify-center items-center text-center border-b-2 border-[#6ea7b2] pb-2 mb-6">

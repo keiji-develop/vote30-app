@@ -179,11 +179,11 @@ const About = () => {
         <h2 className="text-heading-2 mb-3" style={{ color: 'var(--info)' }}>🎯 こんな人に使ってほしい</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div className="rounded p-4" style={{ backgroundColor: 'var(--info-light)' }}>
-            <h3 className="text-heading-3 mb-2">VOTE30で迷ってる人</h3>
+            <h3 className="text-heading-3 mb-2">VOTE30の投票先で迷ってる人</h3>
             <p className="text-body-small">とりあえずここ見とけば情報は揃います</p>
           </div>
           <div className="rounded p-4" style={{ backgroundColor: 'var(--info-light)' }}>
-            <h3 className="text-heading-3 mb-2">T.M.Rファン</h3>
+            <h3 className="text-heading-3 mb-2">T.M.R.のライブを調べたい人</h3>
             <p className="text-body-small">「あのライブどんなだったっけ」の答えがあります</p>
           </div>
           <div className="rounded p-4" style={{ backgroundColor: 'var(--info-light)' }}>

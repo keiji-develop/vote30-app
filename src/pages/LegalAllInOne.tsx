@@ -158,7 +158,8 @@ const LegalAllInOne = () => {
         <section>
           <h2 className="text-heading-2 mb-2">お問い合わせ・制定日</h2>
           <p>本ポリシーに関するお問い合わせは、<Link to="/contact" className="text-blue-600 hover:underline">お問い合わせフォーム</Link>からお願いいたします。</p>
-          <p className="mt-4"><strong>制定日：</strong>2025年1月1日</p>
+          <p className="mt-4"><strong>制定日：</strong>2025年6月6日</p>
+          <p className="mt-2"><strong>運営者：</strong>VOTE30選挙対策支援サイトの中の人</p>
         </section>
       </div>
 
