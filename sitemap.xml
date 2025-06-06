@@ -2,47 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://takanori-support.com/</loc>
-    <lastmod>2025-05-28</lastmod>
+    <lastmod>2025-06-06</lastmod>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://takanori-support.com/about</loc>
-    <lastmod>2025-05-28</lastmod>
+    <lastmod>2025-06-06</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://takanori-support.com/contact</loc>
-    <lastmod>2025-05-28</lastmod>
+    <lastmod>2025-06-06</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://takanori-support.com/privacy-policy</loc>
-    <lastmod>2025-05-28</lastmod>
-    <priority>0.5</priority>
+    <loc>https://takanori-support.com/legal</loc>
+    <lastmod>2025-06-06</lastmod>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://takanori-support.com/affiliate-disclosure</loc>
-    <lastmod>2025-05-28</lastmod>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://takanori-support.com/disclaimer</loc>
-    <lastmod>2025-05-28</lastmod>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://takanori-support.com/cookies</loc>
-    <lastmod>2025-05-28</lastmod>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://takanori-support.com/spec-commercial</loc>
-    <lastmod>2025-05-28</lastmod>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://takanori-support.com/sitemap.html</loc>
-    <lastmod>2025-05-28</lastmod>
+    <loc>https://takanori-support.com/sitemap</loc>
+    <lastmod>2025-06-06</lastmod>
     <priority>0.3</priority>
   </url>
 </urlset> 
