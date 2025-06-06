@@ -141,21 +141,24 @@ useEffect(() => {
                   <meta name="description" content="T.M.Rの30年分のライブツアー情報をまとめて、VOTE30で迷ってる人の投票をお手伝いしてます。セトリとか映像情報とか調べるのにも使えます。" />
                 </Helmet>
 
-                {/* 本日の座席番号欄 */}
-                <section aria-labelledby="seat-label" className="flex flex-col sm:flex-row items-center gap-2 sm:gap-4 bg-gray-50 rounded p-4 border-l-4 border-[#6ea7b2] mb-6">
-                <label id="seat-label" className="text-heading-4 text-gray-800 text-center sm:text-right whitespace-nowrap sm:w-1/3">
-                  本日の座席番号
-                  <span className="block sm:text-right">（投票記入見本に表示されます）</span>
-                </label>
-  <input
-    value={seat}
-                  onChange={e => { setSeat(e.target.value); saveSeat(e.target.value); }}
-    placeholder="例 1階 919ブロック 2R扉 513列 1242番"
-                  className="border border-gray-300 rounded px-3 py-2 text-body w-full sm:w-2/3 h-12"
-                  style={{ minWidth: 0 }}
-                  aria-label="本日の座席番号"
-  />
-              </section>
+                                {/* 本日の座席番号欄 */}
+                <section aria-labelledby="seat-label" className="bg-gray-50 rounded p-4 border-l-4 border-[#6ea7b2] mb-6">
+                  <div className="mb-3">
+                    <label id="seat-label" className="text-heading-4 text-gray-800 block">
+                      本日の座席番号
+                    </label>
+                    <p className="text-body-small text-gray-600 mt-1">
+                      投票記入見本に表示されます
+                    </p>
+                  </div>
+                  <input
+                    value={seat}
+                    onChange={e => { setSeat(e.target.value); saveSeat(e.target.value); }}
+                    placeholder="例 1階 919ブロック 2R扉 513列 1242番"
+                    className="border border-gray-300 rounded px-3 py-2 text-body w-full h-12 focus:border-[#6ea7b2] focus:ring-1 focus:ring-[#6ea7b2] transition-colors"
+                    aria-label="本日の座席番号"
+                  />
+                </section>
 
 {/* 20250525_0330_検索機能はしばらく封印します */}
       {/* 検索バー */}
@@ -185,7 +188,7 @@ useEffect(() => {
                 {/* カード一覧説明 */}
                 <section aria-labelledby="tour-list-title" className="flex flex-col sm:flex-row justify-center items-center text-center border-b-2 border-[#6ea7b2] pb-2 mb-6">
                   <h2 id="tour-list-title" className="text-heading-2">候補公演名一覧と公演概要</h2>
-                  <span className="sm:ml-4 text-heading-2 text-[#213547]">（公式の一覧から転記）</span>
+                  <span className="sm:ml-4 text-heading-2 text-[#213547]">（会場配布の候補一覧より）</span>
                 </section>
 
                 {/* コンテンツエリア */}

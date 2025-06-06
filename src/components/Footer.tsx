@@ -10,9 +10,8 @@ export const Footer: React.FC = () => {
           <div>
                     <h3 className="text-heading-3 text-gray-800 mb-4">VOTE30選挙対策支援サイト</h3>
         <p className="text-gray-600 text-body-small mb-4">
-              T.M.Rの30年分のライブツアー情報をまとめて、
-              VOTE30で迷ってる人の投票をお手伝いしてます。
-              あのライブのセトリとか映像情報とか調べるのにも使えると思います。
+        T.M.R. LIVE ELECTION -VOTE 30-のリバイバル公演投票のための、30公演分のライブツアー情報をまとめて、
+        発信しています。どこに投票するか迷ったときに見返したり、あのライブのセトリとか映像情報とか調べるのにも使えると思います。
             </p>
           </div>
 

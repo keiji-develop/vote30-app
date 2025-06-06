@@ -112,32 +112,51 @@ export function DetailModal({ active, setActive, setPreview, tours }: DetailModa
           ×
         </Button>
 
-        {/* ヘッダー部分 */}
+        {/* ヘッダー部分 - 公式一覧と同じレイアウト */}
         <div className="flex-shrink-0">
-          <header className="flex text-caption font-semibold tracking-wider px-5 pt-2">
-            <span className="min-w-[4.5rem]">候補番号</span>
-            <span className="ml-6">候補公演名</span>
+          <header className="flex items-center text-body font-semibold tracking-wider bg-gray-100 px-4 py-3 border-b">
+            <span>候補番号・候補公演名・公演概要</span>
           </header>
-          {/* --- 公式情報 --- */}
-          <div className="p-4 sm:p-5 md:p-6 pt-5 pb-4">
-            <div className="flex items-center mb-2">
-              <span className="text-display-md sm:text-display-lg font-bold mr-4 text-numeric" style={{ color: 'var(--primary)' }}>{active.id}</span>
-              <div>
-                <div className="text-heading-3 sm:text-heading-2 leading-tight">{active.title}</div>
+          
+          {/* 公式一覧と同じ構成：左に番号、右に公演名 */}
+          <div className="p-4 sm:p-5 md:p-6">
+            <div className="flex items-center gap-4 mb-4">
+              {/* 候補番号（公式と同じく左側に大きく） */}
+              <div className="flex-shrink-0 w-16 text-center">
+                <span className="text-display-lg sm:text-display-xl font-bold text-numeric text-black">
+                  {active.id}
+                </span>
+              </div>
+              
+              {/* 候補公演名（公式と同じく右側に） */}
+              <div className="flex-1">
+                <div className="text-heading-3 sm:text-heading-2 font-semibold leading-tight">
+                  {active.title}
+                </div>
                 {active.subtitle && (
-                  <div className="tracking-wider text-body sm:text-body-large text-gray-700">{active.subtitle}</div>
+                  <div className="tracking-wider text-body sm:text-body-large text-gray-700 mt-1">
+                    {active.subtitle}
+                  </div>
                 )}
               </div>
             </div>
-            <div className="text-body-small text-gray-700 whitespace-pre-wrap mt-1">{active.description}</div>
+            
+            {/* 説明文（公式と同じく下部に） */}
+            <div className="text-body-small text-gray-700 whitespace-pre-wrap leading-relaxed">
+              {active.description}
+            </div>
           </div>
-          <hr className="border-b border-black" />
+          <hr className="border-b-2" style={{ borderColor: 'var(--primary)' }} />
         </div>
 
         {/* スクロール可能なコンテンツ部分 */}
         <div className="flex-1 overflow-y-auto">
-          <div className="p-4 sm:p-5 md:p-6 py-5 space-y-6">
-            <div className="text-heading-4 text-black mb-2">中の人追記</div>
+          {/* 管理人追記エリアのヘッダー */}
+          <header className="flex items-center text-body font-semibold tracking-wider bg-gray-100 px-4 py-3 border-b">
+            <span>管理人追記</span>
+          </header>
+          
+          <div className="p-4 sm:p-5 md:p-6 py-4 space-y-4">
             
             {/* 公演メモとセットリストを1列に */}
             <div className="flex flex-col gap-6 w-full">
@@ -153,7 +172,9 @@ export function DetailModal({ active, setActive, setPreview, tours }: DetailModa
               {/* セットリスト */}
               {active.setlist && (
                 <section className="w-full break-words overflow-x-auto">
-                  <div className="text-heading-4 text-black mb-1">セットリスト</div>
+                  <div className="mb-3">
+                    <h3 className="text-body font-semibold text-gray-800 border-b border-gray-200 pb-1">セットリスト</h3>
+                  </div>
                   {/* セットリストを区切り文字で分割して表示 */}
                   {(() => {
                     let trackNumber = 1;
@@ -191,8 +212,10 @@ export function DetailModal({ active, setActive, setPreview, tours }: DetailModa
 
             {/* 関連作品情報 */}
             {((active.releases?.length ?? 0) > 0 || active.liveVideos || active.liveArrangements) && (
-              <section>
-                <div className="text-heading-4 text-black mb-3">関連作品情報</div>
+              <section className="mt-6">
+                <div className="mb-4">
+                  <h3 className="text-body font-semibold text-gray-800 border-b border-gray-200 pb-1">関連作品情報</h3>
+                </div>
                 
                 {/* このライブが収録されている映像・音源 */}
                 {active.liveVideos && (
