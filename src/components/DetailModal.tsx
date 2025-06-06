@@ -13,16 +13,17 @@ export function DetailModal({ active, setActive, setPreview, tours }: DetailModa
   const modalRef = useRef<HTMLElement>(null);
 
   const currentIndex = tours.findIndex(t => t.id === active.id);
-  const prevTour = currentIndex > 0 ? tours[currentIndex - 1] : null;
-  const nextTour = currentIndex < tours.length - 1 ? tours[currentIndex + 1] : null;
+  // ループナビゲーション: 最初の要素の前は最後の要素、最後の要素の次は最初の要素
+  const prevTour = currentIndex > 0 ? tours[currentIndex - 1] : tours[tours.length - 1];
+  const nextTour = currentIndex < tours.length - 1 ? tours[currentIndex + 1] : tours[0];
 
   // キーボードナビゲーション
   useEffect(() => {
     const handler = (e: KeyboardEvent) => {
-      if (e.key === 'ArrowLeft' && prevTour) {
+      if (e.key === 'ArrowLeft') {
         setActive(prevTour);
       }
-      if (e.key === 'ArrowRight' && nextTour) {
+      if (e.key === 'ArrowRight') {
         setActive(nextTour);
       }
     };
@@ -41,9 +42,9 @@ export function DetailModal({ active, setActive, setPreview, tours }: DetailModa
       const diff = startX - endX;
       
       if (Math.abs(diff) > 50) { // 50px以上のスワイプで反応
-        if (diff > 0 && nextTour) {
+        if (diff > 0) {
           setActive(nextTour); // 左スワイプで次へ
-        } else if (diff < 0 && prevTour) {
+        } else if (diff < 0) {
           setActive(prevTour); // 右スワイプで前へ
         }
       }
@@ -74,28 +75,24 @@ export function DetailModal({ active, setActive, setPreview, tours }: DetailModa
       >
         {/* 矢印ナビゲーション */}
         <div className="absolute top-1/2 left-0 -translate-y-1/2 z-10">
-          {prevTour && (
-            <Button 
-              variant="icon" 
-              size="md"
-              onClick={() => setActive(prevTour)}
-              aria-label="前の公演"
-            >
-              &#8592;
-            </Button>
-          )}
+          <Button 
+            variant="icon" 
+            size="md"
+            onClick={() => setActive(prevTour)}
+            aria-label="前の公演"
+          >
+            &#8592;
+          </Button>
         </div>
         <div className="absolute top-1/2 right-0 -translate-y-1/2 z-10">
-          {nextTour && (
-            <Button 
-              variant="icon" 
-              size="md"
-              onClick={() => setActive(nextTour)}
-              aria-label="次の公演"
-            >
-              &#8594;
-            </Button>
-          )}
+          <Button 
+            variant="icon" 
+            size="md"
+            onClick={() => setActive(nextTour)}
+            aria-label="次の公演"
+          >
+            &#8594;
+          </Button>
         </div>
 
         {/* × ボタン */}
