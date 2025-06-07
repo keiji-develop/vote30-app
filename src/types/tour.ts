@@ -1,3 +1,5 @@
+import type { TourMedia } from './media';
+
 export type Tour = {
   id: number;
   title: string;
@@ -29,4 +31,5 @@ export type Tour = {
     notes?: string;
     isNone?: boolean;
   }[];
+  noMediaInfo?: TourMedia['noMediaInfo'];
 }; 

@@ -294,6 +294,9 @@ export function DetailModal({ active, setActive, setPreview, tours }: DetailModa
                                   const otherLinks: any[] = [];
 
                                   (v as any).links.forEach((link: any) => {
+                                    // enabledがfalseの場合はスキップ
+                                    if (link.enabled === false) return;
+
                                     if (typeof link === 'object' && link.category) {
                                       if (!linksByCategory.has(link.category)) {
                                         linksByCategory.set(link.category, []);
@@ -315,7 +318,7 @@ export function DetailModal({ active, setActive, setPreview, tours }: DetailModa
                                       {sortedCategories.map((category) => {
                                         const categoryLinks = linksByCategory.get(category) || [];
                                         const categoryLabel = categoryConfig[category]?.label || category;
-                                        
+
                                         return (
                                           <div key={category}>
                                             <div className="text-xs sm:text-sm font-semibold text-gray-600 mb-1 sm:mb-2">

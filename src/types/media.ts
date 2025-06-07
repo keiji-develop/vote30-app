@@ -3,7 +3,8 @@ export type MediaItem = {
   title: string;
   type: string;
   notes: string | null;  // 補足情報（例：「テレビ放送のみ」）
-  links: string[];
+  isNone?: boolean;     // 非表示フラグ
+  links: MediaLink[];   // プラットフォーム別リンク
 };
 
 export type TourMedia = {
@@ -20,6 +21,17 @@ export type TourMedia = {
       comment: string | null;
     };
   };
+};
+
+// 商品データの型定義
+export type MediaLink = {
+  platform: string;      // プラットフォーム識別子
+  label: string;        // 表示ラベル
+  urls: {
+    direct: string;     // 直接リンク
+  };
+  category: string;     // 購入/視聴カテゴリー
+  enabled?: boolean;    // 個別の表示制御（任意）
 };
 
 export type TourExtraNotes = {
