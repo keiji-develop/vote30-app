@@ -257,23 +257,107 @@ export function DetailModal({ active, setActive, setPreview, tours }: DetailModa
                              )}
                            </div>
                           {!v.isNone && (
-                            <div className="flex flex-wrap gap-sm">
-                              {/* リンク表示を一時的に非表示 - データは保持 */}
-                              {/* 
+                            <div className="space-y-3">
                               {Array.isArray((v as any).links) && (v as any).links.length > 0 ? (
-                                (v as any).links.map((link: string, j: number) => (
-                                  <a key={j} href={link} target="_blank" rel="noopener noreferrer" 
-                                     className="px-3 py-1 bg-blue-600 text-white text-xs rounded hover:bg-blue-700 transition-colors">
-                                    視聴/購入{(v as any).links.length > 1 ? `(${j + 1})` : ''}
-                                  </a>
-                                ))
+                                (() => {
+                                  // プラットフォーム別の色設定（レスポンシブ対応・1行表示保証）
+                                  const getButtonStyle = (platform: string) => {
+                                    const baseStyle = "w-[120px] sm:w-[140px] md:w-[160px] px-2 py-1 sm:px-3 sm:py-1.5 md:px-4 md:py-2 text-xs sm:text-sm text-white font-bold rounded sm:rounded-md md:rounded-lg hover:shadow-lg transition-all duration-200 text-center whitespace-nowrap";
+                                    
+                                    switch(platform) {
+                                      case 'sony_music':
+                                        return `${baseStyle} bg-red-600 hover:bg-red-700`;
+                                      case 'amazon':
+                                        return `${baseStyle} bg-orange-500 hover:bg-orange-600`;
+                                      case 'apple_music':
+                                        return `${baseStyle} bg-gray-800 hover:bg-gray-900`;
+                                      case 'spotify':
+                                        return `${baseStyle} bg-green-500 hover:bg-green-600`;
+                                      case 'youtube':
+                                        return `${baseStyle} bg-red-500 hover:bg-red-600`;
+                                      case 'rakuten':
+                                        return `${baseStyle} bg-red-700 hover:bg-red-800`;
+                                      default:
+                                        return `${baseStyle} bg-blue-600 hover:bg-blue-700`;
+                                    }
+                                  };
+
+                                  // カテゴリ設定（拡張可能）
+                                  const categoryConfig: Record<string, { label: string; priority: number }> = {
+                                    purchase: { label: '購入', priority: 1 },
+                                    streaming: { label: '視聴・試聴', priority: 2 },
+                                    viewing: { label: '視聴', priority: 3 }
+                                  };
+
+                                  // データのcategoryに基づいて動的に分類
+                                  const linksByCategory = new Map<string, any[]>();
+                                  const otherLinks: any[] = [];
+
+                                  (v as any).links.forEach((link: any) => {
+                                    if (typeof link === 'object' && link.category) {
+                                      if (!linksByCategory.has(link.category)) {
+                                        linksByCategory.set(link.category, []);
+                                      }
+                                      linksByCategory.get(link.category)?.push(link);
+                                    } else {
+                                      // カテゴリなし・旧形式は「その他」
+                                      otherLinks.push(link);
+                                    }
+                                  });
+
+                                  // priorityでカテゴリを並び替え
+                                  const sortedCategories = Array.from(linksByCategory.keys())
+                                    .sort((a, b) => (categoryConfig[a]?.priority || 999) - (categoryConfig[b]?.priority || 999));
+
+                                  return (
+                                    <>
+                                      {/* 動的カテゴリ表示 */}
+                                      {sortedCategories.map((category) => {
+                                        const categoryLinks = linksByCategory.get(category) || [];
+                                        const categoryLabel = categoryConfig[category]?.label || category;
+                                        
+                                        return (
+                                          <div key={category}>
+                                            <div className="text-xs sm:text-sm font-semibold text-gray-600 mb-1 sm:mb-2">
+                                              {categoryLabel}
+                                            </div>
+                                            <div className="flex flex-wrap gap-1 sm:gap-2">
+                                              {categoryLinks.map((link: any, j: number) => (
+                                                <a key={`${category}-${j}`} href={link.urls.direct} target="_blank" rel="noopener noreferrer" 
+                                                   className={getButtonStyle(link.platform)}>
+                                                  {link.label || 'リンク'}
+                                                </a>
+                                              ))}
+                                            </div>
+                                          </div>
+                                        );
+                                      })}
+
+                                      {/* その他・旧形式 */}
+                                      {otherLinks.length > 0 && (
+                                        <div className="flex flex-wrap gap-2">
+                                          {otherLinks.map((link: any, j: number) => {
+                                            if (typeof link === 'string') {
+                                              return (
+                                                <a key={`other-${j}`} href={link} target="_blank" rel="noopener noreferrer" 
+                                                   className="px-3 py-1 bg-blue-600 text-white text-xs rounded hover:bg-blue-700 transition-colors">
+                                                  視聴/購入{otherLinks.length > 1 ? `(${j + 1})` : ''}
+                                                </a>
+                                              );
+                                            }
+                                            return null;
+                                          })}
+                                        </div>
+                                      )}
+                                    </>
+                                  );
+                                })()
                               ) : v.link ? (
                                 <a href={v.link} target="_blank" rel="noopener noreferrer" 
                                    className="px-3 py-1 bg-blue-600 text-white text-xs rounded hover:bg-blue-700 transition-colors">
                                   視聴/購入
                                 </a>
                               ) : null}
-                              */}
                             </div>
                           )}
                         </div>

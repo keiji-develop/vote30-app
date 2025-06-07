@@ -5,8 +5,66 @@
     "type": "DVD",
     "notes": null,
     "links": [
-      "https://www.sonymusic.co.jp/artist/TMRevolution/discography/ESBL-2123",
-      "https://www.amazon.co.jp/T-M-Revolution-DVD-Summary-summarize1/dp/B0000QX20E"
+      {
+        "platform": "sony_music",
+        "category": "purchase",
+        "label": "SonyMusicで購入",
+        "priority": 1,
+        "urls": {
+          "direct": "https://www.sonymusic.co.jp/artist/TMRevolution/discography/ESBL-2123",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "amazon",
+        "category": "purchase",
+        "label": "Amazonで購入",
+        "priority": 2,
+        "urls": {
+          "direct": "https://www.amazon.co.jp/T-M-Revolution-DVD-Summary-summarize1/dp/B0000QX20E",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "rakuten",
+        "category": "purchase",
+        "label": "楽天で購入",
+        "priority": 3,
+        "urls": {
+          "direct": "https://books.rakuten.co.jp/sample",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "apple_music",
+        "category": "streaming",
+        "label": "Apple Musicで聴く",
+        "priority": 4,
+        "urls": {
+          "direct": "https://music.apple.com/jp/album/sample",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "spotify",
+        "category": "streaming",
+        "label": "Spotifyで聴く",
+        "priority": 5,
+        "urls": {
+          "direct": "https://open.spotify.com/album/sample",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "youtube",
+        "category": "viewing",
+        "label": "YouTubeで視聴",
+        "priority": 6,
+        "urls": {
+          "direct": "https://www.youtube.com/watch?v=sample",
+          "affiliate": null
+        }
+      }
     ]
   },
   {
