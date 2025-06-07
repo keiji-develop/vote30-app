@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "liveVideoIds": [
+      "test_all_enabled",
+      "test_category_disabled"
+    ],
+    "liveArrangementIds": [
+      "test_link_disabled"
+    ],
+    "noMediaInfo": {
+      "liveVideo": {
+        "showNoneItem": false,
+        "comment": null
+      },
+      "liveArrangement": {
+        "showNoneItem": false,
+        "comment": null
+      }
+    }
+  },
+  {
+    "id": 2,
+    "liveVideoIds": [
+      "test_fc_limited"
+    ],
+    "liveArrangementIds": [],
+    "noMediaInfo": {
+      "liveVideo": {
+        "showNoneItem": false,
+        "comment": null
+      },
+      "liveArrangement": {
+        "showNoneItem": true,
+        "comment": "アレンジ音源なし"
+      }
+    }
+  },
+  {
+    "id": 3,
+    "liveVideoIds": [],
+    "liveArrangementIds": [
+      "test_empty_category"
+    ],
+    "noMediaInfo": {
+      "liveVideo": {
+        "showNoneItem": true,
+        "comment": "映像ソースなし"
+      },
+      "liveArrangement": {
+        "showNoneItem": false,
+        "comment": null
+      }
+    }
+  }
+] 

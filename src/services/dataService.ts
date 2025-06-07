@@ -54,9 +54,12 @@ export async function loadToursData(): Promise<Tour[]> {
           const displayTitle = v.notes ? `${v.title}（${v.notes}）` : v.title;
           
           return {
+            id: v.id,
             title: displayTitle,
             type: v.type as 'DVD' | 'Blu-ray' | 'YouTube' | '配信' | 'TV' | 'VHS',
             links: v.links || [],
+            categories: v.categories || {},  // カテゴリー制御情報を保持
+            notes: v.notes || null,
             isNone: false
           };
         });
@@ -66,10 +69,12 @@ export async function loadToursData(): Promise<Tour[]> {
         const displayTitle = comment ? `無し（${comment}）` : "無し";
         
         processedLiveVideos = [{
+          id: `none-${core.id}-video`,
           title: displayTitle,
           type: "none" as any,
           links: [],
-          notes: comment || undefined,
+          categories: {},
+          notes: comment || null,
           isNone: true
         }];
       } else {
@@ -86,9 +91,12 @@ export async function loadToursData(): Promise<Tour[]> {
           const displayTitle = a.notes ? `${a.title}（${a.notes}）` : a.title;
           
           return {
+            id: a.id,
             title: displayTitle,
             type: a.type as 'CD' | 'DVD' | 'TV' | '配信',
-            notes: displayTitle,
+            links: a.links || [],
+            categories: a.categories || {},  // カテゴリー制御情報を保持
+            notes: a.notes || null,
             isNone: false
           };
         });
@@ -98,9 +106,12 @@ export async function loadToursData(): Promise<Tour[]> {
         const displayTitle = comment ? `無し（${comment}）` : "無し";
         
         processedLiveArrangements = [{
+          id: `none-${core.id}-arrangement`,
           title: displayTitle,
           type: "none" as any,
-          notes: comment || undefined,
+          links: [],
+          categories: {},
+          notes: comment || null,
           isNone: true
         }];
       } else {

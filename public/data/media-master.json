@@ -4,12 +4,17 @@
     "title": "T.M.Revolution DVD Series The Summary -summarize 1-",
     "type": "DVD",
     "notes": null,
+    "categories": {
+      "purchase": { "enabled": true },
+      "streaming": { "enabled": true },
+      "marketplace": { "enabled": true }
+    },
     "links": [
       {
         "platform": "sony_music",
-        "category": "purchase",
         "label": "SonyMusicで購入",
         "priority": 1,
+        "category": "purchase",
         "urls": {
           "direct": "https://www.sonymusic.co.jp/artist/TMRevolution/discography/ESBL-2123",
           "affiliate": null
@@ -17,51 +22,141 @@
       },
       {
         "platform": "amazon",
-        "category": "purchase",
         "label": "Amazonで購入",
         "priority": 2,
-        "urls": {
-          "direct": "https://www.amazon.co.jp/T-M-Revolution-DVD-Summary-summarize1/dp/B0000QX20E",
-          "affiliate": null
-        }
-      },
-      {
-        "platform": "rakuten",
         "category": "purchase",
-        "label": "楽天で購入",
-        "priority": 3,
         "urls": {
-          "direct": "https://books.rakuten.co.jp/sample",
+          "direct": "https://www.amazon.co.jp/dp/B000068UH1",
           "affiliate": null
         }
       },
       {
-        "platform": "apple_music",
-        "category": "streaming",
-        "label": "Apple Musicで聴く",
-        "priority": 4,
+        "platform": "rakuten_books",
+        "label": "楽天ブックスで購入",
+        "priority": 3,
+        "category": "purchase",
         "urls": {
-          "direct": "https://music.apple.com/jp/album/sample",
+          "direct": "https://books.rakuten.co.jp/rb/1407570/",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "yahoo_shopping",
+        "label": "Yahoo!ショッピングで購入",
+        "priority": 4,
+        "category": "purchase",
+        "urls": {
+          "direct": "https://shopping.yahoo.co.jp/search?p=T.M.Revolution+DVD+Series+The+Summary+-summarize+1-",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "seven_net",
+        "label": "7netで購入",
+        "priority": 5,
+        "category": "purchase",
+        "urls": {
+          "direct": "https://7net.omni7.jp/search/?keyword=T.M.Revolution+DVD+Series+The+Summary+-summarize+1-",
           "affiliate": null
         }
       },
       {
         "platform": "spotify",
-        "category": "streaming",
         "label": "Spotifyで聴く",
-        "priority": 5,
+        "priority": 1,
+        "category": "streaming",
         "urls": {
-          "direct": "https://open.spotify.com/album/sample",
+          "direct": "https://open.spotify.com/album/example",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "rakuten_music",
+        "label": "RakutenMusicで聴く",
+        "priority": 2,
+        "category": "streaming",
+        "urls": {
+          "direct": "https://music.rakuten.co.jp/album/example",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "recochoku",
+        "label": "レコチョクで聴く",
+        "priority": 3,
+        "category": "streaming",
+        "urls": {
+          "direct": "https://recochoku.jp/album/example",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "apple_music",
+        "label": "Apple Musicで聴く",
+        "priority": 4,
+        "category": "streaming",
+        "urls": {
+          "direct": "https://music.apple.com/jp/album/example",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "amazon_music",
+        "label": "Amazon Musicで聴く",
+        "priority": 5,
+        "category": "streaming",
+        "urls": {
+          "direct": "https://music.amazon.co.jp/albums/example",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "line_music",
+        "label": "LINE MUSICで聴く",
+        "priority": 6,
+        "category": "streaming",
+        "urls": {
+          "direct": "https://music.line.me/album/example",
           "affiliate": null
         }
       },
       {
         "platform": "youtube",
-        "category": "viewing",
         "label": "YouTubeで視聴",
-        "priority": 6,
+        "priority": 7,
+        "category": "streaming",
         "urls": {
-          "direct": "https://www.youtube.com/watch?v=sample",
+          "direct": "https://www.youtube.com/watch?v=example",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "mercari",
+        "label": "メルカリで探す",
+        "priority": 1,
+        "category": "marketplace",
+        "urls": {
+          "direct": "https://jp.mercari.com/search?keyword=T.M.Revolution+DVD+Series+The+Summary+-summarize+1-",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "yahoo_auction",
+        "label": "ヤフオクで探す",
+        "priority": 2,
+        "category": "marketplace",
+        "urls": {
+          "direct": "https://auctions.yahoo.co.jp/search/search?p=T.M.Revolution+DVD+Series+The+Summary+-summarize+1-",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "rakuma",
+        "label": "ラクマで探す",
+        "priority": 3,
+        "category": "marketplace",
+        "urls": {
+          "direct": "https://fril.jp/search/T.M.Revolution+DVD+Series+The+Summary+-summarize+1-",
           "affiliate": null
         }
       }
@@ -72,6 +167,9 @@
     "title": "T.M.Revolution DVD Series The Summary -summarize 2-",
     "type": "DVD",
     "notes": null,
+    "categories": {
+      "purchase": { "enabled": true }
+    },
     "links": []
   },
   {
@@ -79,6 +177,9 @@
     "title": "T.M.Revolution DVD Series The Summary -summarize 3-",
     "type": "DVD",
     "notes": null,
+    "categories": {
+      "purchase": { "enabled": true }
+    },
     "links": []
   },
   {
@@ -93,6 +194,9 @@
     "title": "LIVE REVOLUTION COMPLETE EDITION-1 1996.3.22 新宿LIQUID ROOM",
     "type": "VHS",
     "notes": "FC限定VHS",
+    "categories": {
+      "purchase": { "enabled": false }
+    },
     "links": []
   },
   {

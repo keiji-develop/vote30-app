@@ -5,6 +5,11 @@ export type MediaItem = {
   notes: string | null;  // 補足情報（例：「テレビ放送のみ」）
   isNone?: boolean;     // 非表示フラグ
   links: MediaLink[];   // プラットフォーム別リンク
+  categories?: {        // カテゴリー単位の制御
+    [key: string]: {
+      enabled: boolean;
+    };
+  };
 };
 
 export type TourMedia = {
