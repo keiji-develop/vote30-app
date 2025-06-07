@@ -243,9 +243,9 @@ export function DetailModal({ active, setActive, setPreview, tours }: DetailModa
                                         switch(platform) {
                                           // 購入系
                                           case 'sony_music':
-                                            return `${baseStyle} bg-red-600 hover:bg-red-700`;
+                                            return `${baseStyle} bg-[#8C8C52] hover:bg-[#7A7A47]`;
                                           case 'amazon':
-                                            return `${baseStyle} bg-orange-500 hover:bg-orange-600`;
+                                            return `${baseStyle} bg-black hover:bg-gray-900 border-[#FF9900] border-2`;
                                           case 'rakuten_books':
                                             return `${baseStyle} bg-red-700 hover:bg-red-800`;
                                           case 'seven_net':
@@ -257,11 +257,11 @@ export function DetailModal({ active, setActive, setPreview, tours }: DetailModa
                                           case 'rakuten_music':
                                             return `${baseStyle} bg-red-600 hover:bg-red-700`;
                                           case 'recochoku':
-                                            return `${baseStyle} bg-blue-600 hover:bg-blue-700`;
+                                            return `${baseStyle} bg-pink-500 hover:bg-pink-600`;
                                           case 'apple_music':
                                             return `${baseStyle} bg-gray-800 hover:bg-gray-900`;
                                           case 'amazon_music':
-                                            return `${baseStyle} bg-teal-600 hover:bg-teal-700`;
+                                            return `${baseStyle} bg-[#22BDC6] hover:bg-[#1EA8B0]`;
                                           case 'line_music':
                                             return `${baseStyle} bg-green-600 hover:bg-green-700`;
                                           case 'youtube':
@@ -269,11 +269,11 @@ export function DetailModal({ active, setActive, setPreview, tours }: DetailModa
 
                                           // 中古マーケット系
                                           case 'mercari':
-                                            return `${baseStyle} bg-pink-500 hover:bg-pink-600`;
+                                            return `${baseStyle} bg-[#FF4F50] hover:bg-[#E64748]`;
                                           case 'yahoo_auction':
-                                            return `${baseStyle} bg-red-500 hover:bg-red-600`;
+                                            return `${baseStyle} bg-red-600 hover:bg-red-700`;
                                           case 'rakuma':
-                                            return `${baseStyle} bg-red-400 hover:bg-red-500`;
+                                            return `${baseStyle} bg-blue-600 hover:bg-blue-700`;
 
                                           default:
                                             return `${baseStyle} bg-blue-600 hover:bg-blue-700`;
@@ -381,9 +381,9 @@ export function DetailModal({ active, setActive, setPreview, tours }: DetailModa
                                           switch(platform) {
                                             // 購入系
                                             case 'sony_music':
-                                              return `${baseStyle} bg-red-600 hover:bg-red-700`;
+                                              return `${baseStyle} bg-[#8C8C52] hover:bg-[#7A7A47]`;
                                             case 'amazon':
-                                              return `${baseStyle} bg-orange-500 hover:bg-orange-600`;
+                                              return `${baseStyle} bg-black hover:bg-gray-900 border-[#FF9900] border-2`;
                                             case 'rakuten_books':
                                               return `${baseStyle} bg-red-700 hover:bg-red-800`;
                                             case 'seven_net':
@@ -395,11 +395,11 @@ export function DetailModal({ active, setActive, setPreview, tours }: DetailModa
                                             case 'rakuten_music':
                                               return `${baseStyle} bg-red-600 hover:bg-red-700`;
                                             case 'recochoku':
-                                              return `${baseStyle} bg-blue-600 hover:bg-blue-700`;
+                                              return `${baseStyle} bg-pink-500 hover:bg-pink-600`;
                                             case 'apple_music':
                                               return `${baseStyle} bg-gray-800 hover:bg-gray-900`;
                                             case 'amazon_music':
-                                              return `${baseStyle} bg-teal-600 hover:bg-teal-700`;
+                                              return `${baseStyle} bg-[#22BDC6] hover:bg-[#1EA8B0]`;
                                             case 'line_music':
                                               return `${baseStyle} bg-green-600 hover:bg-green-700`;
                                             case 'youtube':
@@ -407,12 +407,11 @@ export function DetailModal({ active, setActive, setPreview, tours }: DetailModa
 
                                             // 中古マーケット系
                                             case 'mercari':
-                                              return `${baseStyle} bg-pink-500 hover:bg-pink-600`;
+                                              return `${baseStyle} bg-[#FF4F50] hover:bg-[#E64748]`;
                                             case 'yahoo_auction':
-                                              return `${baseStyle} bg-red-500 hover:bg-red-600`;
+                                              return `${baseStyle} bg-red-600 hover:bg-red-700`;
                                             case 'rakuma':
-                                              return `${baseStyle} bg-red-400 hover:bg-red-500`;
-
+                                              return `${baseStyle} bg-blue-600 hover:bg-blue-700`;
                                             default:
                                               return `${baseStyle} bg-blue-600 hover:bg-blue-700`;
                                           }
