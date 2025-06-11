@@ -256,37 +256,35 @@ export function DetailModal({ active, setActive, setPreview, tours }: DetailModa
                                             return `${baseStyle} bg-black hover:bg-gray-900 border-[#FF9900] border-2`;
                                           case 'rakuten_books':
                                             return `${baseStyle} bg-red-700 hover:bg-red-800`;
-                                          case 'yahoo_shopping':
-                                            return `${baseStyle} bg-red-500 hover:bg-red-600`;
                                           case 'seven_net':
                                             return `${baseStyle} bg-green-700 hover:bg-green-800`;
-                                          
-                                          // ストリーミング系
+
+                                          // 視聴・試聴系
                                           case 'spotify':
-                                            return `${baseStyle} bg-green-600 hover:bg-green-700`;
+                                            return `${baseStyle} bg-green-500 hover:bg-green-600`;
                                           case 'rakuten_music':
-                                            return `${baseStyle} bg-red-700 hover:bg-red-800`;
+                                            return `${baseStyle} bg-red-600 hover:bg-red-700`;
                                           case 'recochoku':
-                                            return `${baseStyle} bg-blue-700 hover:bg-blue-800`;
+                                            return `${baseStyle} bg-pink-500 hover:bg-pink-600`;
                                           case 'apple_music':
-                                            return `${baseStyle} bg-black hover:bg-gray-900`;
+                                            return `${baseStyle} bg-gray-800 hover:bg-gray-900`;
                                           case 'amazon_music':
-                                            return `${baseStyle} bg-black hover:bg-gray-900 border-[#FF9900] border-2`;
+                                            return `${baseStyle} bg-[#22BDC6] hover:bg-[#1EA8B0]`;
                                           case 'line_music':
                                             return `${baseStyle} bg-green-600 hover:bg-green-700`;
                                           case 'youtube':
-                                            return `${baseStyle} bg-red-600 hover:bg-red-700`;
-                                          
-                                          // マーケットプレイス系
+                                            return `${baseStyle} bg-red-500 hover:bg-red-600`;
+
+                                          // 中古マーケット系
                                           case 'mercari':
-                                            return `${baseStyle} bg-red-500 hover:bg-red-600`;
+                                            return `${baseStyle} bg-[#FF4F50] hover:bg-[#E64748]`;
                                           case 'yahoo_auction':
-                                            return `${baseStyle} bg-red-500 hover:bg-red-600`;
+                                            return `${baseStyle} bg-red-600 hover:bg-red-700`;
                                           case 'rakuma':
-                                            return `${baseStyle} bg-red-700 hover:bg-red-800`;
-                                          
+                                            return `${baseStyle} bg-blue-600 hover:bg-blue-700`;
+
                                           default:
-                                            return baseStyle;
+                                            return `${baseStyle} bg-blue-600 hover:bg-blue-700`;
                                         }
                                       };
 
@@ -423,6 +421,7 @@ export function DetailModal({ active, setActive, setPreview, tours }: DetailModa
                                               return `${baseStyle} bg-red-600 hover:bg-red-700`;
                                             case 'rakuma':
                                               return `${baseStyle} bg-blue-600 hover:bg-blue-700`;
+
                                             default:
                                               return `${baseStyle} bg-blue-600 hover:bg-blue-700`;
                                           }
