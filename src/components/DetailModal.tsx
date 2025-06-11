@@ -3,6 +3,14 @@ import type { Tour } from '../types/tour';
 import type { MediaItem } from '../types/media';
 import { Button } from './Button';
 
+// 型定義を追加
+type CategoryConfig = {
+  [key: string]: {
+    label: string;
+    priority: number;
+  };
+};
+
 type DetailModalProps = {
   active: Tour;
   setActive: (t: Tour | null) => void;
@@ -248,97 +256,93 @@ export function DetailModal({ active, setActive, setPreview, tours }: DetailModa
                                             return `${baseStyle} bg-black hover:bg-gray-900 border-[#FF9900] border-2`;
                                           case 'rakuten_books':
                                             return `${baseStyle} bg-red-700 hover:bg-red-800`;
+                                          case 'yahoo_shopping':
+                                            return `${baseStyle} bg-red-500 hover:bg-red-600`;
                                           case 'seven_net':
                                             return `${baseStyle} bg-green-700 hover:bg-green-800`;
-
-                                          // 視聴・試聴系
+                                          
+                                          // ストリーミング系
                                           case 'spotify':
-                                            return `${baseStyle} bg-green-500 hover:bg-green-600`;
+                                            return `${baseStyle} bg-green-600 hover:bg-green-700`;
                                           case 'rakuten_music':
-                                            return `${baseStyle} bg-red-600 hover:bg-red-700`;
+                                            return `${baseStyle} bg-red-700 hover:bg-red-800`;
                                           case 'recochoku':
-                                            return `${baseStyle} bg-pink-500 hover:bg-pink-600`;
+                                            return `${baseStyle} bg-blue-700 hover:bg-blue-800`;
                                           case 'apple_music':
-                                            return `${baseStyle} bg-gray-800 hover:bg-gray-900`;
+                                            return `${baseStyle} bg-black hover:bg-gray-900`;
                                           case 'amazon_music':
-                                            return `${baseStyle} bg-[#22BDC6] hover:bg-[#1EA8B0]`;
+                                            return `${baseStyle} bg-black hover:bg-gray-900 border-[#FF9900] border-2`;
                                           case 'line_music':
                                             return `${baseStyle} bg-green-600 hover:bg-green-700`;
                                           case 'youtube':
-                                            return `${baseStyle} bg-red-500 hover:bg-red-600`;
-
-                                          // 中古マーケット系
-                                          case 'mercari':
-                                            return `${baseStyle} bg-[#FF4F50] hover:bg-[#E64748]`;
-                                          case 'yahoo_auction':
                                             return `${baseStyle} bg-red-600 hover:bg-red-700`;
+                                          
+                                          // マーケットプレイス系
+                                          case 'mercari':
+                                            return `${baseStyle} bg-red-500 hover:bg-red-600`;
+                                          case 'yahoo_auction':
+                                            return `${baseStyle} bg-red-500 hover:bg-red-600`;
                                           case 'rakuma':
-                                            return `${baseStyle} bg-blue-600 hover:bg-blue-700`;
-
+                                            return `${baseStyle} bg-red-700 hover:bg-red-800`;
+                                          
                                           default:
-                                            return `${baseStyle} bg-blue-600 hover:bg-blue-700`;
+                                            return baseStyle;
                                         }
                                       };
 
-                                      const categoryConfig: Record<string, { label: string; priority: number }> = {
+                                      const categoryConfig: CategoryConfig = {
                                         purchase: { label: '購入', priority: 1 },
                                         streaming: { label: '視聴・試聴', priority: 2 },
                                         marketplace: { label: '中古を探す', priority: 3 }
                                       };
 
+                                      // カテゴリーごとにリンクをグループ化
                                       const linksByCategory = new Map<string, any[]>();
-                                      const otherLinks: any[] = [];
+                                      (v as any).links.forEach((link: any) => {
+                                        // enabledフラグがfalseの場合はスキップ
+                                        if (!link.enabled) return;
 
-                                      (v as MediaItem).links.forEach((link: any) => {
-                                        if (link.enabled === false) return;
-
-                                        if (typeof link === 'object' && link.category) {
-                                          const category = (v as MediaItem).categories?.[link.category];
-                                          if (category && category.enabled === false) return;
-
-                                          if (!linksByCategory.has(link.category)) {
-                                            linksByCategory.set(link.category, []);
-                                          }
-                                          linksByCategory.get(link.category)?.push(link);
-                                        } else if (typeof link === 'object') {
-                                          otherLinks.push(link);
-                                        } else if (typeof link === 'string') {
-                                          otherLinks.push(link);
+                                        if (!linksByCategory.has(link.category)) {
+                                          linksByCategory.set(link.category, []);
                                         }
+                                        linksByCategory.get(link.category)?.push(link);
                                       });
 
+                                      // カテゴリーの優先順位でソート
+                                      const sortedCategories = Array.from(linksByCategory.entries())
+                                        .sort(([catA, _], [catB, __]) => 
+                                          (categoryConfig[catA]?.priority ?? 999) - (categoryConfig[catB]?.priority ?? 999)
+                                        );
+
                                       return (
-                                        <div>
-                                          {Array.from(linksByCategory.entries()).map(([category, links]) => (
+                                        <div className="space-y-4">
+                                          {sortedCategories.map(([category, links]) => (
                                             <div key={category}>
                                               <div className="text-xs sm:text-sm font-semibold text-gray-600 mb-1 sm:mb-2">
                                                 {categoryConfig[category]?.label || category}
                                               </div>
-                                              <div className="flex flex-wrap gap-1 sm:gap-2">
-                                                {links.map((link: any, j: number) => (
-                                                  <a key={`${category}-${j}`} href={link.urls.direct} target="_blank" rel="noopener noreferrer" 
-                                                     className={getButtonStyle(link.platform)}>
-                                                    {link.label || 'リンク'}
+                                              <div className="flex flex-wrap gap-2">
+                                                {links.map((link: any, i: number) => (
+                                                  <a
+                                                    key={i}
+                                                    href={link.urls.direct}
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                    className={getButtonStyle(link.platform)}>
+                                                    {link.label}
                                                   </a>
                                                 ))}
                                               </div>
                                             </div>
                                           ))}
-
-                                          {otherLinks.length > 0 && (
-                                            <div className="flex flex-wrap gap-2">
-                                              {otherLinks.map((link: any, j: number) => (
-                                                <a key={`other-${j}`} href={link} target="_blank" rel="noopener noreferrer" 
-                                                   className="px-3 py-1 bg-blue-600 text-white text-xs rounded hover:bg-blue-700 transition-colors">
-                                                  視聴/購入{otherLinks.length > 1 ? `(${j + 1})` : ''}
-                                                </a>
-                                              ))}
-                                            </div>
-                                          )}
                                         </div>
                                       );
                                     })()
-                                  ) : null}
+                                  ) : (
+                                    <div className="text-caption text-gray-500">
+                                      ※ 購入・視聴リンクは準備中です
+                                    </div>
+                                  )}
                                 </div>
                               )}
                             </div>
@@ -417,7 +421,7 @@ export function DetailModal({ active, setActive, setPreview, tours }: DetailModa
                                           }
                                         };
 
-                                        const categoryConfig: Record<string, { label: string; priority: number }> = {
+                                        const categoryConfig: CategoryConfig = {
                                           purchase: { label: '購入', priority: 1 },
                                           streaming: { label: '視聴・試聴', priority: 2 },
                                           marketplace: { label: '中古を探す', priority: 3 }
