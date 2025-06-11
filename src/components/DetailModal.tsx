@@ -1,6 +1,15 @@
 import { useEffect, useRef } from 'react';
 import type { Tour } from '../types/tour';
+import type { MediaItem } from '../types/media';
 import { Button } from './Button';
+
+// 型定義を追加
+type CategoryConfig = {
+  [key: string]: {
+    label: string;
+    priority: number;
+  };
+};
 
 type DetailModalProps = {
   active: Tour;
@@ -112,7 +121,7 @@ export function DetailModal({ active, setActive, setPreview, tours }: DetailModa
           </Button>
         </div>
 
-        {/* モーダル本体 - 元の幅に戻す */}
+        {/* モーダル本体 */}
         <article
           ref={modalRef}
           tabIndex={-1}
@@ -120,215 +129,394 @@ export function DetailModal({ active, setActive, setPreview, tours }: DetailModa
           style={{ borderColor: 'var(--primary)' }}
           onClick={e => e.stopPropagation()}
         >
+          {/* × ボタン */}
+          <Button
+            variant="close"
+            size="md"
+            onClick={e => {
+              e.stopPropagation();
+              setActive(null);
+            }}
+            className="absolute top-2 right-2"
+            aria-label="閉じる"
+          >
+            ×
+          </Button>
 
-        {/* × ボタン */}
-        <Button
-          variant="close"
-          size="md"
-          onClick={e => {
-            e.stopPropagation();
-            setActive(null);
-          }}
-          className="absolute top-2 right-2"
-          aria-label="閉じる"
-        >
-          ×
-        </Button>
-
-        {/* ヘッダー部分 - 公式一覧と同じレイアウト */}
-        <div className="flex-shrink-0">
-          <header className="flex items-center text-body font-semibold tracking-wider bg-gray-100 px-4 py-3 border-b">
-            <span>候補番号・候補公演名・公演概要</span>
-          </header>
-          
-          {/* 公式一覧と同じ構成：左に番号、右に公演名 */}
-          <div className="p-4 sm:p-5 md:p-6">
-            <div className="flex items-center gap-4 mb-4">
-              {/* 候補番号（公式と同じく左側に大きく） */}
-              <div className="flex-shrink-0 w-16 text-center">
-                <span className="text-display-lg sm:text-display-xl font-bold text-numeric text-black">
-                  {active.id}
-                </span>
+          {/* ヘッダー部分 */}
+          <div className="flex-shrink-0">
+            <header className="flex items-center text-body font-semibold tracking-wider bg-gray-100 px-4 py-3 border-b">
+              <span>候補番号・候補公演名・公演概要</span>
+            </header>
+            
+            <div className="p-4 sm:p-5 md:p-6">
+              <div className="flex items-center gap-4 mb-4">
+                <div className="flex-shrink-0 w-16 text-center">
+                  <span className="text-display-lg sm:text-display-xl font-bold text-numeric text-black">
+                    {active.id}
+                  </span>
+                </div>
+                
+                <div className="flex-1">
+                  <div className="text-heading-3 sm:text-heading-2 font-semibold leading-tight">
+                    {active.title}
+                  </div>
+                  {active.subtitle && (
+                    <div className="tracking-wider text-body sm:text-body-large text-gray-700 mt-1">
+                      {active.subtitle}
+                    </div>
+                  )}
+                </div>
               </div>
               
-              {/* 候補公演名（公式と同じく右側に） */}
-              <div className="flex-1">
-                <div className="text-heading-3 sm:text-heading-2 font-semibold leading-tight">
-                  {active.title}
-                </div>
-                {active.subtitle && (
-                  <div className="tracking-wider text-body sm:text-body-large text-gray-700 mt-1">
-                    {active.subtitle}
-                  </div>
-                )}
+              <div className="text-body-small text-gray-700 whitespace-pre-wrap leading-relaxed">
+                {active.description}
               </div>
             </div>
-            
-            {/* 説明文（公式と同じく下部に） */}
-            <div className="text-body-small text-gray-700 whitespace-pre-wrap leading-relaxed">
-              {active.description}
-            </div>
+            <hr className="border-b-2" style={{ borderColor: 'var(--primary)' }} />
           </div>
-          <hr className="border-b-2" style={{ borderColor: 'var(--primary)' }} />
-        </div>
 
-        {/* スクロール可能なコンテンツ部分 */}
-        <div className="flex-1 overflow-y-auto">
-          {/* 管理人追記エリアのヘッダー */}
-          <header className="flex items-center text-body font-semibold tracking-wider bg-gray-100 px-4 py-3 border-b">
-            <span>管理人追記</span>
-          </header>
-          
-          <div className="p-4 sm:p-5 md:p-6 py-4 space-y-4">
+          {/* スクロール可能なコンテンツ部分 */}
+          <div className="flex-1 overflow-y-auto">
+            <header className="flex items-center text-body font-semibold tracking-wider bg-gray-100 px-4 py-3 border-b">
+              <span>管理人追記</span>
+            </header>
             
-            {/* 公演メモとセットリストを1列に */}
-            <div className="flex flex-col gap-6 w-full">
-              {/* 公演メモ */}
-              {/* 
-              {active.extraNotes && (
-                <section className="w-full break-words">
-                  <div className="font-bold text-sm text-black mb-1">公演メモ</div>
-                  <div className="text-sm leading-relaxed text-gray-800">{active.extraNotes}</div>
-                </section>
-              )}
-              */}
-              {/* セットリスト */}
-              {active.setlist && (
-                <section className="w-full break-words overflow-x-auto">
-                  <div className="mb-3">
-                    <h3 className="text-body font-semibold text-gray-800 border-b border-gray-200 pb-1">セットリスト</h3>
-                  </div>
-                  {/* セットリストを区切り文字で分割して表示 */}
-                  {(() => {
-                    let trackNumber = 1;
-                    return (
-                      <div>
-                        {active.setlist.map((item, index) => {
-                          // 区切り文字（---で囲まれた文字列）かどうかを判定
-                          const isDivider = item.startsWith('---') && item.endsWith('---');
-                          
-                          if (isDivider) {
-                            // 区切り文字の場合は番号なしで表示
-                            const dividerText = item.replace(/^---/, '').replace(/---$/, '');
-                            return (
-                              <div key={index} className="font-bold mt-3 mb-2 first:mt-0">
-                                {dividerText}
-                              </div>
-                            );
-                          } else {
-                            // 楽曲の場合は番号付きで表示
-                            const currentNumber = trackNumber++;
-                            return (
-                              <div key={index} className="text-body-small leading-relaxed ml-4 mb-1">
-                                <span className="inline-block w-6 text-right mr-2 text-numeric">{currentNumber}.</span>
-                                <span>{item}</span>
-                              </div>
-                            );
-                          }
-                        })}
-                      </div>
-                    );
-                  })()}
-                </section>
-              )}
-            </div>
-
-            {/* 関連作品情報 */}
-            {((active.releases?.length ?? 0) > 0 || active.liveVideos || active.liveArrangements) && (
-              <section className="mt-6">
-                <div className="mb-4">
-                  <h3 className="text-body font-semibold text-gray-800 border-b border-gray-200 pb-1">関連作品情報</h3>
-                </div>
-                
-                {/* このライブが収録されている映像・音源 */}
-                {active.liveVideos && (
-                  <div className="mb-4">
-                    <div className="text-body-small font-semibold mb-2">・このライブが収録されている映像・音源</div>
-                    <div className="space-y-3">
-                      {/* 配列形式のみ対応（文字列形式は廃止） */}
-                      {Array.isArray(active.liveVideos) && active.liveVideos.map((v, i) => (
-                                                 <div key={i} className={`rounded p-4 border-l-4 ${v.isNone ? 'bg-gray-100' : 'bg-gray-50'}`} style={{ borderLeftColor: v.isNone ? 'var(--neutral-300)' : 'var(--info)' }}>
-                           <div className="mb-2">
-                             <div className={`font-semibold text-body-small ${v.isNone ? 'text-gray-500 italic' : ''}`}>
-                               {v.title}
-                             </div>
-                             {!v.isNone && (
-                               <div className="text-caption text-gray-500">({v.type})</div>
-                             )}
-                           </div>
-                          {!v.isNone && (
-                            <div className="flex flex-wrap gap-sm">
-                              {/* リンク表示を一時的に非表示 - データは保持 */}
-                              {/* 
-                              {Array.isArray((v as any).links) && (v as any).links.length > 0 ? (
-                                (v as any).links.map((link: string, j: number) => (
-                                  <a key={j} href={link} target="_blank" rel="noopener noreferrer" 
-                                     className="px-3 py-1 bg-blue-600 text-white text-xs rounded hover:bg-blue-700 transition-colors">
-                                    視聴/購入{(v as any).links.length > 1 ? `(${j + 1})` : ''}
-                                  </a>
-                                ))
-                              ) : v.link ? (
-                                <a href={v.link} target="_blank" rel="noopener noreferrer" 
-                                   className="px-3 py-1 bg-blue-600 text-white text-xs rounded hover:bg-blue-700 transition-colors">
-                                  視聴/購入
-                                </a>
-                              ) : null}
-                              */}
+            <div className="p-4 sm:p-5 md:p-6 py-4 space-y-4">
+              <div className="flex flex-col gap-6 w-full">
+                {active.setlist && (
+                  <section className="w-full break-words overflow-x-auto">
+                    <div className="mb-3">
+                      <h3 className="text-body font-semibold text-gray-800 border-b border-gray-200 pb-1">セットリスト</h3>
+                    </div>
+                    <div>
+                      {active.setlist.map((item, index) => {
+                        const isDivider = item.startsWith('---') && item.endsWith('---');
+                        
+                        if (isDivider) {
+                          const dividerText = item.replace(/^---/, '').replace(/---$/, '');
+                          return (
+                            <div key={index} className="font-bold mt-3 mb-2 first:mt-0">
+                              {dividerText}
                             </div>
-                          )}
-                        </div>
-                      ))}
+                          );
+                        } else {
+                          const currentNumber = index + 1;
+                          return (
+                            <div key={index} className="text-body-small leading-relaxed ml-4 mb-1">
+                              <span className="inline-block w-6 text-right mr-2 text-numeric">{currentNumber}.</span>
+                              <span>{item}</span>
+                            </div>
+                          );
+                        }
+                      })}
                     </div>
-                  </div>
-                )}
-                
-                {/* 同じライブアレンジの映像・音源 */}
-                {active.liveArrangements && (
-                  <div className="mb-4">
-                    <div className="text-body-small font-semibold mb-2">・同じライブアレンジの映像・音源</div>
-                    <div className="space-y-2">
-                      {/* 配列形式のみ対応（文字列形式は廃止） */}
-                      {Array.isArray(active.liveArrangements) && active.liveArrangements.map((a, i) => (
-                        <div key={i} className={`rounded p-4 border-l-4 ${a.isNone ? 'bg-gray-100' : 'bg-gray-50'}`} style={{ borderLeftColor: a.isNone ? 'var(--neutral-300)' : 'var(--success)' }}>
-                                                     <div className="mb-2">
-                             <div className={`font-semibold text-body-small ${a.isNone ? 'text-gray-500 italic' : ''}`}>
-                               {a.title}
-                             </div>
-                             {!a.isNone && (
-                               <div className="text-caption text-gray-500">({a.type})</div>
-                             )}
-                           </div>
-                           {a.notes && a.notes !== a.title && !a.isNone && (
-                             <div className="text-caption text-gray-500 mt-1">{a.notes}</div>
-                           )}
-                        </div>
-                      ))}
-                    </div>
-                  </div>
+                  </section>
                 )}
 
-                {/* どちらも無い場合の表示 */}
-                {!active.liveVideos && !active.liveArrangements && (
-                  <div className="text-body-small text-gray-600">関連映像・音源情報なし</div>
+                {/* 関連作品情報 */}
+                {((active.releases?.length ?? 0) > 0 || active.liveVideos || active.liveArrangements) && (
+                  <section className="mt-6">
+                    <div className="mb-4">
+                      <h3 className="text-body font-semibold text-gray-800 border-b border-gray-200 pb-1">関連作品情報</h3>
+                    </div>
+                    
+                    {/* このライブが収録されている映像・音源 */}
+                    {active.liveVideos && (
+                      <div className="mb-4">
+                        <div className="text-body-small font-semibold mb-2">・このライブが収録されている映像・音源</div>
+                        <div className="space-y-3">
+                          {Array.isArray(active.liveVideos) && active.liveVideos.map((v, i) => (
+                            <div key={i} className={`rounded p-4 border-l-4 ${v.isNone ? 'bg-gray-100' : 'bg-gray-50'}`} style={{ borderLeftColor: v.isNone ? 'var(--neutral-300)' : 'var(--info)' }}>
+                              <div className="mb-2">
+                                <div className={`font-semibold text-body-small ${v.isNone ? 'text-gray-500 italic' : ''}`}>
+                                  {v.title}
+                                </div>
+                                {!v.isNone && (
+                                  <div className="text-caption text-gray-500">({v.type})</div>
+                                )}
+                              </div>
+                              {!v.isNone && (
+                                <div className="space-y-3">
+                                  {Array.isArray((v as any).links) && (v as any).links.length > 0 ? (
+                                    (() => {
+                                      const getButtonStyle = (platform: string) => {
+                                        const baseStyle = "w-[120px] sm:w-[140px] md:w-[160px] px-1 sm:px-2 md:px-3 py-1 sm:py-1.5 md:py-2 text-[11px] sm:text-xs md:text-sm text-white font-bold rounded sm:rounded-md md:rounded-lg hover:shadow-lg transition-all duration-200 text-center whitespace-nowrap";
+                                        
+                                        // Yahoo!ショッピング用の特別なスタイル
+                                        if (platform === 'yahoo_shopping') {
+                                          return `${baseStyle} text-[9px] sm:text-[11px] md:text-xs px-0 sm:px-1 md:px-2 bg-red-500 hover:bg-red-600`;
+                                        }
+
+                                        switch(platform) {
+                                          // 購入系
+                                          case 'sony_music':
+                                            return `${baseStyle} bg-[#8C8C52] hover:bg-[#7A7A47]`;
+                                          case 'amazon':
+                                            return `${baseStyle} bg-black hover:bg-gray-900 border-[#FF9900] border-2`;
+                                          case 'rakuten_books':
+                                            return `${baseStyle} bg-red-700 hover:bg-red-800`;
+                                          case 'seven_net':
+                                            return `${baseStyle} bg-green-700 hover:bg-green-800`;
+
+                                          // 視聴・試聴系
+                                          case 'spotify':
+                                            return `${baseStyle} bg-green-500 hover:bg-green-600`;
+                                          case 'rakuten_music':
+                                            return `${baseStyle} bg-red-600 hover:bg-red-700`;
+                                          case 'recochoku':
+                                            return `${baseStyle} bg-pink-500 hover:bg-pink-600`;
+                                          case 'apple_music':
+                                            return `${baseStyle} bg-gray-800 hover:bg-gray-900`;
+                                          case 'amazon_music':
+                                            return `${baseStyle} bg-[#22BDC6] hover:bg-[#1EA8B0]`;
+                                          case 'line_music':
+                                            return `${baseStyle} bg-green-600 hover:bg-green-700`;
+                                          case 'youtube':
+                                            return `${baseStyle} bg-red-500 hover:bg-red-600`;
+
+                                          // 中古マーケット系
+                                          case 'mercari':
+                                            return `${baseStyle} bg-[#FF4F50] hover:bg-[#E64748]`;
+                                          case 'yahoo_auction':
+                                            return `${baseStyle} bg-red-600 hover:bg-red-700`;
+                                          case 'rakuma':
+                                            return `${baseStyle} bg-blue-600 hover:bg-blue-700`;
+
+                                          default:
+                                            return `${baseStyle} bg-blue-600 hover:bg-blue-700`;
+                                        }
+                                      };
+
+                                      const categoryConfig: CategoryConfig = {
+                                        purchase: { label: '購入', priority: 1 },
+                                        streaming: { label: '視聴・試聴', priority: 2 },
+                                        marketplace: { label: '中古を探す', priority: 3 }
+                                      };
+
+                                      // カテゴリーごとにリンクをグループ化
+                                      const linksByCategory = new Map<string, any[]>();
+                                      (v as any).links.forEach((link: any) => {
+                                        // enabledフラグがfalseの場合はスキップ
+                                        if (!link.enabled) return;
+
+                                        // カテゴリーが無効の場合はスキップ
+                                        const category = (v as any).categories?.[link.category];
+                                        if (!category?.enabled) return;
+
+                                        if (!linksByCategory.has(link.category)) {
+                                          linksByCategory.set(link.category, []);
+                                        }
+                                        linksByCategory.get(link.category)?.push(link);
+                                      });
+
+                                      // カテゴリーの優先順位でソート
+                                      const sortedCategories = Array.from(linksByCategory.entries())
+                                        .sort(([catA, _], [catB, __]) => 
+                                          (categoryConfig[catA]?.priority ?? 999) - (categoryConfig[catB]?.priority ?? 999)
+                                        );
+
+                                      return (
+                                        <div className="space-y-4">
+                                          {sortedCategories.map(([category, links]) => (
+                                            // カテゴリーが有効な場合のみ表示
+                                            (v as any).categories[category]?.enabled && (
+                                              <div key={category}>
+                                                <div className="text-xs sm:text-sm font-semibold text-gray-600 mb-1 sm:mb-2">
+                                                  {categoryConfig[category]?.label || category}
+                                                </div>
+                                                <div className="flex flex-wrap gap-2">
+                                                  {links.map((link: any, i: number) => (
+                                                    <a
+                                                      key={i}
+                                                      href={link.urls.direct}
+                                                      target="_blank"
+                                                      rel="noopener noreferrer"
+                                                      className={getButtonStyle(link.platform)}>
+                                                      {link.label}
+                                                    </a>
+                                                  ))}
+                                                </div>
+                                              </div>
+                                            )
+                                          ))}
+                                        </div>
+                                      );
+                                    })()
+                                  ) : (
+                                    <div className="text-caption text-gray-500">
+                                      ※ 購入・視聴リンクは準備中です
+                                    </div>
+                                  )}
+                                </div>
+                              )}
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                    )}
+                    
+                    {/* 同じライブアレンジの映像・音源 */}
+                    {active.liveArrangements && (
+                      <div className="mb-4">
+                        <div className="text-body-small font-semibold mb-2">・同じライブアレンジの映像・音源</div>
+                        <div className="space-y-2">
+                          {Array.isArray(active.liveArrangements) && active.liveArrangements.map((a, i) => (
+                            <div key={i} className={`rounded p-4 border-l-4 ${a.isNone ? 'bg-gray-100' : 'bg-gray-50'}`} style={{ borderLeftColor: a.isNone ? 'var(--neutral-300)' : 'var(--success)' }}>
+                              <div className="mb-2">
+                                <div className={`font-semibold text-body-small ${a.isNone ? 'text-gray-500 italic' : ''}`}>
+                                  {a.title}
+                                </div>
+                                {!a.isNone && (
+                                  <div className="text-caption text-gray-500">({a.type})</div>
+                                )}
+                              </div>
+                              {!a.isNone && (
+                                <>
+                                  {a.notes && a.notes !== a.title && (
+                                    <div className="text-caption text-gray-500 mt-1 mb-2">{a.notes}</div>
+                                  )}
+                                  <div className="space-y-3">
+                                    {Array.isArray((a as any).links) && (a as any).links.length > 0 ? (
+                                      (() => {
+                                        const getButtonStyle = (platform: string) => {
+                                          const baseStyle = "w-[120px] sm:w-[140px] md:w-[160px] px-1 sm:px-2 md:px-3 py-1 sm:py-1.5 md:py-2 text-[11px] sm:text-xs md:text-sm text-white font-bold rounded sm:rounded-md md:rounded-lg hover:shadow-lg transition-all duration-200 text-center whitespace-nowrap";
+                                          
+                                          // Yahoo!ショッピング用の特別なスタイル
+                                          if (platform === 'yahoo_shopping') {
+                                            return `${baseStyle} text-[9px] sm:text-[11px] md:text-xs px-0 sm:px-1 md:px-2 bg-red-500 hover:bg-red-600`;
+                                          }
+
+                                          switch(platform) {
+                                            // 購入系
+                                            case 'sony_music':
+                                              return `${baseStyle} bg-[#8C8C52] hover:bg-[#7A7A47]`;
+                                            case 'amazon':
+                                              return `${baseStyle} bg-black hover:bg-gray-900 border-[#FF9900] border-2`;
+                                            case 'rakuten_books':
+                                              return `${baseStyle} bg-red-700 hover:bg-red-800`;
+                                            case 'seven_net':
+                                              return `${baseStyle} bg-green-700 hover:bg-green-800`;
+
+                                            // 視聴・試聴系
+                                            case 'spotify':
+                                              return `${baseStyle} bg-green-500 hover:bg-green-600`;
+                                            case 'rakuten_music':
+                                              return `${baseStyle} bg-red-600 hover:bg-red-700`;
+                                            case 'recochoku':
+                                              return `${baseStyle} bg-pink-500 hover:bg-pink-600`;
+                                            case 'apple_music':
+                                              return `${baseStyle} bg-gray-800 hover:bg-gray-900`;
+                                            case 'amazon_music':
+                                              return `${baseStyle} bg-[#22BDC6] hover:bg-[#1EA8B0]`;
+                                            case 'line_music':
+                                              return `${baseStyle} bg-green-600 hover:bg-green-700`;
+                                            case 'youtube':
+                                              return `${baseStyle} bg-red-500 hover:bg-red-600`;
+
+                                            // 中古マーケット系
+                                            case 'mercari':
+                                              return `${baseStyle} bg-[#FF4F50] hover:bg-[#E64748]`;
+                                            case 'yahoo_auction':
+                                              return `${baseStyle} bg-red-600 hover:bg-red-700`;
+                                            case 'rakuma':
+                                              return `${baseStyle} bg-blue-600 hover:bg-blue-700`;
+
+                                            default:
+                                              return `${baseStyle} bg-blue-600 hover:bg-blue-700`;
+                                          }
+                                        };
+
+                                        const categoryConfig: CategoryConfig = {
+                                          purchase: { label: '購入', priority: 1 },
+                                          streaming: { label: '視聴・試聴', priority: 2 },
+                                          marketplace: { label: '中古を探す', priority: 3 }
+                                        };
+
+                                        const linksByCategory = new Map<string, any[]>();
+                                        const otherLinks: any[] = [];
+
+                                        (a as MediaItem).links.forEach((link: any) => {
+                                          if (link.enabled === false) return;
+
+                                          if (typeof link === 'object' && link.category) {
+                                            const category = (a as MediaItem).categories?.[link.category];
+                                            if (category && category.enabled === false) return;
+
+                                            if (!linksByCategory.has(link.category)) {
+                                              linksByCategory.set(link.category, []);
+                                            }
+                                            linksByCategory.get(link.category)?.push(link);
+                                          } else if (typeof link === 'object') {
+                                            otherLinks.push(link);
+                                          } else if (typeof link === 'string') {
+                                            otherLinks.push(link);
+                                          }
+                                        });
+
+                                        return (
+                                          <div>
+                                            {Array.from(linksByCategory.entries()).map(([category, links]) => (
+                                              <div key={category}>
+                                                <div className="text-xs sm:text-sm font-semibold text-gray-600 mb-1 sm:mb-2">
+                                                  {categoryConfig[category]?.label || category}
+                                                </div>
+                                                <div className="flex flex-wrap gap-1 sm:gap-2">
+                                                  {links.map((link: any, j: number) => (
+                                                    <a key={`${category}-${j}`} href={link.urls.direct} target="_blank" rel="noopener noreferrer" 
+                                                       className={getButtonStyle(link.platform)}>
+                                                      {link.label || 'リンク'}
+                                                    </a>
+                                                  ))}
+                                                </div>
+                                              </div>
+                                            ))}
+
+                                            {otherLinks.length > 0 && (
+                                              <div className="flex flex-wrap gap-2">
+                                                {otherLinks.map((link: any, j: number) => (
+                                                  <a key={`other-${j}`} href={link} target="_blank" rel="noopener noreferrer" 
+                                                     className="px-3 py-1 bg-blue-600 text-white text-xs rounded hover:bg-blue-700 transition-colors">
+                                                    視聴/購入{otherLinks.length > 1 ? `(${j + 1})` : ''}
+                                                  </a>
+                                                ))}
+                                              </div>
+                                            )}
+                                          </div>
+                                        );
+                                      })()
+                                    ) : null}
+                                  </div>
+                                </>
+                              )}
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                    )}
+
+                    {/* どちらも無い場合の表示 */}
+                    {!active.liveVideos && !active.liveArrangements && (
+                      <div className="text-body-small text-gray-600">関連映像・音源情報なし</div>
+                    )}
+                  </section>
                 )}
-              </section>
-            )}
+              </div>
+
+              {/* フッター部分 */}
+              <footer className="flex-shrink-0 border-t-2 flex justify-end items-center p-3 space-x-2" style={{ borderTopColor: 'var(--primary)' }}>
+                <Button
+                  variant="secondary"
+                  size="sm"
+                  onClick={() => setPreview(active)}
+                >
+                  投票記入見本を開く
+                </Button>
+              </footer>
+            </div>
           </div>
-        </div>
-
-        {/* フッター部分 */}
-        <footer className="flex-shrink-0 border-t-2 flex justify-end items-center p-3 space-x-2" style={{ borderTopColor: 'var(--primary)' }}>
-          <Button
-            variant="secondary"
-            size="sm"
-            onClick={() => setPreview(active)}
-          >
-            投票記入見本を開く
-          </Button>
-        </footer>
         </article>
-
       </div>
     </div>
   );
-} 
+}

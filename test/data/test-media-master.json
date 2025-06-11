@@ -1,0 +1,184 @@
+[
+  {
+    "id": "test_all_enabled",
+    "title": "すべてのカテゴリーとリンクが有効なケース",
+    "type": "DVD",
+    "notes": "テストケース1：標準的なケース",
+    "categories": {
+      "purchase": { "enabled": false },
+      "streaming": { "enabled": true },
+      "marketplace": { "enabled": true }
+    },
+    "links": [
+      {
+        "platform": "sony_music",
+        "category": "purchase",
+        "label": "SonyMusicで購入",
+        "priority": 1,
+        "enabled": true,
+        "urls": {
+          "direct": "https://example.com/purchase/sony",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "amazon",
+        "category": "purchase",
+        "label": "Amazonで購入",
+        "priority": 2,
+        "enabled": true,
+        "urls": {
+          "direct": "https://example.com/purchase/amazon",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "apple_music",
+        "category": "streaming",
+        "label": "Apple Musicで視聴",
+        "priority": 3,
+        "enabled": false,
+        "urls": {
+          "direct": "https://example.com/streaming/apple",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "youtube",
+        "category": "marketplace",
+        "label": "YouTubeで視聴",
+        "priority": 4,
+        "enabled": true,
+        "urls": {
+          "direct": "https://example.com/viewing/youtube",
+          "affiliate": null
+        }
+      }
+    ]
+  },
+  {
+    "id": "test_category_disabled",
+    "title": "特定のカテゴリーが無効なケース",
+    "type": "DVD",
+    "notes": "テストケース2：streamingカテゴリーが無効",
+    "categories": {
+      "purchase": { "enabled": true },
+      "streaming": { "enabled": false },
+      "marketplace": { "enabled": true }
+    },
+    "links": [
+      {
+        "platform": "sony_music",
+        "category": "purchase",
+        "label": "SonyMusicで購入",
+        "priority": 1,
+        "enabled": true,
+        "urls": {
+          "direct": "https://example.com/purchase/sony2",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "apple_music",
+        "category": "streaming",
+        "label": "Apple Musicで視聴",
+        "priority": 2,
+        "enabled": true,
+        "urls": {
+          "direct": "https://example.com/streaming/apple2",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "youtube",
+        "category": "marketplace",
+        "label": "YouTubeで視聴",
+        "priority": 3,
+        "enabled": true,
+        "urls": {
+          "direct": "https://example.com/viewing/youtube2",
+          "affiliate": null
+        }
+      }
+    ]
+  },
+  {
+    "id": "test_link_disabled",
+    "title": "特定のリンクが無効なケース",
+    "type": "DVD",
+    "notes": "テストケース3：特定のリンクが無効",
+    "categories": {
+      "purchase": { "enabled": true },
+      "streaming": { "enabled": true }
+    },
+    "links": [
+      {
+        "platform": "sony_music",
+        "category": "purchase",
+        "label": "SonyMusicで購入",
+        "priority": 1,
+        "enabled": true,
+        "urls": {
+          "direct": "https://example.com/purchase/sony3",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "amazon",
+        "category": "purchase",
+        "label": "Amazonで購入",
+        "priority": 2,
+        "enabled": false,
+        "urls": {
+          "direct": "https://example.com/purchase/amazon3",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "apple_music",
+        "category": "streaming",
+        "label": "Apple Musicで視聴",
+        "priority": 3,
+        "enabled": true,
+        "urls": {
+          "direct": "https://example.com/streaming/apple3",
+          "affiliate": null
+        }
+      }
+    ]
+  },
+  {
+    "id": "test_fc_limited",
+    "title": "FC限定商品のケース",
+    "type": "DVD",
+    "notes": "テストケース4：FC限定商品",
+    "categories": {
+      "purchase": { "enabled": false }
+    },
+    "links": []
+  },
+  {
+    "id": "test_empty_category",
+    "title": "空のカテゴリーを持つケース",
+    "type": "DVD",
+    "notes": "テストケース5：リンクのないカテゴリー",
+    "categories": {
+      "purchase": { "enabled": true },
+      "streaming": { "enabled": true },
+      "marketplace": { "enabled": true }
+    },
+    "links": [
+      {
+        "platform": "sony_music",
+        "category": "purchase",
+        "label": "SonyMusicで購入",
+        "priority": 1,
+        "enabled": true,
+        "urls": {
+          "direct": "https://example.com/purchase/sony5",
+          "affiliate": null
+        }
+      }
+    ]
+  }
+] 

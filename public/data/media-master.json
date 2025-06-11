@@ -4,9 +4,183 @@
     "title": "T.M.Revolution DVD Series The Summary -summarize 1-",
     "type": "DVD",
     "notes": null,
+    "categories": {
+      "purchase": {
+        "enabled": true
+      },
+      "streaming": {
+        "enabled": false
+      },
+      "marketplace": {
+        "enabled": false
+      }
+    },
     "links": [
-      "https://www.sonymusic.co.jp/artist/TMRevolution/discography/ESBL-2123",
-      "https://www.amazon.co.jp/T-M-Revolution-DVD-Summary-summarize1/dp/B0000QX20E"
+      {
+        "platform": "sony_music",
+        "label": "SonyMusicで購入",
+        "priority": 1,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://www.sonymusicshop.jp/m/item/itemShw.php?site=S&ima=5109&cd=ESBL000002123",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "amazon",
+        "label": "Amazonで購入",
+        "priority": 2,
+        "category": "purchase",
+        "enabled": false,
+        "urls": {
+          "direct": "https://www.amazon.co.jp/s?k=T.M.Revolution+DVD+Series+The+Summary+-summarize+1-",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "rakuten_books",
+        "label": "楽天ブックスで購入",
+        "priority": 3,
+        "category": "purchase",
+        "enabled": false,
+        "urls": {
+          "direct": "https://books.rakuten.co.jp/search?sitem=T.M.Revolution+DVD+Series+The+Summary+-summarize+1-",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "yahoo_shopping",
+        "label": "Yahoo!ショッピングで購入",
+        "priority": 4,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://shopping.yahoo.co.jp/search?p=T.M.Revolution+DVD+Series+The+Summary+-summarize+1-",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "seven_net",
+        "label": "7netで購入",
+        "priority": 5,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://7net.omni7.jp/search/?keyword=T.M.Revolution+DVD+Series+The+Summary+-summarize+1-",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "spotify",
+        "label": "Spotifyで聴く",
+        "priority": 1,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "rakuten_music",
+        "label": "RakutenMusicで聴く",
+        "priority": 2,
+        "category": "streaming",
+        "enabled": false,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "recochoku",
+        "label": "レコチョクで聴く",
+        "priority": 3,
+        "category": "streaming",
+        "enabled": false,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "apple_music",
+        "label": "Apple Musicで聴く",
+        "priority": 4,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "amazon_music",
+        "label": "Amazon Musicで聴く",
+        "priority": 5,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "line_music",
+        "label": "LINE MUSICで聴く",
+        "priority": 6,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "youtube",
+        "label": "YouTubeで視聴",
+        "priority": 7,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "mercari",
+        "label": "メルカリで探す",
+        "priority": 1,
+        "category": "marketplace",
+        "enabled": true,
+        "urls": {
+          "direct": "https://jp.mercari.com/search?keyword=T.M.Revolution+DVD+Series+The+Summary+-summarize+1-",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "yahoo_auction",
+        "label": "ヤフオクで探す",
+        "priority": 2,
+        "category": "marketplace",
+        "enabled": false,
+        "urls": {
+          "direct": "https://auctions.yahoo.co.jp/search/search?p=T.M.Revolution+DVD+Series+The+Summary+-summarize+1-",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "rakuma",
+        "label": "ラクマで探す",
+        "priority": 3,
+        "category": "marketplace",
+        "enabled": true,
+        "urls": {
+          "direct": "https://fril.jp/search/T.M.Revolution+DVD+Series+The+Summary+-summarize+1-",
+          "affiliate": null
+        }
+      }
     ]
   },
   {
@@ -14,216 +188,7175 @@
     "title": "T.M.Revolution DVD Series The Summary -summarize 2-",
     "type": "DVD",
     "notes": null,
-    "links": []
+    "categories": {
+      "purchase": {
+        "enabled": true
+      },
+      "streaming": {
+        "enabled": true
+      },
+      "marketplace": {
+        "enabled": true
+      }
+    },
+    "links": [
+      {
+        "platform": "sony_music",
+        "label": "SonyMusicで購入",
+        "priority": 1,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://www.sonymusicshop.jp/m/item/itemShw.php?site=S&ima=4657&cd=ESBL000002124",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "amazon",
+        "label": "Amazonで購入",
+        "priority": 2,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://www.amazon.co.jp/s?k=T.M.Revolution+DVD+Series+The+Summary+-summarize+2-",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "rakuten_books",
+        "label": "楽天ブックスで購入",
+        "priority": 3,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://books.rakuten.co.jp/search?sitem=T.M.Revolution+DVD+Series+The+Summary+-summarize+2-",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "yahoo_shopping",
+        "label": "Yahoo!ショッピングで購入",
+        "priority": 4,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://shopping.yahoo.co.jp/search?p=T.M.Revolution+DVD+Series+The+Summary+-summarize+2-",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "seven_net",
+        "label": "7netで購入",
+        "priority": 5,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://7net.omni7.jp/search/?keyword=T.M.Revolution+DVD+Series+The+Summary+-summarize+2-",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "spotify",
+        "label": "Spotifyで聴く",
+        "priority": 1,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "rakuten_music",
+        "label": "RakutenMusicで聴く",
+        "priority": 2,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "recochoku",
+        "label": "レコチョクで聴く",
+        "priority": 3,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "apple_music",
+        "label": "Apple Musicで聴く",
+        "priority": 4,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "amazon_music",
+        "label": "Amazon Musicで聴く",
+        "priority": 5,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "line_music",
+        "label": "LINE MUSICで聴く",
+        "priority": 6,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "youtube",
+        "label": "YouTubeで視聴",
+        "priority": 7,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "mercari",
+        "label": "メルカリで探す",
+        "priority": 1,
+        "category": "marketplace",
+        "enabled": true,
+        "urls": {
+          "direct": "https://jp.mercari.com/search?keyword=T.M.Revolution+DVD+Series+The+Summary+-summarize+2-",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "yahoo_auction",
+        "label": "ヤフオクで探す",
+        "priority": 2,
+        "category": "marketplace",
+        "enabled": true,
+        "urls": {
+          "direct": "https://auctions.yahoo.co.jp/search/search?p=T.M.Revolution+DVD+Series+The+Summary+-summarize+2-",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "rakuma",
+        "label": "ラクマで探す",
+        "priority": 3,
+        "category": "marketplace",
+        "enabled": true,
+        "urls": {
+          "direct": "https://fril.jp/search/T.M.Revolution+DVD+Series+The+Summary+-summarize+2-",
+          "affiliate": null
+        }
+      }
+    ]
   },
   {
     "id": "summarize_3",
     "title": "T.M.Revolution DVD Series The Summary -summarize 3-",
     "type": "DVD",
     "notes": null,
-    "links": []
+    "categories": {
+      "purchase": {
+        "enabled": true
+      },
+      "streaming": {
+        "enabled": true
+      },
+      "marketplace": {
+        "enabled": true
+      }
+    },
+    "links": [
+      {
+        "platform": "sony_music",
+        "label": "SonyMusicで購入",
+        "priority": 1,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://www.sonymusicshop.jp/m/item/itemShw.php?site=S&ima=4657&cd=ESBL000002125",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "amazon",
+        "label": "Amazonで購入",
+        "priority": 2,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://www.amazon.co.jp/s?k=T.M.Revolution+DVD+Series+The+Summary+-summarize+3-",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "rakuten_books",
+        "label": "楽天ブックスで購入",
+        "priority": 3,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://books.rakuten.co.jp/search?sitem=T.M.Revolution+DVD+Series+The+Summary+-summarize+3-",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "yahoo_shopping",
+        "label": "Yahoo!ショッピングで購入",
+        "priority": 4,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://shopping.yahoo.co.jp/search?p=T.M.Revolution+DVD+Series+The+Summary+-summarize+3-",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "seven_net",
+        "label": "7netで購入",
+        "priority": 5,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://7net.omni7.jp/search/?keyword=T.M.Revolution+DVD+Series+The+Summary+-summarize+3-",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "spotify",
+        "label": "Spotifyで聴く",
+        "priority": 1,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "rakuten_music",
+        "label": "RakutenMusicで聴く",
+        "priority": 2,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "recochoku",
+        "label": "レコチョクで聴く",
+        "priority": 3,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "apple_music",
+        "label": "Apple Musicで聴く",
+        "priority": 4,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "amazon_music",
+        "label": "Amazon Musicで聴く",
+        "priority": 5,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "line_music",
+        "label": "LINE MUSICで聴く",
+        "priority": 6,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "youtube",
+        "label": "YouTubeで視聴",
+        "priority": 7,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "mercari",
+        "label": "メルカリで探す",
+        "priority": 1,
+        "category": "marketplace",
+        "enabled": true,
+        "urls": {
+          "direct": "https://jp.mercari.com/search?keyword=T.M.Revolution+DVD+Series+The+Summary+-summarize+3-",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "yahoo_auction",
+        "label": "ヤフオクで探す",
+        "priority": 2,
+        "category": "marketplace",
+        "enabled": true,
+        "urls": {
+          "direct": "https://auctions.yahoo.co.jp/search/search?p=T.M.Revolution+DVD+Series+The+Summary+-summarize+3-",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "rakuma",
+        "label": "ラクマで探す",
+        "priority": 3,
+        "category": "marketplace",
+        "enabled": true,
+        "urls": {
+          "direct": "https://fril.jp/search/T.M.Revolution+DVD+Series+The+Summary+-summarize+3-",
+          "affiliate": null
+        }
+      }
+    ]
   },
   {
     "id": "summarize_4",
     "title": "T.M.Revolution DVD Series The Summary -summarize 4-",
     "type": "DVD",
     "notes": null,
-    "links": []
+    "categories": {
+      "purchase": {
+        "enabled": true
+      },
+      "streaming": {
+        "enabled": true
+      },
+      "marketplace": {
+        "enabled": true
+      }
+    },
+    "links": [
+      {
+        "platform": "sony_music",
+        "label": "SonyMusicで購入",
+        "priority": 1,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://www.sonymusicshop.jp/m/item/itemShw.php?site=S&ima=5109&cd=ESBL000002126",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "amazon",
+        "label": "Amazonで購入",
+        "priority": 2,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://www.amazon.co.jp/s?k=T.M.Revolution+DVD+Series+The+Summary+-summarize+4-",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "rakuten_books",
+        "label": "楽天ブックスで購入",
+        "priority": 3,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://books.rakuten.co.jp/search?sitem=T.M.Revolution+DVD+Series+The+Summary+-summarize+4-",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "yahoo_shopping",
+        "label": "Yahoo!ショッピングで購入",
+        "priority": 4,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://shopping.yahoo.co.jp/search?p=T.M.Revolution+DVD+Series+The+Summary+-summarize+4-",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "seven_net",
+        "label": "7netで購入",
+        "priority": 5,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://7net.omni7.jp/search/?keyword=T.M.Revolution+DVD+Series+The+Summary+-summarize+4-",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "spotify",
+        "label": "Spotifyで聴く",
+        "priority": 1,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "rakuten_music",
+        "label": "RakutenMusicで聴く",
+        "priority": 2,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "recochoku",
+        "label": "レコチョクで聴く",
+        "priority": 3,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "apple_music",
+        "label": "Apple Musicで聴く",
+        "priority": 4,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "amazon_music",
+        "label": "Amazon Musicで聴く",
+        "priority": 5,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "line_music",
+        "label": "LINE MUSICで聴く",
+        "priority": 6,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "youtube",
+        "label": "YouTubeで視聴",
+        "priority": 7,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "mercari",
+        "label": "メルカリで探す",
+        "priority": 1,
+        "category": "marketplace",
+        "enabled": true,
+        "urls": {
+          "direct": "https://jp.mercari.com/search?keyword=T.M.Revolution+DVD+Series+The+Summary+-summarize+4-",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "yahoo_auction",
+        "label": "ヤフオクで探す",
+        "priority": 2,
+        "category": "marketplace",
+        "enabled": true,
+        "urls": {
+          "direct": "https://auctions.yahoo.co.jp/search/search?p=T.M.Revolution+DVD+Series+The+Summary+-summarize+4-",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "rakuma",
+        "label": "ラクマで探す",
+        "priority": 3,
+        "category": "marketplace",
+        "enabled": true,
+        "urls": {
+          "direct": "https://fril.jp/search/T.M.Revolution+DVD+Series+The+Summary+-summarize+4-",
+          "affiliate": null
+        }
+      }
+    ]
   },
   {
     "id": "complete_edition_1",
     "title": "LIVE REVOLUTION COMPLETE EDITION-1 1996.3.22 新宿LIQUID ROOM",
     "type": "VHS",
     "notes": "FC限定VHS",
-    "links": []
+    "categories": {
+      "purchase": {
+        "enabled": true
+      },
+      "streaming": {
+        "enabled": true
+      },
+      "marketplace": {
+        "enabled": true
+      }
+    },
+    "links": [
+      {
+        "platform": "sony_music",
+        "label": "SonyMusicで購入",
+        "priority": 1,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "amazon",
+        "label": "Amazonで購入",
+        "priority": 2,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://www.amazon.co.jp/s?k=LIVE+REVOLUTION+COMPLETE+EDITION-1+1996.3.22+新宿LIQUID+ROOM",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "rakuten_books",
+        "label": "楽天ブックスで購入",
+        "priority": 3,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://books.rakuten.co.jp/search?sitem=LIVE+REVOLUTION+COMPLETE+EDITION-1+1996.3.22+新宿LIQUID+ROOM",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "yahoo_shopping",
+        "label": "Yahoo!ショッピングで購入",
+        "priority": 4,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://shopping.yahoo.co.jp/search?p=LIVE+REVOLUTION+COMPLETE+EDITION-1+1996.3.22+新宿LIQUID+ROOM",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "seven_net",
+        "label": "7netで購入",
+        "priority": 5,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://7net.omni7.jp/search/?keyword=LIVE+REVOLUTION+COMPLETE+EDITION-1+1996.3.22+新宿LIQUID+ROOM",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "spotify",
+        "label": "Spotifyで聴く",
+        "priority": 1,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "rakuten_music",
+        "label": "RakutenMusicで聴く",
+        "priority": 2,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "recochoku",
+        "label": "レコチョクで聴く",
+        "priority": 3,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "apple_music",
+        "label": "Apple Musicで聴く",
+        "priority": 4,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "amazon_music",
+        "label": "Amazon Musicで聴く",
+        "priority": 5,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "line_music",
+        "label": "LINE MUSICで聴く",
+        "priority": 6,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "youtube",
+        "label": "YouTubeで視聴",
+        "priority": 7,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "mercari",
+        "label": "メルカリで探す",
+        "priority": 1,
+        "category": "marketplace",
+        "enabled": true,
+        "urls": {
+          "direct": "https://jp.mercari.com/search?keyword=LIVE+REVOLUTION+COMPLETE+EDITION-1+1996.3.22+新宿LIQUID+ROOM",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "yahoo_auction",
+        "label": "ヤフオクで探す",
+        "priority": 2,
+        "category": "marketplace",
+        "enabled": true,
+        "urls": {
+          "direct": "https://auctions.yahoo.co.jp/search/search?p=LIVE+REVOLUTION+COMPLETE+EDITION-1+1996.3.22+新宿LIQUID+ROOM",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "rakuma",
+        "label": "ラクマで探す",
+        "priority": 3,
+        "category": "marketplace",
+        "enabled": true,
+        "urls": {
+          "direct": "https://fril.jp/search/LIVE+REVOLUTION+COMPLETE+EDITION-1+1996.3.22+新宿LIQUID+ROOM",
+          "affiliate": null
+        }
+      }
+    ]
   },
   {
     "id": "complete_edition_2",
     "title": "LIVE REVOLUTION COMPLETE EDITION-2 1996.6.6 赤坂BLITZ",
     "type": "VHS",
     "notes": "FC限定VHS",
-    "links": []
+    "categories": {
+      "purchase": {
+        "enabled": true
+      },
+      "streaming": {
+        "enabled": true
+      },
+      "marketplace": {
+        "enabled": true
+      }
+    },
+    "links": [
+      {
+        "platform": "sony_music",
+        "label": "SonyMusicで購入",
+        "priority": 1,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "amazon",
+        "label": "Amazonで購入",
+        "priority": 2,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://www.amazon.co.jp/s?k=LIVE+REVOLUTION+COMPLETE+EDITION-2+1996.6.6+赤坂BLITZ",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "rakuten_books",
+        "label": "楽天ブックスで購入",
+        "priority": 3,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://books.rakuten.co.jp/search?sitem=LIVE+REVOLUTION+COMPLETE+EDITION-2+1996.6.6+赤坂BLITZ",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "yahoo_shopping",
+        "label": "Yahoo!ショッピングで購入",
+        "priority": 4,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://shopping.yahoo.co.jp/search?p=LIVE+REVOLUTION+COMPLETE+EDITION-2+1996.6.6+赤坂BLITZ",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "seven_net",
+        "label": "7netで購入",
+        "priority": 5,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://7net.omni7.jp/search/?keyword=LIVE+REVOLUTION+COMPLETE+EDITION-2+1996.6.6+赤坂BLITZ",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "spotify",
+        "label": "Spotifyで聴く",
+        "priority": 1,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "rakuten_music",
+        "label": "RakutenMusicで聴く",
+        "priority": 2,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "recochoku",
+        "label": "レコチョクで聴く",
+        "priority": 3,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "apple_music",
+        "label": "Apple Musicで聴く",
+        "priority": 4,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "amazon_music",
+        "label": "Amazon Musicで聴く",
+        "priority": 5,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "line_music",
+        "label": "LINE MUSICで聴く",
+        "priority": 6,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "youtube",
+        "label": "YouTubeで視聴",
+        "priority": 7,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "mercari",
+        "label": "メルカリで探す",
+        "priority": 1,
+        "category": "marketplace",
+        "enabled": true,
+        "urls": {
+          "direct": "https://jp.mercari.com/search?keyword=LIVE+REVOLUTION+COMPLETE+EDITION-2+1996.6.6+赤坂BLITZ",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "yahoo_auction",
+        "label": "ヤフオクで探す",
+        "priority": 2,
+        "category": "marketplace",
+        "enabled": true,
+        "urls": {
+          "direct": "https://auctions.yahoo.co.jp/search/search?p=LIVE+REVOLUTION+COMPLETE+EDITION-2+1996.6.6+赤坂BLITZ",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "rakuma",
+        "label": "ラクマで探す",
+        "priority": 3,
+        "category": "marketplace",
+        "enabled": true,
+        "urls": {
+          "direct": "https://fril.jp/search/LIVE+REVOLUTION+COMPLETE+EDITION-2+1996.6.6+赤坂BLITZ",
+          "affiliate": null
+        }
+      }
+    ]
   },
   {
     "id": "complete_edition_3",
     "title": "LIVE REVOLUTION COMPLETE EDITION-3 1996.8.29 中野サンプラザ",
     "type": "VHS",
     "notes": "FC限定VHS",
-    "links": []
+    "categories": {
+      "purchase": {
+        "enabled": true
+      },
+      "streaming": {
+        "enabled": true
+      },
+      "marketplace": {
+        "enabled": true
+      }
+    },
+    "links": [
+      {
+        "platform": "sony_music",
+        "label": "SonyMusicで購入",
+        "priority": 1,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "amazon",
+        "label": "Amazonで購入",
+        "priority": 2,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://www.amazon.co.jp/s?k=LIVE+REVOLUTION+COMPLETE+EDITION-3+1996.8.29+中野サンプラザ",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "rakuten_books",
+        "label": "楽天ブックスで購入",
+        "priority": 3,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://books.rakuten.co.jp/search?sitem=LIVE+REVOLUTION+COMPLETE+EDITION-3+1996.8.29+中野サンプラザ",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "yahoo_shopping",
+        "label": "Yahoo!ショッピングで購入",
+        "priority": 4,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://shopping.yahoo.co.jp/search?p=LIVE+REVOLUTION+COMPLETE+EDITION-3+1996.8.29+中野サンプラザ",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "seven_net",
+        "label": "7netで購入",
+        "priority": 5,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://7net.omni7.jp/search/?keyword=LIVE+REVOLUTION+COMPLETE+EDITION-3+1996.8.29+中野サンプラザ",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "spotify",
+        "label": "Spotifyで聴く",
+        "priority": 1,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "rakuten_music",
+        "label": "RakutenMusicで聴く",
+        "priority": 2,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "recochoku",
+        "label": "レコチョクで聴く",
+        "priority": 3,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "apple_music",
+        "label": "Apple Musicで聴く",
+        "priority": 4,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "amazon_music",
+        "label": "Amazon Musicで聴く",
+        "priority": 5,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "line_music",
+        "label": "LINE MUSICで聴く",
+        "priority": 6,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "youtube",
+        "label": "YouTubeで視聴",
+        "priority": 7,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "mercari",
+        "label": "メルカリで探す",
+        "priority": 1,
+        "category": "marketplace",
+        "enabled": true,
+        "urls": {
+          "direct": "https://jp.mercari.com/search?keyword=LIVE+REVOLUTION+COMPLETE+EDITION-3+1996.8.29+中野サンプラザ",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "yahoo_auction",
+        "label": "ヤフオクで探す",
+        "priority": 2,
+        "category": "marketplace",
+        "enabled": true,
+        "urls": {
+          "direct": "https://auctions.yahoo.co.jp/search/search?p=LIVE+REVOLUTION+COMPLETE+EDITION-3+1996.8.29+中野サンプラザ",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "rakuma",
+        "label": "ラクマで探す",
+        "priority": 3,
+        "category": "marketplace",
+        "enabled": true,
+        "urls": {
+          "direct": "https://fril.jp/search/LIVE+REVOLUTION+COMPLETE+EDITION-3+1996.8.29+中野サンプラザ",
+          "affiliate": null
+        }
+      }
+    ]
   },
   {
     "id": "genesis_turbo_type_d_live_arena_2000_ad_special_dvd_version",
     "title": "the end of genesis T.M.R. evolution turbo type D LIVE ARENA 2000 A.D. Special DVD Version",
     "type": "DVD",
     "notes": null,
-    "links": []
+    "categories": {
+      "purchase": {
+        "enabled": true
+      },
+      "streaming": {
+        "enabled": true
+      },
+      "marketplace": {
+        "enabled": true
+      }
+    },
+    "links": [
+      {
+        "platform": "sony_music",
+        "label": "SonyMusicで購入",
+        "priority": 1,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "amazon",
+        "label": "Amazonで購入",
+        "priority": 2,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://www.amazon.co.jp/s?k=the+end+of+genesis+T.M.R.+evolution+turbo+type+D+LIVE+ARENA+2000+A.D.+Special+DVD+Version",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "rakuten_books",
+        "label": "楽天ブックスで購入",
+        "priority": 3,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://books.rakuten.co.jp/search?sitem=the+end+of+genesis+T.M.R.+evolution+turbo+type+D+LIVE+ARENA+2000+A.D.+Special+DVD+Version",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "yahoo_shopping",
+        "label": "Yahoo!ショッピングで購入",
+        "priority": 4,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://shopping.yahoo.co.jp/search?p=the+end+of+genesis+T.M.R.+evolution+turbo+type+D+LIVE+ARENA+2000+A.D.+Special+DVD+Version",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "seven_net",
+        "label": "7netで購入",
+        "priority": 5,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://7net.omni7.jp/search/?keyword=the+end+of+genesis+T.M.R.+evolution+turbo+type+D+LIVE+ARENA+2000+A.D.+Special+DVD+Version",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "spotify",
+        "label": "Spotifyで聴く",
+        "priority": 1,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "rakuten_music",
+        "label": "RakutenMusicで聴く",
+        "priority": 2,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "recochoku",
+        "label": "レコチョクで聴く",
+        "priority": 3,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "apple_music",
+        "label": "Apple Musicで聴く",
+        "priority": 4,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "amazon_music",
+        "label": "Amazon Musicで聴く",
+        "priority": 5,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "line_music",
+        "label": "LINE MUSICで聴く",
+        "priority": 6,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "youtube",
+        "label": "YouTubeで視聴",
+        "priority": 7,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "mercari",
+        "label": "メルカリで探す",
+        "priority": 1,
+        "category": "marketplace",
+        "enabled": true,
+        "urls": {
+          "direct": "https://jp.mercari.com/search?keyword=the+end+of+genesis+T.M.R.+evolution+turbo+type+D+LIVE+ARENA+2000+A.D.+Special+DVD+Version",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "yahoo_auction",
+        "label": "ヤフオクで探す",
+        "priority": 2,
+        "category": "marketplace",
+        "enabled": true,
+        "urls": {
+          "direct": "https://auctions.yahoo.co.jp/search/search?p=the+end+of+genesis+T.M.R.+evolution+turbo+type+D+LIVE+ARENA+2000+A.D.+Special+DVD+Version",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "rakuma",
+        "label": "ラクマで探す",
+        "priority": 3,
+        "category": "marketplace",
+        "enabled": true,
+        "urls": {
+          "direct": "https://fril.jp/search/the+end+of+genesis+T.M.R.+evolution+turbo+type+D+LIVE+ARENA+2000+A.D.+Special+DVD+Version",
+          "affiliate": null
+        }
+      }
+    ]
   },
   {
     "id": "TMR_0001",
     "title": "T.M.Revolution 0001",
     "type": "DVD",
     "notes": null,
-    "links": []
+    "categories": {
+      "purchase": {
+        "enabled": true
+      },
+      "streaming": {
+        "enabled": true
+      },
+      "marketplace": {
+        "enabled": true
+      }
+    },
+    "links": [
+      {
+        "platform": "sony_music",
+        "label": "SonyMusicで購入",
+        "priority": 1,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://www.sonymusicshop.jp/m/item/itemShw.php?site=S&ima=5109&cd=ESBL000002121",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "amazon",
+        "label": "Amazonで購入",
+        "priority": 2,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://www.amazon.co.jp/s?k=T.M.Revolution+0001",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "rakuten_books",
+        "label": "楽天ブックスで購入",
+        "priority": 3,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://books.rakuten.co.jp/search?sitem=T.M.Revolution+0001",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "yahoo_shopping",
+        "label": "Yahoo!ショッピングで購入",
+        "priority": 4,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://shopping.yahoo.co.jp/search?p=T.M.Revolution+0001",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "seven_net",
+        "label": "7netで購入",
+        "priority": 5,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://7net.omni7.jp/search/?keyword=T.M.Revolution+0001",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "spotify",
+        "label": "Spotifyで聴く",
+        "priority": 1,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "rakuten_music",
+        "label": "RakutenMusicで聴く",
+        "priority": 2,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "recochoku",
+        "label": "レコチョクで聴く",
+        "priority": 3,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "apple_music",
+        "label": "Apple Musicで聴く",
+        "priority": 4,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "amazon_music",
+        "label": "Amazon Musicで聴く",
+        "priority": 5,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "line_music",
+        "label": "LINE MUSICで聴く",
+        "priority": 6,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "youtube",
+        "label": "YouTubeで視聴",
+        "priority": 7,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "mercari",
+        "label": "メルカリで探す",
+        "priority": 1,
+        "category": "marketplace",
+        "enabled": true,
+        "urls": {
+          "direct": "https://jp.mercari.com/search?keyword=T.M.Revolution+0001",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "yahoo_auction",
+        "label": "ヤフオクで探す",
+        "priority": 2,
+        "category": "marketplace",
+        "enabled": true,
+        "urls": {
+          "direct": "https://auctions.yahoo.co.jp/search/search?p=T.M.Revolution+0001",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "rakuma",
+        "label": "ラクマで探す",
+        "priority": 3,
+        "category": "marketplace",
+        "enabled": true,
+        "urls": {
+          "direct": "https://fril.jp/search/T.M.Revolution+0001",
+          "affiliate": null
+        }
+      }
+    ]
   },
   {
     "id": "summer_crush_2000_wowow",
     "title": "T.M.R.LIVE REVOLUTION'00 -SUMMER CRUSH 2000- WOWOW中継",
     "type": "TV",
     "notes": "詳細不明。情報ください",
-    "links": []
+    "categories": {
+      "purchase": {
+        "enabled": true
+      },
+      "streaming": {
+        "enabled": true
+      },
+      "marketplace": {
+        "enabled": true
+      }
+    },
+    "links": [
+      {
+        "platform": "sony_music",
+        "label": "SonyMusicで購入",
+        "priority": 1,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "amazon",
+        "label": "Amazonで購入",
+        "priority": 2,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://www.amazon.co.jp/s?k=T.M.R.LIVE+REVOLUTION'00+-SUMMER+CRUSH+2000-+WOWOW中継",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "rakuten_books",
+        "label": "楽天ブックスで購入",
+        "priority": 3,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://books.rakuten.co.jp/search?sitem=T.M.R.LIVE+REVOLUTION'00+-SUMMER+CRUSH+2000-+WOWOW中継",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "yahoo_shopping",
+        "label": "Yahoo!ショッピングで購入",
+        "priority": 4,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://shopping.yahoo.co.jp/search?p=T.M.R.LIVE+REVOLUTION'00+-SUMMER+CRUSH+2000-+WOWOW中継",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "seven_net",
+        "label": "7netで購入",
+        "priority": 5,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://7net.omni7.jp/search/?keyword=T.M.R.LIVE+REVOLUTION'00+-SUMMER+CRUSH+2000-+WOWOW中継",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "spotify",
+        "label": "Spotifyで聴く",
+        "priority": 1,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "rakuten_music",
+        "label": "RakutenMusicで聴く",
+        "priority": 2,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "recochoku",
+        "label": "レコチョクで聴く",
+        "priority": 3,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "apple_music",
+        "label": "Apple Musicで聴く",
+        "priority": 4,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "amazon_music",
+        "label": "Amazon Musicで聴く",
+        "priority": 5,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "line_music",
+        "label": "LINE MUSICで聴く",
+        "priority": 6,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "youtube",
+        "label": "YouTubeで視聴",
+        "priority": 7,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "mercari",
+        "label": "メルカリで探す",
+        "priority": 1,
+        "category": "marketplace",
+        "enabled": true,
+        "urls": {
+          "direct": "https://jp.mercari.com/search?keyword=T.M.R.LIVE+REVOLUTION'00+-SUMMER+CRUSH+2000-+WOWOW中継",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "yahoo_auction",
+        "label": "ヤフオクで探す",
+        "priority": 2,
+        "category": "marketplace",
+        "enabled": true,
+        "urls": {
+          "direct": "https://auctions.yahoo.co.jp/search/search?p=T.M.R.LIVE+REVOLUTION'00+-SUMMER+CRUSH+2000-+WOWOW中継",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "rakuma",
+        "label": "ラクマで探す",
+        "priority": 3,
+        "category": "marketplace",
+        "enabled": true,
+        "urls": {
+          "direct": "https://fril.jp/search/T.M.R.LIVE+REVOLUTION'00+-SUMMER+CRUSH+2000-+WOWOW中継",
+          "affiliate": null
+        }
+      }
+    ]
   },
   {
     "id": "best_summer_crush_2002",
     "title": "T.M.R. LIVE REVOLUTION '02 B★E★S★T SUMMER CRUSH 2002",
     "type": "DVD",
     "notes": null,
-    "links": []
+    "categories": {
+      "purchase": {
+        "enabled": true
+      },
+      "streaming": {
+        "enabled": true
+      },
+      "marketplace": {
+        "enabled": true
+      }
+    },
+    "links": [
+      {
+        "platform": "sony_music",
+        "label": "SonyMusicで購入",
+        "priority": 1,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://www.sonymusicshop.jp/m/item/itemShw.php?site=S&ima=4657&cd=ESBL000002217",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "amazon",
+        "label": "Amazonで購入",
+        "priority": 2,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://www.amazon.co.jp/s?k=T.M.R.+LIVE+REVOLUTION+'02+B★E★S★T+SUMMER+CRUSH+2002",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "rakuten_books",
+        "label": "楽天ブックスで購入",
+        "priority": 3,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://books.rakuten.co.jp/search?sitem=T.M.R.+LIVE+REVOLUTION+'02+B★E★S★T+SUMMER+CRUSH+2002",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "yahoo_shopping",
+        "label": "Yahoo!ショッピングで購入",
+        "priority": 4,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://shopping.yahoo.co.jp/search?p=T.M.R.+LIVE+REVOLUTION+'02+B★E★S★T+SUMMER+CRUSH+2002",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "seven_net",
+        "label": "7netで購入",
+        "priority": 5,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://7net.omni7.jp/search/?keyword=T.M.R.+LIVE+REVOLUTION+'02+B★E★S★T+SUMMER+CRUSH+2002",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "spotify",
+        "label": "Spotifyで聴く",
+        "priority": 1,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "rakuten_music",
+        "label": "RakutenMusicで聴く",
+        "priority": 2,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "recochoku",
+        "label": "レコチョクで聴く",
+        "priority": 3,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "apple_music",
+        "label": "Apple Musicで聴く",
+        "priority": 4,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "amazon_music",
+        "label": "Amazon Musicで聴く",
+        "priority": 5,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "line_music",
+        "label": "LINE MUSICで聴く",
+        "priority": 6,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "youtube",
+        "label": "YouTubeで視聴",
+        "priority": 7,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "mercari",
+        "label": "メルカリで探す",
+        "priority": 1,
+        "category": "marketplace",
+        "enabled": true,
+        "urls": {
+          "direct": "https://jp.mercari.com/search?keyword=T.M.R.+LIVE+REVOLUTION+'02+B★E★S★T+SUMMER+CRUSH+2002",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "yahoo_auction",
+        "label": "ヤフオクで探す",
+        "priority": 2,
+        "category": "marketplace",
+        "enabled": true,
+        "urls": {
+          "direct": "https://auctions.yahoo.co.jp/search/search?p=T.M.R.+LIVE+REVOLUTION+'02+B★E★S★T+SUMMER+CRUSH+2002",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "rakuma",
+        "label": "ラクマで探す",
+        "priority": 3,
+        "category": "marketplace",
+        "enabled": true,
+        "urls": {
+          "direct": "https://fril.jp/search/T.M.R.+LIVE+REVOLUTION+'02+B★E★S★T+SUMMER+CRUSH+2002",
+          "affiliate": null
+        }
+      }
+    ]
   },
   {
     "id": "sonic_warp",
     "title": "SONIC WARP the Visual Fields",
     "type": "DVD",
     "notes": null,
-    "links": []
+    "categories": {
+      "purchase": {
+        "enabled": true
+      },
+      "streaming": {
+        "enabled": true
+      },
+      "marketplace": {
+        "enabled": true
+      }
+    },
+    "links": [
+      {
+        "platform": "sony_music",
+        "label": "SonyMusicで購入",
+        "priority": 1,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://www.sonymusicshop.jp/m/item/itemShw.php?site=S&ima=5109&cd=ESBL000002105",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "amazon",
+        "label": "Amazonで購入",
+        "priority": 2,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://www.amazon.co.jp/s?k=SONIC+WARP+the+Visual+Fields",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "rakuten_books",
+        "label": "楽天ブックスで購入",
+        "priority": 3,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://books.rakuten.co.jp/search?sitem=SONIC+WARP+the+Visual+Fields",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "yahoo_shopping",
+        "label": "Yahoo!ショッピングで購入",
+        "priority": 4,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://shopping.yahoo.co.jp/search?p=SONIC+WARP+the+Visual+Fields",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "seven_net",
+        "label": "7netで購入",
+        "priority": 5,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://7net.omni7.jp/search/?keyword=SONIC+WARP+the+Visual+Fields",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "spotify",
+        "label": "Spotifyで聴く",
+        "priority": 1,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "rakuten_music",
+        "label": "RakutenMusicで聴く",
+        "priority": 2,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "recochoku",
+        "label": "レコチョクで聴く",
+        "priority": 3,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "apple_music",
+        "label": "Apple Musicで聴く",
+        "priority": 4,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "amazon_music",
+        "label": "Amazon Musicで聴く",
+        "priority": 5,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "line_music",
+        "label": "LINE MUSICで聴く",
+        "priority": 6,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "youtube",
+        "label": "YouTubeで視聴",
+        "priority": 7,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "mercari",
+        "label": "メルカリで探す",
+        "priority": 1,
+        "category": "marketplace",
+        "enabled": true,
+        "urls": {
+          "direct": "https://jp.mercari.com/search?keyword=SONIC+WARP+the+Visual+Fields",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "yahoo_auction",
+        "label": "ヤフオクで探す",
+        "priority": 2,
+        "category": "marketplace",
+        "enabled": true,
+        "urls": {
+          "direct": "https://auctions.yahoo.co.jp/search/search?p=SONIC+WARP+the+Visual+Fields",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "rakuma",
+        "label": "ラクマで探す",
+        "priority": 3,
+        "category": "marketplace",
+        "enabled": true,
+        "urls": {
+          "direct": "https://fril.jp/search/SONIC+WARP+the+Visual+Fields",
+          "affiliate": null
+        }
+      }
+    ]
   },
   {
     "id": "seventh_heaven",
     "title": "T.M.Revolution SEVENTH HEAVEN T.M.R. LIVE REVOLUTION'04",
     "type": "DVD",
     "notes": null,
-    "links": []
+    "categories": {
+      "purchase": {
+        "enabled": true
+      },
+      "streaming": {
+        "enabled": true
+      },
+      "marketplace": {
+        "enabled": true
+      }
+    },
+    "links": [
+      {
+        "platform": "sony_music",
+        "label": "SonyMusicで購入",
+        "priority": 1,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://www.sonymusicshop.jp/m/item/itemShw.php?site=S&ima=4657&cd=ESBL000002178",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "amazon",
+        "label": "Amazonで購入",
+        "priority": 2,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://www.amazon.co.jp/s?k=T.M.Revolution+SEVENTH+HEAVEN+T.M.R.+LIVE+REVOLUTION'04",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "rakuten_books",
+        "label": "楽天ブックスで購入",
+        "priority": 3,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://books.rakuten.co.jp/search?sitem=T.M.Revolution+SEVENTH+HEAVEN+T.M.R.+LIVE+REVOLUTION'04",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "yahoo_shopping",
+        "label": "Yahoo!ショッピングで購入",
+        "priority": 4,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://shopping.yahoo.co.jp/search?p=T.M.Revolution+SEVENTH+HEAVEN+T.M.R.+LIVE+REVOLUTION'04",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "seven_net",
+        "label": "7netで購入",
+        "priority": 5,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://7net.omni7.jp/search/?keyword=T.M.Revolution+SEVENTH+HEAVEN+T.M.R.+LIVE+REVOLUTION'04",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "spotify",
+        "label": "Spotifyで聴く",
+        "priority": 1,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "rakuten_music",
+        "label": "RakutenMusicで聴く",
+        "priority": 2,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "recochoku",
+        "label": "レコチョクで聴く",
+        "priority": 3,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "apple_music",
+        "label": "Apple Musicで聴く",
+        "priority": 4,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "amazon_music",
+        "label": "Amazon Musicで聴く",
+        "priority": 5,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "line_music",
+        "label": "LINE MUSICで聴く",
+        "priority": 6,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "youtube",
+        "label": "YouTubeで視聴",
+        "priority": 7,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "mercari",
+        "label": "メルカリで探す",
+        "priority": 1,
+        "category": "marketplace",
+        "enabled": true,
+        "urls": {
+          "direct": "https://jp.mercari.com/search?keyword=T.M.Revolution+SEVENTH+HEAVEN+T.M.R.+LIVE+REVOLUTION'04",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "yahoo_auction",
+        "label": "ヤフオクで探す",
+        "priority": 2,
+        "category": "marketplace",
+        "enabled": true,
+        "urls": {
+          "direct": "https://auctions.yahoo.co.jp/search/search?p=T.M.Revolution+SEVENTH+HEAVEN+T.M.R.+LIVE+REVOLUTION'04",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "rakuma",
+        "label": "ラクマで探す",
+        "priority": 3,
+        "category": "marketplace",
+        "enabled": true,
+        "urls": {
+          "direct": "https://fril.jp/search/T.M.Revolution+SEVENTH+HEAVEN+T.M.R.+LIVE+REVOLUTION'04",
+          "affiliate": null
+        }
+      }
+    ]
   },
   {
     "id": "vertical_infinity_tv",
     "title": "T.M.R. LIVE REVOLUTION '05 -vertical infinity-",
     "type": "TV",
     "notes": "テレビ放送のみ",
-    "links": []
+    "categories": {
+      "purchase": {
+        "enabled": true
+      },
+      "streaming": {
+        "enabled": true
+      },
+      "marketplace": {
+        "enabled": true
+      }
+    },
+    "links": [
+      {
+        "platform": "sony_music",
+        "label": "SonyMusicで購入",
+        "priority": 1,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "amazon",
+        "label": "Amazonで購入",
+        "priority": 2,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://www.amazon.co.jp/s?k=T.M.R.+LIVE+REVOLUTION+'05+-vertical+infinity-",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "rakuten_books",
+        "label": "楽天ブックスで購入",
+        "priority": 3,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://books.rakuten.co.jp/search?sitem=T.M.R.+LIVE+REVOLUTION+'05+-vertical+infinity-",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "yahoo_shopping",
+        "label": "Yahoo!ショッピングで購入",
+        "priority": 4,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://shopping.yahoo.co.jp/search?p=T.M.R.+LIVE+REVOLUTION+'05+-vertical+infinity-",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "seven_net",
+        "label": "7netで購入",
+        "priority": 5,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://7net.omni7.jp/search/?keyword=T.M.R.+LIVE+REVOLUTION+'05+-vertical+infinity-",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "spotify",
+        "label": "Spotifyで聴く",
+        "priority": 1,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "rakuten_music",
+        "label": "RakutenMusicで聴く",
+        "priority": 2,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "recochoku",
+        "label": "レコチョクで聴く",
+        "priority": 3,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "apple_music",
+        "label": "Apple Musicで聴く",
+        "priority": 4,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "amazon_music",
+        "label": "Amazon Musicで聴く",
+        "priority": 5,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "line_music",
+        "label": "LINE MUSICで聴く",
+        "priority": 6,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "youtube",
+        "label": "YouTubeで視聴",
+        "priority": 7,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "mercari",
+        "label": "メルカリで探す",
+        "priority": 1,
+        "category": "marketplace",
+        "enabled": true,
+        "urls": {
+          "direct": "https://jp.mercari.com/search?keyword=T.M.R.+LIVE+REVOLUTION+'05+-vertical+infinity-",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "yahoo_auction",
+        "label": "ヤフオクで探す",
+        "priority": 2,
+        "category": "marketplace",
+        "enabled": true,
+        "urls": {
+          "direct": "https://auctions.yahoo.co.jp/search/search?p=T.M.R.+LIVE+REVOLUTION+'05+-vertical+infinity-",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "rakuma",
+        "label": "ラクマで探す",
+        "priority": 3,
+        "category": "marketplace",
+        "enabled": true,
+        "urls": {
+          "direct": "https://fril.jp/search/T.M.R.+LIVE+REVOLUTION+'05+-vertical+infinity-",
+          "affiliate": null
+        }
+      }
+    ]
   },
   {
     "id": "under_cover_live",
     "title": "T.M.R. LIVE REVOLUTION '06 -UNDER:COVER-",
     "type": "DVD/Blu-ray",
     "notes": null,
-    "links": []
+    "categories": {
+      "purchase": {
+        "enabled": true
+      },
+      "streaming": {
+        "enabled": true
+      },
+      "marketplace": {
+        "enabled": true
+      }
+    },
+    "links": [
+      {
+        "platform": "sony_music",
+        "label": "SonyMusicで購入",
+        "priority": 1,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://www.sonymusicshop.jp/m/item/itemShw.php?site=S&ima=4657&cd=ESXL000000003",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "amazon",
+        "label": "Amazonで購入",
+        "priority": 2,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://www.amazon.co.jp/s?k=T.M.R.+LIVE+REVOLUTION+06+-UNDER:COVER-",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "rakuten_books",
+        "label": "楽天ブックスで購入",
+        "priority": 3,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://books.rakuten.co.jp/search?sitem=T.M.R.+LIVE+REVOLUTION+06+-UNDER:COVER-",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "yahoo_shopping",
+        "label": "Yahoo!ショッピングで購入",
+        "priority": 4,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://shopping.yahoo.co.jp/search?p=T.M.R.+LIVE+REVOLUTION+06+-UNDER:COVER-",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "seven_net",
+        "label": "7netで購入",
+        "priority": 5,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://7net.omni7.jp/search/?keyword=T.M.R.+LIVE+REVOLUTION+06+-UNDER:COVER-",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "spotify",
+        "label": "Spotifyで聴く",
+        "priority": 1,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "rakuten_music",
+        "label": "RakutenMusicで聴く",
+        "priority": 2,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "recochoku",
+        "label": "レコチョクで聴く",
+        "priority": 3,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "apple_music",
+        "label": "Apple Musicで聴く",
+        "priority": 4,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "amazon_music",
+        "label": "Amazon Musicで聴く",
+        "priority": 5,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "line_music",
+        "label": "LINE MUSICで聴く",
+        "priority": 6,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "youtube",
+        "label": "YouTubeで視聴",
+        "priority": 7,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "mercari",
+        "label": "メルカリで探す",
+        "priority": 1,
+        "category": "marketplace",
+        "enabled": true,
+        "urls": {
+          "direct": "https://jp.mercari.com/search?keyword=T.M.R.+LIVE+REVOLUTION+06+-UNDER:COVER-",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "yahoo_auction",
+        "label": "ヤフオクで探す",
+        "priority": 2,
+        "category": "marketplace",
+        "enabled": true,
+        "urls": {
+          "direct": "https://auctions.yahoo.co.jp/search/search?p=T.M.R.+LIVE+REVOLUTION+06+-UNDER:COVER-",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "rakuma",
+        "label": "ラクマで探す",
+        "priority": 3,
+        "category": "marketplace",
+        "enabled": true,
+        "urls": {
+          "direct": "https://fril.jp/search/T.M.R.+LIVE+REVOLUTION+06+-UNDER:COVER-",
+          "affiliate": null
+        }
+      }
+    ]
   },
   {
     "id": "under_cover_cd",
     "title": "UNDER:COVER",
     "type": "CD",
     "notes": null,
-    "links": []
+    "categories": {
+      "purchase": {
+        "enabled": true
+      },
+      "streaming": {
+        "enabled": true
+      },
+      "marketplace": {
+        "enabled": true
+      }
+    },
+    "links": [
+      {
+        "platform": "sony_music",
+        "label": "SonyMusicで購入",
+        "priority": 1,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://www.sonymusicshop.jp/m/item/itemShw.php?site=S&ima=4657&cd=ESCL000002757",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "amazon",
+        "label": "Amazonで購入",
+        "priority": 2,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://www.amazon.co.jp/s?k=UNDER:COVER",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "rakuten_books",
+        "label": "楽天ブックスで購入",
+        "priority": 3,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://books.rakuten.co.jp/search?sitem=UNDER:COVER",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "yahoo_shopping",
+        "label": "Yahoo!ショッピングで購入",
+        "priority": 4,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://shopping.yahoo.co.jp/search?p=UNDER:COVER",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "seven_net",
+        "label": "7netで購入",
+        "priority": 5,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://7net.omni7.jp/search/?keyword=UNDER:COVER",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "spotify",
+        "label": "Spotifyで聴く",
+        "priority": 1,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "rakuten_music",
+        "label": "RakutenMusicで聴く",
+        "priority": 2,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "recochoku",
+        "label": "レコチョクで聴く",
+        "priority": 3,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "apple_music",
+        "label": "Apple Musicで聴く",
+        "priority": 4,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "amazon_music",
+        "label": "Amazon Musicで聴く",
+        "priority": 5,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "line_music",
+        "label": "LINE MUSICで聴く",
+        "priority": 6,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "youtube",
+        "label": "YouTubeで視聴",
+        "priority": 7,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "mercari",
+        "label": "メルカリで探す",
+        "priority": 1,
+        "category": "marketplace",
+        "enabled": true,
+        "urls": {
+          "direct": "https://jp.mercari.com/search?keyword=UNDER:COVER",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "yahoo_auction",
+        "label": "ヤフオクで探す",
+        "priority": 2,
+        "category": "marketplace",
+        "enabled": true,
+        "urls": {
+          "direct": "https://auctions.yahoo.co.jp/search/search?p=UNDER:COVER",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "rakuma",
+        "label": "ラクマで探す",
+        "priority": 3,
+        "category": "marketplace",
+        "enabled": true,
+        "urls": {
+          "direct": "https://fril.jp/search/UNDER:COVER",
+          "affiliate": null
+        }
+      }
+    ]
   },
   {
     "id": "cloud_nine_cd",
     "title": "T.M.R. LIVE REVOLUTION'11-12 -CLOUD NINE-",
     "type": "CD",
     "notes": null,
-    "links": []
+    "categories": {
+      "purchase": {
+        "enabled": true
+      },
+      "streaming": {
+        "enabled": true
+      },
+      "marketplace": {
+        "enabled": true
+      }
+    },
+    "links": [
+      {
+        "platform": "sony_music",
+        "label": "SonyMusicで購入",
+        "priority": 1,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://www.sonymusicshop.jp/m/item/itemShw.php?site=S&ima=3845&cd=ESCL000003910",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "amazon",
+        "label": "Amazonで購入",
+        "priority": 2,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://www.amazon.co.jp/s?k=T.M.R.+LIVE+REVOLUTION'11-12+-CLOUD+NINE-",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "rakuten_books",
+        "label": "楽天ブックスで購入",
+        "priority": 3,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://books.rakuten.co.jp/search?sitem=T.M.R.+LIVE+REVOLUTION'11-12+-CLOUD+NINE-",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "yahoo_shopping",
+        "label": "Yahoo!ショッピングで購入",
+        "priority": 4,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://shopping.yahoo.co.jp/search?p=T.M.R.+LIVE+REVOLUTION'11-12+-CLOUD+NINE-",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "seven_net",
+        "label": "7netで購入",
+        "priority": 5,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://7net.omni7.jp/search/?keyword=T.M.R.+LIVE+REVOLUTION'11-12+-CLOUD+NINE-",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "spotify",
+        "label": "Spotifyで聴く",
+        "priority": 1,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "rakuten_music",
+        "label": "RakutenMusicで聴く",
+        "priority": 2,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "recochoku",
+        "label": "レコチョクで聴く",
+        "priority": 3,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "apple_music",
+        "label": "Apple Musicで聴く",
+        "priority": 4,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "amazon_music",
+        "label": "Amazon Musicで聴く",
+        "priority": 5,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "line_music",
+        "label": "LINE MUSICで聴く",
+        "priority": 6,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "youtube",
+        "label": "YouTubeで視聴",
+        "priority": 7,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "mercari",
+        "label": "メルカリで探す",
+        "priority": 1,
+        "category": "marketplace",
+        "enabled": true,
+        "urls": {
+          "direct": "https://jp.mercari.com/search?keyword=T.M.R.+LIVE+REVOLUTION'11-12+-CLOUD+NINE-",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "yahoo_auction",
+        "label": "ヤフオクで探す",
+        "priority": 2,
+        "category": "marketplace",
+        "enabled": true,
+        "urls": {
+          "direct": "https://auctions.yahoo.co.jp/search/search?p=T.M.R.+LIVE+REVOLUTION'11-12+-CLOUD+NINE-",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "rakuma",
+        "label": "ラクマで探す",
+        "priority": 3,
+        "category": "marketplace",
+        "enabled": true,
+        "urls": {
+          "direct": "https://fril.jp/search/T.M.R.+LIVE+REVOLUTION'11-12+-CLOUD+NINE-",
+          "affiliate": null
+        }
+      }
+    ]
+  },
+  {
+    "id": "cloud_nine_limited_a",
+    "title": "CLOUD NINE【初回生産限定盤/type-A】",
+    "type": "CD",
+    "notes": null,
+    "categories": {
+      "purchase": {
+        "enabled": true
+      },
+      "streaming": {
+        "enabled": true
+      },
+      "marketplace": {
+        "enabled": true
+      }
+    },
+    "links": [
+      {
+        "platform": "sony_music",
+        "label": "SonyMusicで購入",
+        "priority": 1,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://www.sonymusicshop.jp/m/item/itemShw.php?site=S&ima=3845&cd=ESCL000003638",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "amazon",
+        "label": "Amazonで購入",
+        "priority": 2,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://www.amazon.co.jp/s?k=CLOUD+NINE【初回生産限定盤/type-A】",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "rakuten_books",
+        "label": "楽天ブックスで購入",
+        "priority": 3,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://books.rakuten.co.jp/search?sitem=CLOUD+NINE【初回生産限定盤/type-A】",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "yahoo_shopping",
+        "label": "Yahoo!ショッピングで購入",
+        "priority": 4,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://shopping.yahoo.co.jp/search?p=CLOUD+NINE【初回生産限定盤/type-A】",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "seven_net",
+        "label": "7netで購入",
+        "priority": 5,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://7net.omni7.jp/search/?keyword=CLOUD+NINE【初回生産限定盤/type-A】",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "spotify",
+        "label": "Spotifyで聴く",
+        "priority": 1,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "rakuten_music",
+        "label": "RakutenMusicで聴く",
+        "priority": 2,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "recochoku",
+        "label": "レコチョクで聴く",
+        "priority": 3,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "apple_music",
+        "label": "Apple Musicで聴く",
+        "priority": 4,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "amazon_music",
+        "label": "Amazon Musicで聴く",
+        "priority": 5,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "line_music",
+        "label": "LINE MUSICで聴く",
+        "priority": 6,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "youtube",
+        "label": "YouTubeで視聴",
+        "priority": 7,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "mercari",
+        "label": "メルカリで探す",
+        "priority": 1,
+        "category": "marketplace",
+        "enabled": true,
+        "urls": {
+          "direct": "https://jp.mercari.com/search?keyword=CLOUD+NINE【初回生産限定盤/type-A】",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "yahoo_auction",
+        "label": "ヤフオクで探す",
+        "priority": 2,
+        "category": "marketplace",
+        "enabled": true,
+        "urls": {
+          "direct": "https://auctions.yahoo.co.jp/search/search?p=CLOUD+NINE【初回生産限定盤/type-A】",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "rakuma",
+        "label": "ラクマで探す",
+        "priority": 3,
+        "category": "marketplace",
+        "enabled": true,
+        "urls": {
+          "direct": "https://fril.jp/search/CLOUD+NINE【初回生産限定盤/type-A】",
+          "affiliate": null
+        }
+      }
+    ]
   },
   {
     "id": "inazuma_2011",
     "title": "イナズマロックフェス 2011",
     "type": "TV",
     "notes": null,
-    "links": []
+    "categories": {
+      "purchase": {
+        "enabled": true
+      },
+      "streaming": {
+        "enabled": true
+      },
+      "marketplace": {
+        "enabled": true
+      }
+    },
+    "links": [
+      {
+        "platform": "sony_music",
+        "label": "SonyMusicで購入",
+        "priority": 1,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "amazon",
+        "label": "Amazonで購入",
+        "priority": 2,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://www.amazon.co.jp/s?k=イナズマロックフェス+2011",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "rakuten_books",
+        "label": "楽天ブックスで購入",
+        "priority": 3,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://books.rakuten.co.jp/search?sitem=イナズマロックフェス+2011",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "yahoo_shopping",
+        "label": "Yahoo!ショッピングで購入",
+        "priority": 4,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://shopping.yahoo.co.jp/search?p=イナズマロックフェス+2011",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "seven_net",
+        "label": "7netで購入",
+        "priority": 5,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://7net.omni7.jp/search/?keyword=イナズマロックフェス+2011",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "spotify",
+        "label": "Spotifyで聴く",
+        "priority": 1,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "rakuten_music",
+        "label": "RakutenMusicで聴く",
+        "priority": 2,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "recochoku",
+        "label": "レコチョクで聴く",
+        "priority": 3,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "apple_music",
+        "label": "Apple Musicで聴く",
+        "priority": 4,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "amazon_music",
+        "label": "Amazon Musicで聴く",
+        "priority": 5,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "line_music",
+        "label": "LINE MUSICで聴く",
+        "priority": 6,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "youtube",
+        "label": "YouTubeで視聴",
+        "priority": 7,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "mercari",
+        "label": "メルカリで探す",
+        "priority": 1,
+        "category": "marketplace",
+        "enabled": true,
+        "urls": {
+          "direct": "https://jp.mercari.com/search?keyword=イナズマロックフェス+2011",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "yahoo_auction",
+        "label": "ヤフオクで探す",
+        "priority": 2,
+        "category": "marketplace",
+        "enabled": true,
+        "urls": {
+          "direct": "https://auctions.yahoo.co.jp/search/search?p=イナズマロックフェス+2011",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "rakuma",
+        "label": "ラクマで探す",
+        "priority": 3,
+        "category": "marketplace",
+        "enabled": true,
+        "urls": {
+          "direct": "https://fril.jp/search/イナズマロックフェス+2011",
+          "affiliate": null
+        }
+      }
+    ]
   },
   {
     "id": "strikes_back_ix_11_in",
     "title": "T.M.R. LIVE REVOLUTION '11 -Strikes Back IX- in ニコファーレ",
     "type": "Streaming",
     "notes": null,
-    "links": []
+    "categories": {
+      "purchase": {
+        "enabled": true
+      },
+      "streaming": {
+        "enabled": true
+      },
+      "marketplace": {
+        "enabled": true
+      }
+    },
+    "links": [
+      {
+        "platform": "sony_music",
+        "label": "SonyMusicで購入",
+        "priority": 1,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "amazon",
+        "label": "Amazonで購入",
+        "priority": 2,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://www.amazon.co.jp/s?k=T.M.R.+LIVE+REVOLUTION+'11+-Strikes+Back+IX-+in+ニコファーレ",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "rakuten_books",
+        "label": "楽天ブックスで購入",
+        "priority": 3,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://books.rakuten.co.jp/search?sitem=T.M.R.+LIVE+REVOLUTION+'11+-Strikes+Back+IX-+in+ニコファーレ",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "yahoo_shopping",
+        "label": "Yahoo!ショッピングで購入",
+        "priority": 4,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://shopping.yahoo.co.jp/search?p=T.M.R.+LIVE+REVOLUTION+'11+-Strikes+Back+IX-+in+ニコファーレ",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "seven_net",
+        "label": "7netで購入",
+        "priority": 5,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://7net.omni7.jp/search/?keyword=T.M.R.+LIVE+REVOLUTION+'11+-Strikes+Back+IX-+in+ニコファーレ",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "spotify",
+        "label": "Spotifyで聴く",
+        "priority": 1,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "rakuten_music",
+        "label": "RakutenMusicで聴く",
+        "priority": 2,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "recochoku",
+        "label": "レコチョクで聴く",
+        "priority": 3,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "apple_music",
+        "label": "Apple Musicで聴く",
+        "priority": 4,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "amazon_music",
+        "label": "Amazon Musicで聴く",
+        "priority": 5,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "line_music",
+        "label": "LINE MUSICで聴く",
+        "priority": 6,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "youtube",
+        "label": "YouTubeで視聴",
+        "priority": 7,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "mercari",
+        "label": "メルカリで探す",
+        "priority": 1,
+        "category": "marketplace",
+        "enabled": true,
+        "urls": {
+          "direct": "https://jp.mercari.com/search?keyword=T.M.R.+LIVE+REVOLUTION+'11+-Strikes+Back+IX-+in+ニコファーレ",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "yahoo_auction",
+        "label": "ヤフオクで探す",
+        "priority": 2,
+        "category": "marketplace",
+        "enabled": true,
+        "urls": {
+          "direct": "https://auctions.yahoo.co.jp/search/search?p=T.M.R.+LIVE+REVOLUTION+'11+-Strikes+Back+IX-+in+ニコファーレ",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "rakuma",
+        "label": "ラクマで探す",
+        "priority": 3,
+        "category": "marketplace",
+        "enabled": true,
+        "urls": {
+          "direct": "https://fril.jp/search/T.M.R.+LIVE+REVOLUTION+'11+-Strikes+Back+IX-+in+ニコファーレ",
+          "affiliate": null
+        }
+      }
+    ]
   },
   {
     "id": "anniversary_15th_final",
     "title": "T.M.R. LIVE REVOLUTION '12 -15th Anniversary FINAL-",
     "type": "DVD/Blu-ray",
     "notes": null,
-    "links": []
+    "categories": {
+      "purchase": {
+        "enabled": true
+      },
+      "streaming": {
+        "enabled": true
+      },
+      "marketplace": {
+        "enabled": true
+      }
+    },
+    "links": [
+      {
+        "platform": "sony_music",
+        "label": "SonyMusicで購入",
+        "priority": 1,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://www.sonymusicshop.jp/m/item/itemShw.php?site=S&ima=3845&cd=ESXL000000030",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "amazon",
+        "label": "Amazonで購入",
+        "priority": 2,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://www.amazon.co.jp/s?k=T.M.R.+LIVE+REVOLUTION+'12+-15th+Anniversary+FINAL-",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "rakuten_books",
+        "label": "楽天ブックスで購入",
+        "priority": 3,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://books.rakuten.co.jp/search?sitem=T.M.R.+LIVE+REVOLUTION+'12+-15th+Anniversary+FINAL-",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "yahoo_shopping",
+        "label": "Yahoo!ショッピングで購入",
+        "priority": 4,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://shopping.yahoo.co.jp/search?p=T.M.R.+LIVE+REVOLUTION+'12+-15th+Anniversary+FINAL-",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "seven_net",
+        "label": "7netで購入",
+        "priority": 5,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://7net.omni7.jp/search/?keyword=T.M.R.+LIVE+REVOLUTION+'12+-15th+Anniversary+FINAL-",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "spotify",
+        "label": "Spotifyで聴く",
+        "priority": 1,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "rakuten_music",
+        "label": "RakutenMusicで聴く",
+        "priority": 2,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "recochoku",
+        "label": "レコチョクで聴く",
+        "priority": 3,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "apple_music",
+        "label": "Apple Musicで聴く",
+        "priority": 4,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "amazon_music",
+        "label": "Amazon Musicで聴く",
+        "priority": 5,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "line_music",
+        "label": "LINE MUSICで聴く",
+        "priority": 6,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "youtube",
+        "label": "YouTubeで視聴",
+        "priority": 7,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "mercari",
+        "label": "メルカリで探す",
+        "priority": 1,
+        "category": "marketplace",
+        "enabled": true,
+        "urls": {
+          "direct": "https://jp.mercari.com/search?keyword=T.M.R.+LIVE+REVOLUTION+'12+-15th+Anniversary+FINAL-",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "yahoo_auction",
+        "label": "ヤフオクで探す",
+        "priority": 2,
+        "category": "marketplace",
+        "enabled": true,
+        "urls": {
+          "direct": "https://auctions.yahoo.co.jp/search/search?p=T.M.R.+LIVE+REVOLUTION+'12+-15th+Anniversary+FINAL-",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "rakuma",
+        "label": "ラクマで探す",
+        "priority": 3,
+        "category": "marketplace",
+        "enabled": true,
+        "urls": {
+          "direct": "https://fril.jp/search/T.M.R.+LIVE+REVOLUTION+'12+-15th+Anniversary+FINAL-",
+          "affiliate": null
+        }
+      }
+    ]
   },
   {
     "id": "under_2_cover",
     "title": "T.M.R. LIVE REVOLUTION'13 -UNDER II COVER-",
     "type": "DVD/Blu-ray",
     "notes": null,
-    "links": []
+    "categories": {
+      "purchase": {
+        "enabled": true
+      },
+      "streaming": {
+        "enabled": true
+      },
+      "marketplace": {
+        "enabled": true
+      }
+    },
+    "links": [
+      {
+        "platform": "sony_music",
+        "label": "SonyMusicで購入",
+        "priority": 1,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://www.sonymusicshop.jp/m/item/itemShw.php?site=S&ima=3845&cd=ESXL000000040",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "amazon",
+        "label": "Amazonで購入",
+        "priority": 2,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://www.amazon.co.jp/s?k=T.M.R.+LIVE+REVOLUTION'13+-UNDER+II+COVER-",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "rakuten_books",
+        "label": "楽天ブックスで購入",
+        "priority": 3,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://books.rakuten.co.jp/search?sitem=T.M.R.+LIVE+REVOLUTION'13+-UNDER+II+COVER-",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "yahoo_shopping",
+        "label": "Yahoo!ショッピングで購入",
+        "priority": 4,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://shopping.yahoo.co.jp/search?p=T.M.R.+LIVE+REVOLUTION'13+-UNDER+II+COVER-",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "seven_net",
+        "label": "7netで購入",
+        "priority": 5,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://7net.omni7.jp/search/?keyword=T.M.R.+LIVE+REVOLUTION'13+-UNDER+II+COVER-",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "spotify",
+        "label": "Spotifyで聴く",
+        "priority": 1,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "rakuten_music",
+        "label": "RakutenMusicで聴く",
+        "priority": 2,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "recochoku",
+        "label": "レコチョクで聴く",
+        "priority": 3,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "apple_music",
+        "label": "Apple Musicで聴く",
+        "priority": 4,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "amazon_music",
+        "label": "Amazon Musicで聴く",
+        "priority": 5,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "line_music",
+        "label": "LINE MUSICで聴く",
+        "priority": 6,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "youtube",
+        "label": "YouTubeで視聴",
+        "priority": 7,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "mercari",
+        "label": "メルカリで探す",
+        "priority": 1,
+        "category": "marketplace",
+        "enabled": true,
+        "urls": {
+          "direct": "https://jp.mercari.com/search?keyword=T.M.R.+LIVE+REVOLUTION'13+-UNDER+II+COVER-",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "yahoo_auction",
+        "label": "ヤフオクで探す",
+        "priority": 2,
+        "category": "marketplace",
+        "enabled": true,
+        "urls": {
+          "direct": "https://auctions.yahoo.co.jp/search/search?p=T.M.R.+LIVE+REVOLUTION'13+-UNDER+II+COVER-",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "rakuma",
+        "label": "ラクマで探す",
+        "priority": 3,
+        "category": "marketplace",
+        "enabled": true,
+        "urls": {
+          "direct": "https://fril.jp/search/T.M.R.+LIVE+REVOLUTION'13+-UNDER+II+COVER-",
+          "affiliate": null
+        }
+      }
+    ]
   },
   {
     "id": "14_14",
     "title": "T.M.R. LIVE REVOLUTION'14 -今まで…'14-",
     "type": "CD",
     "notes": "FC限定CD",
-    "links": []
+    "categories": {
+      "purchase": {
+        "enabled": true
+      },
+      "streaming": {
+        "enabled": true
+      },
+      "marketplace": {
+        "enabled": true
+      }
+    },
+    "links": [
+      {
+        "platform": "sony_music",
+        "label": "SonyMusicで購入",
+        "priority": 1,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "amazon",
+        "label": "Amazonで購入",
+        "priority": 2,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://www.amazon.co.jp/s?k=T.M.R.+LIVE+REVOLUTION'14+-今まで…'14-",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "rakuten_books",
+        "label": "楽天ブックスで購入",
+        "priority": 3,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://books.rakuten.co.jp/search?sitem=T.M.R.+LIVE+REVOLUTION'14+-今まで…'14-",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "yahoo_shopping",
+        "label": "Yahoo!ショッピングで購入",
+        "priority": 4,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://shopping.yahoo.co.jp/search?p=T.M.R.+LIVE+REVOLUTION'14+-今まで…'14-",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "seven_net",
+        "label": "7netで購入",
+        "priority": 5,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://7net.omni7.jp/search/?keyword=T.M.R.+LIVE+REVOLUTION'14+-今まで…'14-",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "spotify",
+        "label": "Spotifyで聴く",
+        "priority": 1,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "rakuten_music",
+        "label": "RakutenMusicで聴く",
+        "priority": 2,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "recochoku",
+        "label": "レコチョクで聴く",
+        "priority": 3,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "apple_music",
+        "label": "Apple Musicで聴く",
+        "priority": 4,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "amazon_music",
+        "label": "Amazon Musicで聴く",
+        "priority": 5,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "line_music",
+        "label": "LINE MUSICで聴く",
+        "priority": 6,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "youtube",
+        "label": "YouTubeで視聴",
+        "priority": 7,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "mercari",
+        "label": "メルカリで探す",
+        "priority": 1,
+        "category": "marketplace",
+        "enabled": true,
+        "urls": {
+          "direct": "https://jp.mercari.com/search?keyword=T.M.R.+LIVE+REVOLUTION'14+-今まで…'14-",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "yahoo_auction",
+        "label": "ヤフオクで探す",
+        "priority": 2,
+        "category": "marketplace",
+        "enabled": true,
+        "urls": {
+          "direct": "https://auctions.yahoo.co.jp/search/search?p=T.M.R.+LIVE+REVOLUTION'14+-今まで…'14-",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "rakuma",
+        "label": "ラクマで探す",
+        "priority": 3,
+        "category": "marketplace",
+        "enabled": true,
+        "urls": {
+          "direct": "https://fril.jp/search/T.M.R.+LIVE+REVOLUTION'14+-今まで…'14-",
+          "affiliate": null
+        }
+      }
+    ]
   },
   {
     "id": "double_deal_cd",
     "title": "DOUBLE-DEAL完全生産限定盤A",
     "type": "CD",
     "notes": null,
-    "links": []
+    "categories": {
+      "purchase": {
+        "enabled": true
+      },
+      "streaming": {
+        "enabled": true
+      },
+      "marketplace": {
+        "enabled": true
+      }
+    },
+    "links": [
+      {
+        "platform": "sony_music",
+        "label": "SonyMusicで購入",
+        "priority": 1,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://www.sonymusicshop.jp/m/item/itemShw.php?site=S&ima=3454&cd=ESCL000004490",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "amazon",
+        "label": "Amazonで購入",
+        "priority": 2,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://www.amazon.co.jp/s?k=DOUBLE-DEAL完全生産限定盤A",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "rakuten_books",
+        "label": "楽天ブックスで購入",
+        "priority": 3,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://books.rakuten.co.jp/search?sitem=DOUBLE-DEAL完全生産限定盤A",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "yahoo_shopping",
+        "label": "Yahoo!ショッピングで購入",
+        "priority": 4,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://shopping.yahoo.co.jp/search?p=DOUBLE-DEAL完全生産限定盤A",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "seven_net",
+        "label": "7netで購入",
+        "priority": 5,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://7net.omni7.jp/search/?keyword=DOUBLE-DEAL完全生産限定盤A",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "spotify",
+        "label": "Spotifyで聴く",
+        "priority": 1,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "rakuten_music",
+        "label": "RakutenMusicで聴く",
+        "priority": 2,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "recochoku",
+        "label": "レコチョクで聴く",
+        "priority": 3,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "apple_music",
+        "label": "Apple Musicで聴く",
+        "priority": 4,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "amazon_music",
+        "label": "Amazon Musicで聴く",
+        "priority": 5,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "line_music",
+        "label": "LINE MUSICで聴く",
+        "priority": 6,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "youtube",
+        "label": "YouTubeで視聴",
+        "priority": 7,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "mercari",
+        "label": "メルカリで探す",
+        "priority": 1,
+        "category": "marketplace",
+        "enabled": true,
+        "urls": {
+          "direct": "https://jp.mercari.com/search?keyword=DOUBLE-DEAL完全生産限定盤A",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "yahoo_auction",
+        "label": "ヤフオクで探す",
+        "priority": 2,
+        "category": "marketplace",
+        "enabled": true,
+        "urls": {
+          "direct": "https://auctions.yahoo.co.jp/search/search?p=DOUBLE-DEAL完全生産限定盤A",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "rakuma",
+        "label": "ラクマで探す",
+        "priority": 3,
+        "category": "marketplace",
+        "enabled": true,
+        "urls": {
+          "direct": "https://fril.jp/search/DOUBLE-DEAL完全生産限定盤A",
+          "affiliate": null
+        }
+      }
+    ]
   },
   {
     "id": "strikes_back_xi_15",
     "title": "T.M.R. LIVE REVOLUTION '15 -Strikes Back XI-",
     "type": "DVD",
     "notes": null,
-    "links": []
+    "categories": {
+      "purchase": {
+        "enabled": true
+      },
+      "streaming": {
+        "enabled": true
+      },
+      "marketplace": {
+        "enabled": true
+      }
+    },
+    "links": [
+      {
+        "platform": "sony_music",
+        "label": "SonyMusicで購入",
+        "priority": 1,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "amazon",
+        "label": "Amazonで購入",
+        "priority": 2,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://www.amazon.co.jp/s?k=T.M.R.+LIVE+REVOLUTION+'15+-Strikes+Back+XI-",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "rakuten_books",
+        "label": "楽天ブックスで購入",
+        "priority": 3,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://books.rakuten.co.jp/search?sitem=T.M.R.+LIVE+REVOLUTION+'15+-Strikes+Back+XI-",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "yahoo_shopping",
+        "label": "Yahoo!ショッピングで購入",
+        "priority": 4,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://shopping.yahoo.co.jp/search?p=T.M.R.+LIVE+REVOLUTION+'15+-Strikes+Back+XI-",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "seven_net",
+        "label": "7netで購入",
+        "priority": 5,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://7net.omni7.jp/search/?keyword=T.M.R.+LIVE+REVOLUTION+'15+-Strikes+Back+XI-",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "spotify",
+        "label": "Spotifyで聴く",
+        "priority": 1,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "rakuten_music",
+        "label": "RakutenMusicで聴く",
+        "priority": 2,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "recochoku",
+        "label": "レコチョクで聴く",
+        "priority": 3,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "apple_music",
+        "label": "Apple Musicで聴く",
+        "priority": 4,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "amazon_music",
+        "label": "Amazon Musicで聴く",
+        "priority": 5,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "line_music",
+        "label": "LINE MUSICで聴く",
+        "priority": 6,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "youtube",
+        "label": "YouTubeで視聴",
+        "priority": 7,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "mercari",
+        "label": "メルカリで探す",
+        "priority": 1,
+        "category": "marketplace",
+        "enabled": true,
+        "urls": {
+          "direct": "https://jp.mercari.com/search?keyword=T.M.R.+LIVE+REVOLUTION+'15+-Strikes+Back+XI-",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "yahoo_auction",
+        "label": "ヤフオクで探す",
+        "priority": 2,
+        "category": "marketplace",
+        "enabled": true,
+        "urls": {
+          "direct": "https://auctions.yahoo.co.jp/search/search?p=T.M.R.+LIVE+REVOLUTION+'15+-Strikes+Back+XI-",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "rakuma",
+        "label": "ラクマで探す",
+        "priority": 3,
+        "category": "marketplace",
+        "enabled": true,
+        "urls": {
+          "direct": "https://fril.jp/search/T.M.R.+LIVE+REVOLUTION+'15+-Strikes+Back+XI-",
+          "affiliate": null
+        }
+      }
+    ]
   },
   {
     "id": "inazuma_2015",
     "title": "イナズマロックフェス 2015",
     "type": "TV",
     "notes": "テレビ放送のみ",
-    "links": []
+    "categories": {
+      "purchase": {
+        "enabled": true
+      },
+      "streaming": {
+        "enabled": true
+      },
+      "marketplace": {
+        "enabled": true
+      }
+    },
+    "links": [
+      {
+        "platform": "sony_music",
+        "label": "SonyMusicで購入",
+        "priority": 1,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "amazon",
+        "label": "Amazonで購入",
+        "priority": 2,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://www.amazon.co.jp/s?k=イナズマロックフェス+2015",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "rakuten_books",
+        "label": "楽天ブックスで購入",
+        "priority": 3,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://books.rakuten.co.jp/search?sitem=イナズマロックフェス+2015",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "yahoo_shopping",
+        "label": "Yahoo!ショッピングで購入",
+        "priority": 4,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://shopping.yahoo.co.jp/search?p=イナズマロックフェス+2015",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "seven_net",
+        "label": "7netで購入",
+        "priority": 5,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://7net.omni7.jp/search/?keyword=イナズマロックフェス+2015",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "spotify",
+        "label": "Spotifyで聴く",
+        "priority": 1,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "rakuten_music",
+        "label": "RakutenMusicで聴く",
+        "priority": 2,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "recochoku",
+        "label": "レコチョクで聴く",
+        "priority": 3,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "apple_music",
+        "label": "Apple Musicで聴く",
+        "priority": 4,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "amazon_music",
+        "label": "Amazon Musicで聴く",
+        "priority": 5,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "line_music",
+        "label": "LINE MUSICで聴く",
+        "priority": 6,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "youtube",
+        "label": "YouTubeで視聴",
+        "priority": 7,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "mercari",
+        "label": "メルカリで探す",
+        "priority": 1,
+        "category": "marketplace",
+        "enabled": true,
+        "urls": {
+          "direct": "https://jp.mercari.com/search?keyword=イナズマロックフェス+2015",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "yahoo_auction",
+        "label": "ヤフオクで探す",
+        "priority": 2,
+        "category": "marketplace",
+        "enabled": true,
+        "urls": {
+          "direct": "https://auctions.yahoo.co.jp/search/search?p=イナズマロックフェス+2015",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "rakuma",
+        "label": "ラクマで探す",
+        "priority": 3,
+        "category": "marketplace",
+        "enabled": true,
+        "urls": {
+          "direct": "https://fril.jp/search/イナズマロックフェス+2015",
+          "affiliate": null
+        }
+      }
+    ]
   },
   {
     "id": "route_20_budokan",
     "title": "T.M.R. LIVE REVOLUTION'16-'17 -Route 20- LIVE AT NIPPON BUDOKAN",
     "type": "DVD/Blu-ray",
     "notes": null,
-    "links": []
+    "categories": {
+      "purchase": {
+        "enabled": true
+      },
+      "streaming": {
+        "enabled": true
+      },
+      "marketplace": {
+        "enabled": true
+      }
+    },
+    "links": [
+      {
+        "platform": "sony_music",
+        "label": "SonyMusicで購入",
+        "priority": 1,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://www.sonymusicshop.jp/m/item/itemShw.php?site=S&ima=3454&cd=ESBL000002493",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "amazon",
+        "label": "Amazonで購入",
+        "priority": 2,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://www.amazon.co.jp/s?k=T.M.R.+LIVE+REVOLUTION'16-'17+-Route+20-+LIVE+AT+NIPPON+BUDOKAN",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "rakuten_books",
+        "label": "楽天ブックスで購入",
+        "priority": 3,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://books.rakuten.co.jp/search?sitem=T.M.R.+LIVE+REVOLUTION'16-'17+-Route+20-+LIVE+AT+NIPPON+BUDOKAN",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "yahoo_shopping",
+        "label": "Yahoo!ショッピングで購入",
+        "priority": 4,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://shopping.yahoo.co.jp/search?p=T.M.R.+LIVE+REVOLUTION'16-'17+-Route+20-+LIVE+AT+NIPPON+BUDOKAN",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "seven_net",
+        "label": "7netで購入",
+        "priority": 5,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://7net.omni7.jp/search/?keyword=T.M.R.+LIVE+REVOLUTION'16-'17+-Route+20-+LIVE+AT+NIPPON+BUDOKAN",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "spotify",
+        "label": "Spotifyで聴く",
+        "priority": 1,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "rakuten_music",
+        "label": "RakutenMusicで聴く",
+        "priority": 2,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "recochoku",
+        "label": "レコチョクで聴く",
+        "priority": 3,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "apple_music",
+        "label": "Apple Musicで聴く",
+        "priority": 4,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "amazon_music",
+        "label": "Amazon Musicで聴く",
+        "priority": 5,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "line_music",
+        "label": "LINE MUSICで聴く",
+        "priority": 6,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "youtube",
+        "label": "YouTubeで視聴",
+        "priority": 7,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "mercari",
+        "label": "メルカリで探す",
+        "priority": 1,
+        "category": "marketplace",
+        "enabled": true,
+        "urls": {
+          "direct": "https://jp.mercari.com/search?keyword=T.M.R.+LIVE+REVOLUTION'16-'17+-Route+20-+LIVE+AT+NIPPON+BUDOKAN",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "yahoo_auction",
+        "label": "ヤフオクで探す",
+        "priority": 2,
+        "category": "marketplace",
+        "enabled": true,
+        "urls": {
+          "direct": "https://auctions.yahoo.co.jp/search/search?p=T.M.R.+LIVE+REVOLUTION'16-'17+-Route+20-+LIVE+AT+NIPPON+BUDOKAN",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "rakuma",
+        "label": "ラクマで探す",
+        "priority": 3,
+        "category": "marketplace",
+        "enabled": true,
+        "urls": {
+          "direct": "https://fril.jp/search/T.M.R.+LIVE+REVOLUTION'16-'17+-Route+20-+LIVE+AT+NIPPON+BUDOKAN",
+          "affiliate": null
+        }
+      }
+    ]
   },
   {
     "id": "round_house_cutback_17cd",
     "title": "T.M.R. LIVE REVOLUTION'17 -ROUND HOUSE CUTBACK-",
     "type": "CD",
     "notes": null,
-    "links": []
+    "categories": {
+      "purchase": {
+        "enabled": true
+      },
+      "streaming": {
+        "enabled": true
+      },
+      "marketplace": {
+        "enabled": true
+      }
+    },
+    "links": [
+      {
+        "platform": "sony_music",
+        "label": "SonyMusicで購入",
+        "priority": 1,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://www.sonymusicshop.jp/m/item/itemShw.php?site=S&ima=3454&cd=ESCL000004986",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "amazon",
+        "label": "Amazonで購入",
+        "priority": 2,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://www.amazon.co.jp/s?k=T.M.R.+LIVE+REVOLUTION'17+-ROUND+HOUSE+CUTBACK-",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "rakuten_books",
+        "label": "楽天ブックスで購入",
+        "priority": 3,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://books.rakuten.co.jp/search?sitem=T.M.R.+LIVE+REVOLUTION'17+-ROUND+HOUSE+CUTBACK-",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "yahoo_shopping",
+        "label": "Yahoo!ショッピングで購入",
+        "priority": 4,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://shopping.yahoo.co.jp/search?p=T.M.R.+LIVE+REVOLUTION'17+-ROUND+HOUSE+CUTBACK-",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "seven_net",
+        "label": "7netで購入",
+        "priority": 5,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://7net.omni7.jp/search/?keyword=T.M.R.+LIVE+REVOLUTION'17+-ROUND+HOUSE+CUTBACK-",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "spotify",
+        "label": "Spotifyで聴く",
+        "priority": 1,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "rakuten_music",
+        "label": "RakutenMusicで聴く",
+        "priority": 2,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "recochoku",
+        "label": "レコチョクで聴く",
+        "priority": 3,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "apple_music",
+        "label": "Apple Musicで聴く",
+        "priority": 4,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "amazon_music",
+        "label": "Amazon Musicで聴く",
+        "priority": 5,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "line_music",
+        "label": "LINE MUSICで聴く",
+        "priority": 6,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "youtube",
+        "label": "YouTubeで視聴",
+        "priority": 7,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "mercari",
+        "label": "メルカリで探す",
+        "priority": 1,
+        "category": "marketplace",
+        "enabled": true,
+        "urls": {
+          "direct": "https://jp.mercari.com/search?keyword=T.M.R.+LIVE+REVOLUTION'17+-ROUND+HOUSE+CUTBACK-",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "yahoo_auction",
+        "label": "ヤフオクで探す",
+        "priority": 2,
+        "category": "marketplace",
+        "enabled": true,
+        "urls": {
+          "direct": "https://auctions.yahoo.co.jp/search/search?p=T.M.R.+LIVE+REVOLUTION'17+-ROUND+HOUSE+CUTBACK-",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "rakuma",
+        "label": "ラクマで探す",
+        "priority": 3,
+        "category": "marketplace",
+        "enabled": true,
+        "urls": {
+          "direct": "https://fril.jp/search/T.M.R.+LIVE+REVOLUTION'17+-ROUND+HOUSE+CUTBACK-",
+          "affiliate": null
+        }
+      }
+    ]
   },
   {
     "id": "inazuma_2017",
     "title": "イナズマロックフェス 2017",
     "type": "TV",
     "notes": null,
-    "links": []
+    "categories": {
+      "purchase": {
+        "enabled": true
+      },
+      "streaming": {
+        "enabled": true
+      },
+      "marketplace": {
+        "enabled": true
+      }
+    },
+    "links": [
+      {
+        "platform": "sony_music",
+        "label": "SonyMusicで購入",
+        "priority": 1,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "amazon",
+        "label": "Amazonで購入",
+        "priority": 2,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://www.amazon.co.jp/s?k=イナズマロックフェス+2017",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "rakuten_books",
+        "label": "楽天ブックスで購入",
+        "priority": 3,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://books.rakuten.co.jp/search?sitem=イナズマロックフェス+2017",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "yahoo_shopping",
+        "label": "Yahoo!ショッピングで購入",
+        "priority": 4,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://shopping.yahoo.co.jp/search?p=イナズマロックフェス+2017",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "seven_net",
+        "label": "7netで購入",
+        "priority": 5,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://7net.omni7.jp/search/?keyword=イナズマロックフェス+2017",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "spotify",
+        "label": "Spotifyで聴く",
+        "priority": 1,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "rakuten_music",
+        "label": "RakutenMusicで聴く",
+        "priority": 2,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "recochoku",
+        "label": "レコチョクで聴く",
+        "priority": 3,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "apple_music",
+        "label": "Apple Musicで聴く",
+        "priority": 4,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "amazon_music",
+        "label": "Amazon Musicで聴く",
+        "priority": 5,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "line_music",
+        "label": "LINE MUSICで聴く",
+        "priority": 6,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "youtube",
+        "label": "YouTubeで視聴",
+        "priority": 7,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "mercari",
+        "label": "メルカリで探す",
+        "priority": 1,
+        "category": "marketplace",
+        "enabled": true,
+        "urls": {
+          "direct": "https://jp.mercari.com/search?keyword=イナズマロックフェス+2017",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "yahoo_auction",
+        "label": "ヤフオクで探す",
+        "priority": 2,
+        "category": "marketplace",
+        "enabled": true,
+        "urls": {
+          "direct": "https://auctions.yahoo.co.jp/search/search?p=イナズマロックフェス+2017",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "rakuma",
+        "label": "ラクマで探す",
+        "priority": 3,
+        "category": "marketplace",
+        "enabled": true,
+        "urls": {
+          "direct": "https://fril.jp/search/イナズマロックフェス+2017",
+          "affiliate": null
+        }
+      }
+    ]
   },
   {
     "id": "anniversary_20th_final",
     "title": "T.M.R. LIVE REVOLUTION '17 -20th Anniversary FINAL at Saitama Super Arena-",
     "type": "DVD/Blu-ray",
     "notes": null,
-    "links": []
+    "categories": {
+      "purchase": {
+        "enabled": true
+      },
+      "streaming": {
+        "enabled": true
+      },
+      "marketplace": {
+        "enabled": true
+      }
+    },
+    "links": [
+      {
+        "platform": "sony_music",
+        "label": "SonyMusicで購入",
+        "priority": 1,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://www.sonymusicshop.jp/m/item/itemShw.php?site=S&ima=3454&cd=ESBL000002516",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "amazon",
+        "label": "Amazonで購入",
+        "priority": 2,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://www.amazon.co.jp/s?k=T.M.R.+LIVE+REVOLUTION+'17+-20th+Anniversary+FINAL+at+Saitama+Super+Arena-",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "rakuten_books",
+        "label": "楽天ブックスで購入",
+        "priority": 3,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://books.rakuten.co.jp/search?sitem=T.M.R.+LIVE+REVOLUTION+'17+-20th+Anniversary+FINAL+at+Saitama+Super+Arena-",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "yahoo_shopping",
+        "label": "Yahoo!ショッピングで購入",
+        "priority": 4,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://shopping.yahoo.co.jp/search?p=T.M.R.+LIVE+REVOLUTION+'17+-20th+Anniversary+FINAL+at+Saitama+Super+Arena-",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "seven_net",
+        "label": "7netで購入",
+        "priority": 5,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://7net.omni7.jp/search/?keyword=T.M.R.+LIVE+REVOLUTION+'17+-20th+Anniversary+FINAL+at+Saitama+Super+Arena-",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "spotify",
+        "label": "Spotifyで聴く",
+        "priority": 1,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "rakuten_music",
+        "label": "RakutenMusicで聴く",
+        "priority": 2,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "recochoku",
+        "label": "レコチョクで聴く",
+        "priority": 3,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "apple_music",
+        "label": "Apple Musicで聴く",
+        "priority": 4,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "amazon_music",
+        "label": "Amazon Musicで聴く",
+        "priority": 5,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "line_music",
+        "label": "LINE MUSICで聴く",
+        "priority": 6,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "youtube",
+        "label": "YouTubeで視聴",
+        "priority": 7,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "mercari",
+        "label": "メルカリで探す",
+        "priority": 1,
+        "category": "marketplace",
+        "enabled": true,
+        "urls": {
+          "direct": "https://jp.mercari.com/search?keyword=T.M.R.+LIVE+REVOLUTION+'17+-20th+Anniversary+FINAL+at+Saitama+Super+Arena-",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "yahoo_auction",
+        "label": "ヤフオクで探す",
+        "priority": 2,
+        "category": "marketplace",
+        "enabled": true,
+        "urls": {
+          "direct": "https://auctions.yahoo.co.jp/search/search?p=T.M.R.+LIVE+REVOLUTION+'17+-20th+Anniversary+FINAL+at+Saitama+Super+Arena-",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "rakuma",
+        "label": "ラクマで探す",
+        "priority": 3,
+        "category": "marketplace",
+        "enabled": true,
+        "urls": {
+          "direct": "https://fril.jp/search/T.M.R.+LIVE+REVOLUTION+'17+-20th+Anniversary+FINAL+at+Saitama+Super+Arena-",
+          "affiliate": null
+        }
+      }
+    ]
   },
   {
     "id": "tmrevolutionhot_limithigh_pressure",
     "title": "T.M.Revolution西川貴教さんのライブに突撃してみた！【HOT LIMIT】【HIGH PRESSURE】",
     "type": "YouTube",
     "notes": "ガチャピンちゃんねる",
-    "links": []
+    "categories": {
+      "purchase": {
+        "enabled": true
+      },
+      "streaming": {
+        "enabled": true
+      },
+      "marketplace": {
+        "enabled": true
+      }
+    },
+    "links": [
+      {
+        "platform": "sony_music",
+        "label": "SonyMusicで購入",
+        "priority": 1,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "amazon",
+        "label": "Amazonで購入",
+        "priority": 2,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://www.amazon.co.jp/s?k=T.M.Revolution西川貴教さんのライブに突撃してみた！【HOT+LIMIT】【HIGH+PRESSURE】",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "rakuten_books",
+        "label": "楽天ブックスで購入",
+        "priority": 3,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://books.rakuten.co.jp/search?sitem=T.M.Revolution西川貴教さんのライブに突撃してみた！【HOT+LIMIT】【HIGH+PRESSURE】",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "yahoo_shopping",
+        "label": "Yahoo!ショッピングで購入",
+        "priority": 4,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://shopping.yahoo.co.jp/search?p=T.M.Revolution西川貴教さんのライブに突撃してみた！【HOT+LIMIT】【HIGH+PRESSURE】",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "seven_net",
+        "label": "7netで購入",
+        "priority": 5,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://7net.omni7.jp/search/?keyword=T.M.Revolution西川貴教さんのライブに突撃してみた！【HOT+LIMIT】【HIGH+PRESSURE】",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "spotify",
+        "label": "Spotifyで聴く",
+        "priority": 1,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "rakuten_music",
+        "label": "RakutenMusicで聴く",
+        "priority": 2,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "recochoku",
+        "label": "レコチョクで聴く",
+        "priority": 3,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "apple_music",
+        "label": "Apple Musicで聴く",
+        "priority": 4,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "amazon_music",
+        "label": "Amazon Musicで聴く",
+        "priority": 5,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "line_music",
+        "label": "LINE MUSICで聴く",
+        "priority": 6,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "youtube",
+        "label": "YouTubeで視聴",
+        "priority": 7,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "mercari",
+        "label": "メルカリで探す",
+        "priority": 1,
+        "category": "marketplace",
+        "enabled": true,
+        "urls": {
+          "direct": "https://jp.mercari.com/search?keyword=T.M.Revolution西川貴教さんのライブに突撃してみた！【HOT+LIMIT】【HIGH+PRESSURE】",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "yahoo_auction",
+        "label": "ヤフオクで探す",
+        "priority": 2,
+        "category": "marketplace",
+        "enabled": true,
+        "urls": {
+          "direct": "https://auctions.yahoo.co.jp/search/search?p=T.M.Revolution西川貴教さんのライブに突撃してみた！【HOT+LIMIT】【HIGH+PRESSURE】",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "rakuma",
+        "label": "ラクマで探す",
+        "priority": 3,
+        "category": "marketplace",
+        "enabled": true,
+        "urls": {
+          "direct": "https://fril.jp/search/T.M.Revolution西川貴教さんのライブに突撃してみた！【HOT+LIMIT】【HIGH+PRESSURE】",
+          "affiliate": null
+        }
+      }
+    ]
   },
   {
     "id": "the_25th_anniversaryvote_21_extended_live_edition",
     "title": "the 25th Anniversary：T.M.R. LIVE REVOLUTION'21 -VOTE- Extended Live Edition",
     "type": "Streaming",
     "notes": "配信ライブ",
-    "links": []
+    "categories": {
+      "purchase": {
+        "enabled": true
+      },
+      "streaming": {
+        "enabled": true
+      },
+      "marketplace": {
+        "enabled": true
+      }
+    },
+    "links": [
+      {
+        "platform": "sony_music",
+        "label": "SonyMusicで購入",
+        "priority": 1,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "amazon",
+        "label": "Amazonで購入",
+        "priority": 2,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://www.amazon.co.jp/s?k=the+25th+Anniversary：T.M.R.+LIVE+REVOLUTION'21+-VOTE-+Extended+Live+Edition",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "rakuten_books",
+        "label": "楽天ブックスで購入",
+        "priority": 3,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://books.rakuten.co.jp/search?sitem=the+25th+Anniversary：T.M.R.+LIVE+REVOLUTION'21+-VOTE-+Extended+Live+Edition",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "yahoo_shopping",
+        "label": "Yahoo!ショッピングで購入",
+        "priority": 4,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://shopping.yahoo.co.jp/search?p=the+25th+Anniversary：T.M.R.+LIVE+REVOLUTION'21+-VOTE-+Extended+Live+Edition",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "seven_net",
+        "label": "7netで購入",
+        "priority": 5,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://7net.omni7.jp/search/?keyword=the+25th+Anniversary：T.M.R.+LIVE+REVOLUTION'21+-VOTE-+Extended+Live+Edition",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "spotify",
+        "label": "Spotifyで聴く",
+        "priority": 1,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "rakuten_music",
+        "label": "RakutenMusicで聴く",
+        "priority": 2,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "recochoku",
+        "label": "レコチョクで聴く",
+        "priority": 3,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "apple_music",
+        "label": "Apple Musicで聴く",
+        "priority": 4,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "amazon_music",
+        "label": "Amazon Musicで聴く",
+        "priority": 5,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "line_music",
+        "label": "LINE MUSICで聴く",
+        "priority": 6,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "youtube",
+        "label": "YouTubeで視聴",
+        "priority": 7,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "mercari",
+        "label": "メルカリで探す",
+        "priority": 1,
+        "category": "marketplace",
+        "enabled": true,
+        "urls": {
+          "direct": "https://jp.mercari.com/search?keyword=the+25th+Anniversary：T.M.R.+LIVE+REVOLUTION'21+-VOTE-+Extended+Live+Edition",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "yahoo_auction",
+        "label": "ヤフオクで探す",
+        "priority": 2,
+        "category": "marketplace",
+        "enabled": true,
+        "urls": {
+          "direct": "https://auctions.yahoo.co.jp/search/search?p=the+25th+Anniversary：T.M.R.+LIVE+REVOLUTION'21+-VOTE-+Extended+Live+Edition",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "rakuma",
+        "label": "ラクマで探す",
+        "priority": 3,
+        "category": "marketplace",
+        "enabled": true,
+        "urls": {
+          "direct": "https://fril.jp/search/the+25th+Anniversary：T.M.R.+LIVE+REVOLUTION'21+-VOTE-+Extended+Live+Edition",
+          "affiliate": null
+        }
+      }
+    ]
   },
   {
     "id": "vote_japan_22",
     "title": "T.M.R. LIVE REVOLUTION'22-'23 -VOTE JAPAN-",
     "type": "DVD/Blu-ray",
     "notes": null,
-    "links": []
+    "categories": {
+      "purchase": {
+        "enabled": true
+      },
+      "streaming": {
+        "enabled": true
+      },
+      "marketplace": {
+        "enabled": true
+      }
+    },
+    "links": [
+      {
+        "platform": "sony_music",
+        "label": "SonyMusicで購入",
+        "priority": 1,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://www.sonymusicshop.jp/m/item/itemShw.php?site=S&ima=3454&cd=ESXL000000294",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "amazon",
+        "label": "Amazonで購入",
+        "priority": 2,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://www.amazon.co.jp/s?k=T.M.R.+LIVE+REVOLUTION+22-23+-VOTE+JAPAN-",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "rakuten_books",
+        "label": "楽天ブックスで購入",
+        "priority": 3,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://books.rakuten.co.jp/search?sitem=T.M.R.+LIVE+REVOLUTION+22-23+-VOTE+JAPAN-",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "yahoo_shopping",
+        "label": "Yahoo!ショッピングで購入",
+        "priority": 4,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://shopping.yahoo.co.jp/search?p=T.M.R.+LIVE+REVOLUTION+22-23+-VOTE+JAPAN-",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "seven_net",
+        "label": "7netで購入",
+        "priority": 5,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://7net.omni7.jp/search/?keyword=T.M.R.+LIVE+REVOLUTION+22-23+-VOTE+JAPAN-",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "spotify",
+        "label": "Spotifyで聴く",
+        "priority": 1,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "rakuten_music",
+        "label": "RakutenMusicで聴く",
+        "priority": 2,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "recochoku",
+        "label": "レコチョクで聴く",
+        "priority": 3,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "apple_music",
+        "label": "Apple Musicで聴く",
+        "priority": 4,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "amazon_music",
+        "label": "Amazon Musicで聴く",
+        "priority": 5,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "line_music",
+        "label": "LINE MUSICで聴く",
+        "priority": 6,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "youtube",
+        "label": "YouTubeで視聴",
+        "priority": 7,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "mercari",
+        "label": "メルカリで探す",
+        "priority": 1,
+        "category": "marketplace",
+        "enabled": true,
+        "urls": {
+          "direct": "https://jp.mercari.com/search?keyword=T.M.R.+LIVE+REVOLUTION+22-23+-VOTE+JAPAN-",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "yahoo_auction",
+        "label": "ヤフオクで探す",
+        "priority": 2,
+        "category": "marketplace",
+        "enabled": true,
+        "urls": {
+          "direct": "https://auctions.yahoo.co.jp/search/search?p=T.M.R.+LIVE+REVOLUTION+22-23+-VOTE+JAPAN-",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "rakuma",
+        "label": "ラクマで探す",
+        "priority": 3,
+        "category": "marketplace",
+        "enabled": true,
+        "urls": {
+          "direct": "https://fril.jp/search/T.M.R.+LIVE+REVOLUTION+22-23+-VOTE+JAPAN-",
+          "affiliate": null
+        }
+      }
+    ]
+  },
+  {
+    "id": "naked_arms_game",
+    "title": "Naked arms / SWORD SUMMIT【初回生産限定盤（ゲーム盤）】",
+    "type": "CD",
+    "notes": null,
+    "categories": {
+      "purchase": {
+        "enabled": true
+      },
+      "streaming": {
+        "enabled": true
+      },
+      "marketplace": {
+        "enabled": true
+      }
+    },
+    "links": [
+      {
+        "platform": "sony_music",
+        "label": "SonyMusicで購入",
+        "priority": 1,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://www.sonymusicshop.jp/m/item/itemShw.php?site=S&ima=4250&cd=ESCL000003478",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "amazon",
+        "label": "Amazonで購入",
+        "priority": 2,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://www.amazon.co.jp/s?k=Naked+arms+/+SWORD+SUMMIT【初回生産限定盤（ゲーム盤）】",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "rakuten_books",
+        "label": "楽天ブックスで購入",
+        "priority": 3,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://books.rakuten.co.jp/search?sitem=Naked+arms+/+SWORD+SUMMIT【初回生産限定盤（ゲーム盤）】",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "yahoo_shopping",
+        "label": "Yahoo!ショッピングで購入",
+        "priority": 4,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://shopping.yahoo.co.jp/search?p=Naked+arms+/+SWORD+SUMMIT【初回生産限定盤（ゲーム盤）】",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "seven_net",
+        "label": "7netで購入",
+        "priority": 5,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://7net.omni7.jp/search/?keyword=Naked+arms+/+SWORD+SUMMIT【初回生産限定盤（ゲーム盤）】",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "spotify",
+        "label": "Spotifyで聴く",
+        "priority": 1,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "rakuten_music",
+        "label": "RakutenMusicで聴く",
+        "priority": 2,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "recochoku",
+        "label": "レコチョクで聴く",
+        "priority": 3,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "apple_music",
+        "label": "Apple Musicで聴く",
+        "priority": 4,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "amazon_music",
+        "label": "Amazon Musicで聴く",
+        "priority": 5,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "line_music",
+        "label": "LINE MUSICで聴く",
+        "priority": 6,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "youtube",
+        "label": "YouTubeで視聴",
+        "priority": 7,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "mercari",
+        "label": "メルカリで探す",
+        "priority": 1,
+        "category": "marketplace",
+        "enabled": true,
+        "urls": {
+          "direct": "https://jp.mercari.com/search?keyword=Naked+arms+/+SWORD+SUMMIT【初回生産限定盤（ゲーム盤）】",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "yahoo_auction",
+        "label": "ヤフオクで探す",
+        "priority": 2,
+        "category": "marketplace",
+        "enabled": true,
+        "urls": {
+          "direct": "https://auctions.yahoo.co.jp/search/search?p=Naked+arms+/+SWORD+SUMMIT【初回生産限定盤（ゲーム盤）】",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "rakuma",
+        "label": "ラクマで探す",
+        "priority": 3,
+        "category": "marketplace",
+        "enabled": true,
+        "urls": {
+          "direct": "https://fril.jp/search/Naked+arms+/+SWORD+SUMMIT【初回生産限定盤（ゲーム盤）】",
+          "affiliate": null
+        }
+      }
+    ]
+  },
+  {
+    "id": "naked_arms_anime",
+    "title": "Naked arms / SWORD SUMMIT【初回生産限定盤（アニメ盤）】",
+    "type": "CD",
+    "notes": null,
+    "categories": {
+      "purchase": {
+        "enabled": true
+      },
+      "streaming": {
+        "enabled": true
+      },
+      "marketplace": {
+        "enabled": true
+      }
+    },
+    "links": [
+      {
+        "platform": "sony_music",
+        "label": "SonyMusicで購入",
+        "priority": 1,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://www.sonymusicshop.jp/m/item/itemShw.php?site=S&ima=4250&cd=ESCL000003480",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "amazon",
+        "label": "Amazonで購入",
+        "priority": 2,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://www.amazon.co.jp/s?k=Naked+arms+/+SWORD+SUMMIT【初回生産限定盤（アニメ盤）】",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "rakuten_books",
+        "label": "楽天ブックスで購入",
+        "priority": 3,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://books.rakuten.co.jp/search?sitem=Naked+arms+/+SWORD+SUMMIT【初回生産限定盤（アニメ盤）】",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "yahoo_shopping",
+        "label": "Yahoo!ショッピングで購入",
+        "priority": 4,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://shopping.yahoo.co.jp/search?p=Naked+arms+/+SWORD+SUMMIT【初回生産限定盤（アニメ盤）】",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "seven_net",
+        "label": "7netで購入",
+        "priority": 5,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://7net.omni7.jp/search/?keyword=Naked+arms+/+SWORD+SUMMIT【初回生産限定盤（アニメ盤）】",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "spotify",
+        "label": "Spotifyで聴く",
+        "priority": 1,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "rakuten_music",
+        "label": "RakutenMusicで聴く",
+        "priority": 2,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "recochoku",
+        "label": "レコチョクで聴く",
+        "priority": 3,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "apple_music",
+        "label": "Apple Musicで聴く",
+        "priority": 4,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "amazon_music",
+        "label": "Amazon Musicで聴く",
+        "priority": 5,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "line_music",
+        "label": "LINE MUSICで聴く",
+        "priority": 6,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "youtube",
+        "label": "YouTubeで視聴",
+        "priority": 7,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "mercari",
+        "label": "メルカリで探す",
+        "priority": 1,
+        "category": "marketplace",
+        "enabled": true,
+        "urls": {
+          "direct": "https://jp.mercari.com/search?keyword=Naked+arms+/+SWORD+SUMMIT【初回生産限定盤（アニメ盤）】",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "yahoo_auction",
+        "label": "ヤフオクで探す",
+        "priority": 2,
+        "category": "marketplace",
+        "enabled": true,
+        "urls": {
+          "direct": "https://auctions.yahoo.co.jp/search/search?p=Naked+arms+/+SWORD+SUMMIT【初回生産限定盤（アニメ盤）】",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "rakuma",
+        "label": "ラクマで探す",
+        "priority": 3,
+        "category": "marketplace",
+        "enabled": true,
+        "urls": {
+          "direct": "https://fril.jp/search/Naked+arms+/+SWORD+SUMMIT【初回生産限定盤（アニメ盤）】",
+          "affiliate": null
+        }
+      }
+    ]
+  },
+  {
+    "id": "under_cover_2_cd",
+    "title": "UNDER:COVER 2【初回生産限定盤】",
+    "type": "CD",
+    "notes": null,
+    "categories": {
+      "purchase": {
+        "enabled": true
+      },
+      "streaming": {
+        "enabled": true
+      },
+      "marketplace": {
+        "enabled": true
+      }
+    },
+    "links": [
+      {
+        "platform": "sony_music",
+        "label": "SonyMusicで購入",
+        "priority": 1,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://www.sonymusicshop.jp/m/item/itemShw.php?site=S&ima=3845&cd=ESCL000004028",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "amazon",
+        "label": "Amazonで購入",
+        "priority": 2,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://www.amazon.co.jp/s?k=UNDER:COVER+2【初回生産限定盤】",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "rakuten_books",
+        "label": "楽天ブックスで購入",
+        "priority": 3,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://books.rakuten.co.jp/search?sitem=UNDER:COVER+2【初回生産限定盤】",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "yahoo_shopping",
+        "label": "Yahoo!ショッピングで購入",
+        "priority": 4,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://shopping.yahoo.co.jp/search?p=UNDER:COVER+2【初回生産限定盤】",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "seven_net",
+        "label": "7netで購入",
+        "priority": 5,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://7net.omni7.jp/search/?keyword=UNDER:COVER+2【初回生産限定盤】",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "spotify",
+        "label": "Spotifyで聴く",
+        "priority": 1,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "rakuten_music",
+        "label": "RakutenMusicで聴く",
+        "priority": 2,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "recochoku",
+        "label": "レコチョクで聴く",
+        "priority": 3,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "apple_music",
+        "label": "Apple Musicで聴く",
+        "priority": 4,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "amazon_music",
+        "label": "Amazon Musicで聴く",
+        "priority": 5,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "line_music",
+        "label": "LINE MUSICで聴く",
+        "priority": 6,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "youtube",
+        "label": "YouTubeで視聴",
+        "priority": 7,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "mercari",
+        "label": "メルカリで探す",
+        "priority": 1,
+        "category": "marketplace",
+        "enabled": true,
+        "urls": {
+          "direct": "https://jp.mercari.com/search?keyword=UNDER:COVER+2【初回生産限定盤】",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "yahoo_auction",
+        "label": "ヤフオクで探す",
+        "priority": 2,
+        "category": "marketplace",
+        "enabled": true,
+        "urls": {
+          "direct": "https://auctions.yahoo.co.jp/search/search?p=UNDER:COVER+2【初回生産限定盤】",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "rakuma",
+        "label": "ラクマで探す",
+        "priority": 3,
+        "category": "marketplace",
+        "enabled": true,
+        "urls": {
+          "direct": "https://fril.jp/search/UNDER:COVER+2【初回生産限定盤】",
+          "affiliate": null
+        }
+      }
+    ]
+  },
+  {
+    "id": "raimei_cd",
+    "title": "RAIMEI",
+    "type": "CD",
+    "notes": null,
+    "categories": {
+      "purchase": {
+        "enabled": true
+      },
+      "streaming": {
+        "enabled": true
+      },
+      "marketplace": {
+        "enabled": true
+      }
+    },
+    "links": [
+      {
+        "platform": "sony_music",
+        "label": "SonyMusicで購入",
+        "priority": 1,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://www.sonymusicshop.jp/m/item/itemShw.php?site=S&ima=3454&cd=ESCL000004705",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "amazon",
+        "label": "Amazonで購入",
+        "priority": 2,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://www.amazon.co.jp/s?k=RAIMEI",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "rakuten_books",
+        "label": "楽天ブックスで購入",
+        "priority": 3,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://books.rakuten.co.jp/search?sitem=RAIMEI",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "yahoo_shopping",
+        "label": "Yahoo!ショッピングで購入",
+        "priority": 4,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://shopping.yahoo.co.jp/search?p=RAIMEI",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "seven_net",
+        "label": "7netで購入",
+        "priority": 5,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://7net.omni7.jp/search/?keyword=RAIMEI",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "spotify",
+        "label": "Spotifyで聴く",
+        "priority": 1,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "rakuten_music",
+        "label": "RakutenMusicで聴く",
+        "priority": 2,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "recochoku",
+        "label": "レコチョクで聴く",
+        "priority": 3,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "apple_music",
+        "label": "Apple Musicで聴く",
+        "priority": 4,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "amazon_music",
+        "label": "Amazon Musicで聴く",
+        "priority": 5,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "line_music",
+        "label": "LINE MUSICで聴く",
+        "priority": 6,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "youtube",
+        "label": "YouTubeで視聴",
+        "priority": 7,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "mercari",
+        "label": "メルカリで探す",
+        "priority": 1,
+        "category": "marketplace",
+        "enabled": true,
+        "urls": {
+          "direct": "https://jp.mercari.com/search?keyword=RAIMEI",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "yahoo_auction",
+        "label": "ヤフオクで探す",
+        "priority": 2,
+        "category": "marketplace",
+        "enabled": true,
+        "urls": {
+          "direct": "https://auctions.yahoo.co.jp/search/search?p=RAIMEI",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "rakuma",
+        "label": "ラクマで探す",
+        "priority": 3,
+        "category": "marketplace",
+        "enabled": true,
+        "urls": {
+          "direct": "https://fril.jp/search/RAIMEI",
+          "affiliate": null
+        }
+      }
+    ]
+  },
+  {
+    "id": "committed_red_cd",
+    "title": "Committed RED / Inherit the Force -インヘリット・ザ・フォース-（通常盤）",
+    "type": "CD",
+    "notes": null,
+    "categories": {
+      "purchase": {
+        "enabled": true
+      },
+      "streaming": {
+        "enabled": true
+      },
+      "marketplace": {
+        "enabled": true
+      }
+    },
+    "links": [
+      {
+        "platform": "sony_music",
+        "label": "SonyMusicで購入",
+        "priority": 1,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://www.sonymusicshop.jp/m/item/itemShw.php?site=S&ima=3454&cd=ESCL000004613",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "amazon",
+        "label": "Amazonで購入",
+        "priority": 2,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://www.amazon.co.jp/s?k=Committed+RED+/+Inherit+the+Force+-インヘリット・ザ・フォース-（通常盤）",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "rakuten_books",
+        "label": "楽天ブックスで購入",
+        "priority": 3,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://books.rakuten.co.jp/search?sitem=Committed+RED+/+Inherit+the+Force+-インヘリット・ザ・フォース-（通常盤）",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "yahoo_shopping",
+        "label": "Yahoo!ショッピングで購入",
+        "priority": 4,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://shopping.yahoo.co.jp/search?p=Committed+RED+/+Inherit+the+Force+-インヘリット・ザ・フォース-（通常盤）",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "seven_net",
+        "label": "7netで購入",
+        "priority": 5,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://7net.omni7.jp/search/?keyword=Committed+RED+/+Inherit+the+Force+-インヘリット・ザ・フォース-（通常盤）",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "spotify",
+        "label": "Spotifyで聴く",
+        "priority": 1,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "rakuten_music",
+        "label": "RakutenMusicで聴く",
+        "priority": 2,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "recochoku",
+        "label": "レコチョクで聴く",
+        "priority": 3,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "apple_music",
+        "label": "Apple Musicで聴く",
+        "priority": 4,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "amazon_music",
+        "label": "Amazon Musicで聴く",
+        "priority": 5,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "line_music",
+        "label": "LINE MUSICで聴く",
+        "priority": 6,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "youtube",
+        "label": "YouTubeで視聴",
+        "priority": 7,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "mercari",
+        "label": "メルカリで探す",
+        "priority": 1,
+        "category": "marketplace",
+        "enabled": true,
+        "urls": {
+          "direct": "https://jp.mercari.com/search?keyword=Committed+RED+/+Inherit+the+Force+-インヘリット・ザ・フォース-（通常盤）",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "yahoo_auction",
+        "label": "ヤフオクで探す",
+        "priority": 2,
+        "category": "marketplace",
+        "enabled": true,
+        "urls": {
+          "direct": "https://auctions.yahoo.co.jp/search/search?p=Committed+RED+/+Inherit+the+Force+-インヘリット・ザ・フォース-（通常盤）",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "rakuma",
+        "label": "ラクマで探す",
+        "priority": 3,
+        "category": "marketplace",
+        "enabled": true,
+        "urls": {
+          "direct": "https://fril.jp/search/Committed+RED+/+Inherit+the+Force+-インヘリット・ザ・フォース-（通常盤）",
+          "affiliate": null
+        }
+      }
+    ]
+  },
+  {
+    "id": "ten_cd",
+    "title": "天【初回生産限定盤/A】",
+    "type": "CD",
+    "notes": null,
+    "categories": {
+      "purchase": {
+        "enabled": true
+      },
+      "streaming": {
+        "enabled": true
+      },
+      "marketplace": {
+        "enabled": true
+      }
+    },
+    "links": [
+      {
+        "platform": "sony_music",
+        "label": "SonyMusicで購入",
+        "priority": 1,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://www.sonymusicshop.jp/m/item/itemShw.php?site=S&ima=3454&cd=ESCL000004410",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "amazon",
+        "label": "Amazonで購入",
+        "priority": 2,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://www.amazon.co.jp/s?k=天【初回生産限定盤/A】",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "rakuten_books",
+        "label": "楽天ブックスで購入",
+        "priority": 3,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://books.rakuten.co.jp/search?sitem=天【初回生産限定盤/A】",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "yahoo_shopping",
+        "label": "Yahoo!ショッピングで購入",
+        "priority": 4,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://shopping.yahoo.co.jp/search?p=天【初回生産限定盤/A】",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "seven_net",
+        "label": "7netで購入",
+        "priority": 5,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://7net.omni7.jp/search/?keyword=天【初回生産限定盤/A】",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "spotify",
+        "label": "Spotifyで聴く",
+        "priority": 1,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "rakuten_music",
+        "label": "RakutenMusicで聴く",
+        "priority": 2,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "recochoku",
+        "label": "レコチョクで聴く",
+        "priority": 3,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "apple_music",
+        "label": "Apple Musicで聴く",
+        "priority": 4,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "amazon_music",
+        "label": "Amazon Musicで聴く",
+        "priority": 5,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "line_music",
+        "label": "LINE MUSICで聴く",
+        "priority": 6,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "youtube",
+        "label": "YouTubeで視聴",
+        "priority": 7,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "mercari",
+        "label": "メルカリで探す",
+        "priority": 1,
+        "category": "marketplace",
+        "enabled": true,
+        "urls": {
+          "direct": "https://jp.mercari.com/search?keyword=天【初回生産限定盤/A】",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "yahoo_auction",
+        "label": "ヤフオクで探す",
+        "priority": 2,
+        "category": "marketplace",
+        "enabled": true,
+        "urls": {
+          "direct": "https://auctions.yahoo.co.jp/search/search?p=天【初回生産限定盤/A】",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "rakuma",
+        "label": "ラクマで探す",
+        "priority": 3,
+        "category": "marketplace",
+        "enabled": true,
+        "urls": {
+          "direct": "https://fril.jp/search/天【初回生産限定盤/A】",
+          "affiliate": null
+        }
+      }
+    ]
+  },
+  {
+    "id": "phantom_pain_cd",
+    "title": "Phantom Pain",
+    "type": "CD",
+    "notes": null,
+    "categories": {
+      "purchase": {
+        "enabled": true
+      },
+      "streaming": {
+        "enabled": true
+      },
+      "marketplace": {
+        "enabled": true
+      }
+    },
+    "links": [
+      {
+        "platform": "sony_music",
+        "label": "SonyMusicで購入",
+        "priority": 1,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://www.sonymusicshop.jp/m/item/itemShw.php?site=S&ima=3454&cd=ESCL000004274",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "amazon",
+        "label": "Amazonで購入",
+        "priority": 2,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://www.amazon.co.jp/s?k=Phantom+Pain",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "rakuten_books",
+        "label": "楽天ブックスで購入",
+        "priority": 3,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://books.rakuten.co.jp/search?sitem=Phantom+Pain",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "yahoo_shopping",
+        "label": "Yahoo!ショッピングで購入",
+        "priority": 4,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://shopping.yahoo.co.jp/search?p=Phantom+Pain",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "seven_net",
+        "label": "7netで購入",
+        "priority": 5,
+        "category": "purchase",
+        "enabled": true,
+        "urls": {
+          "direct": "https://7net.omni7.jp/search/?keyword=Phantom+Pain",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "spotify",
+        "label": "Spotifyで聴く",
+        "priority": 1,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "rakuten_music",
+        "label": "RakutenMusicで聴く",
+        "priority": 2,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "recochoku",
+        "label": "レコチョクで聴く",
+        "priority": 3,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "apple_music",
+        "label": "Apple Musicで聴く",
+        "priority": 4,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "amazon_music",
+        "label": "Amazon Musicで聴く",
+        "priority": 5,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "line_music",
+        "label": "LINE MUSICで聴く",
+        "priority": 6,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "youtube",
+        "label": "YouTubeで視聴",
+        "priority": 7,
+        "category": "streaming",
+        "enabled": true,
+        "urls": {
+          "direct": "",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "mercari",
+        "label": "メルカリで探す",
+        "priority": 1,
+        "category": "marketplace",
+        "enabled": true,
+        "urls": {
+          "direct": "https://jp.mercari.com/search?keyword=Phantom+Pain",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "yahoo_auction",
+        "label": "ヤフオクで探す",
+        "priority": 2,
+        "category": "marketplace",
+        "enabled": true,
+        "urls": {
+          "direct": "https://auctions.yahoo.co.jp/search/search?p=Phantom+Pain",
+          "affiliate": null
+        }
+      },
+      {
+        "platform": "rakuma",
+        "label": "ラクマで探す",
+        "priority": 3,
+        "category": "marketplace",
+        "enabled": true,
+        "urls": {
+          "direct": "https://fril.jp/search/Phantom+Pain",
+          "affiliate": null
+        }
+      }
+    ]
   }
 ]

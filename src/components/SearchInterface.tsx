@@ -1,4 +1,4 @@
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useEffect } from 'react';
 import type { Tour } from '../types/tour';
 
 type SearchFilters = {
@@ -43,7 +43,7 @@ export function SearchInterface({ tours, onFilteredResults }: SearchInterfacePro
   }, [tours, filters]);
 
   // フィルタ結果を親に通知
-  useMemo(() => {
+  useEffect(() => {
     onFilteredResults(filteredTours);
   }, [filteredTours, onFilteredResults]);
 
