@@ -12,7 +12,7 @@
         "enabled": false
       },
       "marketplace": {
-        "enabled": true
+        "enabled": false
       }
     },
     "links": [
@@ -32,7 +32,7 @@
         "label": "Amazonで購入",
         "priority": 2,
         "category": "purchase",
-        "enabled": true,
+        "enabled": false,
         "urls": {
           "direct": "https://www.amazon.co.jp/s?k=T.M.Revolution+DVD+Series+The+Summary+-summarize+1-",
           "affiliate": null
@@ -43,7 +43,7 @@
         "label": "楽天ブックスで購入",
         "priority": 3,
         "category": "purchase",
-        "enabled": true,
+        "enabled": false,
         "urls": {
           "direct": "https://books.rakuten.co.jp/search?sitem=T.M.Revolution+DVD+Series+The+Summary+-summarize+1-",
           "affiliate": null

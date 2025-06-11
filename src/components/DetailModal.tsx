@@ -302,6 +302,10 @@ export function DetailModal({ active, setActive, setPreview, tours }: DetailModa
                                         // enabledフラグがfalseの場合はスキップ
                                         if (!link.enabled) return;
 
+                                        // カテゴリーが無効の場合はスキップ
+                                        const category = (v as any).categories?.[link.category];
+                                        if (!category?.enabled) return;
+
                                         if (!linksByCategory.has(link.category)) {
                                           linksByCategory.set(link.category, []);
                                         }
@@ -317,23 +321,26 @@ export function DetailModal({ active, setActive, setPreview, tours }: DetailModa
                                       return (
                                         <div className="space-y-4">
                                           {sortedCategories.map(([category, links]) => (
-                                            <div key={category}>
-                                              <div className="text-xs sm:text-sm font-semibold text-gray-600 mb-1 sm:mb-2">
-                                                {categoryConfig[category]?.label || category}
+                                            // カテゴリーが有効な場合のみ表示
+                                            (v as any).categories[category]?.enabled && (
+                                              <div key={category}>
+                                                <div className="text-xs sm:text-sm font-semibold text-gray-600 mb-1 sm:mb-2">
+                                                  {categoryConfig[category]?.label || category}
+                                                </div>
+                                                <div className="flex flex-wrap gap-2">
+                                                  {links.map((link: any, i: number) => (
+                                                    <a
+                                                      key={i}
+                                                      href={link.urls.direct}
+                                                      target="_blank"
+                                                      rel="noopener noreferrer"
+                                                      className={getButtonStyle(link.platform)}>
+                                                      {link.label}
+                                                    </a>
+                                                  ))}
+                                                </div>
                                               </div>
-                                              <div className="flex flex-wrap gap-2">
-                                                {links.map((link: any, i: number) => (
-                                                  <a
-                                                    key={i}
-                                                    href={link.urls.direct}
-                                                    target="_blank"
-                                                    rel="noopener noreferrer"
-                                                    className={getButtonStyle(link.platform)}>
-                                                    {link.label}
-                                                  </a>
-                                                ))}
-                                              </div>
-                                            </div>
+                                            )
                                           ))}
                                         </div>
                                       );
