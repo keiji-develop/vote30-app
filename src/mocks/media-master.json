@@ -1,0 +1,47 @@
+[
+  {
+    "id": "summarize_1",
+    "title": "T.M.Revolution DVD Series The Summary -summarize 1-",
+    "categories": {
+      "purchase": false,
+      "streaming": false,
+      "marketplace": false
+    },
+    "platforms": {
+      "sonyMusic": { "enabled": false, "priority": 0 },
+      "amazon": { "enabled": false, "priority": 0 },
+      "rakutenBooks": { "enabled": false, "priority": 0 },
+      "yahooShopping": { "enabled": false, "priority": 0 },
+      "7net": { "enabled": false, "priority": 0 },
+      "spotify": { "enabled": false, "priority": 0 },
+      "rakutenMusic": { "enabled": false, "priority": 0 }
+    }
+  },
+  {
+    "id": "complete_edition_2",
+    "title": "LIVE REVOLUTION COMPLETE EDITION-3 1996.8.29 中野サンプラザ",
+    "categories": {
+      "purchase": true,
+      "streaming": true,
+      "marketplace": false
+    },
+    "platforms": {
+      "sonyMusic": { "enabled": true, "priority": 1 },
+      "amazon": { "enabled": true, "priority": 2 },
+      "spotify": { "enabled": true, "priority": 1 }
+    }
+  },
+  {
+    "id": "summarize_3",
+    "title": "T.M.Revolution DVD Series The Summary -summarize 3-",
+    "categories": {
+      "purchase": true,
+      "streaming": false,
+      "marketplace": false
+    },
+    "platforms": {
+      "sonyMusic": { "enabled": true, "priority": 1 },
+      "amazon": { "enabled": true, "priority": 2 }
+    }
+  }
+] 

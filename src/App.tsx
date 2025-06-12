@@ -19,6 +19,7 @@ import NotFound from './pages/NotFound';
 import Sitemap from './pages/Sitemap';
 import ScrollToTop from './components/ScrollToTop';
 import LegalAllInOne from './pages/LegalAllInOne';
+import { MediaEditorPage } from './pages/MediaEditorPage';
 import { Helmet } from 'react-helmet-async';
 import { loadToursData } from './services/dataService';
 
@@ -238,6 +239,8 @@ useEffect(() => {
         <Route path="/affiliate-disclosure" element={<LegalAllInOne />} />
         <Route path="/spec-commercial" element={<LegalAllInOne />} />
         <Route path="/sitemap" element={<Sitemap />} />
+        <Route path="/media-editor" element={<MediaEditorPage />} />
+        <Route path="/media-editor/:mediaId" element={<MediaEditorPage />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>

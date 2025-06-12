@@ -1,6 +1,6 @@
 import React from 'react';
 
-type ButtonVariant = 'primary' | 'secondary' | 'ghost' | 'icon' | 'close';
+export type ButtonVariant = 'primary' | 'secondary' | 'ghost' | 'icon' | 'close' | 'danger';
 type ButtonSize = 'sm' | 'md' | 'lg';
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
@@ -23,7 +23,8 @@ export function Button({
     secondary: `text-white border hover:opacity-90 focus:ring-2`,
     ghost: `bg-transparent border border-transparent hover:opacity-80 focus:ring-2`,
     icon: `bg-white/80 border border-transparent hover:bg-white/90 hover:shadow-lg focus:ring-2 rounded-full shadow`,
-    close: `bg-transparent border border-transparent hover:opacity-70 focus:ring-1 text-2xl font-semibold leading-none`
+    close: `bg-transparent border border-transparent hover:opacity-70 focus:ring-1 text-2xl font-semibold leading-none`,
+    danger: `bg-red-600 text-white hover:bg-red-700 focus:ring-red-500`
   };
 
   const sizeStyles = {
@@ -73,6 +74,12 @@ export function Button({
         return {
           color: 'var(--neutral-800)',
           '--tw-ring-color': 'var(--neutral-300)'
+        };
+      case 'danger':
+        return {
+          backgroundColor: 'var(--red-600)',
+          borderColor: 'var(--red-600)',
+          '--tw-ring-color': 'var(--red-500)'
         };
       default:
         return {};

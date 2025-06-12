@@ -1,0 +1,36 @@
+[
+  {
+    "id": 1,
+    "title": "LIVE REVOLUTION",
+    "subtitle": "2023年夏の陣",
+    "liveVideoIds": ["summarize_1", "complete_edition_2"],
+    "liveArrangementIds": [],
+    "noMediaInfo": {
+      "liveVideo": {
+        "showNoneItem": true,
+        "comment": null
+      },
+      "liveArrangement": {
+        "showNoneItem": false,
+        "comment": null
+      }
+    }
+  },
+  {
+    "id": 2,
+    "title": "T.M.Revolution DVD Series",
+    "subtitle": "The Summary",
+    "liveVideoIds": ["summarize_3", "complete_edition_4"],
+    "liveArrangementIds": ["arrangement_1"],
+    "noMediaInfo": {
+      "liveVideo": {
+        "showNoneItem": true,
+        "comment": "一部未収録あり"
+      },
+      "liveArrangement": {
+        "showNoneItem": false,
+        "comment": null
+      }
+    }
+  }
+]
