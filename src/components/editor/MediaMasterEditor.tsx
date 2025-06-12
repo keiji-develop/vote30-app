@@ -1,215 +1,139 @@
 import React, { useState, useEffect } from 'react';
 import type { MediaMaster } from '../../types/MediaMasterTypes';
-import { loadMediaMaster, updateMediaMaster } from '../../services/mediaMasterService';
-import { Button } from '../Button';
+import { loadMediaMasterData, updateMediaMaster } from '../../services/mediaMasterService';
 
-export interface MediaMasterEditorProps {
+interface MediaMasterEditorProps {
   mediaId: string;
-  onChangesPending: (pending: boolean) => void;
 }
 
-export function MediaMasterEditor({ mediaId, onChangesPending }: MediaMasterEditorProps) {
+export function MediaMasterEditor({ mediaId }: MediaMasterEditorProps) {
   const [media, setMedia] = useState<MediaMaster | null>(null);
-  const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+  const [loading, setLoading] = useState(true);
   const [isDirty, setIsDirty] = useState(false);
+  const [saving, setSaving] = useState(false);
 
   useEffect(() => {
-    if (!mediaId) {
-      setError('メディアIDが指定されていません');
-      setLoading(false);
-      return;
+    async function loadData() {
+      try {
+        setLoading(true);
+        setError(null);
+        const data = await loadMediaMasterData();
+        const found = data.find(m => m.id === mediaId);
+        if (!found) {
+          setError('指定されたメディアが見つかりません');
+          setMedia(null);
+        } else {
+          setMedia(found);
+        }
+      } catch (err) {
+        setError('メディアマスターの読み込みに失敗しました');
+        setMedia(null);
+      } finally {
+        setLoading(false);
+        setIsDirty(false);
+      }
     }
     loadData();
   }, [mediaId]);
 
-  const loadData = async () => {
-    try {
-      setLoading(true);
-      setError(null);
-      
-      if (!mediaId) {
-        throw new Error('メディアIDが指定されていません');
+  const handleCategoryChange = (key: string, enabled: boolean) => {
+    if (!media) return;
+    setMedia(prev => prev ? {
+      ...prev,
+      categories: {
+        ...prev.categories,
+        [key]: { enabled }
       }
+    } : prev);
+    setIsDirty(true);
+  };
 
-      const mediaData = await loadMediaMaster();
-      
-      if (!Array.isArray(mediaData) || mediaData.length === 0) {
-        throw new Error('メディアデータの読み込みに失敗しました');
-      }
-
-      const targetMedia = mediaData.find(m => m.id === mediaId);
-      
-      if (!targetMedia) {
-        throw new Error(`メディアID "${mediaId}" の情報が見つかりません`);
-      }
-
-      setMedia(targetMedia);
-      setIsDirty(false);
-      onChangesPending(false);
-    } catch (err) {
-      setError(err instanceof Error ? err.message : 'データの読み込みに失敗しました');
-      setMedia(null);
-    } finally {
-      setLoading(false);
-    }
+  const handleLinkChange = (index: number, enabled: boolean) => {
+    if (!media) return;
+    setMedia(prev => prev ? {
+      ...prev,
+      links: prev.links.map((link, i) => i === index ? { ...link, enabled } : link)
+    } : prev);
+    setIsDirty(true);
   };
 
   const handleUpdate = async () => {
     if (!media) return;
-    
+    setSaving(true);
+    setError(null);
     try {
-      setLoading(true);
-      setError(null);
       await updateMediaMaster(media);
       setIsDirty(false);
-      onChangesPending(false);
     } catch (err) {
-      setError(err instanceof Error ? err.message : '更新に失敗しました');
+      setError('更新に失敗しました');
     } finally {
-      setLoading(false);
+      setSaving(false);
     }
-  };
-
-  const handleChange = (newData: Partial<MediaMaster>) => {
-    if (!media) return;
-    setMedia({ ...media, ...newData });
-    setIsDirty(true);
-    onChangesPending(true);
   };
 
   if (loading) {
     return <div>読み込み中...</div>;
   }
-
   if (error) {
-    return (
-      <div className="text-red-600 mb-4">
-        <p>{error}</p>
-        <Button
-          variant="secondary"
-          onClick={loadData}
-          className="mt-2"
-        >
-          再読み込み
-        </Button>
-      </div>
-    );
+    return <div className="text-red-600 mb-4">{error}</div>;
   }
-
   if (!media) {
     return <div>データが見つかりません</div>;
   }
 
   return (
-    <div>
+    <div className="space-y-8">
       <div className="flex justify-between items-center mb-6">
-        <h2 className="text-xl font-bold">メディアマスター情報の編集</h2>
-        <Button
-          variant="primary"
+        <div>
+          <div className="text-sm text-gray-500">メディアID</div>
+          <div className="font-bold">{media.id}</div>
+          <div className="text-sm text-gray-500 mt-2">タイトル</div>
+          <div>{media.title}</div>
+        </div>
+        <button
           onClick={handleUpdate}
-          disabled={!isDirty}
+          disabled={!isDirty || saving}
+          className={`px-4 py-2 rounded ${isDirty && !saving ? 'bg-blue-500 text-white hover:bg-blue-600' : 'bg-gray-200 text-gray-500 cursor-not-allowed'}`}
         >
-          {isDirty ? "更新" : "更新済み"}
-        </Button>
+          {saving ? '保存中...' : isDirty ? '更新' : '更新済み'}
+        </button>
       </div>
 
-      <div className="space-y-6">
-        <section>
-          <h3 className="text-lg font-semibold mb-4">購入を有効化</h3>
-          <div className="space-y-4">
-            <label className="flex items-center gap-2">
+      <section className="space-y-4">
+        <h3 className="text-lg font-semibold">カテゴリー有効/無効</h3>
+        <div className="space-y-2">
+          {Object.entries(media.categories).map(([key, { enabled }]) => (
+            <label key={key} className="flex items-center gap-2">
               <input
                 type="checkbox"
-                checked={media.purchaseEnabled}
-                onChange={(e) => handleChange({ purchaseEnabled: e.target.checked })}
+                checked={enabled}
+                onChange={e => handleCategoryChange(key, e.target.checked)}
                 className="rounded"
               />
-              購入を有効化
+              <span>{key}</span>
             </label>
+          ))}
+        </div>
+      </section>
 
-            <div className="pl-6 space-y-4">
-              {[
-                { id: 'sonyMusic', label: 'SonyMusicで購入' },
-                { id: 'amazon', label: 'Amazonで購入' },
-                { id: 'rakuten', label: '楽天ブックスで購入' },
-                { id: 'yahoo', label: 'Yahoo!ショッピングで購入' },
-                { id: '7net', label: '7netで購入' }
-              ].map(store => (
-                <div key={store.id} className="flex items-center gap-4">
-                  <label className="flex items-center gap-2">
-                    <input
-                      type="checkbox"
-                      checked={media.purchaseStores?.[store.id]?.enabled ?? false}
-                      onChange={(e) => handleChange({
-                        purchaseStores: {
-                          ...media.purchaseStores,
-                          [store.id]: {
-                            enabled: e.target.checked,
-                            priority: media.purchaseStores?.[store.id]?.priority ?? 0
-                          }
-                        }
-                      })}
-                      disabled={!media.purchaseEnabled}
-                      className="rounded"
-                    />
-                    {store.label}
-                  </label>
-                  {media.purchaseStores?.[store.id]?.enabled && (
-                    <div className="flex items-center gap-2">
-                      <span>優先度:</span>
-                      <input
-                        type="number"
-                        value={media.purchaseStores?.[store.id]?.priority ?? 0}
-                        onChange={(e) => handleChange({
-                          purchaseStores: {
-                            ...media.purchaseStores,
-                            [store.id]: {
-                              enabled: true,
-                              priority: parseInt(e.target.value) || 0
-                            }
-                          }
-                        })}
-                        className="w-20 px-2 py-1 border rounded"
-                      />
-                    </div>
-                  )}
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        <section>
-          <h3 className="text-lg font-semibold mb-4">ストリーミング</h3>
-          <div className="space-y-4">
-            <label className="flex items-center gap-2">
+      <section className="space-y-4">
+        <h3 className="text-lg font-semibold">リンク有効/無効</h3>
+        <div className="space-y-2">
+          {media.links.length === 0 && <div className="text-gray-400">リンク情報なし</div>}
+          {media.links.map((link, i) => (
+            <label key={link.id} className="flex items-center gap-2">
               <input
                 type="checkbox"
-                checked={media.streamingEnabled}
-                onChange={(e) => handleChange({ streamingEnabled: e.target.checked })}
+                checked={!!link.enabled}
+                onChange={e => handleLinkChange(i, e.target.checked)}
                 className="rounded"
               />
-              ストリーミングを有効化
+              <span>{link.label}（{link.url}）</span>
             </label>
-          </div>
-        </section>
-
-        <section>
-          <h3 className="text-lg font-semibold mb-4">マーケットプレイス</h3>
-          <div className="space-y-4">
-            <label className="flex items-center gap-2">
-              <input
-                type="checkbox"
-                checked={media.marketplaceEnabled}
-                onChange={(e) => handleChange({ marketplaceEnabled: e.target.checked })}
-                className="rounded"
-              />
-              マーケットプレイスを有効化
-            </label>
-          </div>
-        </section>
-      </div>
+          ))}
+        </div>
+      </section>
     </div>
   );
 } 

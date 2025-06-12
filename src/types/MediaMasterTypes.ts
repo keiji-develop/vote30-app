@@ -1,6 +1,6 @@
 export type MediaType = 'DVD' | 'CD' | 'DVD/Blu-ray' | 'VHS' | 'Streaming' | 'YouTube' | 'TV' | 'Web';
 
-export type CategoryType = 'purchase' | 'streaming' | 'marketplace';
+export type CategoryType = 'liveVideo' | 'liveArrangement' | 'tourMedia';
 
 export type PlatformType =
   | 'sony_music'
@@ -19,27 +19,30 @@ export type PlatformType =
   | 'yahoo_auction'
   | 'rakuma';
 
-export type MediaLink = {
-  platform: PlatformType;
+export interface MediaItem {
+  id: string;
+  title: string;
+}
+
+export interface MediaLink {
+  id: string;
   label: string;
-  priority: number;
-  category: CategoryType;
+  url: string;
+  category: string;
   enabled: boolean;
-  urls: {
-    direct: string;
-    affiliate: string | null;
-  };
-};
+}
+
+export interface CategorySetting {
+  enabled: boolean;
+}
+
+export interface Categories {
+  [key: string]: CategorySetting;
+}
 
 export interface PlatformConfig {
   enabled: boolean;
   priority: number;
-}
-
-export interface Categories {
-  [key: string]: {
-    enabled: boolean;
-  };
 }
 
 export interface PurchaseStore {
@@ -54,14 +57,19 @@ export interface PurchaseStores {
 export interface MediaMaster {
   id: string;
   title: string;
-  type: string;
-  category: string;
+  type: MediaType;
+  category: CategoryType;
   purchaseEnabled: boolean;
   purchaseStores: PurchaseStores;
   streamingEnabled: boolean;
   marketplaceEnabled: boolean;
-  links: any[];
+  links: MediaLink[];
   categories: Categories;
+}
+
+export interface MediaMasterCollection {
+  videos: MediaItem[];
+  arrangements: MediaItem[];
 }
 
 export interface MediaMasterUpdatePayload {

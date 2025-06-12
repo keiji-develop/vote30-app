@@ -1,6 +1,6 @@
-import type { MediaMaster, MediaMasterFile, MediaMasterUpdatePayload } from '../types/MediaMasterTypes';
+import type { MediaMaster, MediaMasterCollection, MediaMasterUpdatePayload } from '../types/MediaMasterTypes';
 
-const mockData: MediaMaster[] = [
+const mockMediaMasterData: MediaMaster[] = [
   {
     id: "genesis_turbo_type_d_live_arena_2000_ad_special_dvd_version",
     title: "GENESIS TURBO TYPE-D LIVE ARENA 2000 A.D. SPECIAL DVD VERSION",
@@ -171,12 +171,24 @@ const mockData: MediaMaster[] = [
   }
 ];
 
-export async function loadMediaMaster(): Promise<MediaMaster[]> {
+const mockMediaMasterCollection: MediaMasterCollection = {
+  videos: [
+    { id: "DVD_0001", title: "LIVE DVD Vol.1" },
+    { id: "DVD_0002", title: "LIVE DVD Vol.2" },
+    { id: "BD_0001", title: "LIVE Blu-ray Vol.1" }
+  ],
+  arrangements: [
+    { id: "TMR_0001", title: "Tour Music Remix 1" },
+    { id: "TMR_0002", title: "Tour Music Remix 2" },
+    { id: "TMR_0003", title: "Tour Music Remix 3" }
+  ]
+};
+
+export async function loadMediaMaster(): Promise<MediaMasterCollection> {
   try {
-    // 開発環境ではモックデータを使用
     if (process.env.NODE_ENV === 'development') {
       console.log('Development mode: Using mock media master data');
-      return mockData;
+      return mockMediaMasterCollection;
     }
 
     const response = await fetch('/api/media-master');
@@ -186,11 +198,29 @@ export async function loadMediaMaster(): Promise<MediaMaster[]> {
     return await response.json();
   } catch (error) {
     console.error('Failed to load media master:', error);
-    return [];
+    throw error;
   }
 }
 
-export const saveMediaMaster = async (data: MediaMasterFile): Promise<void> => {
+export async function loadMediaMasterData(): Promise<MediaMaster[]> {
+  try {
+    if (process.env.NODE_ENV === 'development') {
+      console.log('Development mode: Using mock media master data');
+      return mockMediaMasterData;
+    }
+
+    const response = await fetch('/api/media-master/data');
+    if (!response.ok) {
+      throw new Error('Failed to fetch media master data');
+    }
+    return await response.json();
+  } catch (error) {
+    console.error('Failed to load media master data:', error);
+    throw error;
+  }
+}
+
+export const saveMediaMaster = async (data: MediaMaster): Promise<void> => {
   try {
     const response = await fetch('/api/media-master', {
       method: 'POST',

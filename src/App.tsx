@@ -240,7 +240,6 @@ useEffect(() => {
         <Route path="/spec-commercial" element={<LegalAllInOne />} />
         <Route path="/sitemap" element={<Sitemap />} />
         <Route path="/media-editor" element={<MediaEditorPage />} />
-        <Route path="/media-editor/:mediaId" element={<MediaEditorPage />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>

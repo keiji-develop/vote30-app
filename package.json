@@ -13,6 +13,7 @@
     "deploy": "gh-pages -d dist -b gh-pages"
   },
   "dependencies": {
+    "@heroicons/react": "^2.2.0",
     "@types/react-beautiful-dnd": "^13.1.8",
     "flexsearch": "^0.8.203",
     "react": "^19.1.0",
