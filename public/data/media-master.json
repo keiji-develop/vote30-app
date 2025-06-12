@@ -12,7 +12,7 @@
         "enabled": false
       },
       "marketplace": {
-        "enabled": false
+        "enabled": true
       }
     },
     "links": [
@@ -32,7 +32,7 @@
         "label": "Amazonで購入",
         "priority": 2,
         "category": "purchase",
-        "enabled": false,
+        "enabled": true,
         "urls": {
           "direct": "https://www.amazon.co.jp/s?k=T.M.Revolution+DVD+Series+The+Summary+-summarize+1-",
           "affiliate": null
@@ -43,7 +43,7 @@
         "label": "楽天ブックスで購入",
         "priority": 3,
         "category": "purchase",
-        "enabled": false,
+        "enabled": true,
         "urls": {
           "direct": "https://books.rakuten.co.jp/search?sitem=T.M.Revolution+DVD+Series+The+Summary+-summarize+1-",
           "affiliate": null
@@ -87,7 +87,7 @@
         "label": "RakutenMusicで聴く",
         "priority": 2,
         "category": "streaming",
-        "enabled": false,
+        "enabled": true,
         "urls": {
           "direct": "",
           "affiliate": null
@@ -98,7 +98,7 @@
         "label": "レコチョクで聴く",
         "priority": 3,
         "category": "streaming",
-        "enabled": false,
+        "enabled": true,
         "urls": {
           "direct": "",
           "affiliate": null
@@ -164,7 +164,7 @@
         "label": "ヤフオクで探す",
         "priority": 2,
         "category": "marketplace",
-        "enabled": false,
+        "enabled": true,
         "urls": {
           "direct": "https://auctions.yahoo.co.jp/search/search?p=T.M.Revolution+DVD+Series+The+Summary+-summarize+1-",
           "affiliate": null
@@ -193,7 +193,7 @@
         "enabled": true
       },
       "streaming": {
-        "enabled": true
+        "enabled": false
       },
       "marketplace": {
         "enabled": true
@@ -377,7 +377,7 @@
         "enabled": true
       },
       "streaming": {
-        "enabled": true
+        "enabled": false
       },
       "marketplace": {
         "enabled": true
@@ -561,7 +561,7 @@
         "enabled": true
       },
       "streaming": {
-        "enabled": true
+        "enabled": false
       },
       "marketplace": {
         "enabled": true
@@ -742,10 +742,10 @@
     "notes": "FC限定VHS",
     "categories": {
       "purchase": {
-        "enabled": true
+        "enabled": false
       },
       "streaming": {
-        "enabled": true
+        "enabled": false
       },
       "marketplace": {
         "enabled": true
@@ -926,10 +926,10 @@
     "notes": "FC限定VHS",
     "categories": {
       "purchase": {
-        "enabled": true
+        "enabled": false
       },
       "streaming": {
-        "enabled": true
+        "enabled": false
       },
       "marketplace": {
         "enabled": true
@@ -1110,10 +1110,10 @@
     "notes": "FC限定VHS",
     "categories": {
       "purchase": {
-        "enabled": true
+        "enabled": false
       },
       "streaming": {
-        "enabled": true
+        "enabled": false
       },
       "marketplace": {
         "enabled": true
@@ -1297,7 +1297,7 @@
         "enabled": true
       },
       "streaming": {
-        "enabled": true
+        "enabled": false
       },
       "marketplace": {
         "enabled": true
@@ -1309,7 +1309,7 @@
         "label": "SonyMusicで購入",
         "priority": 1,
         "category": "purchase",
-        "enabled": true,
+        "enabled": false,
         "urls": {
           "direct": "",
           "affiliate": null
@@ -1331,7 +1331,7 @@
         "label": "楽天ブックスで購入",
         "priority": 3,
         "category": "purchase",
-        "enabled": true,
+        "enabled": false,
         "urls": {
           "direct": "https://books.rakuten.co.jp/search?sitem=the+end+of+genesis+T.M.R.+evolution+turbo+type+D+LIVE+ARENA+2000+A.D.+Special+DVD+Version",
           "affiliate": null
@@ -1353,7 +1353,7 @@
         "label": "7netで購入",
         "priority": 5,
         "category": "purchase",
-        "enabled": true,
+        "enabled": false,
         "urls": {
           "direct": "https://7net.omni7.jp/search/?keyword=the+end+of+genesis+T.M.R.+evolution+turbo+type+D+LIVE+ARENA+2000+A.D.+Special+DVD+Version",
           "affiliate": null
@@ -1481,7 +1481,7 @@
         "enabled": true
       },
       "streaming": {
-        "enabled": true
+        "enabled": false
       },
       "marketplace": {
         "enabled": true
@@ -1662,13 +1662,13 @@
     "notes": "詳細不明。情報ください",
     "categories": {
       "purchase": {
-        "enabled": true
+        "enabled": false  
       },
       "streaming": {
-        "enabled": true
+        "enabled": false
       },
       "marketplace": {
-        "enabled": true
+        "enabled": false
       }
     },
     "links": [
@@ -1849,7 +1849,7 @@
         "enabled": true
       },
       "streaming": {
-        "enabled": true
+        "enabled": false
       },
       "marketplace": {
         "enabled": true
@@ -2033,7 +2033,7 @@
         "enabled": true
       },
       "streaming": {
-        "enabled": true
+        "enabled": false
       },
       "marketplace": {
         "enabled": true
@@ -2217,7 +2217,7 @@
         "enabled": true
       },
       "streaming": {
-        "enabled": true
+        "enabled": false
       },
       "marketplace": {
         "enabled": true
@@ -2398,13 +2398,13 @@
     "notes": "テレビ放送のみ",
     "categories": {
       "purchase": {
-        "enabled": true
+        "enabled": false
       },
       "streaming": {
-        "enabled": true
+        "enabled": false
       },
       "marketplace": {
-        "enabled": true
+        "enabled": false
       }
     },
     "links": [
@@ -2585,7 +2585,7 @@
         "enabled": true
       },
       "streaming": {
-        "enabled": true
+        "enabled": false
       },
       "marketplace": {
         "enabled": true
@@ -2902,7 +2902,7 @@
         "label": "YouTubeで視聴",
         "priority": 7,
         "category": "streaming",
-        "enabled": true,
+        "enabled": false,
         "urls": {
           "direct": "",
           "affiliate": null
@@ -2953,7 +2953,7 @@
         "enabled": true
       },
       "streaming": {
-        "enabled": true
+        "enabled": false
       },
       "marketplace": {
         "enabled": true
@@ -3131,13 +3131,13 @@
     "id": "cloud_nine_limited_a",
     "title": "CLOUD NINE【初回生産限定盤/type-A】",
     "type": "CD",
-    "notes": null,
+    "notes": "イナズマロックフェス2010映像収録",
     "categories": {
       "purchase": {
         "enabled": true
       },
       "streaming": {
-        "enabled": true
+        "enabled": false
       },
       "marketplace": {
         "enabled": true
@@ -3318,13 +3318,13 @@
     "notes": null,
     "categories": {
       "purchase": {
-        "enabled": true
+        "enabled": false
       },
       "streaming": {
-        "enabled": true
+        "enabled": false
       },
       "marketplace": {
-        "enabled": true
+        "enabled": false
       }
     },
     "links": [
@@ -3502,13 +3502,13 @@
     "notes": null,
     "categories": {
       "purchase": {
-        "enabled": true
+        "enabled": false
       },
       "streaming": {
-        "enabled": true
+        "enabled": false
       },
       "marketplace": {
-        "enabled": true
+        "enabled": false
       }
     },
     "links": [
@@ -3689,7 +3689,7 @@
         "enabled": true
       },
       "streaming": {
-        "enabled": true
+        "enabled": false
       },
       "marketplace": {
         "enabled": true
@@ -3873,7 +3873,7 @@
         "enabled": true
       },
       "streaming": {
-        "enabled": true
+        "enabled": false
       },
       "marketplace": {
         "enabled": true
@@ -4049,7 +4049,7 @@
   },
   {
     "id": "14_14",
-    "title": "T.M.R. LIVE REVOLUTION'14 -今まで…'14-",
+    "title": "T.M.R. LIVE REVOLUTION'14 -今まで『今年は単独LIVEはやらねぇ！』的なニュアンスの話をしてたけど、何か急にFC限定でもLIVEやりたくなっちゃって…違う！違う！そうぢゃ…そうぢゃない！『平日の夜でも、どうせ呼べば来るんだろ？』みたいな、“都合のいいオンナ”的な扱いなわけじゃないよ！ただ、今夜はどうしてもお前が抱きたくなっただけ…'14-",
     "type": "CD",
     "notes": "FC限定CD",
     "categories": {
@@ -4057,7 +4057,7 @@
         "enabled": true
       },
       "streaming": {
-        "enabled": true
+        "enabled": false
       },
       "marketplace": {
         "enabled": true
@@ -4069,7 +4069,7 @@
         "label": "SonyMusicで購入",
         "priority": 1,
         "category": "purchase",
-        "enabled": true,
+        "enabled": false,
         "urls": {
           "direct": "",
           "affiliate": null
@@ -4113,7 +4113,7 @@
         "label": "7netで購入",
         "priority": 5,
         "category": "purchase",
-        "enabled": true,
+        "enabled": false,
         "urls": {
           "direct": "https://7net.omni7.jp/search/?keyword=T.M.R.+LIVE+REVOLUTION'14+-今まで…'14-",
           "affiliate": null
@@ -4419,7 +4419,7 @@
     "id": "strikes_back_xi_15",
     "title": "T.M.R. LIVE REVOLUTION '15 -Strikes Back XI-",
     "type": "DVD",
-    "notes": null,
+    "notes": "DVDはFC限定販売。音源のみ配信に対応",
     "categories": {
       "purchase": {
         "enabled": true
@@ -4437,7 +4437,7 @@
         "label": "SonyMusicで購入",
         "priority": 1,
         "category": "purchase",
-        "enabled": true,
+        "enabled": false,
         "urls": {
           "direct": "",
           "affiliate": null
@@ -4481,7 +4481,7 @@
         "label": "7netで購入",
         "priority": 5,
         "category": "purchase",
-        "enabled": true,
+        "enabled": false,
         "urls": {
           "direct": "https://7net.omni7.jp/search/?keyword=T.M.R.+LIVE+REVOLUTION+'15+-Strikes+Back+XI-",
           "affiliate": null
@@ -4558,7 +4558,7 @@
         "label": "YouTubeで視聴",
         "priority": 7,
         "category": "streaming",
-        "enabled": true,
+        "enabled": false,
         "urls": {
           "direct": "",
           "affiliate": null
@@ -4606,13 +4606,13 @@
     "notes": "テレビ放送のみ",
     "categories": {
       "purchase": {
-        "enabled": true
+        "enabled": false
       },
       "streaming": {
-        "enabled": true
+        "enabled": false
       },
       "marketplace": {
-        "enabled": true
+        "enabled": false
       }
     },
     "links": [
@@ -4793,7 +4793,7 @@
         "enabled": true
       },
       "streaming": {
-        "enabled": true
+        "enabled": false
       },
       "marketplace": {
         "enabled": true
@@ -5158,13 +5158,13 @@
     "notes": null,
     "categories": {
       "purchase": {
-        "enabled": true
+        "enabled": false
       },
       "streaming": {
-        "enabled": true
+        "enabled": false
       },
       "marketplace": {
-        "enabled": true
+        "enabled": false
       }
     },
     "links": [
@@ -5345,7 +5345,7 @@
         "enabled": true
       },
       "streaming": {
-        "enabled": true
+        "enabled": false
       },
       "marketplace": {
         "enabled": true
@@ -5526,13 +5526,13 @@
     "notes": "ガチャピンちゃんねる",
     "categories": {
       "purchase": {
-        "enabled": true
+        "enabled": false
       },
       "streaming": {
         "enabled": true
       },
       "marketplace": {
-        "enabled": true
+        "enabled": false
       }
     },
     "links": [
@@ -5596,7 +5596,7 @@
         "label": "Spotifyで聴く",
         "priority": 1,
         "category": "streaming",
-        "enabled": true,
+        "enabled": false,
         "urls": {
           "direct": "",
           "affiliate": null
@@ -5607,7 +5607,7 @@
         "label": "RakutenMusicで聴く",
         "priority": 2,
         "category": "streaming",
-        "enabled": true,
+        "enabled": false,
         "urls": {
           "direct": "",
           "affiliate": null
@@ -5618,7 +5618,7 @@
         "label": "レコチョクで聴く",
         "priority": 3,
         "category": "streaming",
-        "enabled": true,
+        "enabled": false,
         "urls": {
           "direct": "",
           "affiliate": null
@@ -5629,7 +5629,7 @@
         "label": "Apple Musicで聴く",
         "priority": 4,
         "category": "streaming",
-        "enabled": true,
+        "enabled": false,
         "urls": {
           "direct": "",
           "affiliate": null
@@ -5640,7 +5640,7 @@
         "label": "Amazon Musicで聴く",
         "priority": 5,
         "category": "streaming",
-        "enabled": true,
+        "enabled": false,
         "urls": {
           "direct": "",
           "affiliate": null
@@ -5651,7 +5651,7 @@
         "label": "LINE MUSICで聴く",
         "priority": 6,
         "category": "streaming",
-        "enabled": true,
+        "enabled": false,
         "urls": {
           "direct": "",
           "affiliate": null
@@ -5664,7 +5664,7 @@
         "category": "streaming",
         "enabled": true,
         "urls": {
-          "direct": "",
+          "direct": "https://www.youtube.com/watch?v=bPyP0RWnsOI",
           "affiliate": null
         }
       },
@@ -5710,13 +5710,13 @@
     "notes": "配信ライブ",
     "categories": {
       "purchase": {
-        "enabled": true
+        "enabled": false
       },
       "streaming": {
-        "enabled": true
+        "enabled": false
       },
       "marketplace": {
-        "enabled": true
+        "enabled": false
       }
     },
     "links": [
@@ -5897,7 +5897,7 @@
         "enabled": true
       },
       "streaming": {
-        "enabled": true
+        "enabled": false
       },
       "marketplace": {
         "enabled": true
@@ -6032,7 +6032,7 @@
         "category": "streaming",
         "enabled": true,
         "urls": {
-          "direct": "",
+          "direct": "https://www.youtube.com/watch?v=3eEZKrPcJbA",
           "affiliate": null
         }
       },

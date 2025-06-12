@@ -291,7 +291,7 @@ export function DetailModal({ active, setActive, setPreview, tours }: DetailModa
                                       const categoryConfig: CategoryConfig = {
                                         purchase: { label: '購入', priority: 1 },
                                         streaming: { label: '視聴・試聴', priority: 2 },
-                                        marketplace: { label: '中古を探す', priority: 3 }
+                                        marketplace: { label: 'フリマで探す', priority: 3 }
                                       };
 
                                       // カテゴリーごとにリンクをグループ化
