@@ -34,7 +34,7 @@
         "category": "purchase",
         "enabled": true,
         "urls": {
-          "direct": "https://www.amazon.co.jp/s?k=T.M.Revolution+DVD+Series+The+Summary&__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&crid=SF8GM4803K2F&sprefix=t.m.revolution+dvd+series+the+summary%2Caps%2C166&ref=nb_sb_noss_1",
+          "direct": "https://www.amazon.co.jp/s?k=T.M.Revolution+DVD+Series+The+Summary+-summarize+1-",
           "affiliate": null
         }
       },
@@ -45,7 +45,7 @@
         "category": "purchase",
         "enabled": true,
         "urls": {
-          "direct": "https://books.rakuten.co.jp/search?g=000&sitem=T.M.Revolution+DVD+Series+The+Summary",
+          "direct": "https://books.rakuten.co.jp/search?sitem=T.M.Revolution+DVD+Series+The+Summary+-summarize+1-",
           "affiliate": null
         }
       },
@@ -56,7 +56,7 @@
         "category": "purchase",
         "enabled": true,
         "urls": {
-          "direct": "https://shopping.yahoo.co.jp/search?p=T.M.Revolution+DVD+Series+The+Summary",
+          "direct": "https://shopping.yahoo.co.jp/search?p=T.M.Revolution+DVD+Series+The+Summary+-summarize+1-",
           "affiliate": null
         }
       },
@@ -67,7 +67,7 @@
         "category": "purchase",
         "enabled": true,
         "urls": {
-          "direct": "https://7net.omni7.jp/search/?keyword=T.M.Revolution+DVD+Series+The+Summary",
+          "direct": "https://7net.omni7.jp/search/?keyword=T.M.Revolution+DVD+Series+The+Summary+-summarize+1-",
           "affiliate": null
         }
       },
@@ -155,7 +155,7 @@
         "category": "marketplace",
         "enabled": true,
         "urls": {
-          "direct": "https://www.mercari.com/jp/search/?keyword=T.M.Revolution+DVD+Series+The+Summary",
+          "direct": "https://jp.mercari.com/search?keyword=T.M.Revolution+DVD+Series+The+Summary+-summarize+1-",
           "affiliate": null
         }
       },
@@ -166,7 +166,7 @@
         "category": "marketplace",
         "enabled": true,
         "urls": {
-          "direct": "https://auctions.yahoo.co.jp/search/search?p=T.M.Revolution+DVD+Series+The+Summary",
+          "direct": "https://auctions.yahoo.co.jp/search/search?p=T.M.Revolution+DVD+Series+The+Summary+-summarize+1-",
           "affiliate": null
         }
       },
@@ -177,7 +177,7 @@
         "category": "marketplace",
         "enabled": true,
         "urls": {
-          "direct": "https://fril.jp/s?query=T.M.Revolution+DVD+Series+The+Summary",
+          "direct": "https://fril.jp/search/T.M.Revolution+DVD+Series+The+Summary+-summarize+1-",
           "affiliate": null
         }
       }
@@ -218,7 +218,7 @@
         "category": "purchase",
         "enabled": true,
         "urls": {
-          "direct": "https://www.amazon.co.jp/s?k=T.M.Revolution+DVD+Series+The+Summary&__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&crid=SF8GM4803K2F&sprefix=t.m.revolution+dvd+series+the+summary%2Caps%2C166&ref=nb_sb_noss_1",
+          "direct": "https://www.amazon.co.jp/s?k=T.M.Revolution+DVD+Series+The+Summary+-summarize+2-",
           "affiliate": null
         }
       },
@@ -229,7 +229,7 @@
         "category": "purchase",
         "enabled": true,
         "urls": {
-          "direct": "https://books.rakuten.co.jp/search?g=000&sitem=T.M.Revolution+DVD+Series+The+Summary",
+          "direct": "https://books.rakuten.co.jp/search?sitem=T.M.Revolution+DVD+Series+The+Summary+-summarize+2-",
           "affiliate": null
         }
       },
@@ -240,7 +240,7 @@
         "category": "purchase",
         "enabled": true,
         "urls": {
-          "direct": "https://shopping.yahoo.co.jp/search?p=T.M.Revolution+DVD+Series+The+Summary",
+          "direct": "https://shopping.yahoo.co.jp/search?p=T.M.Revolution+DVD+Series+The+Summary+-summarize+2-",
           "affiliate": null
         }
       },
@@ -251,7 +251,7 @@
         "category": "purchase",
         "enabled": true,
         "urls": {
-          "direct": "https://7net.omni7.jp/search/?keyword=T.M.Revolution+DVD+Series+The+Summary",
+          "direct": "https://7net.omni7.jp/search/?keyword=T.M.Revolution+DVD+Series+The+Summary+-summarize+2-",
           "affiliate": null
         }
       },
@@ -339,7 +339,7 @@
         "category": "marketplace",
         "enabled": true,
         "urls": {
-          "direct": "https://www.mercari.com/jp/search/?keyword=T.M.Revolution+DVD+Series+The+Summary",
+          "direct": "https://jp.mercari.com/search?keyword=T.M.Revolution+DVD+Series+The+Summary+-summarize+2-",
           "affiliate": null
         }
       },
@@ -350,7 +350,7 @@
         "category": "marketplace",
         "enabled": true,
         "urls": {
-          "direct": "https://auctions.yahoo.co.jp/search/search?p=T.M.Revolution+DVD+Series+The+Summary",
+          "direct": "https://auctions.yahoo.co.jp/search/search?p=T.M.Revolution+DVD+Series+The+Summary+-summarize+2-",
           "affiliate": null
         }
       },
@@ -361,7 +361,7 @@
         "category": "marketplace",
         "enabled": true,
         "urls": {
-          "direct": "https://fril.jp/s?query=T.M.Revolution+DVD+Series+The+Summary",
+          "direct": "https://fril.jp/search/T.M.Revolution+DVD+Series+The+Summary+-summarize+2-",
           "affiliate": null
         }
       }
@@ -402,7 +402,7 @@
         "category": "purchase",
         "enabled": true,
         "urls": {
-          "direct": "https://www.amazon.co.jp/s?k=T.M.Revolution+DVD+Series+The+Summary&__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&crid=SF8GM4803K2F&sprefix=t.m.revolution+dvd+series+the+summary%2Caps%2C166&ref=nb_sb_noss_1",
+          "direct": "https://www.amazon.co.jp/s?k=T.M.Revolution+DVD+Series+The+Summary+-summarize+3-",
           "affiliate": null
         }
       },
@@ -413,7 +413,7 @@
         "category": "purchase",
         "enabled": true,
         "urls": {
-          "direct": "https://books.rakuten.co.jp/search?g=000&sitem=T.M.Revolution+DVD+Series+The+Summary",
+          "direct": "https://books.rakuten.co.jp/search?sitem=T.M.Revolution+DVD+Series+The+Summary+-summarize+3-",
           "affiliate": null
         }
       },
@@ -424,7 +424,7 @@
         "category": "purchase",
         "enabled": true,
         "urls": {
-          "direct": "https://shopping.yahoo.co.jp/search?p=T.M.Revolution+DVD+Series+The+Summary",
+          "direct": "https://shopping.yahoo.co.jp/search?p=T.M.Revolution+DVD+Series+The+Summary+-summarize+3-",
           "affiliate": null
         }
       },
@@ -435,7 +435,7 @@
         "category": "purchase",
         "enabled": true,
         "urls": {
-          "direct": "https://7net.omni7.jp/search/?keyword=T.M.Revolution+DVD+Series+The+Summary",
+          "direct": "https://7net.omni7.jp/search/?keyword=T.M.Revolution+DVD+Series+The+Summary+-summarize+3-",
           "affiliate": null
         }
       },
@@ -523,7 +523,7 @@
         "category": "marketplace",
         "enabled": true,
         "urls": {
-          "direct": "https://www.mercari.com/jp/search/?keyword=T.M.Revolution+DVD+Series+The+Summary",
+          "direct": "https://jp.mercari.com/search?keyword=T.M.Revolution+DVD+Series+The+Summary+-summarize+3-",
           "affiliate": null
         }
       },
@@ -534,7 +534,7 @@
         "category": "marketplace",
         "enabled": true,
         "urls": {
-          "direct": "https://auctions.yahoo.co.jp/search/search?p=T.M.Revolution+DVD+Series+The+Summary",
+          "direct": "https://auctions.yahoo.co.jp/search/search?p=T.M.Revolution+DVD+Series+The+Summary+-summarize+3-",
           "affiliate": null
         }
       },
@@ -545,7 +545,7 @@
         "category": "marketplace",
         "enabled": true,
         "urls": {
-          "direct": "https://fril.jp/s?query=T.M.Revolution+DVD+Series+The+Summary",
+          "direct": "https://fril.jp/search/T.M.Revolution+DVD+Series+The+Summary+-summarize+3-",
           "affiliate": null
         }
       }
@@ -586,7 +586,7 @@
         "category": "purchase",
         "enabled": true,
         "urls": {
-          "direct": "https://www.amazon.co.jp/s?k=T.M.Revolution+DVD+Series+The+Summary&__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&crid=SF8GM4803K2F&sprefix=t.m.revolution+dvd+series+the+summary%2Caps%2C166&ref=nb_sb_noss_1",
+          "direct": "https://www.amazon.co.jp/s?k=T.M.Revolution+DVD+Series+The+Summary+-summarize+4-",
           "affiliate": null
         }
       },
@@ -597,7 +597,7 @@
         "category": "purchase",
         "enabled": true,
         "urls": {
-          "direct": "https://books.rakuten.co.jp/search?g=000&sitem=T.M.Revolution+DVD+Series+The+Summary",
+          "direct": "https://books.rakuten.co.jp/search?sitem=T.M.Revolution+DVD+Series+The+Summary+-summarize+4-",
           "affiliate": null
         }
       },
@@ -608,7 +608,7 @@
         "category": "purchase",
         "enabled": true,
         "urls": {
-          "direct": "https://shopping.yahoo.co.jp/search?p=T.M.Revolution+DVD+Series+The+Summary",
+          "direct": "https://shopping.yahoo.co.jp/search?p=T.M.Revolution+DVD+Series+The+Summary+-summarize+4-",
           "affiliate": null
         }
       },
@@ -619,7 +619,7 @@
         "category": "purchase",
         "enabled": true,
         "urls": {
-          "direct": "https://7net.omni7.jp/search/?keyword=T.M.Revolution+DVD+Series+The+Summary",
+          "direct": "https://7net.omni7.jp/search/?keyword=T.M.Revolution+DVD+Series+The+Summary+-summarize+4-",
           "affiliate": null
         }
       },
@@ -707,7 +707,7 @@
         "category": "marketplace",
         "enabled": true,
         "urls": {
-          "direct": "https://www.mercari.com/jp/search/?keyword=T.M.Revolution+DVD+Series+The+Summary",
+          "direct": "https://jp.mercari.com/search?keyword=T.M.Revolution+DVD+Series+The+Summary+-summarize+4-",
           "affiliate": null
         }
       },
@@ -718,7 +718,7 @@
         "category": "marketplace",
         "enabled": true,
         "urls": {
-          "direct": "https://auctions.yahoo.co.jp/search/search?p=T.M.Revolution+DVD+Series+The+Summary",
+          "direct": "https://auctions.yahoo.co.jp/search/search?p=T.M.Revolution+DVD+Series+The+Summary+-summarize+4-",
           "affiliate": null
         }
       },
@@ -729,7 +729,7 @@
         "category": "marketplace",
         "enabled": true,
         "urls": {
-          "direct": "https://fril.jp/s?query=T.M.Revolution+DVD+Series+The+Summary",
+          "direct": "https://fril.jp/search/T.M.Revolution+DVD+Series+The+Summary+-summarize+4-",
           "affiliate": null
         }
       }
@@ -770,7 +770,7 @@
         "category": "purchase",
         "enabled": true,
         "urls": {
-          "direct": "https://www.amazon.co.jp/s?k=T.M.Revolution+LIVE+REVOLUTION+COMPLETE+EDITION&__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&crid=A0BIKW5LUY5P&sprefix=t.m.revolution+live+revolution+complete+edition%2Caps%2C152&ref=nb_sb_noss",
+          "direct": "https://www.amazon.co.jp/s?k=LIVE+REVOLUTION+COMPLETE+EDITION-1+1996.3.22+新宿LIQUID+ROOM",
           "affiliate": null
         }
       },
@@ -781,7 +781,7 @@
         "category": "purchase",
         "enabled": true,
         "urls": {
-          "direct": "https://books.rakuten.co.jp/search?g=000&sitem=T.M.Revolution+LIVE+REVOLUTION+COMPLETE+EDITION",
+          "direct": "https://books.rakuten.co.jp/search?sitem=LIVE+REVOLUTION+COMPLETE+EDITION-1+1996.3.22+新宿LIQUID+ROOM",
           "affiliate": null
         }
       },
@@ -792,7 +792,7 @@
         "category": "purchase",
         "enabled": true,
         "urls": {
-          "direct": "https://shopping.yahoo.co.jp/search?p=T.M.Revolution+LIVE+REVOLUTION+COMPLETE+EDITION",
+          "direct": "https://shopping.yahoo.co.jp/search?p=LIVE+REVOLUTION+COMPLETE+EDITION-1+1996.3.22+新宿LIQUID+ROOM",
           "affiliate": null
         }
       },
@@ -803,7 +803,7 @@
         "category": "purchase",
         "enabled": true,
         "urls": {
-          "direct": "https://7net.omni7.jp/search/?keyword=T.M.Revolution+LIVE+REVOLUTION+COMPLETE+EDITION",
+          "direct": "https://7net.omni7.jp/search/?keyword=LIVE+REVOLUTION+COMPLETE+EDITION-1+1996.3.22+新宿LIQUID+ROOM",
           "affiliate": null
         }
       },
@@ -891,7 +891,7 @@
         "category": "marketplace",
         "enabled": true,
         "urls": {
-          "direct": "https://www.mercari.com/jp/search/?keyword=T.M.Revolution+LIVE+REVOLUTION+COMPLETE+EDITION",
+          "direct": "https://jp.mercari.com/search?keyword=LIVE+REVOLUTION+COMPLETE+EDITION-1+1996.3.22+新宿LIQUID+ROOM",
           "affiliate": null
         }
       },
@@ -902,7 +902,7 @@
         "category": "marketplace",
         "enabled": true,
         "urls": {
-          "direct": "https://auctions.yahoo.co.jp/search/search?p=T.M.Revolution+LIVE+REVOLUTION+COMPLETE+EDITION",
+          "direct": "https://auctions.yahoo.co.jp/search/search?p=LIVE+REVOLUTION+COMPLETE+EDITION-1+1996.3.22+新宿LIQUID+ROOM",
           "affiliate": null
         }
       },
@@ -913,7 +913,7 @@
         "category": "marketplace",
         "enabled": true,
         "urls": {
-          "direct": "https://fril.jp/s?query=T.M.Revolution+LIVE+REVOLUTION+COMPLETE+EDITION",
+          "direct": "https://fril.jp/search/LIVE+REVOLUTION+COMPLETE+EDITION-1+1996.3.22+新宿LIQUID+ROOM",
           "affiliate": null
         }
       }
@@ -954,7 +954,7 @@
         "category": "purchase",
         "enabled": true,
         "urls": {
-          "direct": "https://www.amazon.co.jp/s?k=T.M.Revolution+LIVE+REVOLUTION+COMPLETE+EDITION&__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&crid=A0BIKW5LUY5P&sprefix=t.m.revolution+live+revolution+complete+edition%2Caps%2C152&ref=nb_sb_noss",
+          "direct": "https://www.amazon.co.jp/s?k=LIVE+REVOLUTION+COMPLETE+EDITION-2+1996.6.6+赤坂BLITZ",
           "affiliate": null
         }
       },
@@ -965,7 +965,7 @@
         "category": "purchase",
         "enabled": true,
         "urls": {
-          "direct": "https://books.rakuten.co.jp/search?g=000&sitem=T.M.Revolution+LIVE+REVOLUTION+COMPLETE+EDITION",
+          "direct": "https://books.rakuten.co.jp/search?sitem=LIVE+REVOLUTION+COMPLETE+EDITION-2+1996.6.6+赤坂BLITZ",
           "affiliate": null
         }
       },
@@ -976,7 +976,7 @@
         "category": "purchase",
         "enabled": true,
         "urls": {
-          "direct": "https://shopping.yahoo.co.jp/search?p=T.M.Revolution+LIVE+REVOLUTION+COMPLETE+EDITION",
+          "direct": "https://shopping.yahoo.co.jp/search?p=LIVE+REVOLUTION+COMPLETE+EDITION-2+1996.6.6+赤坂BLITZ",
           "affiliate": null
         }
       },
@@ -987,7 +987,7 @@
         "category": "purchase",
         "enabled": true,
         "urls": {
-          "direct": "https://7net.omni7.jp/search/?keyword=T.M.Revolution+LIVE+REVOLUTION+COMPLETE+EDITION",
+          "direct": "https://7net.omni7.jp/search/?keyword=LIVE+REVOLUTION+COMPLETE+EDITION-2+1996.6.6+赤坂BLITZ",
           "affiliate": null
         }
       },
@@ -1075,7 +1075,7 @@
         "category": "marketplace",
         "enabled": true,
         "urls": {
-          "direct": "https://www.mercari.com/jp/search/?keyword=T.M.Revolution+LIVE+REVOLUTION+COMPLETE+EDITION",
+          "direct": "https://jp.mercari.com/search?keyword=LIVE+REVOLUTION+COMPLETE+EDITION-2+1996.6.6+赤坂BLITZ",
           "affiliate": null
         }
       },
@@ -1086,7 +1086,7 @@
         "category": "marketplace",
         "enabled": true,
         "urls": {
-          "direct": "https://auctions.yahoo.co.jp/search/search?p=T.M.Revolution+LIVE+REVOLUTION+COMPLETE+EDITION",
+          "direct": "https://auctions.yahoo.co.jp/search/search?p=LIVE+REVOLUTION+COMPLETE+EDITION-2+1996.6.6+赤坂BLITZ",
           "affiliate": null
         }
       },
@@ -1097,7 +1097,7 @@
         "category": "marketplace",
         "enabled": true,
         "urls": {
-          "direct": "https://fril.jp/s?query=T.M.Revolution+LIVE+REVOLUTION+COMPLETE+EDITION",
+          "direct": "https://fril.jp/search/LIVE+REVOLUTION+COMPLETE+EDITION-2+1996.6.6+赤坂BLITZ",
           "affiliate": null
         }
       }
@@ -1138,7 +1138,7 @@
         "category": "purchase",
         "enabled": true,
         "urls": {
-          "direct": "https://www.amazon.co.jp/s?k=T.M.Revolution+LIVE+REVOLUTION+COMPLETE+EDITION&__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&crid=A0BIKW5LUY5P&sprefix=t.m.revolution+live+revolution+complete+edition%2Caps%2C152&ref=nb_sb_noss",
+          "direct": "https://www.amazon.co.jp/s?k=LIVE+REVOLUTION+COMPLETE+EDITION-3+1996.8.29+中野サンプラザ",
           "affiliate": null
         }
       },
@@ -1149,7 +1149,7 @@
         "category": "purchase",
         "enabled": true,
         "urls": {
-          "direct": "https://books.rakuten.co.jp/search?g=000&sitem=T.M.Revolution+LIVE+REVOLUTION+COMPLETE+EDITION",
+          "direct": "https://books.rakuten.co.jp/search?sitem=LIVE+REVOLUTION+COMPLETE+EDITION-3+1996.8.29+中野サンプラザ",
           "affiliate": null
         }
       },
@@ -1160,7 +1160,7 @@
         "category": "purchase",
         "enabled": true,
         "urls": {
-          "direct": "https://shopping.yahoo.co.jp/search?p=T.M.Revolution+LIVE+REVOLUTION+COMPLETE+EDITION",
+          "direct": "https://shopping.yahoo.co.jp/search?p=LIVE+REVOLUTION+COMPLETE+EDITION-3+1996.8.29+中野サンプラザ",
           "affiliate": null
         }
       },
@@ -1171,7 +1171,7 @@
         "category": "purchase",
         "enabled": true,
         "urls": {
-          "direct": "https://7net.omni7.jp/search/?keyword=T.M.Revolution+LIVE+REVOLUTION+COMPLETE+EDITION",
+          "direct": "https://7net.omni7.jp/search/?keyword=LIVE+REVOLUTION+COMPLETE+EDITION-3+1996.8.29+中野サンプラザ",
           "affiliate": null
         }
       },
@@ -1259,7 +1259,7 @@
         "category": "marketplace",
         "enabled": true,
         "urls": {
-          "direct": "https://www.mercari.com/jp/search/?keyword=T.M.Revolution+LIVE+REVOLUTION+COMPLETE+EDITION",
+          "direct": "https://jp.mercari.com/search?keyword=LIVE+REVOLUTION+COMPLETE+EDITION-3+1996.8.29+中野サンプラザ",
           "affiliate": null
         }
       },
@@ -1270,7 +1270,7 @@
         "category": "marketplace",
         "enabled": true,
         "urls": {
-          "direct": "https://auctions.yahoo.co.jp/search/search?p=T.M.Revolution+LIVE+REVOLUTION+COMPLETE+EDITION",
+          "direct": "https://auctions.yahoo.co.jp/search/search?p=LIVE+REVOLUTION+COMPLETE+EDITION-3+1996.8.29+中野サンプラザ",
           "affiliate": null
         }
       },
@@ -1281,7 +1281,7 @@
         "category": "marketplace",
         "enabled": true,
         "urls": {
-          "direct": "https://fril.jp/s?query=T.M.Revolution+LIVE+REVOLUTION+COMPLETE+EDITION",
+          "direct": "https://fril.jp/search/LIVE+REVOLUTION+COMPLETE+EDITION-3+1996.8.29+中野サンプラザ",
           "affiliate": null
         }
       }
@@ -1322,7 +1322,7 @@
         "category": "purchase",
         "enabled": true,
         "urls": {
-          "direct": "https://www.amazon.co.jp/s?k=the+end+of+genesis+T.M.R.+evolution+turbo+type+D+LIVE+ARENA+2000&__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&ref=nb_sb_noss",
+          "direct": "https://www.amazon.co.jp/s?k=the+end+of+genesis+T.M.R.+evolution+turbo+type+D+LIVE+ARENA+2000+A.D.+Special+DVD+Version",
           "affiliate": null
         }
       },
@@ -1333,7 +1333,7 @@
         "category": "purchase",
         "enabled": false,
         "urls": {
-          "direct": "https://books.rakuten.co.jp/search?g=000&sitem=the+end+of+genesis+T.M.R.+evolution+turbo+type+D+LIVE+ARENA+2000",
+          "direct": "https://books.rakuten.co.jp/search?sitem=the+end+of+genesis+T.M.R.+evolution+turbo+type+D+LIVE+ARENA+2000+A.D.+Special+DVD+Version",
           "affiliate": null
         }
       },
@@ -1344,7 +1344,7 @@
         "category": "purchase",
         "enabled": true,
         "urls": {
-          "direct": "https://shopping.yahoo.co.jp/search?p=the+end+of+genesis+T.M.R.+evolution+turbo+type+D+LIVE+ARENA+2000",
+          "direct": "https://shopping.yahoo.co.jp/search?p=the+end+of+genesis+T.M.R.+evolution+turbo+type+D+LIVE+ARENA+2000+A.D.+Special+DVD+Version",
           "affiliate": null
         }
       },
@@ -1355,7 +1355,7 @@
         "category": "purchase",
         "enabled": false,
         "urls": {
-          "direct": "https://7net.omni7.jp/search/?keyword=the+end+of+genesis+T.M.R.+evolution+turbo+type+D+LIVE+ARENA+2000",
+          "direct": "https://7net.omni7.jp/search/?keyword=the+end+of+genesis+T.M.R.+evolution+turbo+type+D+LIVE+ARENA+2000+A.D.+Special+DVD+Version",
           "affiliate": null
         }
       },
@@ -1443,7 +1443,7 @@
         "category": "marketplace",
         "enabled": true,
         "urls": {
-          "direct": "https://www.mercari.com/jp/search/?keyword=the+end+of+genesis+T.M.R.+evolution+turbo+type+D+LIVE+ARENA+2000",
+          "direct": "https://jp.mercari.com/search?keyword=the+end+of+genesis+T.M.R.+evolution+turbo+type+D+LIVE+ARENA+2000+A.D.+Special+DVD+Version",
           "affiliate": null
         }
       },
@@ -1454,7 +1454,7 @@
         "category": "marketplace",
         "enabled": true,
         "urls": {
-          "direct": "https://auctions.yahoo.co.jp/search/search?p=the+end+of+genesis+T.M.R.+evolution+turbo+type+D+LIVE+ARENA+2000",
+          "direct": "https://auctions.yahoo.co.jp/search/search?p=the+end+of+genesis+T.M.R.+evolution+turbo+type+D+LIVE+ARENA+2000+A.D.+Special+DVD+Version",
           "affiliate": null
         }
       },
@@ -1465,7 +1465,7 @@
         "category": "marketplace",
         "enabled": true,
         "urls": {
-          "direct": "https://fril.jp/s?query=the+end+of+genesis+T.M.R.+evolution+turbo+type+D+LIVE+ARENA+2000",
+          "direct": "https://fril.jp/search/the+end+of+genesis+T.M.R.+evolution+turbo+type+D+LIVE+ARENA+2000+A.D.+Special+DVD+Version",
           "affiliate": null
         }
       }
@@ -2058,7 +2058,7 @@
         "category": "purchase",
         "enabled": true,
         "urls": {
-          "direct": "https://www.amazon.co.jp/s?k=T.M.Revolution+SONIC+WARP&__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&crid=3B1D85HDJI21L&sprefix=t.m.revolution+sonic+warp%2Caps%2C162&ref=nb_sb_noss",
+          "direct": "https://www.amazon.co.jp/s?k=SONIC+WARP+the+Visual+Fields",
           "affiliate": null
         }
       },
@@ -2069,7 +2069,7 @@
         "category": "purchase",
         "enabled": true,
         "urls": {
-          "direct": "https://books.rakuten.co.jp/search?g=000&sitem=T.M.Revolution+SONIC+WARP",
+          "direct": "https://books.rakuten.co.jp/search?sitem=SONIC+WARP+the+Visual+Fields",
           "affiliate": null
         }
       },
@@ -2080,7 +2080,7 @@
         "category": "purchase",
         "enabled": true,
         "urls": {
-          "direct": "https://shopping.yahoo.co.jp/search?p=T.M.Revolution+SONIC+WARP",
+          "direct": "https://shopping.yahoo.co.jp/search?p=SONIC+WARP+the+Visual+Fields",
           "affiliate": null
         }
       },
@@ -2091,7 +2091,7 @@
         "category": "purchase",
         "enabled": true,
         "urls": {
-          "direct": "https://7net.omni7.jp/search/?keyword=T.M.Revolution+SONIC+WARP",
+          "direct": "https://7net.omni7.jp/search/?keyword=SONIC+WARP+the+Visual+Fields",
           "affiliate": null
         }
       },
@@ -2179,7 +2179,7 @@
         "category": "marketplace",
         "enabled": true,
         "urls": {
-          "direct": "https://www.mercari.com/jp/search/?keyword=T.M.Revolution+SONIC+WARP",
+          "direct": "https://jp.mercari.com/search?keyword=SONIC+WARP+the+Visual+Fields",
           "affiliate": null
         }
       },
@@ -2190,7 +2190,7 @@
         "category": "marketplace",
         "enabled": true,
         "urls": {
-          "direct": "https://auctions.yahoo.co.jp/search/search?p=T.M.Revolution+SONIC+WARP",
+          "direct": "https://auctions.yahoo.co.jp/search/search?p=SONIC+WARP+the+Visual+Fields",
           "affiliate": null
         }
       },
@@ -2201,7 +2201,7 @@
         "category": "marketplace",
         "enabled": true,
         "urls": {
-          "direct": "https://fril.jp/s?query=T.M.Revolution+SONIC+WARP",
+          "direct": "https://fril.jp/search/SONIC+WARP+the+Visual+Fields",
           "affiliate": null
         }
       }
@@ -2610,7 +2610,7 @@
         "category": "purchase",
         "enabled": true,
         "urls": {
-          "direct": "https://www.amazon.co.jp/s?k=T.M.Revolution+T.M.R.+LIVE+REVOLUTION+06+UNDER+COVER&__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&crid=3PQTILIH4P6NK&sprefix=t.m.revolution+t.m.r.+live+revolution+06+under+cover%2Caps%2C162&ref=nb_sb_noss",
+          "direct": "https://www.amazon.co.jp/s?k=T.M.R.+LIVE+REVOLUTION+06+-UNDER:COVER-",
           "affiliate": null
         }
       },
@@ -2621,7 +2621,7 @@
         "category": "purchase",
         "enabled": true,
         "urls": {
-          "direct": "https://books.rakuten.co.jp/search?g=000&sitem=T.M.Revolution+T.M.R.+LIVE+REVOLUTION+06+UNDER+COVER",
+          "direct": "https://books.rakuten.co.jp/search?sitem=T.M.R.+LIVE+REVOLUTION+06+-UNDER:COVER-",
           "affiliate": null
         }
       },
@@ -2632,7 +2632,7 @@
         "category": "purchase",
         "enabled": true,
         "urls": {
-          "direct": "https://shopping.yahoo.co.jp/search?p=T.M.Revolution+T.M.R.+LIVE+REVOLUTION+06+UNDER+COVER",
+          "direct": "https://shopping.yahoo.co.jp/search?p=T.M.R.+LIVE+REVOLUTION+06+-UNDER:COVER-",
           "affiliate": null
         }
       },
@@ -2643,7 +2643,7 @@
         "category": "purchase",
         "enabled": true,
         "urls": {
-          "direct": "https://7net.omni7.jp/search/?keyword=T.M.Revolution+T.M.R.+LIVE+REVOLUTION+06+UNDER+COVER",
+          "direct": "https://7net.omni7.jp/search/?keyword=T.M.R.+LIVE+REVOLUTION+06+-UNDER:COVER-",
           "affiliate": null
         }
       },
@@ -2731,7 +2731,7 @@
         "category": "marketplace",
         "enabled": true,
         "urls": {
-          "direct": "https://www.mercari.com/jp/search/?keyword=T.M.Revolution+T.M.R.+LIVE+REVOLUTION+06+UNDER+COVER",
+          "direct": "https://jp.mercari.com/search?keyword=T.M.R.+LIVE+REVOLUTION+06+-UNDER:COVER-",
           "affiliate": null
         }
       },
@@ -2742,7 +2742,7 @@
         "category": "marketplace",
         "enabled": true,
         "urls": {
-          "direct": "https://auctions.yahoo.co.jp/search/search?p=T.M.Revolution+T.M.R.+LIVE+REVOLUTION+06+UNDER+COVER",
+          "direct": "https://auctions.yahoo.co.jp/search/search?p=T.M.R.+LIVE+REVOLUTION+06+-UNDER:COVER-",
           "affiliate": null
         }
       },
@@ -2753,7 +2753,7 @@
         "category": "marketplace",
         "enabled": true,
         "urls": {
-          "direct": "https://fril.jp/s?query=T.M.Revolution+T.M.R.+LIVE+REVOLUTION+06+UNDER+COVER",
+          "direct": "https://fril.jp/search/T.M.R.+LIVE+REVOLUTION+06+-UNDER:COVER-",
           "affiliate": null
         }
       }
@@ -2794,7 +2794,7 @@
         "category": "purchase",
         "enabled": true,
         "urls": {
-          "direct": "https://www.amazon.co.jp/s?k=T.M.Revolution+UNDER+COVER&__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&crid=3A82D1BTSIC04&sprefix=t.m.revolution+under+cover%2Caps%2C163&ref=nb_sb_noss_1",
+          "direct": "https://www.amazon.co.jp/s?k=UNDER:COVER",
           "affiliate": null
         }
       },
@@ -2805,7 +2805,7 @@
         "category": "purchase",
         "enabled": true,
         "urls": {
-          "direct": "https://books.rakuten.co.jp/search?g=000&sitem=T.M.Revolution+UNDER+COVER",
+          "direct": "https://books.rakuten.co.jp/search?sitem=UNDER:COVER",
           "affiliate": null
         }
       },
@@ -2816,7 +2816,7 @@
         "category": "purchase",
         "enabled": true,
         "urls": {
-          "direct": "https://shopping.yahoo.co.jp/search?p=T.M.Revolution+UNDER+COVER",
+          "direct": "https://shopping.yahoo.co.jp/search?p=UNDER:COVER",
           "affiliate": null
         }
       },
@@ -2827,7 +2827,7 @@
         "category": "purchase",
         "enabled": true,
         "urls": {
-          "direct": "https://7net.omni7.jp/search/?keyword=T.M.Revolution+UNDER+COVER",
+          "direct": "https://7net.omni7.jp/search/?keyword=UNDER:COVER",
           "affiliate": null
         }
       },
@@ -2915,7 +2915,7 @@
         "category": "marketplace",
         "enabled": true,
         "urls": {
-          "direct": "https://www.mercari.com/jp/search/?keyword=T.M.Revolution+UNDER+COVER",
+          "direct": "https://jp.mercari.com/search?keyword=UNDER:COVER",
           "affiliate": null
         }
       },
@@ -2926,7 +2926,7 @@
         "category": "marketplace",
         "enabled": true,
         "urls": {
-          "direct": "https://auctions.yahoo.co.jp/search/search?p=T.M.Revolution+UNDER+COVER",
+          "direct": "https://auctions.yahoo.co.jp/search/search?p=UNDER:COVER",
           "affiliate": null
         }
       },
@@ -2937,7 +2937,7 @@
         "category": "marketplace",
         "enabled": true,
         "urls": {
-          "direct": "https://fril.jp/s?query=T.M.Revolution+UNDER+COVER",
+          "direct": "https://fril.jp/search/UNDER:COVER",
           "affiliate": null
         }
       }
@@ -2978,7 +2978,7 @@
         "category": "purchase",
         "enabled": true,
         "urls": {
-          "direct": "https://www.amazon.co.jp/s?k=T.M.Revolution+T.M.R.+LIVE+REVOLUTION+11-12+CLOUD+NINE&__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&crid=RQTUHFDORG3P&sprefix=t.m.revolution+t.m.r.+live+revolution+11-12+cloud+nine%2Caps%2C155&ref=nb_sb_noss",
+          "direct": "https://www.amazon.co.jp/s?k=T.M.R.+LIVE+REVOLUTION'11-12+-CLOUD+NINE-",
           "affiliate": null
         }
       },
@@ -2989,7 +2989,7 @@
         "category": "purchase",
         "enabled": true,
         "urls": {
-          "direct": "https://books.rakuten.co.jp/search?g=000&sitem=T.M.Revolution+T.M.R.+LIVE+REVOLUTION+11-12+CLOUD+NINE",
+          "direct": "https://books.rakuten.co.jp/search?sitem=T.M.R.+LIVE+REVOLUTION'11-12+-CLOUD+NINE-",
           "affiliate": null
         }
       },
@@ -3000,7 +3000,7 @@
         "category": "purchase",
         "enabled": true,
         "urls": {
-          "direct": "https://shopping.yahoo.co.jp/search?p=T.M.Revolution+T.M.R.+LIVE+REVOLUTION+11-12+CLOUD+NINE",
+          "direct": "https://shopping.yahoo.co.jp/search?p=T.M.R.+LIVE+REVOLUTION'11-12+-CLOUD+NINE-",
           "affiliate": null
         }
       },
@@ -3011,7 +3011,7 @@
         "category": "purchase",
         "enabled": true,
         "urls": {
-          "direct": "https://7net.omni7.jp/search/?keyword=T.M.Revolution+T.M.R.+LIVE+REVOLUTION+11-12+CLOUD+NINE",
+          "direct": "https://7net.omni7.jp/search/?keyword=T.M.R.+LIVE+REVOLUTION'11-12+-CLOUD+NINE-",
           "affiliate": null
         }
       },
@@ -3099,7 +3099,7 @@
         "category": "marketplace",
         "enabled": true,
         "urls": {
-          "direct": "https://www.mercari.com/jp/search/?keyword=T.M.Revolution+CLOUD+NINE",
+          "direct": "https://jp.mercari.com/search?keyword=T.M.R.+LIVE+REVOLUTION'11-12+-CLOUD+NINE-",
           "affiliate": null
         }
       },
@@ -3110,7 +3110,7 @@
         "category": "marketplace",
         "enabled": true,
         "urls": {
-          "direct": "https://auctions.yahoo.co.jp/search/search?p=T.M.Revolution+T.M.R.+LIVE+REVOLUTION+11-12+CLOUD+NINE",
+          "direct": "https://auctions.yahoo.co.jp/search/search?p=T.M.R.+LIVE+REVOLUTION'11-12+-CLOUD+NINE-",
           "affiliate": null
         }
       },
@@ -3121,7 +3121,7 @@
         "category": "marketplace",
         "enabled": true,
         "urls": {
-          "direct": "https://fril.jp/s?query=T.M.Revolution+T.M.R.+LIVE+REVOLUTION+11-12+CLOUD+NINE",
+          "direct": "https://fril.jp/search/T.M.R.+LIVE+REVOLUTION'11-12+-CLOUD+NINE-",
           "affiliate": null
         }
       }
@@ -3162,7 +3162,7 @@
         "category": "purchase",
         "enabled": true,
         "urls": {
-          "direct": "https://www.amazon.co.jp/s?k=T.M.Revolution+CLOUD+NINE&__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&ref=nb_sb_noss",
+          "direct": "https://www.amazon.co.jp/s?k=CLOUD+NINE【初回生産限定盤/type-A】",
           "affiliate": null
         }
       },
@@ -3173,7 +3173,7 @@
         "category": "purchase",
         "enabled": true,
         "urls": {
-          "direct": "https://books.rakuten.co.jp/search?g=000&sitem=T.M.Revolution+CLOUD+NINE",
+          "direct": "https://books.rakuten.co.jp/search?sitem=CLOUD+NINE【初回生産限定盤/type-A】",
           "affiliate": null
         }
       },
@@ -3184,7 +3184,7 @@
         "category": "purchase",
         "enabled": true,
         "urls": {
-          "direct": "https://shopping.yahoo.co.jp/search?p=T.M.Revolution+CLOUD+NINE",
+          "direct": "https://shopping.yahoo.co.jp/search?p=CLOUD+NINE【初回生産限定盤/type-A】",
           "affiliate": null
         }
       },
@@ -3195,7 +3195,7 @@
         "category": "purchase",
         "enabled": true,
         "urls": {
-          "direct": "https://7net.omni7.jp/search/?keyword=T.M.Revolution+CLOUD+NINE",
+          "direct": "https://7net.omni7.jp/search/?keyword=CLOUD+NINE【初回生産限定盤/type-A】",
           "affiliate": null
         }
       },
@@ -3283,7 +3283,7 @@
         "category": "marketplace",
         "enabled": true,
         "urls": {
-          "direct": "https://www.mercari.com/jp/search/?keyword=T.M.Revolution+CLOUD+NINE",
+          "direct": "https://jp.mercari.com/search?keyword=CLOUD+NINE【初回生産限定盤/type-A】",
           "affiliate": null
         }
       },
@@ -3294,7 +3294,7 @@
         "category": "marketplace",
         "enabled": true,
         "urls": {
-          "direct": "https://auctions.yahoo.co.jp/search/search?p=T.M.Revolution+CLOUD+NINE",
+          "direct": "https://auctions.yahoo.co.jp/search/search?p=CLOUD+NINE【初回生産限定盤/type-A】",
           "affiliate": null
         }
       },
@@ -3305,7 +3305,7 @@
         "category": "marketplace",
         "enabled": true,
         "urls": {
-          "direct": "https://fril.jp/s?query=T.M.Revolution+CLOUD+NINE",
+          "direct": "https://fril.jp/search/CLOUD+NINE【初回生産限定盤/type-A】",
           "affiliate": null
         }
       }
@@ -3714,7 +3714,7 @@
         "category": "purchase",
         "enabled": true,
         "urls": {
-          "direct": "https://www.amazon.co.jp/s?k=T.M.Revolution+T.M.R.+LIVE+REVOLUTION+12+15th+Anniversary+FINAL&__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&ref=nb_sb_noss",
+          "direct": "https://www.amazon.co.jp/s?k=T.M.R.+LIVE+REVOLUTION+'12+-15th+Anniversary+FINAL-",
           "affiliate": null
         }
       },
@@ -3725,7 +3725,7 @@
         "category": "purchase",
         "enabled": true,
         "urls": {
-          "direct": "https://books.rakuten.co.jp/search?g=000&sitem=T.M.Revolution+T.M.R.+LIVE+REVOLUTION+12+15th+Anniversary+FINAL",
+          "direct": "https://books.rakuten.co.jp/search?sitem=T.M.R.+LIVE+REVOLUTION+'12+-15th+Anniversary+FINAL-",
           "affiliate": null
         }
       },
@@ -3736,7 +3736,7 @@
         "category": "purchase",
         "enabled": true,
         "urls": {
-          "direct": "https://shopping.yahoo.co.jp/search?p=T.M.Revolution+T.M.R.+LIVE+REVOLUTION+12+15th+Anniversary+FINAL",
+          "direct": "https://shopping.yahoo.co.jp/search?p=T.M.R.+LIVE+REVOLUTION+'12+-15th+Anniversary+FINAL-",
           "affiliate": null
         }
       },
@@ -3747,7 +3747,7 @@
         "category": "purchase",
         "enabled": true,
         "urls": {
-          "direct": "https://7net.omni7.jp/search/?keyword=T.M.Revolution+T.M.R.+LIVE+REVOLUTION+12+15th+Anniversary+FINAL",
+          "direct": "https://7net.omni7.jp/search/?keyword=T.M.R.+LIVE+REVOLUTION+'12+-15th+Anniversary+FINAL-",
           "affiliate": null
         }
       },
@@ -3835,7 +3835,7 @@
         "category": "marketplace",
         "enabled": true,
         "urls": {
-          "direct": "https://www.mercari.com/jp/search/?keyword=T.M.Revolution+T.M.R.+LIVE+REVOLUTION+12+15th+Anniversary+FINAL",
+          "direct": "https://jp.mercari.com/search?keyword=T.M.R.+LIVE+REVOLUTION+'12+-15th+Anniversary+FINAL-",
           "affiliate": null
         }
       },
@@ -3846,7 +3846,7 @@
         "category": "marketplace",
         "enabled": true,
         "urls": {
-          "direct": "https://auctions.yahoo.co.jp/search/search?p=T.M.Revolution+T.M.R.+LIVE+REVOLUTION+12+15th+Anniversary+FINAL",
+          "direct": "https://auctions.yahoo.co.jp/search/search?p=T.M.R.+LIVE+REVOLUTION+'12+-15th+Anniversary+FINAL-",
           "affiliate": null
         }
       },
@@ -3857,7 +3857,7 @@
         "category": "marketplace",
         "enabled": true,
         "urls": {
-          "direct": "https://fril.jp/s?query=T.M.Revolution+T.M.R.+LIVE+REVOLUTION+12+15th+Anniversary+FINAL",
+          "direct": "https://fril.jp/search/T.M.R.+LIVE+REVOLUTION+'12+-15th+Anniversary+FINAL-",
           "affiliate": null
         }
       }
@@ -3909,7 +3909,7 @@
         "category": "purchase",
         "enabled": true,
         "urls": {
-          "direct": "https://books.rakuten.co.jp/search?g=000&sitem=T.M.Revolution+T.M.R.+LIVE+REVOLUTION+13+UNDER+II+COVER",
+          "direct": "https://books.rakuten.co.jp/search?sitem=T.M.R.+LIVE+REVOLUTION'13+-UNDER+II+COVER-",
           "affiliate": null
         }
       },
@@ -3920,7 +3920,7 @@
         "category": "purchase",
         "enabled": true,
         "urls": {
-          "direct": "https://shopping.yahoo.co.jp/search?p=T.M.Revolution+T.M.R.+LIVE+REVOLUTION+13+UNDER+II+COVER",
+          "direct": "https://shopping.yahoo.co.jp/search?p=T.M.R.+LIVE+REVOLUTION'13+-UNDER+II+COVER-",
           "affiliate": null
         }
       },
@@ -3931,7 +3931,7 @@
         "category": "purchase",
         "enabled": true,
         "urls": {
-          "direct": "https://7net.omni7.jp/search/?keyword=T.M.Revolution+T.M.R.+LIVE+REVOLUTION+13+UNDER+II+COVER",
+          "direct": "https://7net.omni7.jp/search/?keyword=T.M.R.+LIVE+REVOLUTION'13+-UNDER+II+COVER-",
           "affiliate": null
         }
       },
@@ -4019,7 +4019,7 @@
         "category": "marketplace",
         "enabled": true,
         "urls": {
-          "direct": "https://www.mercari.com/jp/search/?keyword=T.M.Revolution+T.M.R.+LIVE+REVOLUTION+13+UNDER+II+COVER",
+          "direct": "https://jp.mercari.com/search?keyword=T.M.R.+LIVE+REVOLUTION'13+-UNDER+II+COVER-",
           "affiliate": null
         }
       },
@@ -4030,7 +4030,7 @@
         "category": "marketplace",
         "enabled": true,
         "urls": {
-          "direct": "https://auctions.yahoo.co.jp/search/search?p=T.M.Revolution+T.M.R.+LIVE+REVOLUTION+13+UNDER+II+COVER",
+          "direct": "https://auctions.yahoo.co.jp/search/search?p=T.M.R.+LIVE+REVOLUTION'13+-UNDER+II+COVER-",
           "affiliate": null
         }
       },
@@ -4041,7 +4041,7 @@
         "category": "marketplace",
         "enabled": true,
         "urls": {
-          "direct": "https://fril.jp/s?query=T.M.Revolution+T.M.R.+LIVE+REVOLUTION+13+UNDER+II+COVER",
+          "direct": "https://fril.jp/search/T.M.R.+LIVE+REVOLUTION'13+-UNDER+II+COVER-",
           "affiliate": null
         }
       }
@@ -4082,7 +4082,7 @@
         "category": "purchase",
         "enabled": true,
         "urls": {
-          "direct": "https://www.amazon.co.jp/s?k=T.M.Revolution+T.M.R.+LIVE+REVOLUTION+14&__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&crid=3K6JT44PIW8A6&sprefix=t.m.revolution+t.m.r.+live+revolution+14%2Caps%2C157&ref=nb_sb_noss",
+          "direct": "https://www.amazon.co.jp/s?k=T.M.R.+LIVE+REVOLUTION'14+-今まで…'14-",
           "affiliate": null
         }
       },
@@ -4093,7 +4093,7 @@
         "category": "purchase",
         "enabled": true,
         "urls": {
-          "direct": "https://books.rakuten.co.jp/search?g=000&sitem=T.M.Revolution+T.M.R.+LIVE+REVOLUTION+14",
+          "direct": "https://books.rakuten.co.jp/search?sitem=T.M.R.+LIVE+REVOLUTION'14+-今まで…'14-",
           "affiliate": null
         }
       },
@@ -4104,7 +4104,7 @@
         "category": "purchase",
         "enabled": true,
         "urls": {
-          "direct": "https://shopping.yahoo.co.jp/search?p=T.M.Revolution+T.M.R.+LIVE+REVOLUTION+14",
+          "direct": "https://shopping.yahoo.co.jp/search?p=T.M.R.+LIVE+REVOLUTION'14+-今まで…'14-",
           "affiliate": null
         }
       },
@@ -4115,7 +4115,7 @@
         "category": "purchase",
         "enabled": false,
         "urls": {
-          "direct": "https://7net.omni7.jp/search/?keyword=T.M.Revolution+T.M.R.+LIVE+REVOLUTION+14",
+          "direct": "https://7net.omni7.jp/search/?keyword=T.M.R.+LIVE+REVOLUTION'14+-今まで…'14-",
           "affiliate": null
         }
       },
@@ -4203,7 +4203,7 @@
         "category": "marketplace",
         "enabled": true,
         "urls": {
-          "direct": "https://www.mercari.com/jp/search/?keyword=T.M.Revolution+T.M.R.+LIVE+REVOLUTION+14",
+          "direct": "https://jp.mercari.com/search?keyword=T.M.R.+LIVE+REVOLUTION'14+-今まで…'14-",
           "affiliate": null
         }
       },
@@ -4214,7 +4214,7 @@
         "category": "marketplace",
         "enabled": true,
         "urls": {
-          "direct": "https://auctions.yahoo.co.jp/search/search?p=T.M.Revolution+T.M.R.+LIVE+REVOLUTION+14",
+          "direct": "https://auctions.yahoo.co.jp/search/search?p=T.M.R.+LIVE+REVOLUTION'14+-今まで…'14-",
           "affiliate": null
         }
       },
@@ -4225,7 +4225,7 @@
         "category": "marketplace",
         "enabled": true,
         "urls": {
-          "direct": "https://fril.jp/s?query=T.M.Revolution+T.M.R.+LIVE+REVOLUTION+14",
+          "direct": "https://fril.jp/search/T.M.R.+LIVE+REVOLUTION'14+-今まで…'14-",
           "affiliate": null
         }
       }
@@ -4266,7 +4266,7 @@
         "category": "purchase",
         "enabled": true,
         "urls": {
-          "direct": "https://www.amazon.co.jp/s?k=T.M.Revolution+DOUBLE-DEAL+%E5%AE%8C%E5%85%A8%E7%94%9F%E7%94%A3%E9%99%90%E5%AE%9A%E7%9B%A4A&__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&ref=nb_sb_noss",
+          "direct": "https://www.amazon.co.jp/s?k=DOUBLE-DEAL完全生産限定盤A",
           "affiliate": null
         }
       },
@@ -4277,7 +4277,7 @@
         "category": "purchase",
         "enabled": true,
         "urls": {
-          "direct": "https://books.rakuten.co.jp/search?g=000&sitem=T.M.Revolution+DOUBLE-DEAL+%E5%AE%8C%E5%85%A8%E7%94%9F%E7%94%A3%E9%99%90%E5%AE%9A%E7%9B%A4A",
+          "direct": "https://books.rakuten.co.jp/search?sitem=DOUBLE-DEAL完全生産限定盤A",
           "affiliate": null
         }
       },
@@ -4288,7 +4288,7 @@
         "category": "purchase",
         "enabled": true,
         "urls": {
-          "direct": "https://shopping.yahoo.co.jp/search?p=T.M.Revolution+DOUBLE-DEAL+%E5%AE%8C%E5%85%A8%E7%94%9F%E7%94%A3%E9%99%90%E5%AE%9A%E7%9B%A4A",
+          "direct": "https://shopping.yahoo.co.jp/search?p=DOUBLE-DEAL完全生産限定盤A",
           "affiliate": null
         }
       },
@@ -4299,7 +4299,7 @@
         "category": "purchase",
         "enabled": true,
         "urls": {
-          "direct": "https://7net.omni7.jp/search/?keyword=T.M.Revolution+DOUBLE-DEAL+%E5%AE%8C%E5%85%A8%E7%94%9F%E7%94%A3%E9%99%90%E5%AE%9A%E7%9B%A4A",
+          "direct": "https://7net.omni7.jp/search/?keyword=DOUBLE-DEAL完全生産限定盤A",
           "affiliate": null
         }
       },
@@ -4387,7 +4387,7 @@
         "category": "marketplace",
         "enabled": true,
         "urls": {
-          "direct": "https://www.mercari.com/jp/search/?keyword=T.M.Revolution+DOUBLE-DEAL+%E5%AE%8C%E5%85%A8%E7%94%9F%E7%94%A3%E9%99%90%E5%AE%9A%E7%9B%A4A",
+          "direct": "https://jp.mercari.com/search?keyword=DOUBLE-DEAL完全生産限定盤A",
           "affiliate": null
         }
       },
@@ -4398,7 +4398,7 @@
         "category": "marketplace",
         "enabled": true,
         "urls": {
-          "direct": "https://auctions.yahoo.co.jp/search/search?p=T.M.Revolution+DOUBLE-DEAL+%E5%AE%8C%E5%85%A8%E7%94%9F%E7%94%A3%E9%99%90%E5%AE%9A%E7%9B%A4A",
+          "direct": "https://auctions.yahoo.co.jp/search/search?p=DOUBLE-DEAL完全生産限定盤A",
           "affiliate": null
         }
       },
@@ -4409,7 +4409,7 @@
         "category": "marketplace",
         "enabled": true,
         "urls": {
-          "direct": "https://fril.jp/s?query=T.M.Revolution+DOUBLE-DEAL+%E5%AE%8C%E5%85%A8%E7%94%9F%E7%94%A3%E9%99%90%E5%AE%9A%E7%9B%A4A",
+          "direct": "https://fril.jp/search/DOUBLE-DEAL完全生産限定盤A",
           "affiliate": null
         }
       }
@@ -4450,7 +4450,7 @@
         "category": "purchase",
         "enabled": true,
         "urls": {
-          "direct": "https://www.amazon.co.jp/s?k=T.M.Revolution+T.M.R.+LIVE+REVOLUTION+15+Strikes+Back&__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&crid=1V6Q9FJY19HTO&sprefix=t.m.revolution+t.m.r.+live+revolution+15+strikes+back%2Caps%2C154&ref=nb_sb_noss",
+          "direct": "https://www.amazon.co.jp/s?k=T.M.R.+LIVE+REVOLUTION+'15+-Strikes+Back+XI-",
           "affiliate": null
         }
       },
@@ -4461,7 +4461,7 @@
         "category": "purchase",
         "enabled": true,
         "urls": {
-          "direct": "https://books.rakuten.co.jp/search?g=000&sitem=T.M.Revolution+T.M.R.+LIVE+REVOLUTION+15+Strikes+Back",
+          "direct": "https://books.rakuten.co.jp/search?sitem=T.M.R.+LIVE+REVOLUTION+'15+-Strikes+Back+XI-",
           "affiliate": null
         }
       },
@@ -4472,7 +4472,7 @@
         "category": "purchase",
         "enabled": true,
         "urls": {
-          "direct": "https://shopping.yahoo.co.jp/search?p=T.M.Revolution+T.M.R.+LIVE+REVOLUTION+15+Strikes+Back",
+          "direct": "https://shopping.yahoo.co.jp/search?p=T.M.R.+LIVE+REVOLUTION+'15+-Strikes+Back+XI-",
           "affiliate": null
         }
       },
@@ -4483,7 +4483,7 @@
         "category": "purchase",
         "enabled": false,
         "urls": {
-          "direct": "https://7net.omni7.jp/search/?keyword=T.M.Revolution+T.M.R.+LIVE+REVOLUTION+15+Strikes+Back",
+          "direct": "https://7net.omni7.jp/search/?keyword=T.M.R.+LIVE+REVOLUTION+'15+-Strikes+Back+XI-",
           "affiliate": null
         }
       },
@@ -4571,7 +4571,7 @@
         "category": "marketplace",
         "enabled": true,
         "urls": {
-          "direct": "https://www.mercari.com/jp/search/?keyword=T.M.Revolution+T.M.R.+LIVE+REVOLUTION+15+Strikes+Back",
+          "direct": "https://jp.mercari.com/search?keyword=T.M.R.+LIVE+REVOLUTION+'15+-Strikes+Back+XI-",
           "affiliate": null
         }
       },
@@ -4582,7 +4582,7 @@
         "category": "marketplace",
         "enabled": true,
         "urls": {
-          "direct": "https://auctions.yahoo.co.jp/search/search?p=T.M.Revolution+T.M.R.+LIVE+REVOLUTION+15+Strikes+Back",
+          "direct": "https://auctions.yahoo.co.jp/search/search?p=T.M.R.+LIVE+REVOLUTION+'15+-Strikes+Back+XI-",
           "affiliate": null
         }
       },
@@ -4593,7 +4593,7 @@
         "category": "marketplace",
         "enabled": true,
         "urls": {
-          "direct": "https://fril.jp/s?query=T.M.Revolution+T.M.R.+LIVE+REVOLUTION+15+Strikes+Back",
+          "direct": "https://fril.jp/search/T.M.R.+LIVE+REVOLUTION+'15+-Strikes+Back+XI-",
           "affiliate": null
         }
       }
@@ -4818,7 +4818,7 @@
         "category": "purchase",
         "enabled": true,
         "urls": {
-          "direct": "https://www.amazon.co.jp/s?k=T.M.Revolution+T.M.R.+LIVE+REVOLUTION+16+17+Route+20&__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&crid=1EXZMMNGE2M25&sprefix=t.m.revolution+t.m.r.+live+revolution+16+17+route+20%2Caps%2C155&ref=nb_sb_noss",
+          "direct": "https://www.amazon.co.jp/s?k=T.M.R.+LIVE+REVOLUTION'16-'17+-Route+20-+LIVE+AT+NIPPON+BUDOKAN",
           "affiliate": null
         }
       },
@@ -4829,7 +4829,7 @@
         "category": "purchase",
         "enabled": true,
         "urls": {
-          "direct": "https://books.rakuten.co.jp/search?g=000&sitem=T.M.Revolution+T.M.R.+LIVE+REVOLUTION+16+17+Route+20",
+          "direct": "https://books.rakuten.co.jp/search?sitem=T.M.R.+LIVE+REVOLUTION'16-'17+-Route+20-+LIVE+AT+NIPPON+BUDOKAN",
           "affiliate": null
         }
       },
@@ -4840,7 +4840,7 @@
         "category": "purchase",
         "enabled": true,
         "urls": {
-          "direct": "https://shopping.yahoo.co.jp/search?p=T.M.Revolution+T.M.R.+LIVE+REVOLUTION+16+17+Route+20",
+          "direct": "https://shopping.yahoo.co.jp/search?p=T.M.R.+LIVE+REVOLUTION'16-'17+-Route+20-+LIVE+AT+NIPPON+BUDOKAN",
           "affiliate": null
         }
       },
@@ -4851,7 +4851,7 @@
         "category": "purchase",
         "enabled": true,
         "urls": {
-          "direct": "https://7net.omni7.jp/search/?keyword=T.M.Revolution+T.M.R.+LIVE+REVOLUTION+16+17+Route+20",
+          "direct": "https://7net.omni7.jp/search/?keyword=T.M.R.+LIVE+REVOLUTION'16-'17+-Route+20-+LIVE+AT+NIPPON+BUDOKAN",
           "affiliate": null
         }
       },
@@ -4939,7 +4939,7 @@
         "category": "marketplace",
         "enabled": true,
         "urls": {
-          "direct": "https://jp.mercari.com/search?keyword=T.M.Revolution%20LIVE%20REVOLUTION%20Route%2020",
+          "direct": "https://jp.mercari.com/search?keyword=T.M.R.+LIVE+REVOLUTION'16-'17+-Route+20-+LIVE+AT+NIPPON+BUDOKAN",
           "affiliate": null
         }
       },
@@ -4950,7 +4950,7 @@
         "category": "marketplace",
         "enabled": true,
         "urls": {
-          "direct": "https://auctions.yahoo.co.jp/search/search?p=T.M.Revolution+T.M.R.+LIVE+REVOLUTION+16+17+Route+20",
+          "direct": "https://auctions.yahoo.co.jp/search/search?p=T.M.R.+LIVE+REVOLUTION'16-'17+-Route+20-+LIVE+AT+NIPPON+BUDOKAN",
           "affiliate": null
         }
       },
@@ -4961,7 +4961,7 @@
         "category": "marketplace",
         "enabled": true,
         "urls": {
-          "direct": "https://fril.jp/s?query=T.M.Revolution+T.M.R.+LIVE+REVOLUTION+16+17+Route+20",
+          "direct": "https://fril.jp/search/T.M.R.+LIVE+REVOLUTION'16-'17+-Route+20-+LIVE+AT+NIPPON+BUDOKAN",
           "affiliate": null
         }
       }
@@ -5002,7 +5002,7 @@
         "category": "purchase",
         "enabled": true,
         "urls": {
-          "direct": "https://www.amazon.co.jp/s?k=T.M.Revolution+T.M.R.+LIVE+REVOLUTION+17+ROUND+HOUSE+CUTBACK&__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&crid=2FH50UCNFQS2I&sprefix=t.m.revolution+t.m.r.+live+revolution+17+round+house+cutback%2Caps%2C159&ref=nb_sb_noss",
+          "direct": "https://www.amazon.co.jp/s?k=T.M.R.+LIVE+REVOLUTION'17+-ROUND+HOUSE+CUTBACK-",
           "affiliate": null
         }
       },
@@ -5013,7 +5013,7 @@
         "category": "purchase",
         "enabled": true,
         "urls": {
-          "direct": "https://books.rakuten.co.jp/search?g=000&sitem=T.M.Revolution+T.M.R.+LIVE+REVOLUTION+17+ROUND+HOUSE+CUTBACK",
+          "direct": "https://books.rakuten.co.jp/search?sitem=T.M.R.+LIVE+REVOLUTION'17+-ROUND+HOUSE+CUTBACK-",
           "affiliate": null
         }
       },
@@ -5024,7 +5024,7 @@
         "category": "purchase",
         "enabled": true,
         "urls": {
-          "direct": "https://shopping.yahoo.co.jp/search?p=T.M.Revolution+T.M.R.+LIVE+REVOLUTION+17+ROUND+HOUSE+CUTBACK",
+          "direct": "https://shopping.yahoo.co.jp/search?p=T.M.R.+LIVE+REVOLUTION'17+-ROUND+HOUSE+CUTBACK-",
           "affiliate": null
         }
       },
@@ -5035,7 +5035,7 @@
         "category": "purchase",
         "enabled": true,
         "urls": {
-          "direct": "https://7net.omni7.jp/search/?keyword=T.M.Revolution+T.M.R.+LIVE+REVOLUTION+17+ROUND+HOUSE+CUTBACK",
+          "direct": "https://7net.omni7.jp/search/?keyword=T.M.R.+LIVE+REVOLUTION'17+-ROUND+HOUSE+CUTBACK-",
           "affiliate": null
         }
       },
@@ -5123,7 +5123,7 @@
         "category": "marketplace",
         "enabled": true,
         "urls": {
-          "direct": "https://www.mercari.com/jp/search/?keyword=T.M.Revolution+T.M.R.+LIVE+REVOLUTION+17+ROUND+HOUSE+CUTBACK",
+          "direct": "https://jp.mercari.com/search?keyword=T.M.R.+LIVE+REVOLUTION'17+-ROUND+HOUSE+CUTBACK-",
           "affiliate": null
         }
       },
@@ -5134,7 +5134,7 @@
         "category": "marketplace",
         "enabled": true,
         "urls": {
-          "direct": "https://auctions.yahoo.co.jp/search/search?p=T.M.Revolution+T.M.R.+LIVE+REVOLUTION+17+ROUND+HOUSE+CUTBACK",
+          "direct": "https://auctions.yahoo.co.jp/search/search?p=T.M.R.+LIVE+REVOLUTION'17+-ROUND+HOUSE+CUTBACK-",
           "affiliate": null
         }
       },
@@ -5145,7 +5145,7 @@
         "category": "marketplace",
         "enabled": true,
         "urls": {
-          "direct": "https://fril.jp/s?query=T.M.Revolution+T.M.R.+LIVE+REVOLUTION+17+ROUND+HOUSE+CUTBACK",
+          "direct": "https://fril.jp/search/T.M.R.+LIVE+REVOLUTION'17+-ROUND+HOUSE+CUTBACK-",
           "affiliate": null
         }
       }
@@ -5370,7 +5370,7 @@
         "category": "purchase",
         "enabled": true,
         "urls": {
-          "direct": "https://www.amazon.co.jp/s?k=T.M.Revolution+T.M.R.+LIVE+REVOLUTION+17+20th+Anniversary+FINAL&__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&ref=nb_sb_noss",
+          "direct": "https://www.amazon.co.jp/s?k=T.M.R.+LIVE+REVOLUTION+'17+-20th+Anniversary+FINAL+at+Saitama+Super+Arena-",
           "affiliate": null
         }
       },
@@ -5381,7 +5381,7 @@
         "category": "purchase",
         "enabled": true,
         "urls": {
-          "direct": "https://books.rakuten.co.jp/search?g=000&sitem=T.M.Revolution+T.M.R.+LIVE+REVOLUTION+17+20th+Anniversary+FINAL",
+          "direct": "https://books.rakuten.co.jp/search?sitem=T.M.R.+LIVE+REVOLUTION+'17+-20th+Anniversary+FINAL+at+Saitama+Super+Arena-",
           "affiliate": null
         }
       },
@@ -5392,7 +5392,7 @@
         "category": "purchase",
         "enabled": true,
         "urls": {
-          "direct": "https://shopping.yahoo.co.jp/search?p=T.M.Revolution+T.M.R.+LIVE+REVOLUTION+17+20th+Anniversary+FINAL",
+          "direct": "https://shopping.yahoo.co.jp/search?p=T.M.R.+LIVE+REVOLUTION+'17+-20th+Anniversary+FINAL+at+Saitama+Super+Arena-",
           "affiliate": null
         }
       },
@@ -5403,7 +5403,7 @@
         "category": "purchase",
         "enabled": true,
         "urls": {
-          "direct": "https://7net.omni7.jp/search/?keyword=T.M.Revolution+T.M.R.+LIVE+REVOLUTION+17+20th+Anniversary+FINAL",
+          "direct": "https://7net.omni7.jp/search/?keyword=T.M.R.+LIVE+REVOLUTION+'17+-20th+Anniversary+FINAL+at+Saitama+Super+Arena-",
           "affiliate": null
         }
       },
@@ -5491,7 +5491,7 @@
         "category": "marketplace",
         "enabled": true,
         "urls": {
-          "direct": "https://www.mercari.com/jp/search/?keyword=T.M.Revolution+T.M.R.+LIVE+REVOLUTION+17+20th+Anniversary+FINAL",
+          "direct": "https://jp.mercari.com/search?keyword=T.M.R.+LIVE+REVOLUTION+'17+-20th+Anniversary+FINAL+at+Saitama+Super+Arena-",
           "affiliate": null
         }
       },
@@ -5502,7 +5502,7 @@
         "category": "marketplace",
         "enabled": true,
         "urls": {
-          "direct": "https://auctions.yahoo.co.jp/search/search?p=T.M.Revolution+T.M.R.+LIVE+REVOLUTION+17+20th+Anniversary+FINAL",
+          "direct": "https://auctions.yahoo.co.jp/search/search?p=T.M.R.+LIVE+REVOLUTION+'17+-20th+Anniversary+FINAL+at+Saitama+Super+Arena-",
           "affiliate": null
         }
       },
@@ -5513,7 +5513,7 @@
         "category": "marketplace",
         "enabled": true,
         "urls": {
-          "direct": "https://fril.jp/s?query=T.M.Revolution+T.M.R.+LIVE+REVOLUTION+17+20th+Anniversary+FINAL",
+          "direct": "https://fril.jp/search/T.M.R.+LIVE+REVOLUTION+'17+-20th+Anniversary+FINAL+at+Saitama+Super+Arena-",
           "affiliate": null
         }
       }
@@ -5922,7 +5922,7 @@
         "category": "purchase",
         "enabled": true,
         "urls": {
-          "direct": "https://www.amazon.co.jp/s?k=T.M.Revolution+T.M.R.+LIVE+REVOLUTION+22+23+VOTE+JAPAN&__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&crid=FRSTIE7TWIO9&sprefix=t.m.revolution+t.m.r.+live+revolution+22+23+vote+japan%2Caps%2C169&ref=nb_sb_noss",
+          "direct": "https://www.amazon.co.jp/s?k=T.M.R.+LIVE+REVOLUTION+22-23+-VOTE+JAPAN-",
           "affiliate": null
         }
       },
@@ -5933,7 +5933,7 @@
         "category": "purchase",
         "enabled": true,
         "urls": {
-          "direct": "https://books.rakuten.co.jp/search?g=000&sitem=T.M.Revolution+T.M.R.+LIVE+REVOLUTION+22+23+VOTE+JAPAN",
+          "direct": "https://books.rakuten.co.jp/search?sitem=T.M.R.+LIVE+REVOLUTION+22-23+-VOTE+JAPAN-",
           "affiliate": null
         }
       },
@@ -5944,7 +5944,7 @@
         "category": "purchase",
         "enabled": true,
         "urls": {
-          "direct": "https://shopping.yahoo.co.jp/search?p=T.M.Revolution+T.M.R.+LIVE+REVOLUTION+22+23+VOTE+JAPAN",
+          "direct": "https://shopping.yahoo.co.jp/search?p=T.M.R.+LIVE+REVOLUTION+22-23+-VOTE+JAPAN-",
           "affiliate": null
         }
       },
@@ -5955,7 +5955,7 @@
         "category": "purchase",
         "enabled": true,
         "urls": {
-          "direct": "https://7net.omni7.jp/search/?keyword=T.M.Revolution+T.M.R.+LIVE+REVOLUTION+22+23+VOTE+JAPAN",
+          "direct": "https://7net.omni7.jp/search/?keyword=T.M.R.+LIVE+REVOLUTION+22-23+-VOTE+JAPAN-",
           "affiliate": null
         }
       },
@@ -6043,7 +6043,7 @@
         "category": "marketplace",
         "enabled": true,
         "urls": {
-          "direct": "https://jp.mercari.com/search?keyword=T.M.Revolution%20LIVE%20REVOLUTION%20VOTE%20JAPAN",
+          "direct": "https://jp.mercari.com/search?keyword=T.M.R.+LIVE+REVOLUTION+22-23+-VOTE+JAPAN-",
           "affiliate": null
         }
       },
@@ -6054,7 +6054,7 @@
         "category": "marketplace",
         "enabled": true,
         "urls": {
-          "direct": "https://auctions.yahoo.co.jp/search/search?p=T.M.Revolution+T.M.R.+LIVE+REVOLUTION+22+23+VOTE+JAPAN",
+          "direct": "https://auctions.yahoo.co.jp/search/search?p=T.M.R.+LIVE+REVOLUTION+22-23+-VOTE+JAPAN-",
           "affiliate": null
         }
       },
@@ -6065,7 +6065,7 @@
         "category": "marketplace",
         "enabled": true,
         "urls": {
-          "direct": "https://fril.jp/s?query=T.M.Revolution+T.M.R.+LIVE+REVOLUTION+22+23+VOTE+JAPAN",
+          "direct": "https://fril.jp/search/T.M.R.+LIVE+REVOLUTION+22-23+-VOTE+JAPAN-",
           "affiliate": null
         }
       }
