@@ -291,7 +291,7 @@ export function DetailModal({ active, setActive, setPreview, tours }: DetailModa
                                       const categoryConfig: CategoryConfig = {
                                         purchase: { label: '購入', priority: 1 },
                                         streaming: { label: '視聴・試聴', priority: 2 },
-                                        marketplace: { label: '中古を探す', priority: 3 }
+                                        marketplace: { label: 'フリマで探す', priority: 3 }
                                       };
 
                                       // カテゴリーごとにリンクをグループ化
@@ -329,7 +329,7 @@ export function DetailModal({ active, setActive, setPreview, tours }: DetailModa
                                                   {links.map((link: any, i: number) => (
                                                     <a
                                                       key={i}
-                                                      href={link.urls.direct}
+                                                      href={link.urls.affiliate ?? link.urls.direct}
                                                       target="_blank"
                                                       rel="noopener noreferrer"
                                                       className={getButtonStyle(link.platform)}>
@@ -430,7 +430,7 @@ export function DetailModal({ active, setActive, setPreview, tours }: DetailModa
                                         const categoryConfig: CategoryConfig = {
                                           purchase: { label: '購入', priority: 1 },
                                           streaming: { label: '視聴・試聴', priority: 2 },
-                                          marketplace: { label: '中古を探す', priority: 3 }
+                                          marketplace: { label: 'フリマで探す', priority: 3 }
                                         };
 
                                         const linksByCategory = new Map<string, any[]>();
@@ -463,7 +463,7 @@ export function DetailModal({ active, setActive, setPreview, tours }: DetailModa
                                                 </div>
                                                 <div className="flex flex-wrap gap-1 sm:gap-2">
                                                   {links.map((link: any, j: number) => (
-                                                    <a key={`${category}-${j}`} href={link.urls.direct} target="_blank" rel="noopener noreferrer" 
+                                                    <a key={`${category}-${j}`} href={link.urls.affiliate ?? link.urls.direct} target="_blank" rel="noopener noreferrer" 
                                                        className={getButtonStyle(link.platform)}>
                                                       {link.label || 'リンク'}
                                                     </a>
