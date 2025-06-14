@@ -742,7 +742,7 @@
     "notes": "FC限定VHS",
     "categories": {
       "purchase": {
-        "enabled": false
+        "enabled": true
       },
       "streaming": {
         "enabled": false
@@ -757,7 +757,7 @@
         "label": "SonyMusicで購入",
         "priority": 1,
         "category": "purchase",
-        "enabled": true,
+        "enabled": false,
         "urls": {
           "direct": "",
           "affiliate": null
@@ -926,7 +926,7 @@
     "notes": "FC限定VHS",
     "categories": {
       "purchase": {
-        "enabled": false
+        "enabled": true
       },
       "streaming": {
         "enabled": false
@@ -941,7 +941,7 @@
         "label": "SonyMusicで購入",
         "priority": 1,
         "category": "purchase",
-        "enabled": true,
+        "enabled": false,
         "urls": {
           "direct": "",
           "affiliate": null
@@ -963,7 +963,7 @@
         "label": "楽天ブックスで購入",
         "priority": 3,
         "category": "purchase",
-        "enabled": true,
+        "enabled": false,
         "urls": {
           "direct": "https://books.rakuten.co.jp/search?g=000&sitem=T.M.Revolution+LIVE+REVOLUTION+COMPLETE+EDITION",
           "affiliate": null
@@ -974,7 +974,7 @@
         "label": "Yahoo!ショッピングで購入",
         "priority": 4,
         "category": "purchase",
-        "enabled": true,
+        "enabled": false,
         "urls": {
           "direct": "https://shopping.yahoo.co.jp/search?p=T.M.Revolution+LIVE+REVOLUTION+COMPLETE+EDITION",
           "affiliate": null
@@ -985,7 +985,7 @@
         "label": "7netで購入",
         "priority": 5,
         "category": "purchase",
-        "enabled": true,
+        "enabled": false,
         "urls": {
           "direct": "https://7net.omni7.jp/search/?keyword=T.M.Revolution+LIVE+REVOLUTION+COMPLETE+EDITION",
           "affiliate": null
@@ -1110,7 +1110,7 @@
     "notes": "FC限定VHS",
     "categories": {
       "purchase": {
-        "enabled": false
+        "enabled": true
       },
       "streaming": {
         "enabled": false
@@ -1125,7 +1125,7 @@
         "label": "SonyMusicで購入",
         "priority": 1,
         "category": "purchase",
-        "enabled": true,
+        "enabled": false,
         "urls": {
           "direct": "",
           "affiliate": null
@@ -1147,7 +1147,7 @@
         "label": "楽天ブックスで購入",
         "priority": 3,
         "category": "purchase",
-        "enabled": true,
+        "enabled": false,
         "urls": {
           "direct": "https://books.rakuten.co.jp/search?g=000&sitem=T.M.Revolution+LIVE+REVOLUTION+COMPLETE+EDITION",
           "affiliate": null
@@ -1158,7 +1158,7 @@
         "label": "Yahoo!ショッピングで購入",
         "priority": 4,
         "category": "purchase",
-        "enabled": true,
+        "enabled": false,
         "urls": {
           "direct": "https://shopping.yahoo.co.jp/search?p=T.M.Revolution+LIVE+REVOLUTION+COMPLETE+EDITION",
           "affiliate": null
@@ -1169,7 +1169,7 @@
         "label": "7netで購入",
         "priority": 5,
         "category": "purchase",
-        "enabled": true,
+        "enabled": false,
         "urls": {
           "direct": "https://7net.omni7.jp/search/?keyword=T.M.Revolution+LIVE+REVOLUTION+COMPLETE+EDITION",
           "affiliate": null
@@ -4091,7 +4091,7 @@
         "label": "楽天ブックスで購入",
         "priority": 3,
         "category": "purchase",
-        "enabled": true,
+        "enabled": false,
         "urls": {
           "direct": "https://books.rakuten.co.jp/search?g=000&sitem=T.M.Revolution+T.M.R.+LIVE+REVOLUTION+14",
           "affiliate": null
@@ -4102,7 +4102,7 @@
         "label": "Yahoo!ショッピングで購入",
         "priority": 4,
         "category": "purchase",
-        "enabled": true,
+        "enabled": false,
         "urls": {
           "direct": "https://shopping.yahoo.co.jp/search?p=T.M.Revolution+T.M.R.+LIVE+REVOLUTION+14",
           "affiliate": null
@@ -4459,7 +4459,7 @@
         "label": "楽天ブックスで購入",
         "priority": 3,
         "category": "purchase",
-        "enabled": true,
+        "enabled": false,
         "urls": {
           "direct": "https://books.rakuten.co.jp/search?g=000&sitem=T.M.Revolution+T.M.R.+LIVE+REVOLUTION+15+Strikes+Back",
           "affiliate": null
