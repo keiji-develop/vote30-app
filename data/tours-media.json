@@ -195,7 +195,7 @@
         "comment": null
       },
       "liveArrangement": {
-        "showNoneItem": true,
+        "showNoneItem": false,
         "comment": null
       }
     }
@@ -212,7 +212,7 @@
         "comment": null
       },
       "liveArrangement": {
-        "showNoneItem": true,
+        "showNoneItem": false,
         "comment": null
       }
     }
@@ -229,7 +229,7 @@
         "comment": null
       },
       "liveArrangement": {
-        "showNoneItem": true,
+        "showNoneItem": false,
         "comment": null
       }
     }
@@ -282,7 +282,7 @@
         "comment": null
       },
       "liveArrangement": {
-        "showNoneItem": true,
+        "showNoneItem": false,
         "comment": null
       }
     }
@@ -338,7 +338,7 @@
         "comment": null
       },
       "liveArrangement": {
-        "showNoneItem": true,
+        "showNoneItem": false,
         "comment": null
       }
     }
@@ -396,7 +396,7 @@
         "comment": null
       },
       "liveArrangement": {
-        "showNoneItem": true,
+        "showNoneItem": false,
         "comment": null
       }
     }
@@ -413,7 +413,7 @@
         "comment": null
       },
       "liveArrangement": {
-        "showNoneItem": true,
+        "showNoneItem": false,
         "comment": null
       }
     }
@@ -451,7 +451,7 @@
         "comment": null
       },
       "liveArrangement": {
-        "showNoneItem": true,
+        "showNoneItem": false,
         "comment": null
       }
     }
@@ -481,7 +481,6 @@
       "anniversary_20th_final"
     ],
     "liveArrangementIds": [
-      "cloud_nine_cd"
     ],
     "noMediaInfo": {
       "liveVideo": {
@@ -489,7 +488,7 @@
         "comment": null
       },
       "liveArrangement": {
-        "showNoneItem": true,
+        "showNoneItem": false,
         "comment": null
       }
     }
@@ -525,7 +524,7 @@
         "comment": null
       },
       "liveArrangement": {
-        "showNoneItem": true,
+        "showNoneItem": false,
         "comment": null
       }
     }
