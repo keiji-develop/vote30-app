@@ -329,7 +329,7 @@ export function DetailModal({ active, setActive, setPreview, tours }: DetailModa
                                                   {links.map((link: any, i: number) => (
                                                     <a
                                                       key={i}
-                                                      href={link.urls.direct}
+                                                      href={link.urls.affiliate ?? link.urls.direct}
                                                       target="_blank"
                                                       rel="noopener noreferrer"
                                                       className={getButtonStyle(link.platform)}>
@@ -463,7 +463,7 @@ export function DetailModal({ active, setActive, setPreview, tours }: DetailModa
                                                 </div>
                                                 <div className="flex flex-wrap gap-1 sm:gap-2">
                                                   {links.map((link: any, j: number) => (
-                                                    <a key={`${category}-${j}`} href={link.urls.direct} target="_blank" rel="noopener noreferrer" 
+                                                    <a key={`${category}-${j}`} href={link.urls.affiliate ?? link.urls.direct} target="_blank" rel="noopener noreferrer" 
                                                        className={getButtonStyle(link.platform)}>
                                                       {link.label || 'リンク'}
                                                     </a>
